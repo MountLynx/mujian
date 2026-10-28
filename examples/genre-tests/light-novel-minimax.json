@@ -1,0 +1,835 @@
+{
+  "version": 1,
+  "id": "run_e4711dba7e24",
+  "seed": "minimax-light-01",
+  "status": "paused",
+  "scenario": {
+    "id": "genre-light-novel",
+    "title": "魔王城门口的药店",
+    "subtitle": "勇者来买止痛药，魔族来收保护费，店主只想今天早点关门。",
+    "kicker": "类型实验 · 日轻奇幻 · 最终决战前夜",
+    "isPreset": true,
+    "world": {
+      "title": "魔王城门口的药店",
+      "era": "剑与魔法的异世界 · 黑岩山脚",
+      "tone": "日式轻小说喜剧：吐槽、食物、契约与一点点温柔。对白要快，允许夸张反应；不要用中式网文的“打脸”节奏，也不要写成黑暗严肃奇幻。",
+      "setting": "魔王城所在的黑岩山脚。山脚的居民已经撤走，只剩一家两层小楼还亮着灯，招牌写着“琳的炼金小铺”。明天正午，勇者小队将攻打魔王城。今晚店里有炼金锅、药架、一锅快烧干的糖浆，以及一条通向魔王城厨房的密道（只有店主知道）。门外雪很深，远处城墙上的魔火把雪照成暗红色。\n\n这是一个小地方的小夜晚：没有军队，没有史诗，只有三个人都想活过明天。",
+      "location": "药店一层：柜台、炼金锅、药架、门口的风铃、通往后巷的后门。所有角色都在这里。",
+      "dateLabel": "决战前夜",
+      "startClock": "22:10",
+      "premise": "勇者来买“不害怕的药”，魔王城守门人来收“过路费”，被勇者小队开除的炼金术师只想把店关掉；三个人都想要一个不用明天上战场的办法。",
+      "opening": "22:10。雪把黑岩山脚埋到脚踝。琳把“营业中”的牌子翻到“打烊”，门铃就响了。\n\n进来的是勇者亚兰，披风上全是雪，笑得像海报上的人。他把一袋银币放在柜台上，压低声音：“有没有那种……吃了就不怕的药？”\n\n琳还没回答，后门被人敲了三下，又敲两下。米娅从门缝里挤进来，兜帽上沾着魔火的黑灰，手里提着一只空篮子：“过路费。今天收糖。”\n\n前门是勇者，后门是魔王城的人。\n\n琳看了看墙上的钟，又看了看那锅快烧干的糖浆，觉得今晚的营业时间可能要延长。",
+      "directorNotes": "这是轻喜剧，不是史诗。不要写战争场面、政治阴谋或突然的悲剧反转；压力来自“明天正午”和三个人各自不肯说的事。\n\n允许角色吐槽、讨价还价、撒谎、用食物转移话题。亚兰的“勇者”身份可以被调侃，但不要把他写成纯小丑；米娅的魔族身份也一样。不要把魔族写成天生的恶，也不要把勇者写成救世主。\n\n4 个时刻。结尾可以停在“明天还没来”的地方，不必解决战争。",
+      "hiddenCanon": "（仅总控可见，是人物与世界的骨架，不要求照本宣科。）\n\n1. 魔王不是恶人；他在维持山下的封印，教会的“讨伐”是为了夺取魔王城下的炼金资源。亚兰不知道这件事。\n\n2. 亚兰的圣剑是教会量产货，他是孤儿，被包装成勇者；他怕死，但不坏。他来买的是“能让自己不逃跑的药”。\n\n3. 米娅是魔王女儿；她不想继承魔王城，想去人类镇上开甜品店。她今晚来药店，是想买糖，也想警告琳明天别开门。\n\n4. 琳被勇者小队开除，是因为她把贤者之石拿去救了一个魔族小孩；她不后悔，但再也不相信“队伍”。她店里有一条通往魔王城厨房的密道，答应过米娅不告诉勇者。\n\n5. 明天不一定会打起来；这个夜晚能改变的是三个人要不要说实话。不要让任何人在第一刻就坦白。",
+      "initialFacts": [
+        "明天正午，勇者小队将攻打魔王城。",
+        "山脚的居民已经撤离。",
+        "琳的药店是唯一还亮着灯的店。",
+        "亚兰是勇者小队的队长。",
+        "米娅是魔王城的守门人。"
+      ],
+      "countdown": "明天正午，魔王城开门"
+    },
+    "characters": [
+      {
+        "id": "lin",
+        "name": "琳·阿斯特",
+        "title": "炼金术师 · 药店店主",
+        "age": "20",
+        "pronouns": "她",
+        "publicProfile": "黑岩山脚唯一还开着的炼金术师，嘴毒、算账快；附近的小孩都怕她，但生病时又都来找她。",
+        "appearance": "栗色头发用一根搅拌棒别着，围裙上全是药渍；右手食指有一道被炼金锅烫出的旧疤。",
+        "personality": "用价格和吐槽把人挡在外面；其实会偷偷给穷孩子留药。她不是不温柔，只是不相信“队伍”这种东西。",
+        "desire": "攒够钱买回自己的炼金工坊，不再给任何人打下手。",
+        "fear": "再次被“队伍”丢下。",
+        "secret": "她店里有一条通往魔王城厨房的密道，答应过米娅不告诉勇者；她被开除是因为用贤者之石救了一个魔族小孩。",
+        "abilities": {
+          "physique": 4,
+          "agility": 6,
+          "perception": 7,
+          "intellect": 9,
+          "will": 6,
+          "presence": 4
+        },
+        "traits": [
+          {
+            "name": "炼金鼻子",
+            "description": "闻一下就知道药材几成熟、糖浆还差几秒。",
+            "bonus": 2,
+            "ability": "intellect"
+          },
+          {
+            "name": "把真心话包在报价单里",
+            "description": "越想说真话，越要先报一个价。",
+            "bonus": 2,
+            "ability": "presence"
+          }
+        ],
+        "possessions": [
+          "搅拌棒",
+          "账本",
+          "后门钥匙"
+        ],
+        "relationships": [
+          {
+            "targetId": "yalan",
+            "label": "勇者 / 潜在客户",
+            "attitude": "他笑得越像海报，我越不想卖给他。"
+          },
+          {
+            "targetId": "miya",
+            "label": "魔族守门人 / 赊账的丫头",
+            "attitude": "这丫头每次来都赊账，但我总给她留糖。"
+          }
+        ],
+        "memories": [
+          {
+            "summary": "被勇者小队开除那天，她把贤者之石塞进一个魔族小孩的手里。",
+            "detail": "队长说“你救了敌人”，她说“他只是个孩子”。",
+            "importance": 5
+          },
+          {
+            "summary": "那个魔族小孩的手很烫，后来再也没见过。",
+            "detail": "她有时会想，他有没有活下来。",
+            "importance": 3
+          },
+          {
+            "summary": "她最大的愿望是有一间自己的工坊，门口挂自己的名字。",
+            "detail": "现在这块招牌是租的。",
+            "importance": 4
+          }
+        ],
+        "conditions": []
+      },
+      {
+        "id": "yalan",
+        "name": "亚兰·格雷",
+        "title": "勇者小队队长 · 教会册封的勇者",
+        "age": "24",
+        "pronouns": "他",
+        "publicProfile": "教会册封的勇者，金发，笑容标准；吟游诗人已经把他的脸印在酒馆海报上。",
+        "appearance": "银甲外面罩着旧披风，剑鞘很华丽，握剑的手却在抖；脖子上围着一条褪色的旧围巾。",
+        "personality": "习惯用漂亮话撑场面；越害怕越要笑；他不是英雄，但也不想让队友死。",
+        "desire": "明天活着回来，并且不要让任何人看出他怕。",
+        "fear": "被揭穿“勇者”只是教会的选秀产品；更怕自己真的会逃跑。",
+        "secret": "圣剑是量产货；他已经在收拾行李，准备今晚离开。",
+        "abilities": {
+          "physique": 6,
+          "agility": 6,
+          "perception": 5,
+          "intellect": 5,
+          "will": 4,
+          "presence": 8
+        },
+        "traits": [
+          {
+            "name": "勇者式微笑",
+            "description": "再慌也能笑得像海报。",
+            "bonus": 2,
+            "ability": "presence"
+          },
+          {
+            "name": "先看退路",
+            "description": "进任何房间先看门在哪。",
+            "bonus": 2,
+            "ability": "perception"
+          }
+        ],
+        "possessions": [
+          "圣剑（量产）",
+          "一袋银币",
+          "教会的讨伐令"
+        ],
+        "relationships": [
+          {
+            "targetId": "lin",
+            "label": "炼金术师 / 被队伍开除的人",
+            "attitude": "她看我的眼神像在看假货。"
+          },
+          {
+            "targetId": "miya",
+            "label": "魔族守门人",
+            "attitude": "魔族原来也怕冷。"
+          }
+        ],
+        "memories": [
+          {
+            "summary": "教会地下室挂着他和其他十二个“勇者候选人”的海报。",
+            "detail": "最后只有他一个人被选中。",
+            "importance": 5
+          },
+          {
+            "summary": "队友说“队长你肯定不怕吧”，他笑着点头。",
+            "detail": "那天晚上他吐了。",
+            "importance": 4
+          },
+          {
+            "summary": "母亲留给他的旧围巾，是他唯一没交给教会的东西。",
+            "detail": "围巾上有补丁，不配勇者的铠甲。",
+            "importance": 3
+          }
+        ],
+        "conditions": []
+      },
+      {
+        "id": "miya",
+        "name": "米娅",
+        "title": "魔王城守门人 · 魔王的女儿",
+        "age": "19",
+        "pronouns": "她",
+        "publicProfile": "魔王城最年轻的守门人，红眼睛，兜帽上总有魔火的灰；收过路费时很凶，其实爱吃人类的糖。",
+        "appearance": "黑色兜帽，角从帽沿下露出一点；篮子里永远有糖纸。",
+        "personality": "嘴硬、讨价还价、用“魔族规矩”遮掩心软；对人类甜品没有抵抗力。",
+        "desire": "让魔王城和人类停战，好去人类镇上开一家甜品店。",
+        "fear": "父亲发现她偷偷放走人类；也怕明天真的打起来。",
+        "secret": "她是魔王女儿；今晚来药店是想买糖，也想警告琳明天别开门。",
+        "abilities": {
+          "physique": 5,
+          "agility": 7,
+          "perception": 7,
+          "intellect": 5,
+          "will": 6,
+          "presence": 6
+        },
+        "traits": [
+          {
+            "name": "魔族耳朵",
+            "description": "能听见雪下面很轻的脚步和心跳。",
+            "bonus": 2,
+            "ability": "perception"
+          },
+          {
+            "name": "糖分至上",
+            "description": "只要有糖，什么都可以谈。",
+            "bonus": 1,
+            "ability": "will"
+          }
+        ],
+        "possessions": [
+          "空篮子",
+          "一串城门钥匙",
+          "半块人类太妃糖"
+        ],
+        "relationships": [
+          {
+            "targetId": "lin",
+            "label": "炼金术师 / 唯一不赶她走的人类",
+            "attitude": "她家的糖比魔王城的药好。"
+          },
+          {
+            "targetId": "yalan",
+            "label": "勇者 / 明天要来的那个人",
+            "attitude": "勇者看起来比传说里矮。"
+          }
+        ],
+        "memories": [
+          {
+            "summary": "她曾在人类甜品店门口站了一下午，最后没敢进去。",
+            "detail": "橱窗里的草莓蛋糕标价三枚银币。",
+            "importance": 4
+          },
+          {
+            "summary": "父亲说“守门人不能心软”。",
+            "detail": "她放走的人类小孩已经不止一个。",
+            "importance": 5
+          },
+          {
+            "summary": "琳第一次给她留糖，是在城门口。",
+            "detail": "糖纸她还留着。",
+            "importance": 3
+          }
+        ],
+        "conditions": []
+      }
+    ],
+    "rules": {
+      "maxBeats": 4,
+      "difficultyGuidance": "日常动作（抓药、熬糖、关窗）DC 8–10；让一个戒备的人说出真话、在勇者和魔族之间周旋 DC 13–16；当众承认自己的身份或恐惧 DC 18。不要给抓药、煮糖设置高风险。",
+      "mode": "trpg"
+    }
+  },
+  "settings": {
+    "maxBeats": 4,
+    "autoLimit": 4,
+    "thinking": "auto",
+    "model": "MiniMax-M3.1-Flash"
+  },
+  "createdAt": "2026-10-27T11:49:12.296Z",
+  "updatedAt": "2026-10-27T12:04:35.157Z",
+  "clock": {
+    "minutes": 1330,
+    "display": "22:10",
+    "dateLabel": "决战前夜"
+  },
+  "world": {
+    "publicFacts": [
+      "明天正午，勇者小队将攻打魔王城。",
+      "山脚的居民已经撤离。",
+      "琳的药店是唯一还亮着灯的店。",
+      "亚兰是勇者小队的队长。",
+      "米娅是魔王城的守门人。",
+      "亚兰当着琳和米娅的面承认自己害怕，并明确表示想逃。",
+      "琳收下米娅以糖霜预付的第二笔货款，并答应明早不碰那扇门。"
+    ],
+    "flags": {
+      "sugar_syrup_saved": true,
+      "yalan_fear_admitted": true,
+      "miya_frosting_received": true,
+      "lin_morning_door_promise": true
+    },
+    "pressure": "亚兰的去留尚未公开落定，琳还要处理带焦味的糖浆并守住明早的约定。",
+    "sceneTitle": "两笔账落地"
+  },
+  "characters": {
+    "lin": {
+      "id": "lin",
+      "conditions": [
+        {
+          "name": "两账分心",
+          "description": "糖浆善后与两笔交易同时压在账本上，下一次炼金或议价时更难兼顾两边。",
+          "modifier": -2,
+          "kind": "emotion",
+          "abilities": [
+            "will"
+          ],
+          "id": "cond_531e42d46990",
+          "sourceBeat": 0
+        }
+      ],
+      "stress": 1,
+      "memories": [
+        {
+          "id": "mem_96776686b0d1",
+          "at": "决战前夜",
+          "beatIndex": null,
+          "summary": "被勇者小队开除那天，她把贤者之石塞进一个魔族小孩的手里。",
+          "detail": "队长说“你救了敌人”，她说“他只是个孩子”。",
+          "importance": 5,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_1ccbc55f7f2f",
+          "at": "决战前夜",
+          "beatIndex": null,
+          "summary": "那个魔族小孩的手很烫，后来再也没见过。",
+          "detail": "她有时会想，他有没有活下来。",
+          "importance": 3,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_1e35bf57f37b",
+          "at": "决战前夜",
+          "beatIndex": null,
+          "summary": "她最大的愿望是有一间自己的工坊，门口挂自己的名字。",
+          "detail": "现在这块招牌是租的。",
+          "importance": 4,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_126c96f28bda",
+          "at": "22:10",
+          "beatIndex": 0,
+          "summary": "她把勇者的银币和守门人的糖霜分成了两笔账。",
+          "detail": "焦甜的泡从锅沿接连炸开，琳·阿斯特俯身闻了一下，立刻关小炉火，把炼金锅挪离灶口。糖浆总算没烧穿，只留下浓得发苦的焦甜气。她把账本摊到银币旁，指尖敲着价目栏：“止痛药有，吃了就不怕的药没有。亚兰队长，这袋银币只够买一剂药——胆量不归炼金术师管。”\n\n亚兰·格雷仍挂着海报式的笑，却慢慢收回了按银币的手。他从甲内抽出教会讨伐令，摊在账本旁，又瞥了后门一眼。标准笑容僵了半拍，他终于不再假装来买“不怕”的药：“琳小姐，刚才说错了。我要的不是吃了就不怕，是能让人把‘我想走’说出口的药。哪怕只说一次——我现在就怕得要死，止痛药也请给我一剂。”那袋银币压住了药账，也压… 只有你知道：糖浆虽保住了，焦甜味已经钻进这一锅；米娅的明早货款记在第二栏。",
+          "importance": 3,
+          "kind": "observation",
+          "source": "gm"
+        }
+      ],
+      "inventory": [
+        "搅拌棒",
+        "账本",
+        "后门钥匙",
+        "亚兰支付的一袋银币"
+      ],
+      "flags": {}
+    },
+    "yalan": {
+      "id": "yalan",
+      "conditions": [],
+      "stress": 0,
+      "memories": [
+        {
+          "id": "mem_66b407b106e5",
+          "at": "决战前夜",
+          "beatIndex": null,
+          "summary": "教会地下室挂着他和其他十二个“勇者候选人”的海报。",
+          "detail": "最后只有他一个人被选中。",
+          "importance": 5,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_a8a6b0119e09",
+          "at": "决战前夜",
+          "beatIndex": null,
+          "summary": "队友说“队长你肯定不怕吧”，他笑着点头。",
+          "detail": "那天晚上他吐了。",
+          "importance": 4,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_a301b495ea2d",
+          "at": "决战前夜",
+          "beatIndex": null,
+          "summary": "母亲留给他的旧围巾，是他唯一没交给教会的东西。",
+          "detail": "围巾上有补丁，不配勇者的铠甲。",
+          "importance": 3,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_1474c6ff6cbf",
+          "at": "22:10",
+          "beatIndex": 0,
+          "summary": "亚兰当着米娅的面承认自己想走。",
+          "detail": "焦甜的泡从锅沿接连炸开，琳·阿斯特俯身闻了一下，立刻关小炉火，把炼金锅挪离灶口。糖浆总算没烧穿，只留下浓得发苦的焦甜气。她把账本摊到银币旁，指尖敲着价目栏：“止痛药有，吃了就不怕的药没有。亚兰队长，这袋银币只够买一剂药——胆量不归炼金术师管。”\n\n亚兰·格雷仍挂着海报式的笑，却慢慢收回了按银币的手。他从甲内抽出教会讨伐令，摊在账本旁，又瞥了后门一眼。标准笑容僵了半拍，他终于不再假装来买“不怕”的药：“琳小姐，刚才说错了。我要的不是吃了就不怕，是能让人把‘我想走’说出口的药。哪怕只说一次——我现在就怕得要死，止痛药也请给我一剂。”那袋银币压住了药账，也压… 只有你知道：那剂药尚未服用，但“我想走”已经先说出了口。",
+          "importance": 4,
+          "kind": "observation",
+          "source": "gm"
+        }
+      ],
+      "inventory": [
+        "圣剑（量产）",
+        "教会的讨伐令",
+        "一剂苦艾醒神剂（未服用）"
+      ],
+      "flags": {}
+    },
+    "miya": {
+      "id": "miya",
+      "conditions": [],
+      "stress": 0,
+      "memories": [
+        {
+          "id": "mem_cd1a65bf68a9",
+          "at": "决战前夜",
+          "beatIndex": null,
+          "summary": "她曾在人类甜品店门口站了一下午，最后没敢进去。",
+          "detail": "橱窗里的草莓蛋糕标价三枚银币。",
+          "importance": 4,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_1d6534b018b3",
+          "at": "决战前夜",
+          "beatIndex": null,
+          "summary": "父亲说“守门人不能心软”。",
+          "detail": "她放走的人类小孩已经不止一个。",
+          "importance": 5,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_03d91082c19b",
+          "at": "决战前夜",
+          "beatIndex": null,
+          "summary": "琳第一次给她留糖，是在城门口。",
+          "detail": "糖纸她还留着。",
+          "importance": 3,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_f9f61e2021bb",
+          "at": "22:10",
+          "beatIndex": 0,
+          "summary": "琳收下了她用糖霜预付的明早约定。",
+          "detail": "焦甜的泡从锅沿接连炸开，琳·阿斯特俯身闻了一下，立刻关小炉火，把炼金锅挪离灶口。糖浆总算没烧穿，只留下浓得发苦的焦甜气。她把账本摊到银币旁，指尖敲着价目栏：“止痛药有，吃了就不怕的药没有。亚兰队长，这袋银币只够买一剂药——胆量不归炼金术师管。”\n\n亚兰·格雷仍挂着海报式的笑，却慢慢收回了按银币的手。他从甲内抽出教会讨伐令，摊在账本旁，又瞥了后门一眼。标准笑容僵了半拍，他终于不再假装来买“不怕”的药：“琳小姐，刚才说错了。我要的不是吃了就不怕，是能让人把‘我想走’说出口的药。哪怕只说一次——我现在就怕得要死，止痛药也请给我一剂。”那袋银币压住了药账，也压… 只有你知道：糖霜罐和第二笔货款都到手了，明早那扇门现在有琳的明确承诺。",
+          "importance": 4,
+          "kind": "observation",
+          "source": "gm"
+        }
+      ],
+      "inventory": [
+        "空篮子",
+        "一串城门钥匙",
+        "半块人类太妃糖",
+        "一罐糖霜"
+      ],
+      "flags": {}
+    }
+  },
+  "beats": [
+    {
+      "id": "beat_5d9cbcfac7c3",
+      "index": 0,
+      "title": "两扇门的生意",
+      "phase": "complete",
+      "clock": {
+        "minutes": 1330,
+        "display": "22:10",
+        "dateLabel": "决战前夜"
+      },
+      "timeJump": null,
+      "publicBrief": "22:10，门外的雪已埋到脚踝，远处城墙的魔火把雪映成暗红，招牌仍亮着，琳刚把“营业中”翻成“打烊”。勇者亚兰抖落披风的雪，把一袋银币压在柜台，问有没有吃了就不怕的药；她尚未作答，炼金锅里的糖浆便因火太旺冒出焦甜泡，锅沿嘶嘶作响。后门随即响起三下、再两下的敲击，米娅从门缝钻入，兜帽上沾着魔火黑灰，提着空篮子讨糖作过路费。前门是教会勇者，后门是魔王城守门人；银币、空篮和快烧干的糖浆同时摆在柜台前，没谁能装作没听见另一边。",
+      "privateCues": [
+        {
+          "characterId": "lin",
+          "cue": "后门的三下再两下让你想起药架后那段只有你知道的密道，也想起答应米娅不把密道之事告诉勇者的约定。锅里的焦甜气越来越重；你盯着柜台上的银币，猜这袋钱究竟买的是药，还是一条退路。"
+        },
+        {
+          "characterId": "yalan",
+          "cue": "披风上的雪融成水，沿着鞋边往里爬。你摸到圣剑护手内侧那道量产接缝，又想起自己已经收拾好的行李；你想买的恐怕不是“不怕”，而是“敢承认自己会逃”。药还没入口，你的脉搏已经先乱了。"
+        },
+        {
+          "characterId": "miya",
+          "cue": "空篮底粘着一粒你照着人类食谱试做糖霜时留下的碎屑；你想的不是明天的城门，而是人类镇上甜品店的第一炉奶油。兜帽里的魔火灰贴着额头微烫，提醒你来买糖，也想请琳明天别开门——偏偏勇者就站在柜台另一侧。"
+        }
+      ],
+      "pressure": "糖浆再烧干就会焦，雪正从两扇门的缝里往里钻，银币和空篮也都等着回应——今晚这桩生意没法按正常顺序打烊。",
+      "sceneQuestion": "柜台上的银币与空篮，哪一边会先换来一句实话？",
+      "gmNote": "第一刻只让焦糖与灌雪制造即时压力；三人先互相观察、讨价还价和回避，阵营秘密继续压在各自动作里。",
+      "actions": [
+        {
+          "id": "act_a87c1a02913c",
+          "characterId": "lin",
+          "category": "技术",
+          "summary": "抢救糖浆并给勇者报价",
+          "description": "琳俯身闻了闻锅沿的焦甜气，立刻关小炉火，把炼金锅从灶口挪开；随后她抽出账本摊在银币旁，手指敲了敲价目栏。",
+          "dialogue": "止痛药有，吃了就不怕的药没有。亚兰队长，这袋银币只够买一剂药——胆量不归炼金术师管。",
+          "thought": "糖浆再拖几秒就要焦；先保住这锅货，再决定银币能买到哪一句实话。",
+          "goalProgress": "不让这锅糖浆变成焦炭，就是保住离买回炼金工坊又近一笔的周转金。",
+          "stakes": "如果糖浆烧焦、又被亚兰压价，我今天本就有限的周转钱会更少。",
+          "ability": "intellect",
+          "traitName": "炼金鼻子",
+          "targetId": "yalan",
+          "targetLabel": "亚兰·格雷",
+          "status": "resolved",
+          "penalties": -2,
+          "penaltyNotes": [
+            "分心应战 -2"
+          ],
+          "generatedBy": "llm",
+          "createdAt": "2026-10-27T11:50:40.242Z",
+          "roll": {
+            "natural": 15,
+            "ability": "intellect",
+            "abilityValue": 9,
+            "traitName": "炼金鼻子",
+            "traitBonus": 2,
+            "conditionBonus": 0,
+            "conditionNotes": [],
+            "situationalBonus": 0,
+            "penalty": -2,
+            "penaltyNotes": [
+              "分心应战 -2"
+            ],
+            "total": 24,
+            "dc": null,
+            "opponentTotal": 19,
+            "margin": 5,
+            "tier": "success",
+            "criticalByNatural20": false
+          },
+          "outcome": "success",
+          "outcomeNote": ""
+        },
+        {
+          "id": "act_e353f4f2d256",
+          "characterId": "yalan",
+          "category": "交涉",
+          "summary": "把想逃说出口再买药",
+          "description": "亚兰仍挂着海报式的笑，却收回了按在银币上的手。他从甲内抽出教会讨伐令，摊到银币旁，瞥过后门的米娅后看向琳。",
+          "dialogue": "琳小姐，刚才说错了。我要的不是吃了就不怕，是能让人把‘我想走’说出口的药。哪怕只说一次。",
+          "thought": "我要的从来不是“不怕”，而是把想逃说出口后，仍有一条活路。先把真话递给琳，别让糖浆焦掉或米娅的过路费替我逼出答案。",
+          "goalProgress": "他当着旁人承认自己并非不怕，并尝试把退路变成琳可以回应的请求。",
+          "stakes": "若琳把这当成怯战，他可能连药和退路都得不到，勇者的体面也会当场碎掉。",
+          "ability": "presence",
+          "traitName": "勇者式微笑",
+          "targetId": "lin",
+          "targetLabel": "琳·阿斯特",
+          "status": "resolved",
+          "penalties": -2,
+          "penaltyNotes": [
+            "分心应战 -2"
+          ],
+          "generatedBy": "llm",
+          "createdAt": "2026-10-27T11:50:40.142Z",
+          "roll": {
+            "natural": 6,
+            "ability": "presence",
+            "abilityValue": 8,
+            "traitName": "勇者式微笑",
+            "traitBonus": 2,
+            "conditionBonus": 0,
+            "conditionNotes": [],
+            "situationalBonus": 0,
+            "penalty": -2,
+            "penaltyNotes": [
+              "分心应战 -2"
+            ],
+            "total": 14,
+            "dc": null,
+            "opponentTotal": 10,
+            "margin": 4,
+            "tier": "success",
+            "criticalByNatural20": false
+          },
+          "outcome": "success",
+          "outcomeNote": ""
+        },
+        {
+          "id": "act_05aa1c5b6385",
+          "characterId": "miya",
+          "category": "交涉",
+          "summary": "把两笔账拆开来谈",
+          "description": "米娅把兜帽往下拽了拽，倒扣空篮，用指甲刮下篮底的糖霜碎屑摆在银币旁，又将半块太妃糖放在碎屑上，指尖却迟迟没松开。",
+          "dialogue": "两笔账分开：银币是勇者的，篮子是我这个讨糖人的。琳，给我一罐糖霜；明早城门开时别开门——算我预付的第二笔货款。",
+          "thought": "亚兰就在柜台另一侧，不能装作互不相识；篮底的糖霜碎屑却能提醒琳，我今天不是来抢钱的。先把两笔账拆开，再把警告藏进糖价里。",
+          "goalProgress": "以糖霜和预付货款提出避战警告，迈出劝琳明天停业的第一步。",
+          "stakes": "她最可能失去的是在父王面前守住“守门人不能心软”的退路，以及琳对她的信任。",
+          "ability": "presence",
+          "traitName": null,
+          "targetId": "lin",
+          "targetLabel": "琳·阿斯特",
+          "status": "resolved",
+          "penalties": 0,
+          "penaltyNotes": [],
+          "generatedBy": "llm",
+          "createdAt": "2026-10-27T11:55:05.042Z",
+          "roll": {
+            "natural": 6,
+            "ability": "presence",
+            "abilityValue": 6,
+            "traitName": null,
+            "traitBonus": 0,
+            "conditionBonus": 0,
+            "conditionNotes": [],
+            "situationalBonus": 0,
+            "penalty": 0,
+            "penaltyNotes": [],
+            "total": 12,
+            "dc": null,
+            "opponentTotal": 10,
+            "margin": 2,
+            "tier": "success",
+            "criticalByNatural20": false
+          },
+          "outcome": "success",
+          "outcomeNote": ""
+        }
+      ],
+      "adjudications": [
+        {
+          "actionId": "act_a87c1a02913c",
+          "difficultyLabel": "容易",
+          "dc": 10,
+          "modifier": 0,
+          "reason": "关火移锅和按价目报价都是熟练店主的日常操作，只有糖浆将烧焦带来一点时限压力。",
+          "risk": "若糖浆烧焦且报价未被接受，琳会同时损失整锅糖和这袋银币。"
+        },
+        {
+          "actionId": "act_e353f4f2d256",
+          "difficultyLabel": "困难",
+          "dc": 18,
+          "modifier": 0,
+          "reason": "当着琳和潜在敌人承认“我想走”并非普通求药，而是公开承认自己的恐惧。",
+          "risk": "亚兰的勇者威信会当场受损，琳也可能认定他临阵怯战而拒绝卖药。"
+        },
+        {
+          "actionId": "act_05aa1c5b6385",
+          "difficultyLabel": "标准",
+          "dc": 15,
+          "modifier": 0,
+          "reason": "用糖作交换降低了取得糖霜的门槛，但让戒备中的琳答应明早不开门仍是一次需要当面周旋的请求。",
+          "risk": "若周旋失败，琳会拒绝糖霜交易并追问米娅为何急着替魔王城说话，使其守门人的立场暴露。"
+        }
+      ],
+      "reactions": [
+        {
+          "id": "rxn_bd8e3781ba06",
+          "characterId": "lin",
+          "incomingActionIds": [
+            "act_e353f4f2d256",
+            "act_05aa1c5b6385"
+          ],
+          "continueOriginal": true,
+          "summary": "一碗糖霜分开卖给两张嘴",
+          "description": "琳一手压低炉火、把冒焦泡的锅挪离灶口，另一手翻开账本，将亚兰的银币和米娅的空篮划成两笔。她给两份真话各自标上价，又把糖霜罐推到米娅手边。",
+          "dialogue": "亚兰队长，这袋钱只够一剂苦艾醒神剂：能让你把“我想走”说出口，副作用是别的真话也会跟着冒出来；胆量不归炼金术师管。米娅，糖霜一罐，记在空篮那笔；明早那扇门我不碰，算收下你的第二笔货款。",
+          "thought": "两个都在拿真话换东西，药可以卖，秘密不能明码标价；先把快焦的糖浆和两张嘴一起按住。",
+          "ability": "presence",
+          "traitName": "把真心话包在报价单里",
+          "stance": "分账周旋",
+          "createdAt": "2026-10-27T11:58:43.263Z",
+          "roll": {
+            "natural": 7,
+            "ability": "presence",
+            "abilityValue": 4,
+            "traitName": "把真心话包在报价单里",
+            "traitBonus": 2,
+            "conditionBonus": 0,
+            "conditionNotes": [],
+            "situationalBonus": 0,
+            "penalty": -3,
+            "penaltyNotes": [
+              "分心兼顾原行动 -2",
+              "同时应对 2 个行动 -1"
+            ],
+            "total": 10,
+            "incomingTotals": {
+              "act_e353f4f2d256": 14,
+              "act_05aa1c5b6385": 12
+            }
+          }
+        },
+        {
+          "id": "rxn_fcda91e0b558",
+          "characterId": "yalan",
+          "incomingActionIds": [
+            "act_a87c1a02913c"
+          ],
+          "continueOriginal": true,
+          "summary": "海报笑容下承认想逃",
+          "description": "我顺势折起讨伐令，按住差点被账本挤走的银币。标准笑容僵了半拍，却没再装作来买“不怕”的药。",
+          "dialogue": "琳小姐，刚才说错了。我要的不是吃了就不怕，是能让人把‘我想走’说出口的药。哪怕只说一次——我现在就怕得要死，止痛药也请给我一剂。",
+          "thought": "琳把退路堵得很干脆，却没说不卖止痛药。既然最难堪的话已经到嘴边，再拿教会的说辞遮掩反而更荒唐。",
+          "ability": "presence",
+          "traitName": "勇者式微笑",
+          "stance": "顺势坦白",
+          "createdAt": "2026-10-27T11:55:54.666Z",
+          "roll": {
+            "natural": 11,
+            "ability": "presence",
+            "abilityValue": 8,
+            "traitName": "勇者式微笑",
+            "traitBonus": 2,
+            "conditionBonus": 0,
+            "conditionNotes": [],
+            "situationalBonus": 0,
+            "penalty": -2,
+            "penaltyNotes": [
+              "分心兼顾原行动 -2"
+            ],
+            "total": 19,
+            "incomingTotals": {
+              "act_a87c1a02913c": 24
+            }
+          }
+        }
+      ],
+      "narration": "焦甜的泡从锅沿接连炸开，琳·阿斯特俯身闻了一下，立刻关小炉火，把炼金锅挪离灶口。糖浆总算没烧穿，只留下浓得发苦的焦甜气。她把账本摊到银币旁，指尖敲着价目栏：“止痛药有，吃了就不怕的药没有。亚兰队长，这袋银币只够买一剂药——胆量不归炼金术师管。”\n\n亚兰·格雷仍挂着海报式的笑，却慢慢收回了按银币的手。他从甲内抽出教会讨伐令，摊在账本旁，又瞥了后门一眼。标准笑容僵了半拍，他终于不再假装来买“不怕”的药：“琳小姐，刚才说错了。我要的不是吃了就不怕，是能让人把‘我想走’说出口的药。哪怕只说一次——我现在就怕得要死，止痛药也请给我一剂。”那袋银币压住了药账，也压不住这句已经出口的真心话。\n\n米娅从门缝探进半张脸，把兜帽又往下拽了拽。她倒扣空篮，用指甲刮下篮底的糖霜碎屑摆在银币旁，又将半块太妃糖压在碎屑上，指尖却迟迟没松开：“两笔账分开：银币是勇者的，篮子是我这个讨糖人的。琳，给我一罐糖霜；明早城门开时别开门——算我预付的第二笔货款。”\n\n琳一手压住仍想冒泡的锅，一手把两份真话分别标上价，将糖霜罐推到米娅手边：“亚兰队长，这袋钱只够一剂苦艾醒神剂：能让你把‘我想走’说出口，副作用是别的真话也会跟着冒出来；胆量不归炼金术师管。米娅，糖霜一罐，记在空篮那笔；明早那扇门我不碰，算收下你的第二笔货款。”账本上两行价目终于分开，糖霜罐触到米娅指尖，屋里却比先前更安静——毕竟勇者当众承认想逃，魔王的女儿又拿糖霜买走了明早的一句话。",
+      "outcomeNotes": [
+        {
+          "characterId": "lin",
+          "note": "琳救回了快烧焦的糖浆，却因同时周旋两笔交易而消耗心力，并正式收下米娅预付的明早约定。"
+        },
+        {
+          "characterId": "yalan",
+          "note": "亚兰以银币买下一剂尚未服用的苦艾醒神剂，并当着琳与米娅的面承认自己怕得要死、想逃。"
+        },
+        {
+          "characterId": "miya",
+          "note": "米娅成功取得一罐糖霜，也获得了琳明早不碰那扇门的明确承诺。"
+        }
+      ],
+      "stateChanges": {
+        "characters": [
+          {
+            "characterId": "lin",
+            "stressDelta": 1,
+            "conditionsAdd": [
+              {
+                "name": "两账分心",
+                "description": "糖浆善后与两笔交易同时压在账本上，下一次炼金或议价时更难兼顾两边。",
+                "modifier": -2,
+                "kind": "emotion",
+                "abilities": [
+                  "will"
+                ]
+              }
+            ],
+            "conditionsRemove": [],
+            "inventoryAdd": [
+              "亚兰支付的一袋银币"
+            ],
+            "inventoryRemove": [],
+            "privateNote": "糖浆虽保住了，焦甜味已经钻进这一锅；米娅的明早货款记在第二栏。",
+            "memory": {
+              "summary": "她把勇者的银币和守门人的糖霜分成了两笔账。",
+              "importance": 3
+            }
+          },
+          {
+            "characterId": "yalan",
+            "stressDelta": -2,
+            "conditionsAdd": [],
+            "conditionsRemove": [],
+            "inventoryAdd": [
+              "一剂苦艾醒神剂（未服用）"
+            ],
+            "inventoryRemove": [
+              "一袋银币"
+            ],
+            "privateNote": "那剂药尚未服用，但“我想走”已经先说出了口。",
+            "memory": {
+              "summary": "亚兰当着米娅的面承认自己想走。",
+              "importance": 4
+            }
+          },
+          {
+            "characterId": "miya",
+            "stressDelta": -1,
+            "conditionsAdd": [],
+            "conditionsRemove": [],
+            "inventoryAdd": [
+              "一罐糖霜"
+            ],
+            "inventoryRemove": [],
+            "privateNote": "糖霜罐和第二笔货款都到手了，明早那扇门现在有琳的明确承诺。",
+            "memory": {
+              "summary": "琳收下了她用糖霜预付的明早约定。",
+              "importance": 4
+            }
+          }
+        ],
+        "world": {
+          "factsAdd": [
+            "亚兰当着琳和米娅的面承认自己害怕，并明确表示想逃。",
+            "琳收下米娅以糖霜预付的第二笔货款，并答应明早不碰那扇门。"
+          ],
+          "factsRemove": [],
+          "flagsSet": {
+            "sugar_syrup_saved": true,
+            "yalan_fear_admitted": true,
+            "miya_frosting_received": true,
+            "lin_morning_door_promise": true
+          },
+          "pressure": "亚兰的去留尚未公开落定，琳还要处理带焦味的糖浆并守住明早的约定。",
+          "sceneTitle": "两笔账落地"
+        }
+      },
+      "nextTimeJump": {
+        "elapsedMinutes": 12,
+        "label": "焦泡塌下以后",
+        "reason": "分开核算两笔账、稳住余温未退的糖浆，并让双方把交易条件说完，耗去了一段收尾时间。"
+      },
+      "ending": null,
+      "createdAt": "2026-10-27T11:49:12.299Z",
+      "completedAt": "2026-10-27T12:04:35.156Z"
+    }
+  ],
+  "progress": {
+    "phase": "idle",
+    "label": "等待继续",
+    "updatedAt": "2026-10-27T12:04:35.160Z"
+  },
+  "llm": {
+    "calls": 10,
+    "promptTokens": 21828,
+    "completionTokens": 36486,
+    "cachedTokens": 7213,
+    "reasoningTokens": 33119,
+    "totalTokens": 58314,
+    "failures": 2
+  },
+  "ending": null,
+  "error": null,
+  "startedAt": "2026-10-27T11:49:12.298Z"
+}

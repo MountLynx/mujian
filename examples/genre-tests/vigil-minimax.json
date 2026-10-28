@@ -1,0 +1,498 @@
+{
+  "version": 1,
+  "id": "run_8ecbebf93ef0",
+  "seed": "minimax-vigil-01",
+  "status": "paused",
+  "scenario": {
+    "id": "genre-vigil",
+    "title": "守夜",
+    "subtitle": "她醒不过来，但她听得见。",
+    "kicker": "类型实验 · 家庭现实主义 · 被动角色",
+    "isPreset": true,
+    "world": {
+      "title": "守夜",
+      "era": "当代 · 市二院神经外科 · 深夜",
+      "tone": "克制、具体的家庭现实主义。医疗细节准确，不煽情；允许沉默、仪器声和答非所问。不要用奇迹解决冲突，也不要把昏迷写成全知内心戏。",
+      "setting": "市二院神经外科三人病房，靠窗的两张床空着。林素术后第三天，仍处于昏迷；监护仪每几秒响一声，输液管里的液体一滴一滴往下走。女儿周宁请了假，今晚一个人守夜。床头柜上压着一份房屋出售委托书，明天上午九点买家来签约。窗外下着雨，护士站的灯从门缝底下漏进来。",
+      "location": "神经外科病房：病床、监护仪、输液架、床头柜、折叠陪护椅、门边的洗手液。所有人物都在这里。",
+      "dateLabel": "术后第三夜",
+      "startClock": "23:40",
+      "premise": "母亲昏迷，女儿守夜；明天上午九点，买家要来签卖房合同。女儿必须在今夜决定：签，还是不签。",
+      "opening": "23:40。监护仪的绿线在屏幕上走，每走一格，病房里就多一声很轻的滴。\n\n林素躺在床上，头发被剃掉了一块，纱布底下露出青色的头皮。她的手放在被子外面，指甲剪得很短，指节上还有裁缝做活留下的旧茧。\n\n周宁坐在折叠椅上，膝盖上摊着那份房屋出售委托书。她已经签了自己的名字，只差母亲的那一栏。\n\n“妈，”她说，“明天上午九点，人家来签约。”\n\n监护仪滴了一声。林素的手指动了一下，很轻，像被风吹了一下。\n\n周宁没有看见。",
+      "directorNotes": "这是一个只有一位主动角色的场景。周宁会说话、做事、犹豫；林素是被动角色，不能宣告举动，也不能进入回应回合。她的内心不能被旁白直接写出，只能通过可观察的细节（手指、呼吸、监护仪、眼角）暗示。\n\n不要制造医生突然冲进来、停电、奇迹苏醒之类的外部事件；压力来自明天九点的合同、夜里的安静、以及女儿要不要相信自己的眼睛。\n\n3–4 个时刻。结尾不必让母亲醒来；让某个可观察的小动作留下来就够了。",
+      "hiddenCanon": "（仅导演可见，是人物与世界的骨架，不要求照本宣科。）\n\n1. 林素听得见。她术后昏迷，但听觉时断时续；她能听见女儿说话，也能听见监护仪。她的手指能极轻微地动，但无法控制。\n\n2. 周宁已经收了买家定金，合同上她自己的名字签了。她卖的是母亲住了三十年的老房子，也是她自己的 childhood home。她需要钱付康复费用，但她还没告诉母亲。\n\n3. 林素最怕的不是死，是女儿为了她把房子卖掉，最后什么都没有。她当年一个人把周宁拉扯大，靠的就是那间裁缝铺和老房子。\n\n4. 周宁小时候有一次发高烧，林素也是这样守了一夜，握着她的手。她记得。\n\n5. 今晚不会发生奇迹。可能发生的是：周宁注意到母亲的手指，或者没有注意到；她可能撕掉合同，也可能签下母亲的名字。不要替她决定。",
+      "initialFacts": [
+        "林素术后第三天，仍处于昏迷。",
+        "明天上午九点，买家来签房屋出售合同。",
+        "周宁已经签了自己的名字，母亲那一栏还空着。",
+        "病房里只有周宁一个人在守夜。",
+        "窗外在下雨。"
+      ],
+      "countdown": "明天上午九点，买家来签约"
+    },
+    "characters": [
+      {
+        "id": "zhou_ning",
+        "name": "周宁",
+        "title": "中学美术老师 · 女儿",
+        "age": "34",
+        "pronouns": "她",
+        "publicProfile": "中学美术老师，请了长假；这几天一直在医院，眼睛底下有很重的青。护士说她每天晚上都来，早上才走。",
+        "appearance": "深灰色卫衣，袖口沾了一点颜料；左手无名指上有一圈很浅的戒痕；膝盖上摊着一份合同。",
+        "personality": "习惯把事做完再哭；越害怕越要安排；对母亲说话时像在哄小孩，对自己说话时像在开会。她相信“只要把下一步做完，就不会崩溃”。",
+        "desire": "让母亲醒过来，或者至少让自己做出一个不会后悔的决定。",
+        "fear": "母亲醒不过来；更怕自己为了留住房子，把母亲的康复拖垮。",
+        "secret": "她已经收了买家定金，合同上她自己的名字签了；她还没告诉母亲。",
+        "abilities": {
+          "physique": 4,
+          "agility": 5,
+          "perception": 6,
+          "intellect": 7,
+          "will": 6,
+          "presence": 6
+        },
+        "traits": [
+          {
+            "name": "把事做完",
+            "description": "越慌越要把清单上的下一项划掉。",
+            "bonus": 2,
+            "ability": "will"
+          },
+          {
+            "name": "看手",
+            "description": "她习惯看人的手，判断对方紧不紧张。",
+            "bonus": 1,
+            "ability": "perception"
+          }
+        ],
+        "possessions": [
+          "房屋出售委托书",
+          "手机",
+          "一支黑色签字笔"
+        ],
+        "relationships": [
+          {
+            "targetId": "lin_su",
+            "label": "母亲 / 昏迷中",
+            "attitude": "我有一半的话是说给她听的，另一半是说给自己听的。"
+          }
+        ],
+        "memories": [
+          {
+            "summary": "小时候她发高烧，母亲握着她的手守了一夜。",
+            "detail": "母亲第二天还要去裁缝铺开门。",
+            "importance": 4
+          },
+          {
+            "summary": "医生谈话时说“预后不确定”，她只记住了这四个字。",
+            "detail": "她在走廊里把这句话查了三遍。",
+            "importance": 5
+          },
+          {
+            "summary": "买家说“明天九点，过时不候”。",
+            "detail": "她已经收了定金。",
+            "importance": 4
+          }
+        ],
+        "conditions": []
+      },
+      {
+        "id": "lin_su",
+        "name": "林素",
+        "title": "退休裁缝 · 母亲",
+        "age": "62",
+        "pronouns": "她",
+        "publicProfile": "退休裁缝，在这座城市的老街上做了三十年衣服；邻居说她手很巧，脾气也硬。现在她躺在病床上，术后昏迷。",
+        "appearance": "头发被剃掉一块，纱布底下露出青色的头皮；手放在被子外面，指节上有旧茧。",
+        "personality": "要强、嘴硬、不肯麻烦别人；她对女儿的爱常常表现为“你别管我”。",
+        "desire": "告诉女儿不要为了她把房子卖掉。",
+        "fear": "女儿为了她失去一切，最后连个家都没有。",
+        "secret": "她听得见，只是无法控制身体；她的手指能极轻微地动。",
+        "abilities": {
+          "physique": 2,
+          "agility": 1,
+          "perception": 5,
+          "intellect": 6,
+          "will": 7,
+          "presence": 4
+        },
+        "traits": [
+          {
+            "name": "听得见",
+            "description": "昏迷中仍能断续听见声音。",
+            "bonus": 1,
+            "ability": "perception"
+          }
+        ],
+        "possessions": [
+          "旧银顶针"
+        ],
+        "relationships": [
+          {
+            "targetId": "zhou_ning",
+            "label": "女儿",
+            "attitude": "这孩子什么都自己扛，像我。"
+          }
+        ],
+        "memories": [
+          {
+            "summary": "周宁小时候发高烧，她握着女儿的手守了一夜。",
+            "detail": "天亮时女儿退烧了，她去铺子里迟到挨了骂。",
+            "importance": 4
+          },
+          {
+            "summary": "老伴走的那年，她靠裁缝铺把女儿供到大学。",
+            "detail": "老房子是她最后的底气。",
+            "importance": 5
+          }
+        ],
+        "conditions": [
+          {
+            "name": "术后昏迷",
+            "description": "对外界刺激反应微弱，无法主动行动。",
+            "modifier": 0,
+            "kind": "injury",
+            "visibility": "public"
+          }
+        ],
+        "passive": true
+      }
+    ],
+    "rules": {
+      "maxBeats": 4,
+      "difficultyGuidance": "对昏迷的人说话、擦手、整理被子 DC 5–8；让一个听不见的人“听见”、在合同上替母亲签字、承认自己撑不住 DC 10–15；真正困难的是相信自己的眼睛或做出不可逆的决定 DC 16–20。不要给日常护理设置高风险。"
+    }
+  },
+  "settings": {
+    "maxBeats": 4,
+    "autoLimit": 1,
+    "thinking": "auto",
+    "model": "MiniMax-M3.1-Flash"
+  },
+  "createdAt": "2026-10-27T13:20:31.201Z",
+  "updatedAt": "2026-10-27T13:22:44.884Z",
+  "clock": {
+    "minutes": 1420,
+    "display": "23:40",
+    "dateLabel": "术后第三夜"
+  },
+  "world": {
+    "publicFacts": [
+      "林素术后第三天，仍处于昏迷。",
+      "明天上午九点，买家来签房屋出售合同。",
+      "周宁已经签了自己的名字，母亲那一栏还空着。",
+      "病房里只有周宁一个人在守夜。",
+      "窗外在下雨。",
+      "周宁将拔开笔帽的黑色签字笔横放进林素掌心并拢住手指后，林素的手指清楚收拢了一次，笔杆随之移动。"
+    ],
+    "flags": {
+      "lin_su_hand_response": "clear_flexion_once",
+      "sale_contract_mother_signature": "blank"
+    },
+    "pressure": "母亲的姓名栏仍空着，周宁要在明早九点前决定是否继续签约，而刚才那一下握笔尚无明确解释。",
+    "sceneTitle": "掌心一次握笔"
+  },
+  "characters": {
+    "zhou_ning": {
+      "id": "zhou_ning",
+      "conditions": [
+        {
+          "name": "回应没有解释",
+          "description": "她得到了母亲手指收拢这一可见回应，却仍无法判断它是否源于听见，也未在母亲姓名栏落字。",
+          "modifier": -1,
+          "kind": "emotion",
+          "visibility": "private",
+          "id": "cond_b60ee3fd332f",
+          "sourceBeat": 0
+        }
+      ],
+      "stress": 0,
+      "memories": [
+        {
+          "id": "mem_b7b95e84705f",
+          "at": "术后第三夜",
+          "beatIndex": null,
+          "summary": "小时候她发高烧，母亲握着她的手守了一夜。",
+          "detail": "母亲第二天还要去裁缝铺开门。",
+          "importance": 4,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_3fcfb1439e25",
+          "at": "术后第三夜",
+          "beatIndex": null,
+          "summary": "医生谈话时说“预后不确定”，她只记住了这四个字。",
+          "detail": "她在走廊里把这句话查了三遍。",
+          "importance": 5,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_641b702dc289",
+          "at": "术后第三夜",
+          "beatIndex": null,
+          "summary": "买家说“明天九点，过时不候”。",
+          "detail": "她已经收了定金。",
+          "importance": 4,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_b7a366447148",
+          "at": "23:40",
+          "beatIndex": 0,
+          "summary": "妈妈握了一下笔，可我仍不知道她有没有听见。",
+          "detail": "雨点敲着窗玻璃，监护仪按原来的间隔轻响。周宁拔开黑色签字笔的笔帽，把笔杆横放在林素露在被子外的掌心，又用手指轻轻拢住母亲的手。她说：“妈，笔在这儿。你听得见，就握一下。”声音落下去，屋里仍只有输液架上规律的滴落声。\n\n起初，被周宁拢住的手指没有变化。几秒后，那只手向掌心收了一次，动作短而清楚，几根手指同时屈起，把笔杆夹向掌心，笔杆也随着移了一小段。周宁没有动，仍看着那只手。监护仪的绿线继续向前，提示音仍按原样响着。\n\n林素的眼睛仍闭着，脸和肩没有随之抬起；能确认的只有手指收拢这一下。周宁仍盯着掌心，没有把笔拿到姓名栏前。膝上的出售委托书摊着，周宁自己的… 只有你知道：我看见她握了，但我不知道她有没有听见，也不能把这一下当成同意。",
+          "importance": 4,
+          "kind": "observation",
+          "source": "gm"
+        }
+      ],
+      "inventory": [
+        "房屋出售委托书",
+        "手机",
+        "一支黑色签字笔"
+      ],
+      "flags": {}
+    },
+    "lin_su": {
+      "id": "lin_su",
+      "conditions": [
+        {
+          "name": "术后昏迷",
+          "description": "对外界刺激反应微弱，无法主动行动。",
+          "modifier": 0,
+          "kind": "injury",
+          "visibility": "public",
+          "id": "cond_0020a030e577"
+        },
+        {
+          "name": "手指清楚收拢一次",
+          "description": "周宁拢住其手指后，林素的手指向掌心收了一次并带动笔杆移动，这一反应不能单独证明她清醒。",
+          "modifier": 0,
+          "kind": "other",
+          "visibility": "public",
+          "id": "cond_f8af472b4de3",
+          "sourceBeat": 0
+        }
+      ],
+      "stress": 0,
+      "memories": [
+        {
+          "id": "mem_cd9a3698b4dd",
+          "at": "术后第三夜",
+          "beatIndex": null,
+          "summary": "周宁小时候发高烧，她握着女儿的手守了一夜。",
+          "detail": "天亮时女儿退烧了，她去铺子里迟到挨了骂。",
+          "importance": 4,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_3db4dad7f1c4",
+          "at": "术后第三夜",
+          "beatIndex": null,
+          "summary": "老伴走的那年，她靠裁缝铺把女儿供到大学。",
+          "detail": "老房子是她最后的底气。",
+          "importance": 5,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_148a07219899",
+          "at": "23:40",
+          "beatIndex": 0,
+          "summary": "第 1 刻「空着的签名栏」：你在场，但没有主动行动。雨点敲着窗玻璃，监护仪按原来的间隔轻响。周宁拔开黑色签字笔的笔帽，把笔杆横放在林素露在被子外的掌心，又用手指轻轻拢住母亲的手。她说：“妈，笔在这儿。你听得见，就握一下。”声音落下去，屋里仍只有输液架上规律的滴落声。\n\n起初，被周宁拢住的手指没有变化。几秒后，那只手向掌心收了一次，动作短而清楚，几根手指同时屈起，把笔杆夹向掌心…",
+          "importance": 2,
+          "kind": "event",
+          "source": "event"
+        }
+      ],
+      "inventory": [
+        "旧银顶针",
+        "拔开笔帽的黑色签字笔"
+      ],
+      "flags": {}
+    }
+  },
+  "beats": [
+    {
+      "id": "beat_d10f5c978777",
+      "index": 0,
+      "title": "空着的签名栏",
+      "phase": "complete",
+      "clock": {
+        "minutes": 1420,
+        "display": "23:40",
+        "dateLabel": "术后第三夜"
+      },
+      "timeJump": null,
+      "publicBrief": "23:40的雨还在窗外落，玻璃上的水痕把远处零星灯光拉成长线。监护仪的绿线每走过一格，病房里便响一声轻滴；输液架上的液体一滴一滴往下。门缝下透进护士站的冷白灯光，门边的洗手液瓶映着微光，靠窗的两张床仍空着。林素仰卧在被中，露在被子外的手安静地搁着；周宁坐在折叠椅上，膝头摊着房屋出售委托书，她自己的签名已经干了，母亲姓名栏留着空白。刚才那句“明早九点来签约”落下后，除雨声和仪器声外，病房里没有回答。",
+      "privateCues": [
+        {
+          "characterId": "zhou_ning",
+          "cue": "纸张的硬边硌着膝盖，定金到账的提示还留在静音手机的通知栏里；她自己的签名已经干透，母亲栏却空着。她忽然想起小时候高烧那夜，母亲也是这样握着她的手坐到天亮。"
+        },
+        {
+          "characterId": "lin_su",
+          "cue": "女儿说“明天上午九点”时，字音像隔着厚玻璃，只剩“九点”清楚；她察觉右手指尖有极轻的牵动，却无法让这动作继续，也发不出声音。"
+        }
+      ],
+      "pressure": "明早九点买家到场前，周宁必须决定是否在母亲姓名栏留下“林素”的名字。",
+      "sceneQuestion": "周宁究竟会撕掉这份委托书，还是在母亲栏里写下“林素”？",
+      "gmNote": "保持林素无明确回应，不安排苏醒、报警或医生介入，任何微小动作都不替周宁确认。",
+      "actions": [
+        {
+          "id": "act_a2e4f725806d",
+          "characterId": "zhou_ning",
+          "category": "交涉",
+          "summary": "把笔放进母亲掌心",
+          "deed": "周宁拔开黑色签字笔的笔帽，把笔横放进林素露在被子外的手心，又轻轻拢住她的手指。她没有在母亲姓名栏落字，只盯着那只安静的手。",
+          "effect": "我希望母亲的指尖或手指出现一次清楚的回应，让我知道该不该继续这次签约。",
+          "hostile": false,
+          "description": "周宁拔开黑色签字笔的笔帽，把笔横放进林素露在被子外的手心，又轻轻拢住她的手指。她没有在母亲姓名栏落字，只盯着那只安静的手。",
+          "dialogue": "妈，笔在这儿。你听得见，就握一下。",
+          "thought": "我不能替她把名字补上，可定金已经收了，九点也不会等人。先把笔放到她手里，等一次真正属于她的回应，再决定这份委托还算不算数。",
+          "goalProgress": "我暂时没有越过母亲签字，把决定留给她可能给出的回应。",
+          "stakes": "若等不到回应，我可能为了不退定金而在九点前替她落名，让她失去对自己房屋的最终决定权。",
+          "ability": "perception",
+          "traitName": "看手",
+          "targetId": "lin_su",
+          "targetLabel": "林素",
+          "status": "resolved",
+          "penalties": 0,
+          "penaltyNotes": [],
+          "generatedBy": "llm",
+          "createdAt": "2026-10-27T13:21:25.031Z",
+          "roll": {
+            "natural": 19,
+            "ability": "perception",
+            "abilityValue": 6,
+            "traitName": "看手",
+            "traitBonus": 1,
+            "conditionBonus": 0,
+            "conditionNotes": [],
+            "situationalBonus": 0,
+            "penalty": 0,
+            "penaltyNotes": [],
+            "total": 26,
+            "dc": 15,
+            "opponentTotal": null,
+            "margin": 11,
+            "tier": "critical_success",
+            "criticalByNatural20": false
+          },
+          "outcome": "critical_success",
+          "outcomeNote": ""
+        }
+      ],
+      "adjudications": [
+        {
+          "actionId": "act_a2e4f725806d",
+          "difficultyLabel": "困难",
+          "dc": 15,
+          "modifier": 0,
+          "reason": "林素听觉时断时续，手指只能极轻微且无法控制地活动，要出现一次足以让周宁确认的清晰回应很困难。",
+          "risk": "若始终等不到回应，周宁可能为了不退定金而在九点前替母亲落名，剥夺林素对房屋的最终决定权。"
+        }
+      ],
+      "reactions": [],
+      "narration": "雨点敲着窗玻璃，监护仪按原来的间隔轻响。周宁拔开黑色签字笔的笔帽，把笔杆横放在林素露在被子外的掌心，又用手指轻轻拢住母亲的手。她说：“妈，笔在这儿。你听得见，就握一下。”声音落下去，屋里仍只有输液架上规律的滴落声。\n\n起初，被周宁拢住的手指没有变化。几秒后，那只手向掌心收了一次，动作短而清楚，几根手指同时屈起，把笔杆夹向掌心，笔杆也随着移了一小段。周宁没有动，仍看着那只手。监护仪的绿线继续向前，提示音仍按原样响着。\n\n林素的眼睛仍闭着，脸和肩没有随之抬起；能确认的只有手指收拢这一下。周宁仍盯着掌心，没有把笔拿到姓名栏前。膝上的出售委托书摊着，周宁自己的签名已经发干，母亲姓名栏没有墨迹。\n\n能确认的事实只有林素的手指收拢过一次，至于她是否听见那句话，现场无从判断。雨水沿玻璃上的旧水痕往下淌，监护仪又响了一声。黑色签字笔留在林素掌心，周宁的手指仍拢着她；出售委托书摊在膝头，母亲姓名栏依旧空着，明早九点是否签约还没有答案。",
+      "outcomeNotes": [
+        {
+          "characterId": "zhou_ning",
+          "note": "周宁把笔放进林素掌心、拢住手指并说出原话，清楚的握笔回应实现了可见效果，但没有让母亲姓名栏落字，也没有证明林素听懂了。"
+        },
+        {
+          "characterId": "lin_su",
+          "note": "林素的手指在周宁拢住后向内收拢并带动笔杆移动，留下了一次清楚、可核对的现场反应。"
+        }
+      ],
+      "stateChanges": {
+        "characters": [
+          {
+            "characterId": "zhou_ning",
+            "stressDelta": -1,
+            "conditionsAdd": [
+              {
+                "name": "回应没有解释",
+                "description": "她得到了母亲手指收拢这一可见回应，却仍无法判断它是否源于听见，也未在母亲姓名栏落字。",
+                "modifier": -1,
+                "kind": "emotion",
+                "visibility": "private"
+              }
+            ],
+            "conditionsRemove": [],
+            "inventoryAdd": [],
+            "inventoryRemove": [
+              "拔开笔帽的黑色签字笔"
+            ],
+            "privateNote": "我看见她握了，但我不知道她有没有听见，也不能把这一下当成同意。",
+            "memory": {
+              "summary": "妈妈握了一下笔，可我仍不知道她有没有听见。",
+              "importance": 4
+            }
+          },
+          {
+            "characterId": "lin_su",
+            "stressDelta": 0,
+            "conditionsAdd": [
+              {
+                "name": "手指清楚收拢一次",
+                "description": "周宁拢住其手指后，林素的手指向掌心收了一次并带动笔杆移动，这一反应不能单独证明她清醒。",
+                "modifier": 0,
+                "kind": "other",
+                "visibility": "public"
+              }
+            ],
+            "conditionsRemove": [],
+            "inventoryAdd": [
+              "拔开笔帽的黑色签字笔"
+            ],
+            "inventoryRemove": [],
+            "privateNote": "",
+            "memory": null
+          }
+        ],
+        "world": {
+          "factsAdd": [
+            "周宁将拔开笔帽的黑色签字笔横放进林素掌心并拢住手指后，林素的手指清楚收拢了一次，笔杆随之移动。"
+          ],
+          "factsRemove": [],
+          "flagsSet": {
+            "lin_su_hand_response": "clear_flexion_once",
+            "sale_contract_mother_signature": "blank"
+          },
+          "pressure": "母亲的姓名栏仍空着，周宁要在明早九点前决定是否继续签约，而刚才那一下握笔尚无明确解释。",
+          "sceneTitle": "掌心一次握笔"
+        }
+      },
+      "nextTimeJump": {
+        "elapsedMinutes": 7,
+        "label": "指尖收拢后的第七分钟",
+        "reason": "周宁继续盯着母亲的掌心，等是否再有一次回应，这段时间里只有雨声、输液滴落和监护仪提示音。"
+      },
+      "ending": null,
+      "createdAt": "2026-10-27T13:20:31.205Z",
+      "completedAt": "2026-10-27T13:22:44.883Z"
+    }
+  ],
+  "progress": {
+    "phase": "idle",
+    "label": "等待继续",
+    "updatedAt": "2026-10-27T13:22:44.885Z"
+  },
+  "llm": {
+    "calls": 4,
+    "promptTokens": 8248,
+    "completionTokens": 15839,
+    "cachedTokens": 256,
+    "reasoningTokens": 14091,
+    "totalTokens": 24087,
+    "failures": 0
+  },
+  "ending": null,
+  "error": null,
+  "startedAt": "2026-10-27T13:20:31.204Z"
+}

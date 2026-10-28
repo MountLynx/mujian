@@ -1,0 +1,94 @@
+/* ==========================================================================
+   tokens.css — 双主题设计令牌。
+   规则：组件层 CSS 一律引用这些变量，不出现裸色值。
+   ========================================================================== */
+
+:root,
+[data-theme='dark'] {
+  color-scheme: dark;
+
+  /* 底色 */
+  --bg: #0b1215;
+  --bg-1: #0f191e;
+  --bg-2: #141f25;
+  --bg-3: #1a262c;
+
+  /* 描边 */
+  --line: rgba(163, 190, 181, 0.13);
+  --line-strong: rgba(163, 190, 181, 0.28);
+
+  /* 墨色 */
+  --ink: #e3e9e6;
+  --ink-2: #a3b5ae;
+  --ink-3: #6f827c;
+
+  /* 金（强调，仅小面积） */
+  --gold: #c9a76b;
+  --gold-2: #e4cb92;
+  --gold-soft: rgba(201, 167, 107, 0.13);
+
+  /* 语义色：落地 / 落空 / 危险 / 取舍 */
+  --ok: #7fb99a;
+  --ok-soft: rgba(127, 185, 154, 0.14);
+  --softc: #c9906c;
+  --softc-soft: rgba(201, 144, 108, 0.14);
+  --danger: #cf7663;
+  --danger-soft: rgba(207, 118, 99, 0.15);
+  --drop: #93a7ba;
+  --drop-soft: rgba(147, 167, 186, 0.14);
+
+  /* 字体 */
+  --serif: 'Noto Serif SC', 'Songti SC', 'STSong', 'SimSun', serif;
+  --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+    'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  --mono: ui-monospace, 'SF Mono', 'Cascadia Code', Menlo, Consolas, monospace;
+
+  /* 形状与浮层 */
+  --radius-s: 6px;
+  --radius-m: 10px;
+  --shadow-overlay: 0 24px 64px rgba(0, 0, 0, 0.5);
+  --shadow-pop: 0 8px 24px rgba(0, 0, 0, 0.35);
+
+  /* 头像在两种主题下需要不同的明度才可读 */
+  --avatar-l: 40%;
+  --avatar-ink: rgba(255, 255, 255, 0.92);
+
+  /* 布局 */
+  --content-w: 1180px;
+  --topbar-h: 58px;
+}
+
+[data-theme='light'] {
+  color-scheme: light;
+
+  --bg: #f2efe8;
+  --bg-1: #faf8f2;
+  --bg-2: #eee9dd;
+  --bg-3: #e5dfd0;
+
+  --line: rgba(64, 76, 70, 0.16);
+  --line-strong: rgba(64, 76, 70, 0.34);
+
+  --ink: #232a2d;
+  --ink-2: #55645d;
+  --ink-3: #8a968e;
+
+  --gold: #8a6a35;
+  --gold-2: #6f5427;
+  --gold-soft: rgba(138, 106, 53, 0.12);
+
+  --ok: #3d7c5c;
+  --ok-soft: rgba(61, 124, 92, 0.12);
+  --softc: #a2603c;
+  --softc-soft: rgba(162, 96, 60, 0.12);
+  --danger: #b04a3a;
+  --danger-soft: rgba(176, 74, 58, 0.12);
+  --drop: #56718c;
+  --drop-soft: rgba(86, 113, 140, 0.12);
+
+  --shadow-overlay: 0 24px 64px rgba(58, 52, 40, 0.28);
+  --shadow-pop: 0 8px 24px rgba(58, 52, 40, 0.16);
+
+  --avatar-l: 78%;
+  --avatar-ink: rgba(20, 26, 24, 0.9);
+}

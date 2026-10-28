@@ -1,0 +1,22 @@
+{
+  "name": "mise-en-scene",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "description": "幕间 — 基于大语言模型的情节推演与文字创作框架",
+  "scripts": {
+    "start": "node src/server.ts",
+    "dev": "node --watch src/server.ts",
+    "demo": "node src/cli.ts --scenario fog-harbor",
+    "test": "node --test tests/*.test.ts",
+    "test:ui": "node tests/ui-smoke.mjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.8.0"
+  }
+}

@@ -1,0 +1,1974 @@
+{
+  "version": 1,
+  "id": "run_ff8b9a0b9eeb",
+  "seed": "converge-ferry-04",
+  "status": "paused",
+  "scenario": {
+    "id": "test-convergence-ferry",
+    "title": "末班渡轮",
+    "subtitle": "最后一班船开走之前，两个人都不肯先说出那句话。",
+    "kicker": "收敛测试 · 双人 · 一个截止时间",
+    "isPreset": true,
+    "world": {
+      "title": "末班渡轮",
+      "era": "当代 · 江城 · 雾渡口",
+      "tone": "克制、潮湿、安静。对白短，留白多；不制造新角色、外部事件或突然的真相。所有压力只来自 23:55 和两个人各自不肯说的事。",
+      "setting": "江城老渡口，最后一班渡轮 23:55 开往对岸。售票亭只剩一盏灯，江面起雾，跳板还没收。阿婆在亭子里收票，林生站在跳板前，手里攥着一张被雨水泡软的旧船票。渡口明早才重新开。",
+      "location": "雾渡口：售票亭、跳板、候船棚、一盏挂在杆上的灯。所有人物都在这里。",
+      "dateLabel": "末班船之前",
+      "startClock": "23:40",
+      "premise": "最后一班渡轮 23:55 开。阿婆每天都多打一张票，留给二十年前坐这班船离开的儿子；林生今晚必须过江，却迟迟不肯踏上跳板。两个人都要在这十五分钟里决定：上船，还是留下。",
+      "opening": "23:40。雾从江面漫上来，把对岸的灯吃成一团模糊的黄。\n\n售票亭的窗口开着，阿婆把一沓船票在桌上磕齐，最上面一张是空的，没有日期。她每天都打一张，打了二十年。\n\n林生站在跳板前，手里攥着一张旧船票，纸边被雨泡得发软。他没有上去。\n\n跳板尽头的渡轮亮着两盏灯，发动机低低地响。\n\n“最后一班了。”阿婆在窗口里说，“上不上？”",
+      "directorNotes": "这是一个只有两个人的小场景。不要新增角色、电话、追车、疾病发作或突然的真相；压力只来自 23:55 和两个人各自不肯说的事。\n\n每一刻可以让时间靠近 23:55，但不要拖过它。当渡轮离岸、售票亭关灯，或两个人中有一人离开跳板时，本场就自然结束。如果这一夜的问题已经得到回答，就让故事停在那里；不要为了续集硬留钩子。\n\n最多六个时刻；能在三到五个时刻内收束最好。",
+      "hiddenCanon": "（仅导演可见，是人物与世界的骨架，不要求照本宣科。）\n\n1. 阿婆的儿子二十年前坐末班船离开，说“混不好就不回来”。她每天都多打一张票，留给儿子；她知道他可能不会回来。\n\n2. 林生的母亲在对岸住院。他今晚必须过去；他其实不想去，因为一去就要在放弃治疗的同意书上签字。\n\n3. 阿婆看出林生在犹豫，想帮他，又怕自己只是把儿子没回来的那班船，塞给一个陌生人。\n\n4. 最后一班船 23:55 开；船开走后，渡口关闭到明早。\n\n5. 这个夜晚不会解决任何人的大事。可能发生的是：林生上船或不上船；阿婆把那张旧票给他，或者收回去。不要替他们决定。",
+      "initialFacts": [
+        "最后一班渡轮 23:55 开。",
+        "江面起雾，渡口明早才重新开。",
+        "售票亭里只有阿婆。",
+        "林生手里有一张被雨泡软的旧船票。",
+        "林生还没有踏上跳板。"
+      ],
+      "countdown": "23:55 末班船开",
+      "deadlineClock": "23:55",
+      "deadlineFact": "末班渡轮在 23:55 离岸；渡口关闭到明早。"
+    },
+    "characters": [
+      {
+        "id": "apo",
+        "name": "阿婆",
+        "title": "雾渡口守渡人",
+        "age": "68",
+        "pronouns": "她",
+        "publicProfile": "雾渡口守了三十年渡船的老人，瘦，背有点驼；附近的人都叫她阿婆。她每天最后一班船之前，都会多打一张票。",
+        "appearance": "深蓝色棉袄，袖口磨得发亮；手边一只旧票夹，里面夹着一张没有日期的船票。",
+        "personality": "话少，手稳；不直接问，先看人。她把“等”当成一种日常，不觉得苦，也不让别人看见苦。",
+        "desire": "确认儿子是不是还会回来；哪怕只是再听人提起他一次。",
+        "fear": "最后一班船开走以后，自己连等的理由都没有了。",
+        "secret": "她每天都多打一张票，留给二十年前坐末班船离开的儿子；她知道他可能不会回来。",
+        "abilities": {
+          "physique": 4,
+          "agility": 5,
+          "perception": 7,
+          "intellect": 6,
+          "will": 8,
+          "presence": 6
+        },
+        "traits": [
+          {
+            "name": "看人先看手",
+            "description": "她能从一个人攥票的姿势看出他到底想不想走。",
+            "bonus": 2,
+            "ability": "perception"
+          },
+          {
+            "name": "把话咽回去",
+            "description": "越是想问，越能忍住。",
+            "bonus": 2,
+            "ability": "will"
+          }
+        ],
+        "possessions": [
+          "旧票夹",
+          "一张没有日期的船票",
+          "一只搪瓷杯"
+        ],
+        "relationships": [
+          {
+            "targetId": "lin_sheng",
+            "label": "末班船的乘客 / 陌生年轻人",
+            "attitude": "他攥票的样子，跟我儿子当年一样。"
+          }
+        ],
+        "memories": [
+          {
+            "summary": "二十年前，儿子坐末班船离开，说“混不好就不回来”。",
+            "detail": "她每天多打一张票，留到今天。",
+            "importance": 5
+          },
+          {
+            "summary": "丈夫去世后，她一个人守了三十年渡口。",
+            "detail": "她从没误过一班船。",
+            "importance": 3
+          },
+          {
+            "summary": "儿子小时候在跳板上跑，她总喊他慢点。",
+            "detail": "现在跳板旧了，她也老了。",
+            "importance": 4
+          }
+        ],
+        "conditions": []
+      },
+      {
+        "id": "lin_sheng",
+        "name": "林生",
+        "title": "末班船的乘客",
+        "age": "28",
+        "pronouns": "他",
+        "publicProfile": "从外地回江城的年轻人，提着一只旧旅行袋；他在跳板前站了很久，没有上去。",
+        "appearance": "深色外套，肩上落着雾水；手里攥着一张被雨泡软的旧船票。",
+        "personality": "用沉默和玩笑把事情往后拖；越是要紧的决定，越要装作只是路过。他不是不孝，是不知道怎么面对。",
+        "desire": "赶上最后一班船，过江，把该签的字签完，然后离开。",
+        "fear": "一旦上了船，就再也没有理由回头；也怕自己其实想留下。",
+        "secret": "他母亲在对岸住院；他今晚过去，是要在放弃治疗的同意书上签字。他不想去。",
+        "abilities": {
+          "physique": 5,
+          "agility": 5,
+          "perception": 6,
+          "intellect": 6,
+          "will": 5,
+          "presence": 6
+        },
+        "traits": [
+          {
+            "name": "把话说成玩笑",
+            "description": "越认真越要说得像随口一提。",
+            "bonus": 2,
+            "ability": "presence"
+          },
+          {
+            "name": "看退路",
+            "description": "进任何地方先看门在哪。",
+            "bonus": 1,
+            "ability": "perception"
+          }
+        ],
+        "possessions": [
+          "旧旅行袋",
+          "一张被雨泡软的船票",
+          "一支没拧开的笔"
+        ],
+        "relationships": [
+          {
+            "targetId": "apo",
+            "label": "守渡人 / 陌生老人",
+            "attitude": "她看我的眼神，像在等一个不是我的人。"
+          }
+        ],
+        "memories": [
+          {
+            "summary": "母亲住院第三周，医生让他“做好心理准备”。",
+            "detail": "他还没签字。",
+            "importance": 5
+          },
+          {
+            "summary": "他小时候也坐这班船去对岸上学。",
+            "detail": "那时候船票是纸的，阿婆会多给他一颗糖。",
+            "importance": 3
+          },
+          {
+            "summary": "他其实不想去对岸。",
+            "detail": "他也不知道自己为什么站在跳板前。",
+            "importance": 4
+          }
+        ],
+        "conditions": []
+      }
+    ],
+    "rules": {
+      "maxBeats": 6,
+      "difficultyGuidance": "日常动作（收票、看表、收跳板）DC 5–8；把一张旧票递出去、问一句真话 DC 10–13；承认自己在等一个不会回来的人、说出“我不想去”DC 14–16。不要制造新的外部事件。"
+    }
+  },
+  "settings": {
+    "maxBeats": 6,
+    "autoLimit": 6,
+    "thinking": "auto",
+    "model": "deepseek-flash"
+  },
+  "createdAt": "2026-10-28T00:45:24.972Z",
+  "updatedAt": "2026-10-28T00:49:46.117Z",
+  "clock": {
+    "minutes": 1435,
+    "display": "23:55",
+    "dateLabel": "末班船之前"
+  },
+  "world": {
+    "publicFacts": [
+      "最后一班渡轮 23:55 开。",
+      "江面起雾，渡口明早才重新开。",
+      "售票亭里只有阿婆。",
+      "林生手里有一张被雨泡软的旧船票。",
+      "林生还没有踏上跳板。",
+      "林生走到售票亭窗口前搭过话，阿婆没有回答他。",
+      "售票亭窗台上并排放着两张船票：林生那张泡糊了日期，阿婆推出来那张没有日期。",
+      "阿婆开口回应了林生，说日子看不清就照没日子算。",
+      "林生问过阿婆那张空白票留给谁，阿婆没有出声，只把被点过的票角按平了。",
+      "江上的发动机声降到最低一档，雾已经从跳板第三节漫到第四节。",
+      "阿婆对林生拿起空白票既没有拦，也没有点头。",
+      "两张票并排搁在售票亭窗台上，几乎挨在一起，谁都没有再动。",
+      "林生说过“就当今晚白跑一趟，反正也不是头一回”，阿婆没有应这句。",
+      "末班渡轮在 23:55 离岸；渡口关闭到明早。",
+      "23:55 到了，渡轮没有离岸：发动机升了半格又落回最低一档，跳板仍搭着，没人去收。",
+      "空白票被林生推回阿婆手边，两人都没有再拿起它。"
+    ],
+    "flags": {
+      "lin_sheng_at_window": true,
+      "two_tickets_on_sill": true,
+      "apo_spoke_to_lin": true,
+      "blank_ticket_asked": true,
+      "blank_ticket_in_lin_hand": true,
+      "lin_sheng_joke_fell_flat": true,
+      "tickets_side_by_side": true,
+      "deadline_passed": true,
+      "ferry_held_in_fog": true,
+      "blank_ticket_at_apo_hand": true
+    },
+    "pressure": "船在雾里以最低一档等着，跳板还没收；空白票停在阿婆指根旁边，两个人的手都还搁在窗台上。",
+    "sceneTitle": "跳板还没收"
+  },
+  "characters": {
+    "apo": {
+      "id": "apo",
+      "conditions": [
+        {
+          "name": "看清了那只手",
+          "description": "她已确认这年轻人攥票的手松过又攥紧，之后看他时会带上一层了然",
+          "modifier": 2,
+          "kind": "other",
+          "visibility": "private",
+          "abilities": [
+            "perception"
+          ],
+          "id": "cond_936267717da2",
+          "sourceBeat": 0
+        },
+        {
+          "name": "推出去的票收不回来",
+          "description": "那张没日期的票已经在他手边，她再伸手去拿就等于改口，只能等",
+          "modifier": -2,
+          "kind": "emotion",
+          "visibility": "private",
+          "id": "cond_26faefe234e4",
+          "sourceBeat": 1
+        },
+        {
+          "name": "话没落地",
+          "description": "那句“没日子的”说出去后没人接，再开口前会先顿一下",
+          "modifier": -2,
+          "kind": "emotion",
+          "visibility": "private",
+          "id": "cond_893505fc0320",
+          "sourceBeat": 3
+        },
+        {
+          "name": "看进那只手",
+          "description": "她刚刚看清了那只手先攥紧后松开，心里有了底，再开口反倒更难",
+          "modifier": 2,
+          "kind": "other",
+          "visibility": "private",
+          "abilities": [
+            "will"
+          ],
+          "id": "cond_b41fcffbef8d",
+          "sourceBeat": 4
+        },
+        {
+          "name": "推出去的票被退回来",
+          "description": "手指还压在票边，既不收回也不捏紧；再开口会比刚才更难",
+          "modifier": -2,
+          "kind": "emotion",
+          "visibility": "private",
+          "id": "cond_84ed09099ac7",
+          "sourceBeat": 5
+        },
+        {
+          "name": "掌心贴着纸角不动",
+          "description": "手停在窗台上没有收回，旁人看得出她在等",
+          "modifier": -1,
+          "kind": "other",
+          "visibility": "public",
+          "id": "cond_c92690f09bde",
+          "sourceBeat": 5
+        }
+      ],
+      "stress": 7,
+      "memories": [
+        {
+          "id": "mem_4a4701f4da0e",
+          "at": "末班船之前",
+          "beatIndex": null,
+          "summary": "二十年前，儿子坐末班船离开，说“混不好就不回来”。",
+          "detail": "她每天多打一张票，留到今天。",
+          "importance": 5,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_318abbde3807",
+          "at": "末班船之前",
+          "beatIndex": null,
+          "summary": "丈夫去世后，她一个人守了三十年渡口。",
+          "detail": "她从没误过一班船。",
+          "importance": 3,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_0b7f15c77409",
+          "at": "末班船之前",
+          "beatIndex": null,
+          "summary": "儿子小时候在跳板上跑，她总喊他慢点。",
+          "detail": "现在跳板旧了，她也老了。",
+          "importance": 4,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_dcc50974799e",
+          "at": "23:40",
+          "beatIndex": 0,
+          "summary": "他把票换到另一只手时，掌心粘掉了一点纸",
+          "detail": "搪瓷杯底磕在桌面上，闷闷一声。阿婆没出亭子，只把半个身子探到窗口，目光顺着他攥票的那只手看过去——指节发白，纸角被捏得起了毛，虎口那里压出一道深痕。她看了有一会儿，像在数他那只手到底松开过几次。\n\n林生把船票在指间转了半圈，抬脚往窗口挪了两步，肩膀微耸，笑还没完全出来就先挂在脸上。“阿婆，今晚雾这么大，船……不会提前溜吧？”\n\n话是落进雾里的。阿婆没接。她的目光从他手上抬起来，碰到他的眼睛，又慢慢移开，落在杆上那盏灯上，像在数灯罩里的水汽。亭子里静了几秒，只有江风把窗口那张没写日期的船票吹得翘起一角。\n\n林生的笑收回去了，收得不算快。他把票换到另一只手… 只有你知道：他问船会不会提前走，问的其实不是船。",
+          "importance": 3,
+          "kind": "observation",
+          "source": "gm"
+        },
+        {
+          "id": "mem_44d07308000d",
+          "at": "23:46",
+          "beatIndex": 1,
+          "summary": "“日子看不清，就照没日子算。”——这句话她终于说出口了。",
+          "detail": "他从跳板那头走过来只有两步。湿透的船票从掌心撕下来时带起一小片皮，他用两根手指把它按在窗台的搪瓷边沿上，纸里的水立刻往四周洇开，像一小块正在褪色的天。他低头看了看，又抬眼看她，嘴角扯了一下，不算笑。“这票……泡得连日子都看不清了。您说，还作数吗？”\n\n阿婆没有去接。她的手停在半途，因为窗台上已经有两张纸了——她先前推出去的那张还压在原处，边角翘着，干、硬、空白，跟他那张软塌塌的正好挨在一起。两张票并排躺着，一张什么都被水泡掉了，一张什么也没写过。\n\n她把伸出去的手往回收了半寸，指尖在窗台木沿上按了一下。挂钟的秒针走过三格，她才开口，声音不高，像怕惊动雾… 只有你知道：他问的是日子，她答的也是日子；她不确定他听出来没有。",
+          "importance": 4,
+          "kind": "observation",
+          "source": "gm"
+        },
+        {
+          "id": "mem_a27ad70f6ae8",
+          "at": "23:49",
+          "beatIndex": 2,
+          "summary": "他问：一个字没写，是打算留给谁。",
+          "detail": "阿婆的手从窗台木沿上抬起来，不紧不慢，落在那张干硬翘角的空白票上。指尖按住纸边，往林生那侧推了半寸——不多，刚好让纸角越过窗台上一道旧刻痕。然后她把手收回去，搁在搪瓷杯旁边，指尖在杯沿上多停了一下，杯底那点水没有晃。\n\n林生的手还留在窗台上。他用食指点了点那张空白票，指节压在纸角上，停住，纸干，响了一声很轻的脆响。他抬眼。“那您这张呢——一个字没写，是打算留给谁？”声音压得低，像怕被江上那点发动机声盖过去。\n\n阿婆没有立刻答。她的手离开杯沿，回到票上，把被他点过的那只角按平，一下，两下，纸贴在木头上，不再翘着。窗台上的灯照着两只手，一只在票这边，一只在… 只有你知道：他问的那句话，差一点就从嘴里出去了；她把它按回纸角底下，像按平一张翘起来的票。",
+          "importance": 3,
+          "kind": "observation",
+          "source": "gm"
+        },
+        {
+          "id": "mem_3279deced575",
+          "at": "23:53",
+          "beatIndex": 3,
+          "summary": "他捏着那张没日子的票抬起来，等我拦，我没拦。",
+          "detail": "阿婆把手从搪瓷杯边移开，掌心覆上那两张票，一并拢住，慢慢往窗口外推。她没有推快，推到两张票的边都探出窗台沿、悬在木面外头，才松手，把手退回去，看着他。\n\n“两张。一张你的，一张……没日子的。”\n\n话落在窗口和跳板之间的那片雾里。阿婆没有再把票往他手边送近一寸，也没有收回来。探出沿的两片纸角被江风掀起一点，又落回去。林生没有把手伸过去把两张一起拢住，他只是把压在空白票上的食指挪开，换成拇指和食指，捏住那只干硬的角，慢慢把它提起来——提离窗台半寸，停在木面上头。他的眼睛看着阿婆，等她拦一下，或者点一下头。两样都没有。阿婆的手已经搁回搪瓷杯旁边，嘴唇合着，只… 只有你知道：他提出的那半寸像在等我说一个字。我没说。票已经推出去了，收不回来。",
+          "importance": 3,
+          "kind": "observation",
+          "source": "gm"
+        },
+        {
+          "id": "mem_e3311effb602",
+          "at": "23:54",
+          "beatIndex": 4,
+          "summary": "他的手先松了，话才跟上。",
+          "detail": "阿婆把搪瓷杯端起来，抿了一口。水早凉了，她也没皱眉。杯子没有放回去，就那么端在下巴底下，眼睛越过杯沿，落在他捏着空白票的那两根手指上。\n\n那只手先是收紧了一下。指节泛白，纸角被捏出一道折，风一吹又弹平。她看着那道折，看着它反复了两次。然后手指松了。\n\n林生把票放回窗台，纸角压过旧刻痕，跟那张泡软了的并排挨着，两张之间几乎没有缝。手收回来插进外套兜里，肩膀塌下去一点，嘴角重新挂上那种不算笑的笑。“算了，我这张泡烂的能上就上，上不了……就当今晚白跑一趟，反正也不是头一回。”\n\n话说完了。雾里没有接住它的东西。阿婆没有抬头，也没有应声，只把搪瓷杯放下。杯底磕… 只有你知道：他的手比嘴先松。这句她记下了，但没打算说给他听。",
+          "importance": 3,
+          "kind": "observation",
+          "source": "gm"
+        },
+        {
+          "id": "mem_e2dbd5af366d",
+          "at": "23:55",
+          "beatIndex": 5,
+          "summary": "他说“我拿不拿，好像都一样”。",
+          "detail": "阿婆的两根手指把空白票推过窗台外沿，纸角碰到林生垂着的手背。她的手没有松，眼睛抬起来落在他脸上。林生低下头，看了一眼那张票——看的是那片没有日期的空白，还是别的什么，从外面看不出来。\n\n他把手从兜里抽出来，捏住票的另一头。绕过窗台上那道旧刻痕，他把它推回阿婆掌心朝下的手边，纸角挨着她的指根。手没有收回去，停在票边上。“这张……还是您收着吧。我拿不拿，好像都一样。”\n\n阿婆的手没有动。没有捏，也没有躲，指根就贴着那片纸角。售票亭的灯影从她手背上滑过去，两张票的影子在木台面上叠成一张，边缘被风吹得一起掀了掀，又一起落下来。\n\n江上那台发动机升了半格，停在那… 只有你知道：这张票她打了很多年，今晚第一次递到别人手上，又被原样送回来，停在离她指根一寸的地方。",
+          "importance": 3,
+          "kind": "observation",
+          "source": "gm"
+        }
+      ],
+      "inventory": [
+        "旧票夹",
+        "一张没有日期的船票",
+        "一只搪瓷杯"
+      ],
+      "flags": {}
+    },
+    "lin_sheng": {
+      "id": "lin_sheng",
+      "conditions": [
+        {
+          "name": "话没落地",
+          "description": "试探被沉默挡回来，他更不敢直接开口，说话会绕得更远",
+          "modifier": -2,
+          "kind": "emotion",
+          "visibility": "private",
+          "abilities": [
+            "presence"
+          ],
+          "id": "cond_332ab88fcee7",
+          "sourceBeat": 0
+        },
+        {
+          "name": "按着票等回话",
+          "description": "话已经问出去，票还压在掌下，接下来只能等对方把话说明白",
+          "modifier": -2,
+          "kind": "emotion",
+          "visibility": "private",
+          "id": "cond_e98655465ca0",
+          "sourceBeat": 1
+        },
+        {
+          "name": "话悬在窗口",
+          "description": "问出的话没有得到回答，他既没有再问，也没有走开，注意力被钉在窗台上",
+          "modifier": -2,
+          "kind": "emotion",
+          "visibility": "private",
+          "id": "cond_d475001ba148",
+          "sourceBeat": 2
+        },
+        {
+          "name": "等不到点头",
+          "description": "问出去的话没被拦也没被认，再开口时底气弱",
+          "modifier": -2,
+          "kind": "emotion",
+          "visibility": "private",
+          "id": "cond_d19aeeb10f85",
+          "sourceBeat": 3
+        },
+        {
+          "name": "话落在地上",
+          "description": "玩笑说出口没人接，脸上的笑收不回去，人有点僵",
+          "modifier": -2,
+          "kind": "emotion",
+          "visibility": "private",
+          "id": "cond_c2908e8e922f",
+          "sourceBeat": 4
+        },
+        {
+          "name": "手停在窗台上没收回",
+          "description": "推完票手不肯撤回，姿势僵着，随时会再被问一次",
+          "modifier": -1,
+          "kind": "other",
+          "visibility": "public",
+          "id": "cond_a666c2d6afd4",
+          "sourceBeat": 5
+        },
+        {
+          "name": "话说了没人接",
+          "description": "退票和退让都落了空，再往前一步的力气被抽掉一半",
+          "modifier": -2,
+          "kind": "emotion",
+          "visibility": "private",
+          "id": "cond_3e6cae1b94c0",
+          "sourceBeat": 5
+        }
+      ],
+      "stress": 9,
+      "memories": [
+        {
+          "id": "mem_6b6b304ba1dd",
+          "at": "末班船之前",
+          "beatIndex": null,
+          "summary": "母亲住院第三周，医生让他“做好心理准备”。",
+          "detail": "他还没签字。",
+          "importance": 5,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_8d3f9b390672",
+          "at": "末班船之前",
+          "beatIndex": null,
+          "summary": "他小时候也坐这班船去对岸上学。",
+          "detail": "那时候船票是纸的，阿婆会多给他一颗糖。",
+          "importance": 3,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_43643c4a534d",
+          "at": "末班船之前",
+          "beatIndex": null,
+          "summary": "他其实不想去对岸。",
+          "detail": "他也不知道自己为什么站在跳板前。",
+          "importance": 4,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_7025ce536414",
+          "at": "23:40",
+          "beatIndex": 0,
+          "summary": "阿婆没答他雾大不大，只抬头看了一眼灯",
+          "detail": "搪瓷杯底磕在桌面上，闷闷一声。阿婆没出亭子，只把半个身子探到窗口，目光顺着他攥票的那只手看过去——指节发白，纸角被捏得起了毛，虎口那里压出一道深痕。她看了有一会儿，像在数他那只手到底松开过几次。\n\n林生把船票在指间转了半圈，抬脚往窗口挪了两步，肩膀微耸，笑还没完全出来就先挂在脸上。“阿婆，今晚雾这么大，船……不会提前溜吧？”\n\n话是落进雾里的。阿婆没接。她的目光从他手上抬起来，碰到他的眼睛，又慢慢移开，落在杆上那盏灯上，像在数灯罩里的水汽。亭子里静了几秒，只有江风把窗口那张没写日期的船票吹得翘起一角。\n\n林生的笑收回去了，收得不算快。他把票换到另一只手… 只有你知道：她没接话，也没赶我。她看的是我的手，不是我的脸。",
+          "importance": 3,
+          "kind": "observation",
+          "source": "gm"
+        },
+        {
+          "id": "mem_890b3a2c4e2d",
+          "at": "23:46",
+          "beatIndex": 1,
+          "summary": "两张票并排躺在窗台上，一张泡没了日子，一张从来没写过。",
+          "detail": "他从跳板那头走过来只有两步。湿透的船票从掌心撕下来时带起一小片皮，他用两根手指把它按在窗台的搪瓷边沿上，纸里的水立刻往四周洇开，像一小块正在褪色的天。他低头看了看，又抬眼看她，嘴角扯了一下，不算笑。“这票……泡得连日子都看不清了。您说，还作数吗？”\n\n阿婆没有去接。她的手停在半途，因为窗台上已经有两张纸了——她先前推出去的那张还压在原处，边角翘着，干、硬、空白，跟他那张软塌塌的正好挨在一起。两张票并排躺着，一张什么都被水泡掉了，一张什么也没写过。\n\n她把伸出去的手往回收了半寸，指尖在窗台木沿上按了一下。挂钟的秒针走过三格，她才开口，声音不高，像怕惊动雾… 只有你知道：她答的不是“能”也不是“不能”。他把那张空白票看清楚了：上面一个日子也没有。",
+          "importance": 4,
+          "kind": "observation",
+          "source": "gm"
+        },
+        {
+          "id": "mem_80f32651820f",
+          "at": "23:49",
+          "beatIndex": 2,
+          "summary": "她的沉默比回答更像回答。",
+          "detail": "阿婆的手从窗台木沿上抬起来，不紧不慢，落在那张干硬翘角的空白票上。指尖按住纸边，往林生那侧推了半寸——不多，刚好让纸角越过窗台上一道旧刻痕。然后她把手收回去，搁在搪瓷杯旁边，指尖在杯沿上多停了一下，杯底那点水没有晃。\n\n林生的手还留在窗台上。他用食指点了点那张空白票，指节压在纸角上，停住，纸干，响了一声很轻的脆响。他抬眼。“那您这张呢——一个字没写，是打算留给谁？”声音压得低，像怕被江上那点发动机声盖过去。\n\n阿婆没有立刻答。她的手离开杯沿，回到票上，把被他点过的那只角按平，一下，两下，纸贴在木头上，不再翘着。窗台上的灯照着两只手，一只在票这边，一只在… 只有你知道：她没有答，可那只按票角的手比任何回答都更像回答；他忽然不想再问第二遍。",
+          "importance": 3,
+          "kind": "observation",
+          "source": "gm"
+        },
+        {
+          "id": "mem_9dd2c7cffda9",
+          "at": "23:53",
+          "beatIndex": 3,
+          "summary": "她推过来两张票，说“一张你的，一张没日子的”，然后就没再看票，只看着我。",
+          "detail": "阿婆把手从搪瓷杯边移开，掌心覆上那两张票，一并拢住，慢慢往窗口外推。她没有推快，推到两张票的边都探出窗台沿、悬在木面外头，才松手，把手退回去，看着他。\n\n“两张。一张你的，一张……没日子的。”\n\n话落在窗口和跳板之间的那片雾里。阿婆没有再把票往他手边送近一寸，也没有收回来。探出沿的两片纸角被江风掀起一点，又落回去。林生没有把手伸过去把两张一起拢住，他只是把压在空白票上的食指挪开，换成拇指和食指，捏住那只干硬的角，慢慢把它提起来——提离窗台半寸，停在木面上头。他的眼睛看着阿婆，等她拦一下，或者点一下头。两样都没有。阿婆的手已经搁回搪瓷杯旁边，嘴唇合着，只… 只有你知道：她既不拦也不点头。这张票到底算不算，还是没人告诉我。",
+          "importance": 4,
+          "kind": "observation",
+          "source": "gm"
+        },
+        {
+          "id": "mem_26f200c8c4ad",
+          "at": "23:54",
+          "beatIndex": 4,
+          "summary": "她连一句难听话都没给。",
+          "detail": "阿婆把搪瓷杯端起来，抿了一口。水早凉了，她也没皱眉。杯子没有放回去，就那么端在下巴底下，眼睛越过杯沿，落在他捏着空白票的那两根手指上。\n\n那只手先是收紧了一下。指节泛白，纸角被捏出一道折，风一吹又弹平。她看着那道折，看着它反复了两次。然后手指松了。\n\n林生把票放回窗台，纸角压过旧刻痕，跟那张泡软了的并排挨着，两张之间几乎没有缝。手收回来插进外套兜里，肩膀塌下去一点，嘴角重新挂上那种不算笑的笑。“算了，我这张泡烂的能上就上，上不了……就当今晚白跑一趟，反正也不是头一回。”\n\n话说完了。雾里没有接住它的东西。阿婆没有抬头，也没有应声，只把搪瓷杯放下。杯底磕… 只有你知道：他把决定权放回去了，她连一句难听话都不肯给。他忽然不确定自己是不是真的想让她开口。",
+          "importance": 3,
+          "kind": "observation",
+          "source": "gm"
+        },
+        {
+          "id": "mem_2595d2bb3062",
+          "at": "23:55",
+          "beatIndex": 5,
+          "summary": "她说“没日子的，哪天都能用”。",
+          "detail": "阿婆的两根手指把空白票推过窗台外沿，纸角碰到林生垂着的手背。她的手没有松，眼睛抬起来落在他脸上。林生低下头，看了一眼那张票——看的是那片没有日期的空白，还是别的什么，从外面看不出来。\n\n他把手从兜里抽出来，捏住票的另一头。绕过窗台上那道旧刻痕，他把它推回阿婆掌心朝下的手边，纸角挨着她的指根。手没有收回去，停在票边上。“这张……还是您收着吧。我拿不拿，好像都一样。”\n\n阿婆的手没有动。没有捏，也没有躲，指根就贴着那片纸角。售票亭的灯影从她手背上滑过去，两张票的影子在木台面上叠成一张，边缘被风吹得一起掀了掀，又一起落下来。\n\n江上那台发动机升了半格，停在那… 只有你知道：票推回去的那一刻他其实希望她按住它，哪怕只是说一句不行。她什么都没做。",
+          "importance": 3,
+          "kind": "observation",
+          "source": "gm"
+        }
+      ],
+      "inventory": [
+        "旧旅行袋",
+        "一张被雨泡软的船票",
+        "一支没拧开的笔",
+        "没有日期的空白船票（捏在指间，未落定）"
+      ],
+      "flags": {}
+    }
+  },
+  "beats": [
+    {
+      "id": "beat_befc639446a2",
+      "index": 0,
+      "title": "雾里的空票",
+      "phase": "complete",
+      "clock": {
+        "minutes": 1420,
+        "display": "23:40",
+        "dateLabel": "末班船之前"
+      },
+      "timeJump": null,
+      "publicBrief": "雾从江面一层层漫上跳板，把对岸的灯吃成一团模糊的黄。挂在杆上的那盏灯罩里积了点水汽，光落在水面，碎成一片一片。售票亭的窗口开着，桌上的一沓船票刚磕齐，最上面一张是空的，没有日期，纸角被穿堂风吹得微微翘起。林生站在跳板前，旧旅行袋放在脚边，袋底的轮子沾着泥；他手里那张船票被雨泡软了，纸边起了毛，指腹一按就留下个印子。跳板尽头，渡轮亮着两盏灯，发动机低低地响，声音不紧不慢，像在等谁，也像随时可以走。",
+      "privateCues": [
+        {
+          "characterId": "apo",
+          "cue": "你磕齐那沓票的时候，拇指在最上面那张空票上停了一下——二十年了，你打的每张空票都没有日期，因为你也说不清该填哪一天。"
+        },
+        {
+          "characterId": "lin_sheng",
+          "cue": "你攥着票，指腹能摸到纸边泡软后的毛茬。跳板底下的水在拍，一下一下；你忽然想不起上一次踩上这条跳板是什么时候，也不确定自己是不是真的想踩上去。"
+        }
+      ],
+      "pressure": "23:55 一到船就走，跳板一收，渡口关到明早——两个人谁先开口，谁就先露出自己不肯说的那件事。",
+      "sceneQuestion": "那句“上不上”问出口之后，谁会先给出真话，而不是一张票？",
+      "gmNote": "开场只铺雾、票、跳板的触感；阿婆的空票与林生的旧票并列摆着，别让任何人此刻就递出去或收回去。",
+      "actions": [
+        {
+          "id": "act_7055408abcac",
+          "characterId": "apo",
+          "category": "观察",
+          "summary": "隔窗看年轻人攥票的手",
+          "deed": "阿婆把搪瓷杯放下，没出亭子，只从窗口探出半个身子，目光落在林生攥票的那只手上，看了一会儿。",
+          "effect": "我想看清他到底是想走，还是舍不得走——他若抬头，会撞上我的目光。",
+          "hostile": false,
+          "description": "阿婆把搪瓷杯放下，没出亭子，只从窗口探出半个身子，目光落在林生攥票的那只手上，看了一会儿。",
+          "dialogue": "",
+          "thought": "他攥票的样子，跟我儿子当年一样。我不问，我先看他的手。",
+          "goalProgress": "我在这个年轻人身上找儿子的影子，哪怕只是多看一眼。",
+          "stakes": "若我看错了他的手，就白等这一晚，也白多打一张票。",
+          "ability": "perception",
+          "traitName": "看人先看手",
+          "targetId": "lin_sheng",
+          "targetLabel": "林生",
+          "status": "resolved",
+          "penalties": 0,
+          "penaltyNotes": [],
+          "generatedBy": "llm",
+          "createdAt": "2026-10-28T00:45:30.373Z",
+          "roll": {
+            "natural": 3,
+            "ability": "perception",
+            "abilityValue": 7,
+            "traitName": "看人先看手",
+            "traitBonus": 2,
+            "conditionBonus": 0,
+            "conditionNotes": [],
+            "situationalBonus": 1,
+            "penalty": 0,
+            "penaltyNotes": [],
+            "total": 13,
+            "dc": 12,
+            "opponentTotal": null,
+            "margin": 1,
+            "tier": "success",
+            "criticalByNatural20": false
+          },
+          "outcome": "success",
+          "outcomeNote": ""
+        },
+        {
+          "id": "act_2f17cff5a563",
+          "characterId": "lin_sheng",
+          "category": "交涉",
+          "summary": "拿玩笑话探阿婆口风",
+          "deed": "林生把旧船票在指间转了半圈，抬脚往售票亭窗口挪了两步，肩膀微耸，像只是随口搭话。",
+          "effect": "让阿婆先开口说点什么，最好由她提起船和票的事，自己好顺着接。",
+          "hostile": false,
+          "description": "林生把旧船票在指间转了半圈，抬脚往售票亭窗口挪了两步，肩膀微耸，像只是随口搭话。",
+          "dialogue": "阿婆，今晚雾这么大，船……不会提前溜吧？",
+          "thought": "我不想先开口问船，好像一问就承认了自己在犹豫。可阿婆那眼神让我发毛，她多打的那张票是给谁的？先拿句闲话探探她，别显得我急。",
+          "goalProgress": "用一句轻话先摸清船还等不等，给自己多留一点不决定的时间。",
+          "stakes": "要是阿婆只应一声就低头收票，我就得自己接下一句，藏不住那点犹豫。",
+          "ability": "presence",
+          "traitName": "把话说成玩笑",
+          "targetId": "apo",
+          "targetLabel": "阿婆",
+          "status": "resolved",
+          "penalties": 0,
+          "penaltyNotes": [],
+          "generatedBy": "llm",
+          "createdAt": "2026-10-28T00:45:30.611Z",
+          "roll": {
+            "natural": 3,
+            "ability": "presence",
+            "abilityValue": 6,
+            "traitName": "把话说成玩笑",
+            "traitBonus": 2,
+            "conditionBonus": 0,
+            "conditionNotes": [],
+            "situationalBonus": 1,
+            "penalty": 0,
+            "penaltyNotes": [],
+            "total": 12,
+            "dc": 13,
+            "opponentTotal": null,
+            "margin": -1,
+            "tier": "soft_failure",
+            "criticalByNatural20": false
+          },
+          "outcome": "soft_failure",
+          "outcomeNote": ""
+        }
+      ],
+      "adjudications": [
+        {
+          "actionId": "act_7055408abcac",
+          "difficultyLabel": "标准",
+          "dc": 12,
+          "modifier": 1,
+          "reason": "雾气和昏灯下，要从一只攥票的手看出他究竟想走还是舍不得，需要越过他表面的随意；你看手成习，略占便宜。",
+          "risk": "若看错，会把那点用力当成想走，错过他的犹豫，之后再开口问就更难。"
+        },
+        {
+          "actionId": "act_2f17cff5a563",
+          "difficultyLabel": "标准",
+          "dc": 13,
+          "modifier": 1,
+          "reason": "用玩笑探口风不算冒犯，但阿婆习惯把话咽回去，要让她主动提起船和票，得穿过这层沉默。",
+          "risk": "阿婆若只应一句“雾大也照开”就低头收票，你便得自己接下一句，犹豫反而露得更明显。"
+        }
+      ],
+      "reactions": [],
+      "narration": "搪瓷杯底磕在桌面上，闷闷一声。阿婆没出亭子，只把半个身子探到窗口，目光顺着他攥票的那只手看过去——指节发白，纸角被捏得起了毛，虎口那里压出一道深痕。她看了有一会儿，像在数他那只手到底松开过几次。\n\n林生把船票在指间转了半圈，抬脚往窗口挪了两步，肩膀微耸，笑还没完全出来就先挂在脸上。“阿婆，今晚雾这么大，船……不会提前溜吧？”\n\n话是落进雾里的。阿婆没接。她的目光从他手上抬起来，碰到他的眼睛，又慢慢移开，落在杆上那盏灯上，像在数灯罩里的水汽。亭子里静了几秒，只有江风把窗口那张没写日期的船票吹得翘起一角。\n\n林生的笑收回去了，收得不算快。他把票换到另一只手，纸已经被捏得发软，边沿粘在掌心，撕开时留下一点白痕。\n\n雾又厚了一层。跳板尽头的渡轮还在响，声音比刚才低了点，却仍旧不紧不慢。灯把两个人的影子钉在湿地上，一个在窗里，一个在跳板前，谁也没有往前或者往后。\n\n阿婆把搪瓷杯重新端起，杯口对着窗，热气散进雾里不见了。",
+      "outcomeNotes": [
+        {
+          "characterId": "apo",
+          "note": "她隔着窗口看清了林生攥票的手：指节发白、纸被捏软，确认他站得住却一直没踏上去。"
+        },
+        {
+          "characterId": "lin_sheng",
+          "note": "他的话抛出去了却没人接，笑自己收回来，只好把票换手，反而更明显地露了自己在犹豫。"
+        }
+      ],
+      "stateChanges": {
+        "characters": [
+          {
+            "characterId": "apo",
+            "stressDelta": 1,
+            "conditionsAdd": [
+              {
+                "name": "看清了那只手",
+                "description": "她已确认这年轻人攥票的手松过又攥紧，之后看他时会带上一层了然",
+                "modifier": 2,
+                "kind": "other",
+                "visibility": "private",
+                "abilities": [
+                  "perception"
+                ]
+              }
+            ],
+            "conditionsRemove": [],
+            "inventoryAdd": [],
+            "inventoryRemove": [],
+            "privateNote": "他问船会不会提前走，问的其实不是船。",
+            "memory": {
+              "summary": "他把票换到另一只手时，掌心粘掉了一点纸",
+              "importance": 3
+            }
+          },
+          {
+            "characterId": "lin_sheng",
+            "stressDelta": 2,
+            "conditionsAdd": [
+              {
+                "name": "话没落地",
+                "description": "试探被沉默挡回来，他更不敢直接开口，说话会绕得更远",
+                "modifier": -2,
+                "kind": "emotion",
+                "visibility": "private",
+                "abilities": [
+                  "presence"
+                ]
+              },
+              {
+                "name": "掌心粘了纸屑",
+                "description": "船票软得粘手，换手时留下白痕，攥着不舒服",
+                "modifier": -1,
+                "kind": "other",
+                "visibility": "public"
+              }
+            ],
+            "conditionsRemove": [],
+            "inventoryAdd": [],
+            "inventoryRemove": [],
+            "privateNote": "她没接话，也没赶我。她看的是我的手，不是我的脸。",
+            "memory": {
+              "summary": "阿婆没答他雾大不大，只抬头看了一眼灯",
+              "importance": 3
+            }
+          }
+        ],
+        "world": {
+          "factsAdd": [
+            "林生走到售票亭窗口前搭过话，阿婆没有回答他。"
+          ],
+          "factsRemove": [],
+          "flagsSet": {
+            "lin_sheng_at_window": true
+          },
+          "pressure": "渡轮发动机声低了一档，雾还在厚；窗口那张没写日期的船票仍翘着纸角。",
+          "sceneTitle": "窗口那盏灯"
+        }
+      },
+      "nextTimeJump": {
+        "elapsedMinutes": 6,
+        "label": "沉默过去的第六分钟",
+        "reason": "林生搭话落空后没有立刻再开口，两人隔着窗口僵了几分钟，只有雾和船声在动。"
+      },
+      "ending": null,
+      "createdAt": "2026-10-28T00:45:24.975Z",
+      "completedAt": "2026-10-28T00:45:43.717Z"
+    },
+    {
+      "id": "beat_8965acda81fa",
+      "index": 1,
+      "title": "灯下九分钟",
+      "phase": "complete",
+      "clock": {
+        "minutes": 1426,
+        "display": "23:46",
+        "dateLabel": "末班船之前"
+      },
+      "timeJump": {
+        "elapsedMinutes": 6,
+        "label": "沉默过去的第六分钟",
+        "reason": "林生搭话落空后没有立刻再开口，两人隔着窗口僵了几分钟，只有雾和船声在动。"
+      },
+      "publicBrief": "雾里，渡轮的发动机声又低了一档，像有人在水下把什么按住了。跳板边缘结着一层水膜，缆绳盘在系缆桩上，湿得发亮。售票亭窗口那张没写日期的船票仍翘着角，阿婆伸手把它按平，指尖停了一瞬才松开。林生的影子落在跳板上，脚却没有跟上去，旅行袋的提手在他腕上勒出一道红印。灯罩里的水汽聚成一颗，慢慢往下淌。亭子里挂钟的秒针走得很响，一下一下，把雾推得更靠近窗口。",
+      "privateCues": [
+        {
+          "characterId": "apo",
+          "cue": "你按平那张没写日期的票时，指腹摸到纸背上一道旧折痕——是你每天叠在同一处叠出来的。抽屉里那沓票，最上面一张的边角已经发毛。"
+        },
+        {
+          "characterId": "lin_sheng",
+          "cue": "柴油味混着雾钻进鼻子，像小时候跟母亲坐船过江那天的味道。掌心被纸屑磨得发痒，你忽然想不起这张票是几点攥到现在的。"
+        }
+      ],
+      "pressure": "离船开还有九分钟，跳板随时会被收走，而谁先开口说那句没用的话，谁就先欠了对方一次。",
+      "sceneQuestion": "他会踏上跳板，还是阿婆会先把那张多打出来的票推过窗口？",
+      "gmNote": "阿婆的手可以靠近抽屉里的票堆，但本刻不要让她把票拿出来、推出去或说出它的来历；用钟摆和发动机声把这九分钟铺满底噪。",
+      "actions": [
+        {
+          "id": "act_37177ff01b30",
+          "characterId": "apo",
+          "category": "交涉",
+          "summary": "把没写日期的票推过窗口",
+          "deed": "阿婆不答他问船的话，伸手从票夹里抽出那张没有日期的船票，隔着窗口推出去，纸角停在窗台上，压在他手边。",
+          "effect": "希望他看见这张票，要么问一句，要么伸手来接。",
+          "hostile": false,
+          "description": "阿婆不答他问船的话，伸手从票夹里抽出那张没有日期的船票，隔着窗口推出去，纸角停在窗台上，压在他手边。",
+          "dialogue": "",
+          "thought": "他问船，眼睛却往我窗口瞟。我不接话，先把这张多打的票推出去——他要是接了，我就算听他说了一句；他要是不接，我也只当票放错了地方。",
+          "goalProgress": "把留给儿子的那张票推到人眼前，等于让等的那件事露了一次面。",
+          "stakes": "他不接，也不问，我就得把票收回来，继续等下一班。",
+          "ability": "will",
+          "traitName": "把话咽回去",
+          "targetId": "lin_sheng",
+          "targetLabel": "林生",
+          "status": "resolved",
+          "penalties": 0,
+          "penaltyNotes": [],
+          "generatedBy": "llm",
+          "createdAt": "2026-10-28T00:45:52.105Z",
+          "roll": {
+            "natural": 13,
+            "ability": "will",
+            "abilityValue": 8,
+            "traitName": "把话咽回去",
+            "traitBonus": 2,
+            "conditionBonus": 0,
+            "conditionNotes": [],
+            "situationalBonus": 0,
+            "penalty": 0,
+            "penaltyNotes": [],
+            "total": 23,
+            "dc": 12,
+            "opponentTotal": null,
+            "margin": 11,
+            "tier": "critical_success",
+            "criticalByNatural20": false
+          },
+          "outcome": "critical_success",
+          "outcomeNote": ""
+        },
+        {
+          "id": "act_613157e1699f",
+          "characterId": "lin_sheng",
+          "category": "交涉",
+          "summary": "把泡软的旧船票拍在窗台上问阿婆",
+          "deed": "林生把那张被雨泡软的旧船票从掌心撕下来，两步走到售票亭窗口，用两根手指把它按在窗台的搪瓷边沿上，纸上的水印立刻洇开一小片。他低头看了看那张票，又抬眼看阿婆，嘴角扯了一下，不像笑。",
+          "effect": "让阿婆看清这张票的日期已经模糊，逼她先开口说这票还能不能用。",
+          "hostile": false,
+          "description": "林生把那张被雨泡软的旧船票从掌心撕下来，两步走到售票亭窗口，用两根手指把它按在窗台的搪瓷边沿上，纸上的水印立刻洇开一小片。他低头看了看那张票，又抬眼看阿婆，嘴角扯了一下，不像笑。",
+          "dialogue": "这票……泡得连日子都看不清了。您说，还作数吗？",
+          "thought": "她看我的手，不看我的脸。那我就把这张破票亮给她看——反正再攥下去也攥不出个答案。",
+          "goalProgress": "用票当由头把话题拉回渡船本身，试探自己到底还有没有上船的理由。",
+          "stakes": "如果她连票都不接，我就只能自己决定上不上跳板了。",
+          "ability": "presence",
+          "traitName": "把话说成玩笑",
+          "targetId": "apo",
+          "targetLabel": "阿婆",
+          "status": "resolved",
+          "penalties": 0,
+          "penaltyNotes": [],
+          "generatedBy": "llm",
+          "createdAt": "2026-10-28T00:45:57.800Z",
+          "roll": {
+            "natural": 17,
+            "ability": "presence",
+            "abilityValue": 6,
+            "traitName": "把话说成玩笑",
+            "traitBonus": 2,
+            "conditionBonus": -3,
+            "conditionNotes": [
+              "话没落地 -2",
+              "掌心粘了纸屑 -1"
+            ],
+            "situationalBonus": 0,
+            "penalty": 0,
+            "penaltyNotes": [],
+            "total": 22,
+            "dc": 13,
+            "opponentTotal": null,
+            "margin": 9,
+            "tier": "success",
+            "criticalByNatural20": false
+          },
+          "outcome": "success",
+          "outcomeNote": ""
+        }
+      ],
+      "adjudications": [
+        {
+          "actionId": "act_37177ff01b30",
+          "difficultyLabel": "标准",
+          "dc": 12,
+          "modifier": 0,
+          "reason": "把票推出窗口只是手上动作，难的是让一个已经把话咽回去的人，靠一张纸逼对方先开口——她越不说话，这张票越像一张没写收件人的信。",
+          "risk": "他不接也不问，票角被雾气洇软，她只能伸手把它收回票夹——等于第二次把儿子没回来的那班船咽回肚里。"
+        },
+        {
+          "actionId": "act_613157e1699f",
+          "difficultyLabel": "标准",
+          "dc": 13,
+          "modifier": 0,
+          "reason": "问“还作不作数”本身不难，难的是一个刚才问话没被答的人，要用玩笑的口气把同一个问题再递一次，而对方只要继续不答就能把它挡回去。",
+          "risk": "阿婆只把票往他那边推回去、不接这句问话，玩笑成了岔开的台阶，他再想认真开口就得多欠一次。"
+        }
+      ],
+      "reactions": [],
+      "narration": "他从跳板那头走过来只有两步。湿透的船票从掌心撕下来时带起一小片皮，他用两根手指把它按在窗台的搪瓷边沿上，纸里的水立刻往四周洇开，像一小块正在褪色的天。他低头看了看，又抬眼看她，嘴角扯了一下，不算笑。“这票……泡得连日子都看不清了。您说，还作数吗？”\n\n阿婆没有去接。她的手停在半途，因为窗台上已经有两张纸了——她先前推出去的那张还压在原处，边角翘着，干、硬、空白，跟他那张软塌塌的正好挨在一起。两张票并排躺着，一张什么都被水泡掉了，一张什么也没写过。\n\n她把伸出去的手往回收了半寸，指尖在窗台木沿上按了一下。挂钟的秒针走过三格，她才开口，声音不高，像怕惊动雾：“日子看不清，就照没日子算。”\n\n说完她没有再动。灯罩里那颗水汽终于坠下来，落在灯泡上，滋了一声。江上的发动机又低了一档，低到几乎听不见，只剩雾在往前走。林生的手还按在票上，没有拿开，也没有把票收回去。\n\n窗口内外两个人都没有再说话。跳板空着，缆绳在系缆桩上滴水，一下，又一下。",
+      "outcomeNotes": [
+        {
+          "characterId": "apo",
+          "note": "推出去的空白船票停在他手边没有收回，意外地与他的湿票并排躺在一起，也逼出了他的一句问话。"
+        },
+        {
+          "characterId": "lin_sheng",
+          "note": "湿票按在窗台上、问句说出口，阿婆接了他的话，却给了一个能往两边听的答复。"
+        }
+      ],
+      "stateChanges": {
+        "characters": [
+          {
+            "characterId": "apo",
+            "stressDelta": 1,
+            "conditionsAdd": [
+              {
+                "name": "推出去的票收不回来",
+                "description": "那张没日期的票已经在他手边，她再伸手去拿就等于改口，只能等",
+                "modifier": -2,
+                "kind": "emotion",
+                "visibility": "private"
+              }
+            ],
+            "conditionsRemove": [
+              "把话咽回去"
+            ],
+            "inventoryAdd": [],
+            "inventoryRemove": [],
+            "privateNote": "他问的是日子，她答的也是日子；她不确定他听出来没有。",
+            "memory": {
+              "summary": "“日子看不清，就照没日子算。”——这句话她终于说出口了。",
+              "importance": 4
+            }
+          },
+          {
+            "characterId": "lin_sheng",
+            "stressDelta": 1,
+            "conditionsAdd": [
+              {
+                "name": "按着票等回话",
+                "description": "话已经问出去，票还压在掌下，接下来只能等对方把话说明白",
+                "modifier": -2,
+                "kind": "emotion",
+                "visibility": "private"
+              }
+            ],
+            "conditionsRemove": [],
+            "inventoryAdd": [],
+            "inventoryRemove": [],
+            "privateNote": "她答的不是“能”也不是“不能”。他把那张空白票看清楚了：上面一个日子也没有。",
+            "memory": {
+              "summary": "两张票并排躺在窗台上，一张泡没了日子，一张从来没写过。",
+              "importance": 4
+            }
+          }
+        ],
+        "world": {
+          "factsAdd": [
+            "售票亭窗台上并排放着两张船票：林生那张泡糊了日期，阿婆推出来那张没有日期。",
+            "阿婆开口回应了林生，说日子看不清就照没日子算。"
+          ],
+          "factsRemove": [],
+          "flagsSet": {
+            "two_tickets_on_sill": true,
+            "apo_spoke_to_lin": true
+          },
+          "pressure": "两张票都还在窗台上，谁也没先把它拿起来；跳板空着，雾越来越靠岸。",
+          "sceneTitle": "窗台上的两张票"
+        }
+      },
+      "nextTimeJump": {
+        "elapsedMinutes": 3,
+        "label": "那句答话落下后的第三分钟",
+        "reason": "话说完两个人都没再开口，挂钟自己走过了三格，水汽在灯罩里又聚起一颗。"
+      },
+      "ending": null,
+      "createdAt": "2026-10-28T00:45:43.724Z",
+      "completedAt": "2026-10-28T00:46:17.421Z"
+    },
+    {
+      "id": "beat_84e25065a473",
+      "index": 2,
+      "title": "两张票并排",
+      "phase": "complete",
+      "clock": {
+        "minutes": 1429,
+        "display": "23:49",
+        "dateLabel": "末班船之前"
+      },
+      "timeJump": {
+        "elapsedMinutes": 3,
+        "label": "那句答话落下后的第三分钟",
+        "reason": "话说完两个人都没再开口，挂钟自己走过了三格，水汽在灯罩里又聚起一颗。"
+      },
+      "publicBrief": "灯罩里那颗水汽滋掉之后，灯泡亮了一点，把窗台上两张票的边沿照得发白：一张软塌塌地洇着水，一张干硬地翘着角。阿婆的手还按在窗台木沿上，没缩回去，也没往前推。林生那只手也没离开，指腹压在纸面上，纸屑粘在虎口，他没去揭。挂钟走到 23:49，秒针的声音比刚才清楚，因为江上的发动机又低了一档，低得像要停，却还在响。雾贴着水面漫过来，已经爬上跳板的第三节，缆绳在系缆桩上滴水，隔一会儿一下。没有人说话。风把杆上那盏灯吹得轻轻晃，影子在湿地上一动，两个人谁也没先动。",
+      "privateCues": [
+        {
+          "characterId": "apo",
+          "cue": "窗台木沿被你的指尖按出一小圈潮印。二十年里你推票出去的手势都一样：先按一下，再推出去。今天推出去的那张，还软软地挨着你那张躺着。"
+        },
+        {
+          "characterId": "lin_sheng",
+          "cue": "粘在虎口的那点纸屑一直没去揭，干了，像一小块结痂。机器声还在，你听着它，喉咙里那句问话顶了一下又落回去，因为一开口，就得先说出你为什么要赶这班船。"
+        }
+      ],
+      "pressure": "挂钟指向 23:49，跳板第三节已经湿了，而两张票都还在窗台上：谁先伸手，就等于先说了那句话。",
+      "sceneQuestion": "在船开之前，他会问出那句关于两张票的话吗？",
+      "gmNote": "阿婆的手势和两张票的位置，是这一场唯一的测量仪；让沉默再压一会儿，别让台词推着人物走。",
+      "actions": [
+        {
+          "id": "act_e711bc340fdb",
+          "characterId": "apo",
+          "category": "行动",
+          "summary": "把没日期的票再推近半寸",
+          "deed": "阿婆的手从窗台木沿上抬起来，不紧不慢地伸向那张干硬翘角的空白票，指尖按在纸边，轻轻往林生那侧推了半寸，然后把手收回来，搁回搪瓷杯旁边。",
+          "effect": "让他自己伸手把那张空票拿起来，或者至少，让这半寸的距离替我把话递过去。",
+          "hostile": false,
+          "description": "阿婆的手从窗台木沿上抬起来，不紧不慢地伸向那张干硬翘角的空白票，指尖按在纸边，轻轻往林生那侧推了半寸，然后把手收回来，搁回搪瓷杯旁边。",
+          "dialogue": "",
+          "thought": "他问票作不作数，其实问的是人回不回来。我不点破，只把那张空票往他手边再推半寸——他若接了，就当替他收着；他若不接，我也认了。",
+          "goalProgress": "若他碰那张票，就等于替我留了一个可以再提起儿子的由头；船开之前，我还想多听人提一次。",
+          "stakes": "怕他看出这张票不是给他的，怕他问一句‘这是留给谁的’，我答不上来。",
+          "ability": "will",
+          "traitName": "把话咽回去",
+          "targetId": "lin_sheng",
+          "targetLabel": "林生",
+          "status": "resolved",
+          "penalties": 0,
+          "penaltyNotes": [],
+          "generatedBy": "llm",
+          "createdAt": "2026-10-28T00:46:28.040Z",
+          "roll": {
+            "natural": 6,
+            "ability": "will",
+            "abilityValue": 8,
+            "traitName": "把话咽回去",
+            "traitBonus": 2,
+            "conditionBonus": -2,
+            "conditionNotes": [
+              "推出去的票收不回来 -2"
+            ],
+            "situationalBonus": 0,
+            "penalty": 0,
+            "penaltyNotes": [],
+            "total": 14,
+            "dc": 12,
+            "opponentTotal": null,
+            "margin": 2,
+            "tier": "success",
+            "criticalByNatural20": false
+          },
+          "outcome": "success",
+          "outcomeNote": ""
+        },
+        {
+          "id": "act_5a5a7fa1f7e7",
+          "characterId": "lin_sheng",
+          "category": "交涉",
+          "summary": "把话绕到那张空白票上",
+          "deed": "林生用食指点了点窗台上那张干硬、空白的票，指节在纸角上停了一下，然后抬眼看向阿婆。",
+          "effect": "让阿婆接住这个话头，说出她多打一张空票的缘由。",
+          "hostile": false,
+          "description": "林生用食指点了点窗台上那张干硬、空白的票，指节在纸角上停了一下，然后抬眼看向阿婆。",
+          "dialogue": "那您这张呢——一个字没写，是打算留给谁？",
+          "thought": "她把这票说得像张白纸，是让我自己填日子，还是让我自己认？我不能问得太直，先绕回她推出来的那张空票上，看她接不接。",
+          "goalProgress": "绕开自己的票，从阿婆那张空票里探出她到底在等什么，好让自己再拖一会儿。",
+          "stakes": "她若还是不答，我就再没有别的话可以绕了。",
+          "ability": "presence",
+          "traitName": "把话说成玩笑",
+          "targetId": "apo",
+          "targetLabel": "阿婆",
+          "status": "resolved",
+          "penalties": 0,
+          "penaltyNotes": [],
+          "generatedBy": "llm",
+          "createdAt": "2026-10-28T00:46:27.907Z",
+          "roll": {
+            "natural": 11,
+            "ability": "presence",
+            "abilityValue": 6,
+            "traitName": "把话说成玩笑",
+            "traitBonus": 2,
+            "conditionBonus": -5,
+            "conditionNotes": [
+              "话没落地 -2",
+              "掌心粘了纸屑 -1",
+              "按着票等回话 -2"
+            ],
+            "situationalBonus": 0,
+            "penalty": 0,
+            "penaltyNotes": [],
+            "total": 14,
+            "dc": 13,
+            "opponentTotal": null,
+            "margin": 1,
+            "tier": "success",
+            "criticalByNatural20": false
+          },
+          "outcome": "success",
+          "outcomeNote": ""
+        }
+      ],
+      "adjudications": [
+        {
+          "actionId": "act_e711bc340fdb",
+          "difficultyLabel": "标准",
+          "dc": 12,
+          "modifier": 0,
+          "reason": "推半寸这个动作本身必然发生，难的是让这半寸被读成邀请而不是一张无人认领的票。",
+          "risk": "林生的目光在票上停住却没有伸手，或者问一句“这是留给谁的”，她只能把手收回搪瓷杯旁边，答不上来。"
+        },
+        {
+          "actionId": "act_5a5a7fa1f7e7",
+          "difficultyLabel": "标准",
+          "dc": 13,
+          "modifier": 0,
+          "reason": "问题问得轻，落点却正戳在她每天多打一张票的缘由上，穿不穿得过取决于她肯不肯接这个话头。",
+          "risk": "阿婆把这句当成闲话拨开，只回一句“空着好使”，话头断了，他再没有别的话可以绕。"
+        }
+      ],
+      "reactions": [],
+      "narration": "阿婆的手从窗台木沿上抬起来，不紧不慢，落在那张干硬翘角的空白票上。指尖按住纸边，往林生那侧推了半寸——不多，刚好让纸角越过窗台上一道旧刻痕。然后她把手收回去，搁在搪瓷杯旁边，指尖在杯沿上多停了一下，杯底那点水没有晃。\n\n林生的手还留在窗台上。他用食指点了点那张空白票，指节压在纸角上，停住，纸干，响了一声很轻的脆响。他抬眼。“那您这张呢——一个字没写，是打算留给谁？”声音压得低，像怕被江上那点发动机声盖过去。\n\n阿婆没有立刻答。她的手离开杯沿，回到票上，把被他点过的那只角按平，一下，两下，纸贴在木头上，不再翘着。窗台上的灯照着两只手，一只在票这边，一只在票那边，中间隔着那道旧刻痕。江上的机器声又低了一档，低得快要听不见，可还听得见。\n\n挂钟的秒针一格一格地走，声音比人说话清楚。缆绳在系缆桩上滴了一下，隔一会儿，又滴一下。雾顺着跳板往上爬，从第三节爬到第四节，木头的颜色一点点变深。\n\n林生的目光还落在她脸上，那只按过票角的手没有收。问出去的话悬在窗口，没有回来的意思，他也没把话再捡起来。虎口上那点纸屑还在。风把杆上的灯吹得晃了一下，影子从两个人脚边扫过去。",
+      "outcomeNotes": [
+        {
+          "characterId": "apo",
+          "note": "把空白票推近半寸并接住了林生的话头，但没有给他答案，只用按平票角的动作把问话压回了窗台上。"
+        },
+        {
+          "characterId": "lin_sheng",
+          "note": "点着空白票把“留给谁”问出了口，话没有落地成回答，人也没有因此往跳板挪一步。"
+        }
+      ],
+      "stateChanges": {
+        "characters": [
+          {
+            "characterId": "apo",
+            "stressDelta": 1,
+            "conditionsAdd": [
+              {
+                "name": "被问住的手",
+                "description": "被问到空白票留给谁之后，她的动作变慢，凡事都要在纸面上多按一遍才收手",
+                "modifier": -1,
+                "kind": "emotion",
+                "visibility": "public"
+              }
+            ],
+            "conditionsRemove": [],
+            "inventoryAdd": [],
+            "inventoryRemove": [],
+            "privateNote": "他问的那句话，差一点就从嘴里出去了；她把它按回纸角底下，像按平一张翘起来的票。",
+            "memory": {
+              "summary": "他问：一个字没写，是打算留给谁。",
+              "importance": 3
+            }
+          },
+          {
+            "characterId": "lin_sheng",
+            "stressDelta": 1,
+            "conditionsAdd": [
+              {
+                "name": "话悬在窗口",
+                "description": "问出的话没有得到回答，他既没有再问，也没有走开，注意力被钉在窗台上",
+                "modifier": -2,
+                "kind": "emotion",
+                "visibility": "private"
+              }
+            ],
+            "conditionsRemove": [
+              "把话说成玩笑"
+            ],
+            "inventoryAdd": [],
+            "inventoryRemove": [],
+            "privateNote": "她没有答，可那只按票角的手比任何回答都更像回答；他忽然不想再问第二遍。",
+            "memory": {
+              "summary": "她的沉默比回答更像回答。",
+              "importance": 3
+            }
+          }
+        ],
+        "world": {
+          "factsAdd": [
+            "林生问过阿婆那张空白票留给谁，阿婆没有出声，只把被点过的票角按平了。",
+            "江上的发动机声降到最低一档，雾已经从跳板第三节漫到第四节。"
+          ],
+          "factsRemove": [],
+          "flagsSet": {
+            "blank_ticket_asked": true
+          },
+          "pressure": "两张票仍并排躺在窗台上，一张按平了角，一张糊着日期；跳板还搭着，雾已经上了第四节。",
+          "sceneTitle": "按平的票角"
+        }
+      },
+      "nextTimeJump": {
+        "elapsedMinutes": 4,
+        "label": "秒针走过四格，雾又上来一节",
+        "reason": "阿婆按平票角、林生等一个没有来的回答，谁也没有再开口，只有秒针、缆绳滴水和发动机降档把时间推了过去。"
+      },
+      "ending": null,
+      "createdAt": "2026-10-28T00:46:17.426Z",
+      "completedAt": "2026-10-28T00:48:16.674Z"
+    },
+    {
+      "id": "beat_554d3d3579aa",
+      "index": 3,
+      "title": "雾上第四节",
+      "phase": "complete",
+      "clock": {
+        "minutes": 1433,
+        "display": "23:53",
+        "dateLabel": "末班船之前"
+      },
+      "timeJump": {
+        "elapsedMinutes": 4,
+        "label": "秒针走过四格，雾又上来一节",
+        "reason": "阿婆按平票角、林生等一个没有来的回答，谁也没有再开口，只有秒针、缆绳滴水和发动机降档把时间推了过去。"
+      },
+      "publicBrief": "挂钟的秒针又走了一格，声音在亭子里显得比刚才大。江上的发动机降到几乎听不见，只剩一层低低的震颤从跳板那头传过来，像有人在很远的地方敲门。雾从跳板第四节漫到第五节，木头一节比一节深，最下面那节已经看不清了。杆上的灯被风推得偏了小半圈，光从窗台斜过去，两张票的影子在木头上拉长，一张平贴，一张边角还翘着。阿婆的手搁在搪瓷杯边，没有收进袖子，也没有再往票上放。林生的食指还压在空白票的角上，虎口那道被纸边磨出来的白印子在灯下看得出来。江面上没有船影，雾把对岸吞掉了。",
+      "privateCues": [
+        {
+          "characterId": "apo",
+          "cue": "搪瓷杯里的水凉了一层，杯壁上的手印还在。你听见发动机降档，心里数着这是最后一班船靠岸前的声音——二十年前那晚，也是这个声音。窗口这个人问的话还摆在那里，像一件你不肯伸手去接的东西。"
+        },
+        {
+          "characterId": "lin_sheng",
+          "cue": "你指下那张空白票干得发脆，一用力就能按出折痕。旅行袋搁在脚边，袋底已经洇上潮气。对岸在雾里，什么也看不见；你忽然想，如果船开走了你没上去，明早渡口才开——那么今夜这一整段时间，你就不必签字。"
+        }
+      ],
+      "pressure": "秒针已经逼近 23:55，跳板还没收，而窗台上那个问题仍旧没有回答——两分钟里，谁先动，谁就等于先说了。",
+      "sceneQuestion": "他会把手从那张空白票上拿开、转身走向跳板，还是阿婆会先把票收回去？",
+      "gmNote": "保持雾与秒针的节奏，把 23:53 到 23:55 留成一次沉默的长度；不要替任何一方递出票或收票，让手自己动。",
+      "actions": [
+        {
+          "id": "act_44744bc0024a",
+          "characterId": "apo",
+          "category": "交涉",
+          "summary": "把空白票再往他手边推",
+          "deed": "阿婆把手从搪瓷杯旁移开，掌心覆上那张空白票，连同林生那张泡软的票一起拢住，慢慢往窗口外他那侧送过去，直到两张票的边都探出窗台沿。然后她松手，退回去，眼睛看着他。",
+          "effect": "让他把两张票都接过去，或者至少别把手缩回去。",
+          "hostile": false,
+          "description": "阿婆把手从搪瓷杯旁移开，掌心覆上那张空白票，连同林生那张泡软的票一起拢住，慢慢往窗口外他那侧送过去，直到两张票的边都探出窗台沿。然后她松手，退回去，眼睛看着他。",
+          "dialogue": "两张。一张你的，一张……没日子的。",
+          "thought": "他问留给谁，我不能说。可这张票推出去就没打算收回来，他要是拿不走，我就再让它往他手边靠一靠。",
+          "goalProgress": "如果他把票接走，就像有人替她应了一声，她今天多打的那张票便不算白打。",
+          "stakes": "他若把手收回去，那张空白票就只剩她一个人守着，最后一班船开走，连等的样子都摆不下去了。",
+          "ability": "will",
+          "traitName": "把话咽回去",
+          "targetId": "lin_sheng",
+          "targetLabel": "林生",
+          "status": "resolved",
+          "penalties": 0,
+          "penaltyNotes": [],
+          "generatedBy": "llm",
+          "createdAt": "2026-10-28T00:48:23.407Z",
+          "roll": {
+            "natural": 1,
+            "ability": "will",
+            "abilityValue": 8,
+            "traitName": "把话咽回去",
+            "traitBonus": 2,
+            "conditionBonus": -3,
+            "conditionNotes": [
+              "推出去的票收不回来 -2",
+              "被问住的手 -1"
+            ],
+            "situationalBonus": 0,
+            "penalty": 0,
+            "penaltyNotes": [],
+            "total": 8,
+            "dc": 13,
+            "opponentTotal": null,
+            "margin": -5,
+            "tier": "soft_failure",
+            "criticalByNatural20": false
+          },
+          "outcome": "soft_failure",
+          "outcomeNote": ""
+        },
+        {
+          "id": "act_1e858dc95783",
+          "characterId": "lin_sheng",
+          "category": "行动",
+          "summary": "拿起空白票，看阿婆拦不拦",
+          "deed": "林生把压在空白票上的食指挪开，换成拇指和食指捏住那张干硬的票角，慢慢将它从窗台上提起来，提到离木面半寸的地方停住，眼睛看着阿婆。",
+          "effect": "我盼她开口拦我，或者点一下头，好让我知道这张没日子的票到底算不算数。",
+          "hostile": false,
+          "description": "林生把压在空白票上的食指挪开，换成拇指和食指捏住那张干硬的票角，慢慢将它从窗台上提起来，提到离木面半寸的地方停住，眼睛看着阿婆。",
+          "dialogue": "",
+          "thought": "她按票角的样子像在等我自己明白。我不能再问了，再问就是逼她，也是逼我自己。不如先把那张没日子的票拿起来，看看她拦不拦。",
+          "goalProgress": "拿走这张空白票，就等于替自己认下一个日子——不管我上不上船，都得有个说法。",
+          "stakes": "要是她连眼皮都不抬，我就只能自己决定这票是收进袋里，还是放回去。",
+          "ability": "will",
+          "traitName": null,
+          "targetId": "apo",
+          "targetLabel": "阿婆",
+          "status": "resolved",
+          "penalties": 0,
+          "penaltyNotes": [],
+          "generatedBy": "llm",
+          "createdAt": "2026-10-28T00:48:23.442Z",
+          "roll": {
+            "natural": 7,
+            "ability": "will",
+            "abilityValue": 5,
+            "traitName": null,
+            "traitBonus": 0,
+            "conditionBonus": -5,
+            "conditionNotes": [
+              "掌心粘了纸屑 -1",
+              "按着票等回话 -2",
+              "话悬在窗口 -2"
+            ],
+            "situationalBonus": -1,
+            "penalty": 0,
+            "penaltyNotes": [],
+            "total": 6,
+            "dc": 13,
+            "opponentTotal": null,
+            "margin": -7,
+            "tier": "soft_failure",
+            "criticalByNatural20": false
+          },
+          "outcome": "soft_failure",
+          "outcomeNote": ""
+        }
+      ],
+      "adjudications": [
+        {
+          "actionId": "act_44744bc0024a",
+          "difficultyLabel": "标准",
+          "dc": 13,
+          "modifier": 0,
+          "reason": "把两张票都送出去、要他接住，等于要他认下那个没日子的位置——难点不在递，而在他肯不肯伸手。",
+          "risk": "他只捏走自己那张，空白票留在窗台沿上，最后两分钟里谁都不去碰它。"
+        },
+        {
+          "actionId": "act_1e858dc95783",
+          "difficultyLabel": "标准",
+          "dc": 13,
+          "modifier": -1,
+          "reason": "他只是提起来悬着、等一个眼神，等于把话递给一个惯于把话咽回去的人，而他自己还留着退路。",
+          "risk": "阿婆只是看着他的手，一个字不给，票停在他指间半寸，收也不是、放也不是。"
+        }
+      ],
+      "reactions": [],
+      "narration": "阿婆把手从搪瓷杯边移开，掌心覆上那两张票，一并拢住，慢慢往窗口外推。她没有推快，推到两张票的边都探出窗台沿、悬在木面外头，才松手，把手退回去，看着他。\n\n“两张。一张你的，一张……没日子的。”\n\n话落在窗口和跳板之间的那片雾里。阿婆没有再把票往他手边送近一寸，也没有收回来。探出沿的两片纸角被江风掀起一点，又落回去。林生没有把手伸过去把两张一起拢住，他只是把压在空白票上的食指挪开，换成拇指和食指，捏住那只干硬的角，慢慢把它提起来——提离窗台半寸，停在木面上头。他的眼睛看着阿婆，等她拦一下，或者点一下头。两样都没有。阿婆的手已经搁回搪瓷杯旁边，嘴唇合着，只看着他。风把杆上的灯推得偏了小半圈，光从桌面移到了他手背上，虎口那道白印子还在。\n\n空白票在他指间悬着，泡软的那张留在窗台上，边角又往上卷了一点。雾从跳板第五节漫到第六节，最下面两节已经看不见了。挂钟的秒针走了一格，又走了一格，声音比刚才大。\n\n林生的手没有落回木面，也没有再往上提。空白票就停在半空那半寸里，像一句问出去的话还挂着。阿婆没有催他，也没有低下头去。跳板那头，发动机的低响还在，只是一层震动。",
+      "outcomeNotes": [
+        {
+          "characterId": "apo",
+          "note": "她把两张票推到窗台沿并说出了那句话，但他没有把两张一起接过去，话停在雾里，没有落地。"
+        },
+        {
+          "characterId": "lin_sheng",
+          "note": "他把空白票提起半寸去等她拦或点头，阿婆两样都没有给，他只拿到一张悬在半空的票，没拿到答案。"
+        }
+      ],
+      "stateChanges": {
+        "characters": [
+          {
+            "characterId": "apo",
+            "stressDelta": 2,
+            "conditionsAdd": [
+              {
+                "name": "话没落地",
+                "description": "那句“没日子的”说出去后没人接，再开口前会先顿一下",
+                "modifier": -2,
+                "kind": "emotion",
+                "visibility": "private"
+              },
+              {
+                "name": "手已收回",
+                "description": "手搁回搪瓷杯旁不再伸出去，被追问时更难主动递出东西",
+                "modifier": -1,
+                "kind": "other",
+                "visibility": "public"
+              }
+            ],
+            "conditionsRemove": [
+              "被问住的手"
+            ],
+            "inventoryAdd": [],
+            "inventoryRemove": [],
+            "privateNote": "他提出的那半寸像在等我说一个字。我没说。票已经推出去了，收不回来。",
+            "memory": {
+              "summary": "他捏着那张没日子的票抬起来，等我拦，我没拦。",
+              "importance": 3
+            }
+          },
+          {
+            "characterId": "lin_sheng",
+            "stressDelta": 2,
+            "conditionsAdd": [
+              {
+                "name": "空白票在指间",
+                "description": "票悬在半空未落下，手里多一件不知算不算数的东西",
+                "modifier": -1,
+                "kind": "other",
+                "visibility": "public"
+              },
+              {
+                "name": "等不到点头",
+                "description": "问出去的话没被拦也没被认，再开口时底气弱",
+                "modifier": -2,
+                "kind": "emotion",
+                "visibility": "private"
+              }
+            ],
+            "conditionsRemove": [
+              "掌心粘了纸屑"
+            ],
+            "inventoryAdd": [
+              "没有日期的空白船票（捏在指间，未落定）"
+            ],
+            "inventoryRemove": [],
+            "privateNote": "她既不拦也不点头。这张票到底算不算，还是没人告诉我。",
+            "memory": {
+              "summary": "她推过来两张票，说“一张你的，一张没日子的”，然后就没再看票，只看着我。",
+              "importance": 4
+            }
+          }
+        ],
+        "world": {
+          "factsAdd": [
+            "窗台上只剩林生那张泡软的旧票，空白票被林生捏在手里、悬在木面上方半寸，没有落下。",
+            "阿婆对林生拿起空白票既没有拦，也没有点头。"
+          ],
+          "factsRemove": [],
+          "flagsSet": {
+            "blank_ticket_in_lin_hand": true
+          },
+          "pressure": "空白票悬在林生指间未落定，两张票分开在窗台两侧；雾已漫过跳板第五节，离 23:55 不到两分钟。",
+          "sceneTitle": "票悬在半寸"
+        }
+      },
+      "nextTimeJump": {
+        "elapsedMinutes": 1,
+        "label": "票离木面半寸的第一分钟",
+        "reason": "两人都不再动作，只有挂钟和雾在走；这一分钟由他悬着的手和她合着的嘴唇耗掉。"
+      },
+      "ending": null,
+      "createdAt": "2026-10-28T00:48:16.681Z",
+      "completedAt": "2026-10-28T00:48:46.178Z"
+    },
+    {
+      "id": "beat_7a23f81c4df3",
+      "index": 4,
+      "title": "半寸未落",
+      "phase": "complete",
+      "clock": {
+        "minutes": 1434,
+        "display": "23:54",
+        "dateLabel": "末班船之前"
+      },
+      "timeJump": {
+        "elapsedMinutes": 1,
+        "label": "票离木面半寸的第一分钟",
+        "reason": "两人都不再动作，只有挂钟和雾在走；这一分钟由他悬着的手和她合着的嘴唇耗掉。"
+      },
+      "publicBrief": "挂钟的秒针走到 23:54 那一格时，声音忽然显得很响，江上那层发动机的低响反倒退到雾里去了。杆上的灯还在轻微晃动，光落在窗台那道旧刻痕上，又滑开。林生手里的空白票仍旧悬在木面上方半寸，纸面干硬，边缘在风里纹丝不动；窗台上那张泡软的旧票，边角又往上卷起一点。雾已经从跳板第五节漫到第六节，最下面两节只剩两条模糊的白影。缆绳在系缆桩上滴了一下，隔了好一会儿，才滴第二下。阿婆的手搁在搪瓷杯旁边，没有动，杯子里的水已经不再冒热气。两人之间只剩钟走的声音。",
+      "privateCues": [
+        {
+          "characterId": "apo",
+          "cue": "你看见他虎口那道白印子，是攥东西攥久了留下的，和你记忆里另一只手攥票的样子叠在一起，只叠了一瞬，你就把眼睛挪回杯沿。"
+        },
+        {
+          "characterId": "lin_sheng",
+          "cue": "干硬的票角硌着指腹，纸屑有一点扎手。你忽然想起旅行袋侧兜里那张对折的纸，硬得也是这个手感，隔着布也能摸到它的边。"
+        }
+      ],
+      "pressure": "再过不到一分钟船就要解缆，那张空白票还悬在他指间半寸，落不落都没有第三个人来替他决定。",
+      "sceneQuestion": "他会把那张没有日子的票落进掌心，还是放回窗台上？",
+      "gmNote": "本刻只需一个人动半寸，另一个人的沉默就会变成答案；不要替他们补上那句话。",
+      "actions": [
+        {
+          "id": "act_b20ab9d46d60",
+          "characterId": "apo",
+          "category": "观察",
+          "summary": "看他的手指怎么落",
+          "deed": "阿婆把搪瓷杯端起来，抿了一口早凉的水，眼睛越过杯沿，落在他捏着空白票的那两根手指上，不催也不动。",
+          "effect": "我想看清他是攥紧还是松开，那只手会替他把话说出来。",
+          "hostile": false,
+          "description": "阿婆把搪瓷杯端起来，抿了一口早凉的水，眼睛越过杯沿，落在他捏着空白票的那两根手指上，不催也不动。",
+          "dialogue": "",
+          "thought": "票在他手里悬着，我不拦，也不点头。他要是攥住了，那是他自己的日子；他要放回来，我就再按平一只角。",
+          "goalProgress": "我等着看这只手会不会像当年那只手一样攥住票不回头。",
+          "stakes": "若我连他攥没攥住都看不明白，往后就再没有可等的东西了。",
+          "ability": "perception",
+          "traitName": "看人先看手",
+          "targetId": "lin_sheng",
+          "targetLabel": "林生",
+          "status": "resolved",
+          "penalties": 0,
+          "penaltyNotes": [],
+          "generatedBy": "llm",
+          "createdAt": "2026-10-28T00:48:54.746Z",
+          "roll": {
+            "natural": 19,
+            "ability": "perception",
+            "abilityValue": 7,
+            "traitName": "看人先看手",
+            "traitBonus": 2,
+            "conditionBonus": -3,
+            "conditionNotes": [
+              "看清了那只手 +2",
+              "推出去的票收不回来 -2",
+              "话没落地 -2",
+              "手已收回 -1"
+            ],
+            "situationalBonus": 0,
+            "penalty": 0,
+            "penaltyNotes": [],
+            "total": 25,
+            "dc": 12,
+            "opponentTotal": null,
+            "margin": 13,
+            "tier": "critical_success",
+            "criticalByNatural20": false
+          },
+          "outcome": "critical_success",
+          "outcomeNote": ""
+        },
+        {
+          "id": "act_d9e934723654",
+          "characterId": "lin_sheng",
+          "category": "行动",
+          "summary": "把空白票放回窗台，嘴上说只坐一趟",
+          "deed": "他把悬着的那张空白票慢慢放回窗台上，纸角压过那道旧刻痕，和泡软的那张并排挨着。手收回来插进外套兜里，肩膀松了一下，嘴角重新挂上那种不算笑的笑。",
+          "effect": "希望阿婆看出他这是把决定权交回去了，也许她肯开一句口，哪怕只是一句难听话。",
+          "hostile": false,
+          "description": "他把悬着的那张空白票慢慢放回窗台上，纸角压过那道旧刻痕，和泡软的那张并排挨着。手收回来插进外套兜里，肩膀松了一下，嘴角重新挂上那种不算笑的笑。",
+          "dialogue": "算了，我这张泡烂的能上就上，上不了……就当今晚白跑一趟，反正也不是头一回。",
+          "thought": "她不拦也不点头，这张票到底算不算，还是没人说。再耗下去船就开了。与其等一个不会来的回答，不如把票放回去，自己给自己一个台阶。",
+          "goalProgress": "把票放回去，拖延那个上船的决定，也拖延过江签字的时刻。",
+          "stakes": "船开走，他留在岸上，明天再面对该签的字。",
+          "ability": "presence",
+          "traitName": "把话说成玩笑",
+          "targetId": "apo",
+          "targetLabel": "阿婆",
+          "status": "resolved",
+          "penalties": 0,
+          "penaltyNotes": [],
+          "generatedBy": "llm",
+          "createdAt": "2026-10-28T00:48:55.517Z",
+          "roll": {
+            "natural": 3,
+            "ability": "presence",
+            "abilityValue": 6,
+            "traitName": "把话说成玩笑",
+            "traitBonus": 2,
+            "conditionBonus": -8,
+            "conditionNotes": [
+              "话没落地 -2",
+              "按着票等回话 -2",
+              "话悬在窗口 -2",
+              "空白票在指间 -1",
+              "等不到点头 -2"
+            ],
+            "situationalBonus": 0,
+            "penalty": 0,
+            "penaltyNotes": [],
+            "total": 3,
+            "dc": 13,
+            "opponentTotal": null,
+            "margin": -10,
+            "tier": "soft_failure",
+            "criticalByNatural20": false
+          },
+          "outcome": "soft_failure",
+          "outcomeNote": ""
+        }
+      ],
+      "adjudications": [
+        {
+          "actionId": "act_b20ab9d46d60",
+          "difficultyLabel": "标准",
+          "dc": 12,
+          "modifier": 0,
+          "reason": "灯晃、雾起、只剩不到一分钟，而那只手随时会收回兜里，要看出一攥一松的分别并不容易，但她就坐在对面，近得能看清指节。",
+          "risk": "她只看见一只不动的手，分不清那是攥住还是松开，等她想再看一眼，钟已经走到 23:55。"
+        },
+        {
+          "actionId": "act_d9e934723654",
+          "difficultyLabel": "标准",
+          "dc": 13,
+          "modifier": 0,
+          "reason": "把票放回去是真动作，可话被包成玩笑递出去，阿婆可以接，也可以像前面几次一样把嘴闭上——她此刻不肯点头也不肯拦。",
+          "risk": "阿婆不出声，玩笑落在窗口没人接，船一开，这句轻飘飘的话就成了他留在岸上的最后一句。"
+        }
+      ],
+      "reactions": [],
+      "narration": "阿婆把搪瓷杯端起来，抿了一口。水早凉了，她也没皱眉。杯子没有放回去，就那么端在下巴底下，眼睛越过杯沿，落在他捏着空白票的那两根手指上。\n\n那只手先是收紧了一下。指节泛白，纸角被捏出一道折，风一吹又弹平。她看着那道折，看着它反复了两次。然后手指松了。\n\n林生把票放回窗台，纸角压过旧刻痕，跟那张泡软了的并排挨着，两张之间几乎没有缝。手收回来插进外套兜里，肩膀塌下去一点，嘴角重新挂上那种不算笑的笑。“算了，我这张泡烂的能上就上，上不了……就当今晚白跑一趟，反正也不是头一回。”\n\n话说完了。雾里没有接住它的东西。阿婆没有抬头，也没有应声，只把搪瓷杯放下。杯底磕在窗台木面上，声音很轻，她的手腕跟着停在原处，掌心朝下，离那两张票寸许。\n\n钟走着。缆绳又滴了一下。跳板第六节也没了，只剩一条白影通到船的舷边。他兜里的手一直没有拿出来，脸上那个笑慢慢淡下去，变成一种嘴还张着的形状，最后连形状也没有了。\n\n秒针挪到最后一格，声音比刚才都清楚。船没有拉笛。",
+      "outcomeNotes": [
+        {
+          "characterId": "apo",
+          "note": "阿婆隔着一只凉透的杯子看清了那只手先攥紧再松开，也看见他把决定放回窗台时纸角压过了旧刻痕。"
+        },
+        {
+          "characterId": "lin_sheng",
+          "note": "林生把空白票放回窗台并说了句自嘲的话，阿婆既没应声也没看他，那句话落在雾里，只剩他兜里的手和脸上淡下去的笑。"
+        }
+      ],
+      "stateChanges": {
+        "characters": [
+          {
+            "characterId": "apo",
+            "stressDelta": 1,
+            "conditionsAdd": [
+              {
+                "name": "看进那只手",
+                "description": "她刚刚看清了那只手先攥紧后松开，心里有了底，再开口反倒更难",
+                "modifier": 2,
+                "kind": "other",
+                "visibility": "private",
+                "abilities": [
+                  "will"
+                ]
+              },
+              {
+                "name": "掌心朝下停在票边",
+                "description": "手搁在窗台上，离两张票寸许，随时能收回也随时能推开",
+                "modifier": -1,
+                "kind": "other",
+                "visibility": "public"
+              }
+            ],
+            "conditionsRemove": [
+              "手已收回"
+            ],
+            "inventoryAdd": [],
+            "inventoryRemove": [],
+            "privateNote": "他的手比嘴先松。这句她记下了，但没打算说给他听。",
+            "memory": {
+              "summary": "他的手先松了，话才跟上。",
+              "importance": 3
+            }
+          },
+          {
+            "characterId": "lin_sheng",
+            "stressDelta": 2,
+            "conditionsAdd": [
+              {
+                "name": "话落在地上",
+                "description": "玩笑说出口没人接，脸上的笑收不回去，人有点僵",
+                "modifier": -2,
+                "kind": "emotion",
+                "visibility": "private"
+              },
+              {
+                "name": "手插在兜里",
+                "description": "两只手都揣着不肯拿出来，窗台上那两张票与他隔着一臂的距离",
+                "modifier": -1,
+                "kind": "other",
+                "visibility": "public"
+              }
+            ],
+            "conditionsRemove": [
+              "空白票在指间"
+            ],
+            "inventoryAdd": [],
+            "inventoryRemove": [
+              "空白票"
+            ],
+            "privateNote": "他把决定权放回去了，她连一句难听话都不肯给。他忽然不确定自己是不是真的想让她开口。",
+            "memory": {
+              "summary": "她连一句难听话都没给。",
+              "importance": 3
+            }
+          }
+        ],
+        "world": {
+          "factsAdd": [
+            "两张票并排搁在售票亭窗台上，几乎挨在一起，谁都没有再动。",
+            "林生说过“就当今晚白跑一趟，反正也不是头一回”，阿婆没有应这句。"
+          ],
+          "factsRemove": [
+            "窗台上只剩林生那张泡软的旧票，空白票被林生捏在手里、悬在木面上方半寸，没有落下。"
+          ],
+          "flagsSet": {
+            "lin_sheng_joke_fell_flat": true,
+            "tickets_side_by_side": true
+          },
+          "pressure": "23:55 已到，船还没拉笛，两张票并排在窗台上，阿婆的手停在寸许之外，林生的手揣在兜里。",
+          "sceneTitle": "钟到最后一格"
+        }
+      },
+      "nextTimeJump": {
+        "elapsedMinutes": 1,
+        "label": "秒针挪过最后一格的那一分钟",
+        "reason": "两人都不再开口，只有挂钟把时间从 23:54 走到 23:55。"
+      },
+      "ending": null,
+      "createdAt": "2026-10-28T00:48:46.182Z",
+      "completedAt": "2026-10-28T00:49:20.570Z"
+    },
+    {
+      "id": "beat_6bed45f4f365",
+      "index": 5,
+      "title": "船未拉笛",
+      "phase": "complete",
+      "clock": {
+        "minutes": 1435,
+        "display": "23:55",
+        "dateLabel": "末班船之前"
+      },
+      "timeJump": {
+        "elapsedMinutes": 1,
+        "label": "秒针挪过最后一格的那一分钟",
+        "reason": "两人都不再开口，只有挂钟把时间从 23:54 走到 23:55。"
+      },
+      "publicBrief": "挂钟的秒针停在十二上，分针压在十一与十二之间——23:55。江上的发动机声从最低一档往上抬了半格，不是催促，是船在醒。雾漫过跳板最后一节，舷边的白影只剩一截，像被人从两头咬剩下的。售票亭窗台上，两张票还并排挨着，纸边一起被风掀了一下，又一起落回去。阿婆的掌心朝下停在票旁寸许，没有动。林生的两只手都在外套兜里，旧旅行袋的背带勒在肩窝上，勒出一道浅痕。杆上的灯晃了半圈，把两个人的影子推到同一块木面上，几乎叠住。船没有拉笛。跳板上还没有人。",
+      "privateCues": [
+        {
+          "characterId": "apo",
+          "cue": "发动机响起来的那半格声音，二十年前你听过一模一样的——那晚你也是这样站在窗口，手垂着，看一个人从跳板第七节走上去，没有回头。今晚的雾比那晚薄。"
+        },
+        {
+          "characterId": "lin_sheng",
+          "cue": "兜里的手指碰到船票泡软的那一角，湿的、凉的，像刚从水里捞出来。你忽然想起对岸住院楼三层走廊的灯，这个点还亮着，护士站的椅子是塑料的，坐久了会响。"
+        }
+      ],
+      "pressure": "船的发动机已经上档，跳板随时会收——再不动，今晚就过不去了。",
+      "sceneQuestion": "船不拉笛，是在等最后一个上船的人；窗台上那两张票，最后会跟着谁走？",
+      "gmNote": "这是第六刻，接近收场；不要替两人做决定，让发动机声、跳板和票自己把答案逼出来，若本刻无人上船就顺势落幕。",
+      "actions": [
+        {
+          "id": "act_a954e94b8a60",
+          "characterId": "apo",
+          "category": "交涉",
+          "summary": "把空白票推到他手边，说一句",
+          "deed": "阿婆把掌心从票边抬起来，用两根手指捏住那张空白票的角，慢慢推到窗台外沿，几乎碰到林生垂着的手背。她没有松手，抬眼看他。",
+          "effect": "希望他低头看那张票，或者问一句这票到底是给谁的。",
+          "hostile": false,
+          "description": "阿婆把掌心从票边抬起来，用两根手指捏住那张空白票的角，慢慢推到窗台外沿，几乎碰到林生垂着的手背。她没有松手，抬眼看他。",
+          "dialogue": "这张，你拿着。没日子的，哪天都能用。",
+          "thought": "他的手松了，跟我儿子那年一个样。船要走了，我再不开口，这张票就真成了废纸。",
+          "goalProgress": "把留给儿子的票递出去，等于把等的理由交到别人手里，也许能换他一句提起。",
+          "stakes": "票递出去他没接，我就连多打一张票的由头都没了。",
+          "ability": "presence",
+          "traitName": null,
+          "targetId": "lin_sheng",
+          "targetLabel": "林生",
+          "status": "resolved",
+          "penalties": 0,
+          "penaltyNotes": [],
+          "generatedBy": "llm",
+          "createdAt": "2026-10-28T00:49:27.517Z",
+          "roll": {
+            "natural": 11,
+            "ability": "presence",
+            "abilityValue": 6,
+            "traitName": null,
+            "traitBonus": 0,
+            "conditionBonus": -5,
+            "conditionNotes": [
+              "推出去的票收不回来 -2",
+              "话没落地 -2",
+              "掌心朝下停在票边 -1"
+            ],
+            "situationalBonus": 0,
+            "penalty": 0,
+            "penaltyNotes": [],
+            "total": 12,
+            "dc": 13,
+            "opponentTotal": null,
+            "margin": -1,
+            "tier": "soft_failure",
+            "criticalByNatural20": false
+          },
+          "outcome": "soft_failure",
+          "outcomeNote": ""
+        },
+        {
+          "id": "act_cbe80166d5e9",
+          "characterId": "lin_sheng",
+          "category": "行动",
+          "summary": "把空白票推回阿婆手边",
+          "deed": "林生从兜里抽出手，把窗台上那张空白票捏起来，绕过旧刻痕，轻轻推到阿婆掌心朝下的那只手旁边，纸角挨着她的指根。推完手没急着收，停在票边上。",
+          "effect": "希望阿婆碰一下那张票，或者开口说这票到底算不算、留给谁。",
+          "hostile": false,
+          "description": "林生从兜里抽出手，把窗台上那张空白票捏起来，绕过旧刻痕，轻轻推到阿婆掌心朝下的那只手旁边，纸角挨着她的指根。推完手没急着收，停在票边上。",
+          "dialogue": "这张……还是您收着吧。我拿不拿，好像都一样。",
+          "thought": "不能再站下去了，船在等，可我也不想就这么走。把票留给她，算是把话递出去——她要是想拦，总得有个由头。",
+          "goalProgress": "把决定权连同票一起递回阿婆手里，逼出一个能让自己上船或留步的由头。",
+          "stakes": "如果她连碰都不碰，我就再没有话可以递过去了，只能自己走上跳板或者转身走。",
+          "ability": "will",
+          "traitName": null,
+          "targetId": "apo",
+          "targetLabel": "阿婆",
+          "status": "resolved",
+          "penalties": 0,
+          "penaltyNotes": [],
+          "generatedBy": "llm",
+          "createdAt": "2026-10-28T00:49:28.431Z",
+          "roll": {
+            "natural": 8,
+            "ability": "will",
+            "abilityValue": 5,
+            "traitName": null,
+            "traitBonus": 0,
+            "conditionBonus": -8,
+            "conditionNotes": [
+              "按着票等回话 -2",
+              "话悬在窗口 -2",
+              "等不到点头 -2",
+              "话落在地上 -2",
+              "手插在兜里 -1"
+            ],
+            "situationalBonus": -1,
+            "penalty": 0,
+            "penaltyNotes": [],
+            "total": 4,
+            "dc": 14,
+            "opponentTotal": null,
+            "margin": -10,
+            "tier": "soft_failure",
+            "criticalByNatural20": false
+          },
+          "outcome": "soft_failure",
+          "outcomeNote": ""
+        }
+      ],
+      "adjudications": [
+        {
+          "actionId": "act_a954e94b8a60",
+          "difficultyLabel": "标准",
+          "dc": 13,
+          "modifier": 0,
+          "reason": "把票递到对方手背上是一个具体动作，但她要的是他低头或开口问“这票给谁”——这得绕过她自己不肯说的那句话，靠一张纸替他问。",
+          "risk": "他手不接、眼也不落，票停在窗台外沿两头不着，她再没有第二个由头把它推第二次。"
+        },
+        {
+          "actionId": "act_cbe80166d5e9",
+          "difficultyLabel": "标准",
+          "dc": 14,
+          "modifier": -1,
+          "reason": "推回票是明确表态，可他要的是阿婆碰一下或说出这票算谁的；而“我拿不拿都一样”这句把话又裹回了玩笑里，反而给了她不答的余地。",
+          "risk": "她只把票往窗里按住，不回这句话，他就再没有别的说法可递，只能自己决定上跳板还是转身。"
+        }
+      ],
+      "reactions": [],
+      "narration": "阿婆的两根手指把空白票推过窗台外沿，纸角碰到林生垂着的手背。她的手没有松，眼睛抬起来落在他脸上。林生低下头，看了一眼那张票——看的是那片没有日期的空白，还是别的什么，从外面看不出来。\n\n他把手从兜里抽出来，捏住票的另一头。绕过窗台上那道旧刻痕，他把它推回阿婆掌心朝下的手边，纸角挨着她的指根。手没有收回去，停在票边上。“这张……还是您收着吧。我拿不拿，好像都一样。”\n\n阿婆的手没有动。没有捏，也没有躲，指根就贴着那片纸角。售票亭的灯影从她手背上滑过去，两张票的影子在木台面上叠成一张，边缘被风吹得一起掀了掀，又一起落下来。\n\n江上那台发动机升了半格，停在那里，接着又落回最低的一档。雾已经漫过跳板的末节，白舷只剩一截影子。跳板还搭着，没有人去收。船没有拉笛。\n\n挂钟的秒针还压在十二上。谁都没有再开口，谁也没有把手收回去。",
+      "outcomeNotes": [
+        {
+          "characterId": "apo",
+          "note": "她把空白票推到林生手背边却没有松手，话说出了口，但林生没有拿走，也没有问这张票是给谁的。"
+        },
+        {
+          "characterId": "lin_sheng",
+          "note": "他把空白票捏起来推回阿婆手边并说明自己拿不拿都一样，阿婆既不碰票也不应声，他的手停在纸角上没有收回。"
+        }
+      ],
+      "stateChanges": {
+        "characters": [
+          {
+            "characterId": "apo",
+            "stressDelta": 1,
+            "conditionsAdd": [
+              {
+                "name": "推出去的票被退回来",
+                "description": "手指还压在票边，既不收回也不捏紧；再开口会比刚才更难",
+                "modifier": -2,
+                "kind": "emotion",
+                "visibility": "private"
+              },
+              {
+                "name": "掌心贴着纸角不动",
+                "description": "手停在窗台上没有收回，旁人看得出她在等",
+                "modifier": -1,
+                "kind": "other",
+                "visibility": "public"
+              }
+            ],
+            "conditionsRemove": [
+              "掌心朝下停在票边"
+            ],
+            "inventoryAdd": [],
+            "inventoryRemove": [],
+            "privateNote": "这张票她打了很多年，今晚第一次递到别人手上，又被原样送回来，停在离她指根一寸的地方。",
+            "memory": {
+              "summary": "他说“我拿不拿，好像都一样”。",
+              "importance": 3
+            }
+          },
+          {
+            "characterId": "lin_sheng",
+            "stressDelta": 1,
+            "conditionsAdd": [
+              {
+                "name": "手停在窗台上没收回",
+                "description": "推完票手不肯撤回，姿势僵着，随时会再被问一次",
+                "modifier": -1,
+                "kind": "other",
+                "visibility": "public"
+              },
+              {
+                "name": "话说了没人接",
+                "description": "退票和退让都落了空，再往前一步的力气被抽掉一半",
+                "modifier": -2,
+                "kind": "emotion",
+                "visibility": "private"
+              }
+            ],
+            "conditionsRemove": [
+              "手插在兜里"
+            ],
+            "inventoryAdd": [],
+            "inventoryRemove": [],
+            "privateNote": "票推回去的那一刻他其实希望她按住它，哪怕只是说一句不行。她什么都没做。",
+            "memory": {
+              "summary": "她说“没日子的，哪天都能用”。",
+              "importance": 3
+            }
+          }
+        ],
+        "world": {
+          "factsAdd": [
+            "23:55 到了，渡轮没有离岸：发动机升了半格又落回最低一档，跳板仍搭着，没人去收。",
+            "空白票被林生推回阿婆手边，两人都没有再拿起它。"
+          ],
+          "factsRemove": [],
+          "flagsSet": {
+            "ferry_held_in_fog": true,
+            "blank_ticket_at_apo_hand": true
+          },
+          "pressure": "船在雾里以最低一档等着，跳板还没收；空白票停在阿婆指根旁边，两个人的手都还搁在窗台上。",
+          "sceneTitle": "跳板还没收"
+        }
+      },
+      "nextTimeJump": {
+        "elapsedMinutes": 5,
+        "label": "发动机落回最低一档后的第五分钟",
+        "reason": "船因雾停在原地没有离岸，两个人都没有收手，这段沉默把时间拖过去五分钟。"
+      },
+      "ending": null,
+      "createdAt": "2026-10-28T00:49:20.576Z",
+      "completedAt": "2026-10-28T00:49:46.116Z"
+    }
+  ],
+  "progress": {
+    "phase": "idle",
+    "label": "等待继续",
+    "updatedAt": "2026-10-28T00:49:46.119Z"
+  },
+  "llm": {
+    "calls": 30,
+    "promptTokens": 88813,
+    "completionTokens": 25589,
+    "cachedTokens": 30592,
+    "reasoningTokens": 12032,
+    "totalTokens": 114402,
+    "failures": 0
+  },
+  "ending": null,
+  "error": null,
+  "startedAt": "2026-10-28T00:45:24.974Z"
+}

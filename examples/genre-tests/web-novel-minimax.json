@@ -1,0 +1,1144 @@
+{
+  "version": 1,
+  "id": "run_cd374ca96cc5",
+  "seed": "minimax-web-01",
+  "status": "paused",
+  "scenario": {
+    "id": "genre-web-novel",
+    "title": "退婚宴",
+    "subtitle": "三年之期已到，我来退个婚，顺便退个宗门。",
+    "kicker": "类型实验 · 玄幻网文 · 退婚流",
+    "isPreset": true,
+    "world": {
+      "title": "退婚宴",
+      "era": "九州 · 青云宗 · 外门演武场",
+      "tone": "网文爽文节奏：短句、对白、压迫与反击；每一刻要有新的筹码和新的打脸；不要慢热，不要文绉绉；允许夸张，但每次反击都要有代价。",
+      "setting": "青云宗外门演武场，红绸还没撤，三百宾客，长老在座。三年前，萧尘灵根被废，被林家当众退婚、逐出宗门；今天他回来了，穿一身洗旧的黑衣，手里提着一坛酒。山门外下着雪。\n\n林震天要在今天把女儿林清雪许给青云宗少宗主顾长歌，并逼萧尘当众跪下签退婚书。萧尘手里有一封林家通敌的信，还有一柄用布裹着的旧剑。\n\n这个世界的规矩很简单：修为高的说话，面子大的定规矩。今晚，两样都要被当众掀翻。",
+      "location": "青云宗外门演武场：高台、红绸、火盆、宾客席、退婚书。所有人都在这里。",
+      "dateLabel": "三年之期",
+      "startClock": "18:00",
+      "premise": "退婚宴上，林震天要萧尘当众跪下签退婚书；萧尘提着一坛酒走进来，说“退婚可以，先把我萧家的东西还回来”。",
+      "opening": "18:00。雪落在青云宗外门的青石阶上，很快被三百双靴子踩成泥。\n\n演武场中央摆着红绸和火盆，退婚书压在案上，墨迹还没干。林震天坐在主位，手里转着两只玉核桃；顾长歌站在他身侧，剑穗上系着青云宗的玉牌。林清雪穿一身大红嫁衣，站在退婚书旁边，脸上没有表情。\n\n场门被推开。萧尘提着一坛酒走进来，黑衣洗得发白，肩上落着雪。他环顾一圈，笑了。\n\n“三年之期已到。”他说，“退婚可以。先把我萧家的东西还回来。”\n\n林震天手里的玉核桃停了。",
+      "directorNotes": "这是退婚流爽文，不是文学家庭戏。每一刻都要有压迫、反击、筹码和围观者的反应；不要让萧尘一开始就把底牌全亮，也不要让反派一次就倒。\n\n林清雪不是工具人，她有自己的恐惧和选择；顾长歌不是纯草包，他的“青云剑意”有真东西，但根基不稳；林震天是老狐狸，先礼后兵。\n\n4 个时刻。每一刻至少要有一个人当众改变立场或亮出一张新牌。结尾不一定要灭门，但必须有人跪下、有人撕毁婚书、有人露出底牌。",
+      "hiddenCanon": "（仅总控可见，是人物与世界的骨架，不要求照本宣科。）\n\n1. 萧尘三年前被林震天废灵根，扔进乱葬岗，被师父残魂所救；他现在是筑基巅峰，伪装成凡人；手里有林震天通敌的信。\n\n2. 林清雪当年退婚是被逼的；她母亲被林震天囚禁在后山。她今晚带了退婚书和一枚解毒丹，想保萧尘一命。\n\n3. 顾长歌的少宗主之位是林家用资源换来的；他的“青云剑诀”只学了皮毛，遇到真正的剑意会露馅。\n\n4. 萧尘的师父是青云宗上一代剑尊，被林震天和顾家联手害死；剑谱在萧尘手里。\n\n5. 今晚不会灭门；但会有人当众跪下、有人撕毁婚书、有人露出底牌。不要替读者提前爽完。",
+      "initialFacts": [
+        "今天是萧尘与林清雪的退婚宴。",
+        "三年前萧尘灵根被废，被逐出林家。",
+        "林震天要萧尘当众跪下签退婚书。",
+        "青云宗少宗主顾长歌是林家的靠山。",
+        "山门外下着雪，宾客三百。"
+      ],
+      "countdown": "退婚书落印之前"
+    },
+    "characters": [
+      {
+        "id": "xiao_chen",
+        "name": "萧尘",
+        "title": "被逐出宗门的废物 · 归来者",
+        "age": "22",
+        "pronouns": "他",
+        "publicProfile": "三年前被逐出青云宗的废物，今天穿一身洗旧黑衣回来；没人知道他这三年去了哪里。",
+        "appearance": "黑衣，肩上落雪，手里提着一坛酒；腰间裹着一柄没有剑鞘的旧剑。",
+        "personality": "嘴毒、能忍、记仇；越怒越笑；他不是圣人，但不会拿无辜的人开刀。",
+        "desire": "让林家当众收回退婚书，并查出三年前废他灵根的人。",
+        "fear": "再次被踩进泥里；也怕自己变成和当年那些人一样的人。",
+        "secret": "他已经得到上古剑尊传承，修为远超表面；手里有林家通敌的信和师父的剑谱。",
+        "abilities": {
+          "physique": 8,
+          "agility": 7,
+          "perception": 8,
+          "intellect": 7,
+          "will": 10,
+          "presence": 6
+        },
+        "traits": [
+          {
+            "name": "三年不跪",
+            "description": "越是被逼着低头，越站得稳。",
+            "bonus": 2,
+            "ability": "will"
+          },
+          {
+            "name": "藏锋",
+            "description": "能看出一个人出剑前那半寸的犹豫。",
+            "bonus": 2,
+            "ability": "perception"
+          }
+        ],
+        "possessions": [
+          "一坛酒",
+          "旧剑",
+          "通敌信"
+        ],
+        "relationships": [
+          {
+            "targetId": "lin_qingxue",
+            "label": "前未婚妻 / 当众退婚的人",
+            "attitude": "她当年一句话没说，我不信她全是自愿。"
+          },
+          {
+            "targetId": "lin_zhentian",
+            "label": "林家家主 / 废他灵根的人",
+            "attitude": "他欠我师父一条命。"
+          },
+          {
+            "targetId": "gu_changge",
+            "label": "青云宗少宗主 / 林家的靠山",
+            "attitude": "他的剑意是借来的。"
+          }
+        ],
+        "memories": [
+          {
+            "summary": "三年前，林震天当众废了他的灵根，把他扔进乱葬岗。",
+            "detail": "那天下着雨，他在泥里躺了一夜。",
+            "importance": 5
+          },
+          {
+            "summary": "师父的残魂在乱葬岗找到他，只留下一句“别跪”。",
+            "detail": "然后师父就散了。",
+            "importance": 5
+          },
+          {
+            "summary": "他这三年在秘境里练剑，每天只做一件事：把那一剑练到能出鞘。",
+            "detail": "今天他还没拔剑。",
+            "importance": 4
+          }
+        ],
+        "conditions": []
+      },
+      {
+        "id": "lin_qingxue",
+        "name": "林清雪",
+        "title": "林家大小姐 · 今日退婚宴的主角",
+        "age": "20",
+        "pronouns": "她",
+        "publicProfile": "林家大小姐，青云宗外门第一美人；三年前当众退婚，今天要嫁给顾长歌。",
+        "appearance": "大红嫁衣，手里攥着退婚书，指节发白；袖口里藏着一枚解毒丹。",
+        "personality": "冷、稳、把恐惧压在心里；她不是恋爱脑，也不是恶毒女配。",
+        "desire": "保住母亲，退婚可以，但不想萧尘死。",
+        "fear": "萧尘当众说出真相，母亲被家族灭口。",
+        "secret": "她知道三年前废灵根的是她父亲，一直愧疚；她今晚带了退婚书和解毒丹。",
+        "abilities": {
+          "physique": 4,
+          "agility": 7,
+          "perception": 7,
+          "intellect": 6,
+          "will": 5,
+          "presence": 8
+        },
+        "traits": [
+          {
+            "name": "冷脸",
+            "description": "越慌越没有表情。",
+            "bonus": 2,
+            "ability": "presence"
+          },
+          {
+            "name": "袖中丹",
+            "description": "袖子里总藏着一枚救急的药。",
+            "bonus": 1,
+            "ability": "agility"
+          }
+        ],
+        "possessions": [
+          "退婚书",
+          "解毒丹",
+          "一枚旧玉佩"
+        ],
+        "relationships": [
+          {
+            "targetId": "xiao_chen",
+            "label": "前未婚夫 / 被她当众退婚的人",
+            "attitude": "我不求他原谅，只求他今晚别死。"
+          },
+          {
+            "targetId": "lin_zhentian",
+            "label": "父亲 / 囚禁她母亲的人",
+            "attitude": "他是我父亲，也是囚禁我母亲的人。"
+          },
+          {
+            "targetId": "gu_changge",
+            "label": "青云宗少宗主 / 她今日要嫁的人",
+            "attitude": "他的眼睛里没有我，只有青云宗。"
+          }
+        ],
+        "memories": [
+          {
+            "summary": "三年前退婚那晚，她被父亲关在祠堂里，天亮才放出来。",
+            "detail": "她听说萧尘被扔进了乱葬岗。",
+            "importance": 5
+          },
+          {
+            "summary": "母亲被带走那天，只来得及塞给她一枚旧玉佩。",
+            "detail": "玉佩内侧刻着“活下去”。",
+            "importance": 4
+          },
+          {
+            "summary": "萧尘在雨里看她的最后一眼，没有恨，只有不解。",
+            "detail": "她做了三年噩梦。",
+            "importance": 4
+          }
+        ],
+        "conditions": []
+      },
+      {
+        "id": "lin_zhentian",
+        "name": "林震天",
+        "title": "林家家主 · 青云宗外门执事",
+        "age": "45",
+        "pronouns": "他",
+        "publicProfile": "林家家主，青云宗外门执事，笑面虎；三年前亲手把萧尘逐出林家。",
+        "appearance": "锦袍，玉核桃，腰间挂着家主令牌；笑的时候眼睛不笑。",
+        "personality": "利益至上、先礼后兵、最怕当众失控；他相信“面子就是修为”。",
+        "desire": "借退婚宴攀上青云宗少宗主，吞掉萧家遗产。",
+        "fear": "萧尘手里有证据。",
+        "secret": "三年前他亲手废了萧尘灵根，并伪造了萧家通敌的证据；他囚禁了林清雪的母亲。",
+        "abilities": {
+          "physique": 6,
+          "agility": 5,
+          "perception": 6,
+          "intellect": 8,
+          "will": 6,
+          "presence": 8
+        },
+        "traits": [
+          {
+            "name": "家主威压",
+            "description": "一句话就能让外门弟子跪下。",
+            "bonus": 2,
+            "ability": "presence"
+          },
+          {
+            "name": "算账",
+            "description": "谁欠他什么，他记得比账本清。",
+            "bonus": 2,
+            "ability": "intellect"
+          }
+        ],
+        "possessions": [
+          "玉核桃",
+          "家主令牌",
+          "退婚书印鉴"
+        ],
+        "relationships": [
+          {
+            "targetId": "xiao_chen",
+            "label": "萧家余孽 / 今天的废物",
+            "attitude": "一个废物，也配跟我谈条件。"
+          },
+          {
+            "targetId": "lin_qingxue",
+            "label": "女儿 / 林家的筹码",
+            "attitude": "她是我女儿，也是林家的筹码。"
+          },
+          {
+            "targetId": "gu_changge",
+            "label": "青云宗少宗主 / 林家的靠山",
+            "attitude": "青云宗的资源，不是白拿的。"
+          }
+        ],
+        "memories": [
+          {
+            "summary": "三年前废萧尘灵根时，萧尘没有求饶，只说了一句“你会后悔”。",
+            "detail": "他当时笑了。",
+            "importance": 4
+          },
+          {
+            "summary": "萧家灭门那晚，他亲手烧了萧家的族谱。",
+            "detail": "有一页没烧干净，他留了三年。",
+            "importance": 5
+          },
+          {
+            "summary": "青云宗长老答应他，只要退婚宴办成，就举荐他进内门。",
+            "detail": "他等这一天等了三年。",
+            "importance": 4
+          }
+        ],
+        "conditions": []
+      },
+      {
+        "id": "gu_changge",
+        "name": "顾长歌",
+        "title": "青云宗少宗主 · 剑道天才",
+        "age": "26",
+        "pronouns": "他",
+        "publicProfile": "青云宗少宗主，白衣，剑穗玉牌；宗门里都说他是百年一遇的剑道天才。",
+        "appearance": "白衣，玉冠，剑穗上系着青云宗玉牌；笑起来很温和。",
+        "personality": "傲慢、爱面子、习惯被捧着；他不是草包，但根基不稳，最怕当众露怯。",
+        "desire": "在众人面前踩死萧尘，抱得美人归。",
+        "fear": "萧尘让他当众丢脸。",
+        "secret": "他的修为靠丹药堆出来，根基不稳；他其实怕萧尘师父留下的剑谱。",
+        "abilities": {
+          "physique": 7,
+          "agility": 8,
+          "perception": 5,
+          "intellect": 6,
+          "will": 4,
+          "presence": 7
+        },
+        "traits": [
+          {
+            "name": "青云剑意",
+            "description": "起手漂亮，剑光很足。",
+            "bonus": 2,
+            "ability": "agility"
+          },
+          {
+            "name": "少宗主的名头",
+            "description": "只要报出青云宗，大多数人会先退半步。",
+            "bonus": 2,
+            "ability": "presence"
+          }
+        ],
+        "possessions": [
+          "青云剑",
+          "少宗主玉牌",
+          "一瓶聚气丹"
+        ],
+        "relationships": [
+          {
+            "targetId": "xiao_chen",
+            "label": "废物 / 今晚的垫脚石",
+            "attitude": "一个废人，也敢在我面前提剑。"
+          },
+          {
+            "targetId": "lin_qingxue",
+            "label": "林家大小姐 / 他今日要娶的人",
+            "attitude": "她迟早是我的人。"
+          },
+          {
+            "targetId": "lin_zhentian",
+            "label": "林家家主 / 顾家的附庸",
+            "attitude": "他不过是我顾家的一条狗。"
+          }
+        ],
+        "memories": [
+          {
+            "summary": "师父夸他“百年一遇”那天，他其实连剑诀第三式都没练成。",
+            "detail": "师父没看出来，或者不想看出来。",
+            "importance": 4
+          },
+          {
+            "summary": "丹药反噬的那个晚上，他吐了半盆血，没告诉任何人。",
+            "detail": "第二天他照样白衣登台。",
+            "importance": 5
+          },
+          {
+            "summary": "他见过萧尘师父的剑谱，只看了一页，就再也没睡着。",
+            "detail": "那一页上的剑意，他到现在也画不出来。",
+            "importance": 4
+          }
+        ],
+        "conditions": []
+      }
+    ],
+    "rules": {
+      "maxBeats": 4,
+      "difficultyGuidance": "当众施压、夺物、逼跪 DC 13–16；在长老和三百宾客面前翻盘 DC 18–22；真正让老狐狸失态的证据 DC 20+。不要让萧尘随随便便就赢；每次打脸都要付出代价。",
+      "mode": "trpg"
+    }
+  },
+  "settings": {
+    "maxBeats": 4,
+    "autoLimit": 4,
+    "thinking": "auto",
+    "model": "MiniMax-M3.1-Flash"
+  },
+  "createdAt": "2026-10-27T11:49:12.289Z",
+  "updatedAt": "2026-10-27T12:02:10.794Z",
+  "clock": {
+    "minutes": 1088,
+    "display": "18:08",
+    "dateLabel": "三年之期"
+  },
+  "world": {
+    "publicFacts": [
+      "今天是萧尘与林清雪的退婚宴。",
+      "三年前萧尘灵根被废，被逐出林家。",
+      "林震天要萧尘当众跪下签退婚书。",
+      "青云宗少宗主顾长歌是林家的靠山。",
+      "山门外下着雪，宾客三百。",
+      "林清雪当众归还萧家旧玉佩，宣布退婚书作废并拒绝跪签。",
+      "三位长老开始共同核验通敌信；在验明之前，退婚书暂缓落印。"
+    ],
+    "flags": {
+      "letter_verification_pending": "三位长老核验纸张、笔迹与印鉴",
+      "marriage_document_print_suspended": "林清雪拒签，林震天亦下令暂停落印",
+      "jade_returned_to_xiao_chen": "true",
+      "gu_sword_drawn": "三寸"
+    },
+    "pressure": "白眉长老已当众认信为真，林震天必须在宗印落下前把“伪造”翻成“来源可疑”，而萧尘必须给出能当众站住的出处与证人。",
+    "sceneTitle": "印鉴验真"
+  },
+  "characters": {
+    "xiao_chen": {
+      "id": "xiao_chen",
+      "conditions": [
+        {
+          "name": "萧家玉佩归手",
+          "description": "旧玉佩已当众归还并由萧尘收下，可作为萧家旧物凭证。",
+          "modifier": 1,
+          "kind": "boon",
+          "id": "cond_37c5199ada77",
+          "sourceBeat": 0
+        },
+        {
+          "name": "信件出处受质证",
+          "description": "三位长老正在验信，林震天要求萧尘当众交代藏信人与三年经过。",
+          "modifier": -2,
+          "kind": "emotion",
+          "abilities": [
+            "will",
+            "intellect"
+          ],
+          "id": "cond_ee7366255bde",
+          "sourceBeat": 0
+        }
+      ],
+      "stress": 1,
+      "memories": [
+        {
+          "id": "mem_a1ef3331dcae",
+          "at": "三年之期",
+          "beatIndex": null,
+          "summary": "三年前，林震天当众废了他的灵根，把他扔进乱葬岗。",
+          "detail": "那天下着雨，他在泥里躺了一夜。",
+          "importance": 5,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_87b8910ce953",
+          "at": "三年之期",
+          "beatIndex": null,
+          "summary": "师父的残魂在乱葬岗找到他，只留下一句“别跪”。",
+          "detail": "然后师父就散了。",
+          "importance": 5,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_2e55fe736bbe",
+          "at": "三年之期",
+          "beatIndex": null,
+          "summary": "他这三年在秘境里练剑，每天只做一件事：把那一剑练到能出鞘。",
+          "detail": "今天他还没拔剑。",
+          "importance": 4,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_f1a990f24b60",
+          "at": "18:00",
+          "beatIndex": 0,
+          "summary": "退婚书不落印，先验林家通敌之信。",
+          "detail": "风卷着雪沫撞进演武场。萧尘提坛穿过青石路，径直走到案前，从袖中抽出通敌信，重重搁在退婚书旁。纸角压住未干墨迹，墨痕立刻洇开。他始终站着，抬眼盯住林震天：“林家主，落印之前，最好先看看这封信。敢读，还是不敢？”火盆里的火星炸开，三百人的低语瞬间消失。\n\n林震天没有碰信，反而退开半步，请三位长老共同验看纸张、笔迹与印鉴。他先定下规矩：“此事未清之前，谁也不准落印。”随后逼问萧尘信件出处、藏信人与三年经过；少一句，这封便是伪报。信被摆上台面，却还没人替他作证。他原本逼问底牌的后手被截断，局势却被这一招拖进公开验信。\n\n林清雪从袖中取出旧玉佩，压在退婚书正中，… 只有你知道：玉佩已经收回，但信上的出处与藏信人仍必须当众说清。",
+          "importance": 4,
+          "kind": "observation",
+          "source": "gm"
+        }
+      ],
+      "inventory": [
+        "一坛酒",
+        "旧剑",
+        "通敌信",
+        "萧家旧玉佩"
+      ],
+      "flags": {}
+    },
+    "lin_qingxue": {
+      "id": "lin_qingxue",
+      "conditions": [
+        {
+          "name": "公开拒签退婚书",
+          "description": "已当众宣布退婚书作废并拒绝落印，公开与林家立场分裂。",
+          "modifier": 1,
+          "kind": "boon",
+          "abilities": [
+            "presence"
+          ],
+          "id": "cond_b49f04fbccad",
+          "sourceBeat": 0
+        },
+        {
+          "name": "林家席上反压",
+          "description": "林家宾客与家主同时施压，其当众维护萧尘的选择将承受直接反噬。",
+          "modifier": -1,
+          "kind": "emotion",
+          "abilities": [
+            "will"
+          ],
+          "id": "cond_57ae98ce8711",
+          "sourceBeat": 0
+        }
+      ],
+      "stress": 2,
+      "memories": [
+        {
+          "id": "mem_cb403d3dcb6c",
+          "at": "三年之期",
+          "beatIndex": null,
+          "summary": "三年前退婚那晚，她被父亲关在祠堂里，天亮才放出来。",
+          "detail": "她听说萧尘被扔进了乱葬岗。",
+          "importance": 5,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_180493229024",
+          "at": "三年之期",
+          "beatIndex": null,
+          "summary": "母亲被带走那天，只来得及塞给她一枚旧玉佩。",
+          "detail": "玉佩内侧刻着“活下去”。",
+          "importance": 4,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_2efdbec5aade",
+          "at": "三年之期",
+          "beatIndex": null,
+          "summary": "萧尘在雨里看她的最后一眼，没有恨，只有不解。",
+          "detail": "她做了三年噩梦。",
+          "importance": 4,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_6e40b9727586",
+          "at": "18:00",
+          "beatIndex": 0,
+          "summary": "萧尘不欠林家一跪。",
+          "detail": "风卷着雪沫撞进演武场。萧尘提坛穿过青石路，径直走到案前，从袖中抽出通敌信，重重搁在退婚书旁。纸角压住未干墨迹，墨痕立刻洇开。他始终站着，抬眼盯住林震天：“林家主，落印之前，最好先看看这封信。敢读，还是不敢？”火盆里的火星炸开，三百人的低语瞬间消失。\n\n林震天没有碰信，反而退开半步，请三位长老共同验看纸张、笔迹与印鉴。他先定下规矩：“此事未清之前，谁也不准落印。”随后逼问萧尘信件出处、藏信人与三年经过；少一句，这封便是伪报。信被摆上台面，却还没人替他作证。他原本逼问底牌的后手被截断，局势却被这一招拖进公开验信。\n\n林清雪从袖中取出旧玉佩，压在退婚书正中，… 只有你知道：她把退婚书推回萧尘一侧，也把自己推到了父亲对面。",
+          "importance": 4,
+          "kind": "observation",
+          "source": "gm"
+        }
+      ],
+      "inventory": [
+        "退婚书",
+        "解毒丹",
+        "一枚旧玉佩"
+      ],
+      "flags": {}
+    },
+    "lin_zhentian": {
+      "id": "lin_zhentian",
+      "conditions": [
+        {
+          "name": "借长老验信反制",
+          "description": "已把烫手证据交给三位长老核验，暂时夺回验信与问证的主动。",
+          "modifier": 2,
+          "kind": "other",
+          "abilities": [
+            "presence",
+            "intellect"
+          ],
+          "id": "cond_18ad13fad463",
+          "sourceBeat": 0
+        },
+        {
+          "name": "落印被暂阻",
+          "description": "退婚书无法当场落印，林家主原本掌控的退婚流程被公开打断。",
+          "modifier": -2,
+          "kind": "emotion",
+          "abilities": [
+            "presence"
+          ],
+          "id": "cond_0be8628bd05c",
+          "sourceBeat": 0
+        }
+      ],
+      "stress": 0,
+      "memories": [
+        {
+          "id": "mem_99674dede6ba",
+          "at": "三年之期",
+          "beatIndex": null,
+          "summary": "三年前废萧尘灵根时，萧尘没有求饶，只说了一句“你会后悔”。",
+          "detail": "他当时笑了。",
+          "importance": 4,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_af284c2c4cc3",
+          "at": "三年之期",
+          "beatIndex": null,
+          "summary": "萧家灭门那晚，他亲手烧了萧家的族谱。",
+          "detail": "有一页没烧干净，他留了三年。",
+          "importance": 5,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_a2e8120570d0",
+          "at": "三年之期",
+          "beatIndex": null,
+          "summary": "青云宗长老答应他，只要退婚宴办成，就举荐他进内门。",
+          "detail": "他等这一天等了三年。",
+          "importance": 4,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_e57f4842ce40",
+          "at": "18:00",
+          "beatIndex": 0,
+          "summary": "真相未清之前，谁也不准落印。",
+          "detail": "风卷着雪沫撞进演武场。萧尘提坛穿过青石路，径直走到案前，从袖中抽出通敌信，重重搁在退婚书旁。纸角压住未干墨迹，墨痕立刻洇开。他始终站着，抬眼盯住林震天：“林家主，落印之前，最好先看看这封信。敢读，还是不敢？”火盆里的火星炸开，三百人的低语瞬间消失。\n\n林震天没有碰信，反而退开半步，请三位长老共同验看纸张、笔迹与印鉴。他先定下规矩：“此事未清之前，谁也不准落印。”随后逼问萧尘信件出处、藏信人与三年经过；少一句，这封便是伪报。信被摆上台面，却还没人替他作证。他原本逼问底牌的后手被截断，局势却被这一招拖进公开验信。\n\n林清雪从袖中取出旧玉佩，压在退婚书正中，… 只有你知道：只要验信尚无结论，退婚书就还没落印，林家的规矩仍握在他手里。",
+          "importance": 4,
+          "kind": "observation",
+          "source": "gm"
+        }
+      ],
+      "inventory": [
+        "玉核桃",
+        "家主令牌",
+        "退婚书印鉴"
+      ],
+      "flags": {}
+    },
+    "gu_changge": {
+      "id": "gu_changge",
+      "conditions": [
+        {
+          "name": "当众逼跪未成",
+          "description": "剑锋未能迫使萧尘跪下或弃剑，公开威势遭到正面顶住。",
+          "modifier": -2,
+          "kind": "emotion",
+          "abilities": [
+            "presence"
+          ],
+          "id": "cond_db3cf3bed2b8",
+          "sourceBeat": 0
+        }
+      ],
+      "stress": 2,
+      "memories": [
+        {
+          "id": "mem_e0ddae0458c2",
+          "at": "三年之期",
+          "beatIndex": null,
+          "summary": "师父夸他“百年一遇”那天，他其实连剑诀第三式都没练成。",
+          "detail": "师父没看出来，或者不想看出来。",
+          "importance": 4,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_669cc1d292ae",
+          "at": "三年之期",
+          "beatIndex": null,
+          "summary": "丹药反噬的那个晚上，他吐了半盆血，没告诉任何人。",
+          "detail": "第二天他照样白衣登台。",
+          "importance": 5,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_be74381419a3",
+          "at": "三年之期",
+          "beatIndex": null,
+          "summary": "他见过萧尘师父的剑谱，只看了一页，就再也没睡着。",
+          "detail": "那一页上的剑意，他到现在也画不出来。",
+          "importance": 4,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_798d28be0a97",
+          "at": "18:00",
+          "beatIndex": 0,
+          "summary": "萧尘既未跪，也未弃剑。",
+          "detail": "风卷着雪沫撞进演武场。萧尘提坛穿过青石路，径直走到案前，从袖中抽出通敌信，重重搁在退婚书旁。纸角压住未干墨迹，墨痕立刻洇开。他始终站着，抬眼盯住林震天：“林家主，落印之前，最好先看看这封信。敢读，还是不敢？”火盆里的火星炸开，三百人的低语瞬间消失。\n\n林震天没有碰信，反而退开半步，请三位长老共同验看纸张、笔迹与印鉴。他先定下规矩：“此事未清之前，谁也不准落印。”随后逼问萧尘信件出处、藏信人与三年经过；少一句，这封便是伪报。信被摆上台面，却还没人替他作证。他原本逼问底牌的后手被截断，局势却被这一招拖进公开验信。\n\n林清雪从袖中取出旧玉佩，压在退婚书正中，… 只有你知道：他用剑锋压住了退路，却没压住萧尘的膝盖。",
+          "importance": 3,
+          "kind": "observation",
+          "source": "gm"
+        }
+      ],
+      "inventory": [
+        "青云剑",
+        "少宗主玉牌",
+        "一瓶聚气丹"
+      ],
+      "flags": {}
+    }
+  },
+  "beats": [
+    {
+      "id": "beat_36069a5c3209",
+      "index": 0,
+      "title": "旧账登门",
+      "phase": "complete",
+      "clock": {
+        "minutes": 1080,
+        "display": "18:00",
+        "dateLabel": "三年之期"
+      },
+      "timeJump": null,
+      "publicBrief": "山门外的雪被风卷进演武场，落地即化，三百名宾客的靴底把阶上残雪踩成黑泥。火盆里的松枝爆出火星，红绸被烤得微微起伏。萧尘立在青石路中央，洗旧黑衣肩头积雪，手里酒坛的封泥还沾着白霜；他身侧露出一截裹布旧剑。案上退婚书墨光未干，林震天指间的玉核桃骤然停住，主位两侧长老同时望来。顾长歌握住剑鞘，林清雪站在案旁未动。萧尘那句“萧家的东西还回来”落下后，满场低语尽数消失，只剩风卷红绸的猎响。",
+      "privateCues": [
+        {
+          "characterId": "xiao_chen",
+          "cue": "腰侧旧剑隔着粗布传来极轻的震颤，像在回应他压住的灵力；三年里，他已经能分辨这声颤意。袖中那封通敌信的折角硌着腕骨，提醒他今晚不是来喝完这坛酒就算了。"
+        },
+        {
+          "characterId": "lin_qingxue",
+          "cue": "袖内那枚解毒丹被掌心捂得发烫，圆硬边缘反复硌过腕骨。她闻到萧尘衣上旧血、冻土和劣酒混在一起的气味，认出那是三年前乱葬岗才有的土腥，喉间不由一紧。"
+        },
+        {
+          "characterId": "lin_zhentian",
+          "cue": "掌心那枚玉核桃的旧裂口正硌着皮肉，他清楚那桩通敌旧证是林家自己做的手脚。萧尘那句“萧家的东西”落下时，他第一次怀疑，对方或许不是来喝这坛酒的。"
+        },
+        {
+          "characterId": "gu_changge",
+          "cue": "剑穗玉牌被山风撞上鞘口，发出两声发虚的脆响；萧尘身侧那截裹布旧剑让他腕骨骤然发紧。青云剑诀沿经脉走过肩井，根基深处随即浮起熟悉的空浮感。"
+        }
+      ],
+      "pressure": "退婚书上的墨迹正在收干，再无人开口，落印便会替三年前的旧账盖棺。",
+      "sceneQuestion": "萧尘口中的“萧家的东西”究竟是什么，林震天会先认账、先验信，还是先逼他跪下？",
+      "gmNote": "本刻只把“萧家的东西”抛到台前，旧剑与通敌信留作后续筹码，先让林震天以规矩施压、顾长歌以剑试锋。",
+      "actions": [
+        {
+          "id": "act_1aca2169a14d",
+          "characterId": "xiao_chen",
+          "category": "交涉",
+          "summary": "当众亮出林家通敌信",
+          "description": "萧尘提坛穿过青石路，径直走到案前，将袖中的通敌信抽出，重重搁在退婚书旁，纸角压过未干的墨迹。他始终站着，抬眼盯住林震天。",
+          "dialogue": "林家主，落印之前，最好先看看这封信。敢读，还是不敢？",
+          "thought": "退婚书一旦落印，林家便能借宗门规矩把我按死。先把通敌信摆到众人眼前，逼林震天在落印前选择验信。",
+          "goalProgress": "将通敌旧账摆上公开台面，迫使林震天在退婚书落印前先回应证据。",
+          "stakes": "若信被毁或被修为压下，我便会失去这次当众翻盘的机会，再次被踩进泥里。",
+          "ability": "intellect",
+          "traitName": null,
+          "targetId": "lin_zhentian",
+          "targetLabel": "林震天",
+          "status": "resolved",
+          "penalties": -2,
+          "penaltyNotes": [
+            "分心应战 -2"
+          ],
+          "generatedBy": "llm",
+          "createdAt": "2026-10-27T11:50:10.314Z",
+          "roll": {
+            "natural": 12,
+            "ability": "intellect",
+            "abilityValue": 7,
+            "traitName": null,
+            "traitBonus": 0,
+            "conditionBonus": 0,
+            "conditionNotes": [],
+            "situationalBonus": 2,
+            "penalty": -2,
+            "penaltyNotes": [
+              "分心应战 -2"
+            ],
+            "total": 19,
+            "dc": null,
+            "opponentTotal": 20,
+            "margin": -1,
+            "tier": "soft_failure",
+            "criticalByNatural20": false
+          },
+          "outcome": "soft_failure",
+          "outcomeNote": ""
+        },
+        {
+          "id": "act_f72a613ef9f3",
+          "characterId": "lin_qingxue",
+          "category": "交涉",
+          "summary": "归还玉佩并拒绝跪签",
+          "description": "她从袖中取出旧玉佩，压在退婚书正中，却只把玉佩推向萧尘，另一只手仍按着婚书。她侧身站到萧尘与案之间，挡住逼近他的路。",
+          "dialogue": "你说的是这枚？三年前退婚的是我，今日这张退婚书，也该由我作废。萧尘，你不欠林家一跪，更不必签。玉佩若确属萧家旧物，我当着满场宾客还你。",
+          "thought": "萧尘偏在此时索物，袖中那枚旧玉佩多半才是他口中的“萧家的东西”。先把玉佩推回他面前，再当众划死“跪签退婚”这条路，逼父亲和顾长歌无法暗箱处理。",
+          "goalProgress": "以玉佩换萧尘一次公开回应，同时当众阻断父亲逼他跪签退婚的路。",
+          "stakes": "若这一手压不住父亲，我会失去婚书与玉佩这两件筹码，萧尘也会失去站着离开的最后机会。",
+          "ability": "presence",
+          "traitName": "冷脸",
+          "targetId": "xiao_chen",
+          "targetLabel": "萧尘",
+          "status": "resolved",
+          "penalties": 0,
+          "penaltyNotes": [],
+          "generatedBy": "llm",
+          "createdAt": "2026-10-27T11:51:10.269Z",
+          "roll": {
+            "natural": 17,
+            "ability": "presence",
+            "abilityValue": 8,
+            "traitName": "冷脸",
+            "traitBonus": 2,
+            "conditionBonus": 0,
+            "conditionNotes": [],
+            "situationalBonus": 1,
+            "penalty": 0,
+            "penaltyNotes": [],
+            "total": 28,
+            "dc": null,
+            "opponentTotal": 27,
+            "margin": 1,
+            "tier": "success",
+            "criticalByNatural20": false
+          },
+          "outcome": "success",
+          "outcomeNote": ""
+        },
+        {
+          "id": "act_2cb6f45a188a",
+          "characterId": "lin_zhentian",
+          "category": "交涉",
+          "summary": "逼萧尘当众亮出底牌",
+          "description": "林震天抬手压住案上的退婚书印鉴，将家主令牌扣在桌沿，随后走到青石路中央，与萧尘隔着三步相对。",
+          "dialogue": "慢着。你既说这是萧家的东西，便当众说清是什么、凭什么归你。拿上来，让在场长老验过；若拿不出真凭实证，就跪下签完退婚书，再谈萧家余产。",
+          "thought": "他这句话绝非叙旧。先逼他把所谓“萧家的东西”当众摆明，我才能看清他的筹码；若拿不出真凭实证，林家便能顺势把这场闹剧压回退婚书。",
+          "goalProgress": "先迫使萧尘公开亮出底牌，再借长老验看真伪夺回退婚宴的主动权。",
+          "stakes": "若那件东西被当众证实，我便会失去这桩婚事和青云宗的人情。",
+          "ability": "presence",
+          "traitName": "家主威压",
+          "targetId": "xiao_chen",
+          "targetLabel": "萧尘",
+          "status": "abandoned",
+          "penalties": 0,
+          "penaltyNotes": [],
+          "generatedBy": "llm",
+          "createdAt": "2026-10-27T11:50:10.523Z",
+          "outcome": null,
+          "outcomeNote": "为应对来袭而放弃了原本的行动。"
+        },
+        {
+          "id": "act_ae9a21c0a369",
+          "characterId": "gu_changge",
+          "category": "交涉",
+          "summary": "剑锋压回退婚旧规",
+          "description": "我从高台起身，白衣掠过案前，扣住剑鞘拔剑三寸，剑锋斜指萧尘脚前的青石。我隔着满座宾客盯住他。",
+          "dialogue": "萧尘，你记错了——三年前，是林家退婚、逐你出门。今日你若来观礼，就站着；若来讨债，就把剑扔开，跪下！",
+          "thought": "萧尘想把“萧家的东西”抛给满场宾客，我不能让他占住话头。先借少宗主名头和剑势将旧事压回“林家退婚”，逼他跪下；他若不拔旧剑，我便不碰那东西。",
+          "goalProgress": "我用宗门的名分和公开剑势夺回话头，将萧尘重新压回受辱废物的位置，保住今日婚宴的体面。",
+          "stakes": "若他当众顶住我，青云宗少宗主的威名和我在林家父女面前的颜面都会受损。",
+          "ability": "presence",
+          "traitName": "少宗主的名头",
+          "targetId": "xiao_chen",
+          "targetLabel": "萧尘",
+          "status": "resolved",
+          "penalties": 0,
+          "penaltyNotes": [],
+          "generatedBy": "llm",
+          "createdAt": "2026-10-27T11:50:10.841Z",
+          "roll": {
+            "natural": 13,
+            "ability": "presence",
+            "abilityValue": 7,
+            "traitName": "少宗主的名头",
+            "traitBonus": 2,
+            "conditionBonus": 0,
+            "conditionNotes": [],
+            "situationalBonus": 0,
+            "penalty": 0,
+            "penaltyNotes": [],
+            "total": 22,
+            "dc": null,
+            "opponentTotal": 27,
+            "margin": -5,
+            "tier": "soft_failure",
+            "criticalByNatural20": false
+          },
+          "outcome": "soft_failure",
+          "outcomeNote": ""
+        }
+      ],
+      "adjudications": [
+        {
+          "actionId": "act_1aca2169a14d",
+          "difficultyLabel": "艰巨",
+          "dc": 20,
+          "modifier": 2,
+          "reason": "通敌信内容真实且当着长老与三百宾客公开，足以迫使验信，但要让老狐狸当场失态并保住证据链仍极难。",
+          "risk": "信被当场撕毁或以家主权威封存，宾客转而认定萧尘伪造，三年前的旧案就此坐实。"
+        },
+        {
+          "actionId": "act_f72a613ef9f3",
+          "difficultyLabel": "困难",
+          "dc": 18,
+          "modifier": 1,
+          "reason": "旧玉佩提供可见物证，林清雪又以退婚当事人身份当众撤契，但要在长老面前公开违逆父亲并稳住局面并不容易。",
+          "risk": "林震天夺回玉佩并命人将林清雪押离案前，萧尘仍被逼着签署退婚书。"
+        },
+        {
+          "actionId": "act_2cb6f45a188a",
+          "difficultyLabel": "标准",
+          "dc": 15,
+          "modifier": 0,
+          "reason": "家主令牌与公开验物的程序能借长老和宾客之势形成标准施压，却不足以单靠话术逼萧尘交出底牌。",
+          "risk": "萧尘拿出足以坐实的证据，林家的婚盟与青云宗方面的人情当众受损。"
+        },
+        {
+          "actionId": "act_ae9a21c0a369",
+          "difficultyLabel": "标准",
+          "dc": 15,
+          "modifier": 0,
+          "reason": "拔剑示警和少宗主身份足以在公开场合制造压迫，但顾长歌的剑意尚不足以真正迫使意志极强的人跪下。",
+          "risk": "萧尘顶住剑锋后，顾长歌被迫在满场宾客前解释旧规，少宗主的威名与颜面扫地。"
+        }
+      ],
+      "reactions": [
+        {
+          "id": "rxn_e915d85026a8",
+          "characterId": "xiao_chen",
+          "incomingActionIds": [
+            "act_f72a613ef9f3",
+            "act_2cb6f45a188a",
+            "act_ae9a21c0a369"
+          ],
+          "continueOriginal": true,
+          "summary": "借势亮信，逼婚书停印",
+          "description": "我侧身绕到她肩侧，接住推来的玉佩，顺势把通敌信压在她手边的退婚书上；旧剑被我按回腰间，一步不退。林震天要凭据，我便请长老当众验信；顾长歌要跪规，我便问一句——真相未明，这跪是礼，还是认罪？",
+          "dialogue": "玉佩，萧家收回。退婚书想落印，先验这封信。顾长歌，你要规矩？好，规矩先验林家通敌之信，再定我该不该跪。",
+          "thought": "林清雪这一挡未必可信，却正好替我争到落印前的一息；林震天又亲口逼我亮凭据。借所有人的目光把信摊开便是，信可验，人不跪。",
+          "ability": "will",
+          "traitName": "三年不跪",
+          "stance": "顺势反压",
+          "createdAt": "2026-10-27T11:53:16.190Z",
+          "roll": {
+            "natural": 19,
+            "ability": "will",
+            "abilityValue": 10,
+            "traitName": "三年不跪",
+            "traitBonus": 2,
+            "conditionBonus": 0,
+            "conditionNotes": [],
+            "situationalBonus": 0,
+            "penalty": -4,
+            "penaltyNotes": [
+              "分心兼顾原行动 -2",
+              "同时应对 3 个行动 -2"
+            ],
+            "total": 27,
+            "incomingTotals": {
+              "act_f72a613ef9f3": 28,
+              "act_2cb6f45a188a": 0,
+              "act_ae9a21c0a369": 22
+            }
+          }
+        },
+        {
+          "id": "rxn_81e892dee74d",
+          "characterId": "lin_zhentian",
+          "incomingActionIds": [
+            "act_1aca2169a14d"
+          ],
+          "continueOriginal": false,
+          "summary": "借长老之手验信反制",
+          "description": "林震天没有碰信，反而退开半步，请三位长老共同验看。他压住退婚书印鉴，逼萧尘交代信件出处与藏信人，把烫手证据变成公开对质。",
+          "dialogue": "验。此信若涉通敌，老夫有何不敢？三位长老，请同验纸张、笔迹与印鉴。萧尘，你既敢递信，便亲口说清出处、藏信人与三年经过；少一句，这封便是伪报。至于退婚书——此事未清之前，谁也不准落印！",
+          "thought": "信若是真的，当众避读便等于认账；可也不能亲手接这烫手物。先把验信之权交给长老，再逼萧尘交代来路。",
+          "ability": "presence",
+          "traitName": "家主威压",
+          "stance": "借势反问",
+          "createdAt": "2026-10-27T11:52:22.758Z",
+          "roll": {
+            "natural": 10,
+            "ability": "presence",
+            "abilityValue": 8,
+            "traitName": "家主威压",
+            "traitBonus": 2,
+            "conditionBonus": 0,
+            "conditionNotes": [],
+            "situationalBonus": 0,
+            "penalty": 0,
+            "penaltyNotes": [],
+            "total": 20,
+            "incomingTotals": {
+              "act_1aca2169a14d": 19
+            }
+          }
+        }
+      ],
+      "narration": "风卷着雪沫撞进演武场。萧尘提坛穿过青石路，径直走到案前，从袖中抽出通敌信，重重搁在退婚书旁。纸角压住未干墨迹，墨痕立刻洇开。他始终站着，抬眼盯住林震天：“林家主，落印之前，最好先看看这封信。敢读，还是不敢？”火盆里的火星炸开，三百人的低语瞬间消失。\n\n林震天没有碰信，反而退开半步，请三位长老共同验看纸张、笔迹与印鉴。他先定下规矩：“此事未清之前，谁也不准落印。”随后逼问萧尘信件出处、藏信人与三年经过；少一句，这封便是伪报。信被摆上台面，却还没人替他作证。他原本逼问底牌的后手被截断，局势却被这一招拖进公开验信。\n\n林清雪从袖中取出旧玉佩，压在退婚书正中，却只把玉佩推向萧尘，另一只手仍按着婚书。她侧身站到萧尘与案之间，挡住逼跪的路：“你说的是这枚？三年前退婚的是我，今日这张退婚书，也该由我作废。萧尘，你不欠林家一跪，更不必签。玉佩若确属萧家旧物，我当着满场宾客还你。”玉佩越过纸面，落进萧尘掌心。\n\n萧尘接住玉佩，侧身绕到她肩侧，将信压在她手边的退婚书上，裹布旧剑按回腰间，一步不退：“玉佩，萧家收回。退婚书想落印，先验这封信。顾长歌，你要规矩？好，规矩先验林家通敌之信，再定我该不该跪。”高台上，顾长歌起身，白衣掠过案前，拔剑三寸，剑锋斜指萧尘脚前青石：“你记错了……站着观礼便站着，讨债就扔剑，跪下！”三寸锋芒没能换来一跪。萧尘既未跪，也未弃剑。\n\n林清雪仍按着婚书，站在两人之间。三位长老移到案前，围看那封信，纸张、笔迹、印鉴逐一核对。林震天把问题钉回萧尘：“出处，藏信人，三年经过。”萧尘尚未开口。退婚书的印悬在无人落下的位置，红绸猎响，剑锋也停在青石前。下一步，只等他答。",
+      "outcomeNotes": [
+        {
+          "characterId": "xiao_chen",
+          "note": "萧尘收回了旧玉佩并借公开验信逼停落印，但仍欠长老一场对信件来路的公开说明。"
+        },
+        {
+          "characterId": "lin_qingxue",
+          "note": "林清雪当众归还玉佩、宣布退婚书作废并挡住逼跪，代价是公开站到了林家对面。"
+        },
+        {
+          "characterId": "lin_zhentian",
+          "note": "林震天被迫借长老验信反制，落印暂失，却仍能以信的真伪和出处继续逼问萧尘。"
+        },
+        {
+          "characterId": "gu_changge",
+          "note": "顾长歌拔剑施压未能让萧尘跪下或弃剑，反而被公开验信和停印牵制。"
+        }
+      ],
+      "stateChanges": {
+        "characters": [
+          {
+            "characterId": "xiao_chen",
+            "stressDelta": 1,
+            "conditionsAdd": [
+              {
+                "name": "萧家玉佩归手",
+                "description": "旧玉佩已当众归还并由萧尘收下，可作为萧家旧物凭证。",
+                "modifier": 1,
+                "kind": "boon"
+              },
+              {
+                "name": "信件出处受质证",
+                "description": "三位长老正在验信，林震天要求萧尘当众交代藏信人与三年经过。",
+                "modifier": -2,
+                "kind": "emotion",
+                "abilities": [
+                  "will",
+                  "intellect"
+                ]
+              }
+            ],
+            "conditionsRemove": [],
+            "inventoryAdd": [
+              "萧家旧玉佩"
+            ],
+            "inventoryRemove": [],
+            "privateNote": "玉佩已经收回，但信上的出处与藏信人仍必须当众说清。",
+            "memory": {
+              "summary": "退婚书不落印，先验林家通敌之信。",
+              "importance": 4
+            }
+          },
+          {
+            "characterId": "lin_qingxue",
+            "stressDelta": 2,
+            "conditionsAdd": [
+              {
+                "name": "公开拒签退婚书",
+                "description": "已当众宣布退婚书作废并拒绝落印，公开与林家立场分裂。",
+                "modifier": 1,
+                "kind": "boon",
+                "abilities": [
+                  "presence"
+                ]
+              },
+              {
+                "name": "林家席上反压",
+                "description": "林家宾客与家主同时施压，其当众维护萧尘的选择将承受直接反噬。",
+                "modifier": -1,
+                "kind": "emotion",
+                "abilities": [
+                  "will"
+                ]
+              }
+            ],
+            "conditionsRemove": [],
+            "inventoryAdd": [],
+            "inventoryRemove": [
+              "萧家旧玉佩"
+            ],
+            "privateNote": "她把退婚书推回萧尘一侧，也把自己推到了父亲对面。",
+            "memory": {
+              "summary": "萧尘不欠林家一跪。",
+              "importance": 4
+            }
+          },
+          {
+            "characterId": "lin_zhentian",
+            "stressDelta": -1,
+            "conditionsAdd": [
+              {
+                "name": "借长老验信反制",
+                "description": "已把烫手证据交给三位长老核验，暂时夺回验信与问证的主动。",
+                "modifier": 2,
+                "kind": "other",
+                "abilities": [
+                  "presence",
+                  "intellect"
+                ]
+              },
+              {
+                "name": "落印被暂阻",
+                "description": "退婚书无法当场落印，林家主原本掌控的退婚流程被公开打断。",
+                "modifier": -2,
+                "kind": "emotion",
+                "abilities": [
+                  "presence"
+                ]
+              }
+            ],
+            "conditionsRemove": [],
+            "inventoryAdd": [],
+            "inventoryRemove": [],
+            "privateNote": "只要验信尚无结论，退婚书就还没落印，林家的规矩仍握在他手里。",
+            "memory": {
+              "summary": "真相未清之前，谁也不准落印。",
+              "importance": 4
+            }
+          },
+          {
+            "characterId": "gu_changge",
+            "stressDelta": 2,
+            "conditionsAdd": [
+              {
+                "name": "当众逼跪未成",
+                "description": "剑锋未能迫使萧尘跪下或弃剑，公开威势遭到正面顶住。",
+                "modifier": -2,
+                "kind": "emotion",
+                "abilities": [
+                  "presence"
+                ]
+              }
+            ],
+            "conditionsRemove": [],
+            "inventoryAdd": [],
+            "inventoryRemove": [],
+            "privateNote": "他用剑锋压住了退路，却没压住萧尘的膝盖。",
+            "memory": {
+              "summary": "萧尘既未跪，也未弃剑。",
+              "importance": 3
+            }
+          }
+        ],
+        "world": {
+          "factsAdd": [
+            "林清雪当众归还萧家旧玉佩，宣布退婚书作废并拒绝跪签。",
+            "三位长老开始共同核验通敌信；在验明之前，退婚书暂缓落印。"
+          ],
+          "factsRemove": [],
+          "flagsSet": {
+            "letter_verification_pending": "三位长老核验纸张、笔迹与印鉴",
+            "marriage_document_print_suspended": "林清雪拒签，林震天亦下令暂停落印",
+            "jade_returned_to_xiao_chen": "true",
+            "gu_sword_drawn": "三寸"
+          },
+          "pressure": "三位长老结束初步核验却尚未宣布结论，林震天继续逼问萧尘交代信件出处、藏信人与三年经过，顾长歌的剑仍停在青石前。",
+          "sceneTitle": "验信逼问"
+        }
+      },
+      "nextTimeJump": {
+        "elapsedMinutes": 8,
+        "label": "印鉴核毕前",
+        "reason": "三位长老需逐项核对纸张、笔迹与印鉴，并等萧尘当众交代信件来源。"
+      },
+      "ending": null,
+      "createdAt": "2026-10-27T11:49:12.292Z",
+      "completedAt": "2026-10-27T11:58:34.104Z"
+    }
+  ],
+  "progress": {
+    "phase": "idle",
+    "label": "第一刻完成；第二刻因 effort=max 过慢手动停止",
+    "updatedAt": "2026-10-27T12:05:22.623Z"
+  },
+  "llm": {
+    "calls": 14,
+    "promptTokens": 38022,
+    "completionTokens": 55872,
+    "cachedTokens": 11535,
+    "reasoningTokens": 49493,
+    "totalTokens": 93894,
+    "failures": 2
+  },
+  "ending": null,
+  "error": null,
+  "startedAt": "2026-10-27T11:49:12.291Z"
+}

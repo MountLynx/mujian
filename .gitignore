@@ -1,0 +1,43 @@
+# ── 环境变量与密钥 ────────────────────────────────────────────
+# 真实密钥只放在本地 .env；仓库里只保留 .env.example 模板
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+.npmrc
+.netrc
+
+# ── 依赖与构建缓存 ────────────────────────────────────────────
+node_modules/
+.pnpm-store/
+*.tsbuildinfo
+coverage/
+dist/
+
+# ── 运行时数据（保留空目录占位）──────────────────────────────
+# 推演 / 世界快照属于本机运行产物，不进版本库
+data/runs/*.json
+!data/runs/.gitkeep
+data/worlds/*.json
+!data/worlds/.gitkeep
+
+# ── 本地备份与工具产物 ────────────────────────────────────────
+backup/
+.zcode/
+
+# ── 未在文档中引用的生成产物 ──────────────────────────────────
+# examples/ 只收录 README / docs 引用到的演示（战报 + run 快照配对）
+examples/world-tests/
+examples/genre-tests/convergence-ferry-06.json
+examples/genre-tests/convergence-ferry-06.md
+examples/genre-tests/dinner-prose-first-person.md
+
+# ── 系统与编辑器 ──────────────────────────────────────────────
+.DS_Store
+*.log
+.idea/
+.vscode/

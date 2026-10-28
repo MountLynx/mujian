@@ -1,0 +1,1110 @@
+{
+  "version": 1,
+  "id": "run_55f1bc5cab47",
+  "seed": "newengine-web-01",
+  "status": "paused",
+  "scenario": {
+    "id": "genre-web-novel",
+    "title": "退婚宴",
+    "subtitle": "三年之期已到，我来退个婚，顺便退个宗门。",
+    "kicker": "类型实验 · 玄幻网文 · 退婚流",
+    "isPreset": true,
+    "world": {
+      "title": "退婚宴",
+      "era": "九州 · 青云宗 · 外门演武场",
+      "tone": "网文爽文节奏：短句、对白、压迫与反击；每一刻要有新的筹码和新的打脸；不要慢热，不要文绉绉；允许夸张，但每次反击都要有代价。",
+      "setting": "青云宗外门演武场，红绸还没撤，三百宾客，长老在座。三年前，萧尘灵根被废，被林家当众退婚、逐出宗门；今天他回来了，穿一身洗旧的黑衣，手里提着一坛酒。山门外下着雪。\n\n林震天要在今天把女儿林清雪许给青云宗少宗主顾长歌，并逼萧尘当众跪下签退婚书。萧尘手里有一封林家通敌的信，还有一柄用布裹着的旧剑。\n\n这个世界的规矩很简单：修为高的说话，面子大的定规矩。今晚，两样都要被当众掀翻。",
+      "location": "青云宗外门演武场：高台、红绸、火盆、宾客席、退婚书。所有人都在这里。",
+      "dateLabel": "三年之期",
+      "startClock": "18:00",
+      "premise": "退婚宴上，林震天要萧尘当众跪下签退婚书；萧尘提着一坛酒走进来，说“退婚可以，先把我萧家的东西还回来”。",
+      "opening": "18:00。雪落在青云宗外门的青石阶上，很快被三百双靴子踩成泥。\n\n演武场中央摆着红绸和火盆，退婚书压在案上，墨迹还没干。林震天坐在主位，手里转着两只玉核桃；顾长歌站在他身侧，剑穗上系着青云宗的玉牌。林清雪穿一身大红嫁衣，站在退婚书旁边，脸上没有表情。\n\n场门被推开。萧尘提着一坛酒走进来，黑衣洗得发白，肩上落着雪。他环顾一圈，笑了。\n\n“三年之期已到。”他说，“退婚可以。先把我萧家的东西还回来。”\n\n林震天手里的玉核桃停了。",
+      "directorNotes": "这是退婚流爽文，不是文学家庭戏。每一刻都要有压迫、反击、筹码和围观者的反应；不要让萧尘一开始就把底牌全亮，也不要让反派一次就倒。\n\n林清雪不是工具人，她有自己的恐惧和选择；顾长歌不是纯草包，他的“青云剑意”有真东西，但根基不稳；林震天是老狐狸，先礼后兵。\n\n4 个时刻。每一刻至少要有一个人当众改变立场或亮出一张新牌。结尾不一定要灭门，但必须有人跪下、有人撕毁婚书、有人露出底牌。",
+      "hiddenCanon": "（仅总控可见，是人物与世界的骨架，不要求照本宣科。）\n\n1. 萧尘三年前被林震天废灵根，扔进乱葬岗，被师父残魂所救；他现在是筑基巅峰，伪装成凡人；手里有林震天通敌的信。\n\n2. 林清雪当年退婚是被逼的；她母亲被林震天囚禁在后山。她今晚带了退婚书和一枚解毒丹，想保萧尘一命。\n\n3. 顾长歌的少宗主之位是林家用资源换来的；他的“青云剑诀”只学了皮毛，遇到真正的剑意会露馅。\n\n4. 萧尘的师父是青云宗上一代剑尊，被林震天和顾家联手害死；剑谱在萧尘手里。\n\n5. 今晚不会灭门；但会有人当众跪下、有人撕毁婚书、有人露出底牌。不要替读者提前爽完。",
+      "initialFacts": [
+        "今天是萧尘与林清雪的退婚宴。",
+        "三年前萧尘灵根被废，被逐出林家。",
+        "林震天要萧尘当众跪下签退婚书。",
+        "青云宗少宗主顾长歌是林家的靠山。",
+        "山门外下着雪，宾客三百。"
+      ],
+      "countdown": "退婚书落印之前"
+    },
+    "characters": [
+      {
+        "id": "xiao_chen",
+        "name": "萧尘",
+        "title": "被逐出宗门的废物 · 归来者",
+        "age": "22",
+        "pronouns": "他",
+        "publicProfile": "三年前被逐出青云宗的废物，今天穿一身洗旧黑衣回来；没人知道他这三年去了哪里。",
+        "appearance": "黑衣，肩上落雪，手里提着一坛酒；腰间裹着一柄没有剑鞘的旧剑。",
+        "personality": "嘴毒、能忍、记仇；越怒越笑；他不是圣人，但不会拿无辜的人开刀。",
+        "desire": "让林家当众收回退婚书，并查出三年前废他灵根的人。",
+        "fear": "再次被踩进泥里；也怕自己变成和当年那些人一样的人。",
+        "secret": "他已经得到上古剑尊传承，修为远超表面；手里有林家通敌的信和师父的剑谱。",
+        "abilities": {
+          "physique": 8,
+          "agility": 7,
+          "perception": 8,
+          "intellect": 7,
+          "will": 10,
+          "presence": 6
+        },
+        "traits": [
+          {
+            "name": "三年不跪",
+            "description": "越是被逼着低头，越站得稳。",
+            "bonus": 2,
+            "ability": "will"
+          },
+          {
+            "name": "藏锋",
+            "description": "能看出一个人出剑前那半寸的犹豫。",
+            "bonus": 2,
+            "ability": "perception"
+          }
+        ],
+        "possessions": [
+          "一坛酒",
+          "旧剑",
+          "通敌信"
+        ],
+        "relationships": [
+          {
+            "targetId": "lin_qingxue",
+            "label": "前未婚妻 / 当众退婚的人",
+            "attitude": "她当年一句话没说，我不信她全是自愿。"
+          },
+          {
+            "targetId": "lin_zhentian",
+            "label": "林家家主 / 废他灵根的人",
+            "attitude": "他欠我师父一条命。"
+          },
+          {
+            "targetId": "gu_changge",
+            "label": "青云宗少宗主 / 林家的靠山",
+            "attitude": "他的剑意是借来的。"
+          }
+        ],
+        "memories": [
+          {
+            "summary": "三年前，林震天当众废了他的灵根，把他扔进乱葬岗。",
+            "detail": "那天下着雨，他在泥里躺了一夜。",
+            "importance": 5
+          },
+          {
+            "summary": "师父的残魂在乱葬岗找到他，只留下一句“别跪”。",
+            "detail": "然后师父就散了。",
+            "importance": 5
+          },
+          {
+            "summary": "他这三年在秘境里练剑，每天只做一件事：把那一剑练到能出鞘。",
+            "detail": "今天他还没拔剑。",
+            "importance": 4
+          }
+        ],
+        "conditions": []
+      },
+      {
+        "id": "lin_qingxue",
+        "name": "林清雪",
+        "title": "林家大小姐 · 今日退婚宴的主角",
+        "age": "20",
+        "pronouns": "她",
+        "publicProfile": "林家大小姐，青云宗外门第一美人；三年前当众退婚，今天要嫁给顾长歌。",
+        "appearance": "大红嫁衣，手里攥着退婚书，指节发白；袖口里藏着一枚解毒丹。",
+        "personality": "冷、稳、把恐惧压在心里；她不是恋爱脑，也不是恶毒女配。",
+        "desire": "保住母亲，退婚可以，但不想萧尘死。",
+        "fear": "萧尘当众说出真相，母亲被家族灭口。",
+        "secret": "她知道三年前废灵根的是她父亲，一直愧疚；她今晚带了退婚书和解毒丹。",
+        "abilities": {
+          "physique": 4,
+          "agility": 7,
+          "perception": 7,
+          "intellect": 6,
+          "will": 5,
+          "presence": 8
+        },
+        "traits": [
+          {
+            "name": "冷脸",
+            "description": "越慌越没有表情。",
+            "bonus": 2,
+            "ability": "presence"
+          },
+          {
+            "name": "袖中丹",
+            "description": "袖子里总藏着一枚救急的药。",
+            "bonus": 1,
+            "ability": "agility"
+          }
+        ],
+        "possessions": [
+          "退婚书",
+          "解毒丹",
+          "一枚旧玉佩"
+        ],
+        "relationships": [
+          {
+            "targetId": "xiao_chen",
+            "label": "前未婚夫 / 被她当众退婚的人",
+            "attitude": "我不求他原谅，只求他今晚别死。"
+          },
+          {
+            "targetId": "lin_zhentian",
+            "label": "父亲 / 囚禁她母亲的人",
+            "attitude": "他是我父亲，也是囚禁我母亲的人。"
+          },
+          {
+            "targetId": "gu_changge",
+            "label": "青云宗少宗主 / 她今日要嫁的人",
+            "attitude": "他的眼睛里没有我，只有青云宗。"
+          }
+        ],
+        "memories": [
+          {
+            "summary": "三年前退婚那晚，她被父亲关在祠堂里，天亮才放出来。",
+            "detail": "她听说萧尘被扔进了乱葬岗。",
+            "importance": 5
+          },
+          {
+            "summary": "母亲被带走那天，只来得及塞给她一枚旧玉佩。",
+            "detail": "玉佩内侧刻着“活下去”。",
+            "importance": 4
+          },
+          {
+            "summary": "萧尘在雨里看她的最后一眼，没有恨，只有不解。",
+            "detail": "她做了三年噩梦。",
+            "importance": 4
+          }
+        ],
+        "conditions": []
+      },
+      {
+        "id": "lin_zhentian",
+        "name": "林震天",
+        "title": "林家家主 · 青云宗外门执事",
+        "age": "45",
+        "pronouns": "他",
+        "publicProfile": "林家家主，青云宗外门执事，笑面虎；三年前亲手把萧尘逐出林家。",
+        "appearance": "锦袍，玉核桃，腰间挂着家主令牌；笑的时候眼睛不笑。",
+        "personality": "利益至上、先礼后兵、最怕当众失控；他相信“面子就是修为”。",
+        "desire": "借退婚宴攀上青云宗少宗主，吞掉萧家遗产。",
+        "fear": "萧尘手里有证据。",
+        "secret": "三年前他亲手废了萧尘灵根，并伪造了萧家通敌的证据；他囚禁了林清雪的母亲。",
+        "abilities": {
+          "physique": 6,
+          "agility": 5,
+          "perception": 6,
+          "intellect": 8,
+          "will": 6,
+          "presence": 8
+        },
+        "traits": [
+          {
+            "name": "家主威压",
+            "description": "一句话就能让外门弟子跪下。",
+            "bonus": 2,
+            "ability": "presence"
+          },
+          {
+            "name": "算账",
+            "description": "谁欠他什么，他记得比账本清。",
+            "bonus": 2,
+            "ability": "intellect"
+          }
+        ],
+        "possessions": [
+          "玉核桃",
+          "家主令牌",
+          "退婚书印鉴"
+        ],
+        "relationships": [
+          {
+            "targetId": "xiao_chen",
+            "label": "萧家余孽 / 今天的废物",
+            "attitude": "一个废物，也配跟我谈条件。"
+          },
+          {
+            "targetId": "lin_qingxue",
+            "label": "女儿 / 林家的筹码",
+            "attitude": "她是我女儿，也是林家的筹码。"
+          },
+          {
+            "targetId": "gu_changge",
+            "label": "青云宗少宗主 / 林家的靠山",
+            "attitude": "青云宗的资源，不是白拿的。"
+          }
+        ],
+        "memories": [
+          {
+            "summary": "三年前废萧尘灵根时，萧尘没有求饶，只说了一句“你会后悔”。",
+            "detail": "他当时笑了。",
+            "importance": 4
+          },
+          {
+            "summary": "萧家灭门那晚，他亲手烧了萧家的族谱。",
+            "detail": "有一页没烧干净，他留了三年。",
+            "importance": 5
+          },
+          {
+            "summary": "青云宗长老答应他，只要退婚宴办成，就举荐他进内门。",
+            "detail": "他等这一天等了三年。",
+            "importance": 4
+          }
+        ],
+        "conditions": []
+      },
+      {
+        "id": "gu_changge",
+        "name": "顾长歌",
+        "title": "青云宗少宗主 · 剑道天才",
+        "age": "26",
+        "pronouns": "他",
+        "publicProfile": "青云宗少宗主，白衣，剑穗玉牌；宗门里都说他是百年一遇的剑道天才。",
+        "appearance": "白衣，玉冠，剑穗上系着青云宗玉牌；笑起来很温和。",
+        "personality": "傲慢、爱面子、习惯被捧着；他不是草包，但根基不稳，最怕当众露怯。",
+        "desire": "在众人面前踩死萧尘，抱得美人归。",
+        "fear": "萧尘让他当众丢脸。",
+        "secret": "他的修为靠丹药堆出来，根基不稳；他其实怕萧尘师父留下的剑谱。",
+        "abilities": {
+          "physique": 7,
+          "agility": 8,
+          "perception": 5,
+          "intellect": 6,
+          "will": 4,
+          "presence": 7
+        },
+        "traits": [
+          {
+            "name": "青云剑意",
+            "description": "起手漂亮，剑光很足。",
+            "bonus": 2,
+            "ability": "agility"
+          },
+          {
+            "name": "少宗主的名头",
+            "description": "只要报出青云宗，大多数人会先退半步。",
+            "bonus": 2,
+            "ability": "presence"
+          }
+        ],
+        "possessions": [
+          "青云剑",
+          "少宗主玉牌",
+          "一瓶聚气丹"
+        ],
+        "relationships": [
+          {
+            "targetId": "xiao_chen",
+            "label": "废物 / 今晚的垫脚石",
+            "attitude": "一个废人，也敢在我面前提剑。"
+          },
+          {
+            "targetId": "lin_qingxue",
+            "label": "林家大小姐 / 他今日要娶的人",
+            "attitude": "她迟早是我的人。"
+          },
+          {
+            "targetId": "lin_zhentian",
+            "label": "林家家主 / 顾家的附庸",
+            "attitude": "他不过是我顾家的一条狗。"
+          }
+        ],
+        "memories": [
+          {
+            "summary": "师父夸他“百年一遇”那天，他其实连剑诀第三式都没练成。",
+            "detail": "师父没看出来，或者不想看出来。",
+            "importance": 4
+          },
+          {
+            "summary": "丹药反噬的那个晚上，他吐了半盆血，没告诉任何人。",
+            "detail": "第二天他照样白衣登台。",
+            "importance": 5
+          },
+          {
+            "summary": "他见过萧尘师父的剑谱，只看了一页，就再也没睡着。",
+            "detail": "那一页上的剑意，他到现在也画不出来。",
+            "importance": 4
+          }
+        ],
+        "conditions": []
+      }
+    ],
+    "rules": {
+      "maxBeats": 4,
+      "difficultyGuidance": "当众施压、夺物、逼跪 DC 13–16；在长老和三百宾客面前翻盘 DC 18–22；真正让老狐狸失态的证据 DC 20+。不要让萧尘随随便便就赢；每次打脸都要付出代价。"
+    }
+  },
+  "settings": {
+    "maxBeats": 4,
+    "autoLimit": 1,
+    "thinking": "auto",
+    "model": "deepseek-flash"
+  },
+  "createdAt": "2026-10-27T13:07:10.779Z",
+  "updatedAt": "2026-10-27T13:07:56.796Z",
+  "clock": {
+    "minutes": 1080,
+    "display": "18:00",
+    "dateLabel": "三年之期"
+  },
+  "world": {
+    "publicFacts": [
+      "今天是萧尘与林清雪的退婚宴。",
+      "三年前萧尘灵根被废，被逐出林家。",
+      "林震天要萧尘当众跪下签退婚书。",
+      "青云宗少宗主顾长歌是林家的靠山。",
+      "山门外下着雪，宾客三百。",
+      "萧尘把酒坛压在退婚书上，当众没有跪。",
+      "萧尘反问“谁先来喝”，林震天与顾长歌都没接这句。"
+    ],
+    "flags": {
+      "wine_jar_on_documents": true,
+      "xiao_chen_knelt": false,
+      "lin_qingxue_documents_still_in_hand": true
+    },
+    "pressure": "退婚书被酒坛压着等人来挪，另一卷还悬在林清雪手里，三百宾客等着看谁先动。",
+    "sceneTitle": "谁先来喝"
+  },
+  "characters": {
+    "xiao_chen": {
+      "id": "xiao_chen",
+      "conditions": [
+        {
+          "name": "按坛不让",
+          "description": "一手压在酒坛沿上，站姿稳，下一步仍不退",
+          "modifier": 2,
+          "kind": "boon",
+          "visibility": "public",
+          "id": "cond_f49d1cb3eb52",
+          "sourceBeat": 0
+        },
+        {
+          "name": "被两头夹问",
+          "description": "同时应付林震天与顾长歌，先答哪边都会漏一边",
+          "modifier": -2,
+          "kind": "other",
+          "visibility": "private",
+          "id": "cond_31307034a19b",
+          "sourceBeat": 0
+        }
+      ],
+      "stress": 1,
+      "memories": [
+        {
+          "id": "mem_83f3f192a78f",
+          "at": "三年之期",
+          "beatIndex": null,
+          "summary": "三年前，林震天当众废了他的灵根，把他扔进乱葬岗。",
+          "detail": "那天下着雨，他在泥里躺了一夜。",
+          "importance": 5,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_bbe64c9146b2",
+          "at": "三年之期",
+          "beatIndex": null,
+          "summary": "师父的残魂在乱葬岗找到他，只留下一句“别跪”。",
+          "detail": "然后师父就散了。",
+          "importance": 5,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_d4af79b13249",
+          "at": "三年之期",
+          "beatIndex": null,
+          "summary": "他这三年在秘境里练剑，每天只做一件事：把那一剑练到能出鞘。",
+          "detail": "今天他还没拔剑。",
+          "importance": 4,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_b44eb9aea8fe",
+          "at": "18:00",
+          "beatIndex": 0,
+          "summary": "这坛酒压在退婚书上，谁先来挪它，谁就先低头。",
+          "detail": "酒坛落在案上，发出一声闷响。萧尘没有看林震天指地的手。他抬手拍开泥封，酒气一下冲出来，混着雪水的冷腥味，把前排几个宾客呛得皱眉。坛底压住退婚书纸角，砚台边那颗墨珠滚了半圈，停住。“林家主，这坛酒我路上喝了两口——剩下的，正好够给你压纸。”\n\n林震天的手指还悬在半空。他指着青石地面，指了很久，久到火盆里的炭又裂了一声。台下的目光从他指头移到他脸上，又移开。他把手收进袖里，慢了一拍才开口：“萧尘，退婚书就在案上。跪下，落印，今日这顿酒我请你喝。”声音还是稳的，只是“跪下”两个字落进雪地里，没有回声——场心那身黑衣一寸没矮。\n\n林清雪在父亲开口前就动了。她走… 只有你知道：他要的不是签不签，是逼在场有人在三百人面前先答那句“谁先来喝”。",
+          "importance": 4,
+          "kind": "observation",
+          "source": "gm"
+        }
+      ],
+      "inventory": [
+        "一坛酒",
+        "旧剑",
+        "通敌信"
+      ],
+      "flags": {}
+    },
+    "lin_qingxue": {
+      "id": "lin_qingxue",
+      "conditions": [
+        {
+          "name": "双手空悬",
+          "description": "退婚书递出没人接，指节开始发僵",
+          "modifier": -2,
+          "kind": "emotion",
+          "visibility": "public",
+          "id": "cond_44b77ec97b0b",
+          "sourceBeat": 0
+        },
+        {
+          "name": "当众被岔开",
+          "description": "她第一次当众递话没被接，心里记着这次落空",
+          "modifier": -1,
+          "kind": "emotion",
+          "visibility": "private",
+          "id": "cond_daafec87a97e",
+          "sourceBeat": 0
+        }
+      ],
+      "stress": 2,
+      "memories": [
+        {
+          "id": "mem_a354b1b6867a",
+          "at": "三年之期",
+          "beatIndex": null,
+          "summary": "三年前退婚那晚，她被父亲关在祠堂里，天亮才放出来。",
+          "detail": "她听说萧尘被扔进了乱葬岗。",
+          "importance": 5,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_53bf3d22e231",
+          "at": "三年之期",
+          "beatIndex": null,
+          "summary": "母亲被带走那天，只来得及塞给她一枚旧玉佩。",
+          "detail": "玉佩内侧刻着“活下去”。",
+          "importance": 4,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_33cec4da7048",
+          "at": "三年之期",
+          "beatIndex": null,
+          "summary": "萧尘在雨里看她的最后一眼，没有恨，只有不解。",
+          "detail": "她做了三年噩梦。",
+          "importance": 4,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_605b284bd771",
+          "at": "18:00",
+          "beatIndex": 0,
+          "summary": "我把退婚书递出去，他把脸转向了别人。",
+          "detail": "酒坛落在案上，发出一声闷响。萧尘没有看林震天指地的手。他抬手拍开泥封，酒气一下冲出来，混着雪水的冷腥味，把前排几个宾客呛得皱眉。坛底压住退婚书纸角，砚台边那颗墨珠滚了半圈，停住。“林家主，这坛酒我路上喝了两口——剩下的，正好够给你压纸。”\n\n林震天的手指还悬在半空。他指着青石地面，指了很久，久到火盆里的炭又裂了一声。台下的目光从他指头移到他脸上，又移开。他把手收进袖里，慢了一拍才开口：“萧尘，退婚书就在案上。跪下，落印，今日这顿酒我请你喝。”声音还是稳的，只是“跪下”两个字落进雪地里，没有回声——场心那身黑衣一寸没矮。\n\n林清雪在父亲开口前就动了。她走… 只有你知道：他没接。不是拒绝，是根本没往我这边看——比起我手里的卷子，他更想先咬顾长歌。",
+          "importance": 3,
+          "kind": "observation",
+          "source": "gm"
+        }
+      ],
+      "inventory": [
+        "退婚书",
+        "解毒丹",
+        "一枚旧玉佩",
+        "退婚书（未落印）"
+      ],
+      "flags": {}
+    },
+    "lin_zhentian": {
+      "id": "lin_zhentian",
+      "conditions": [
+        {
+          "name": "指地落空",
+          "description": "当众指地命跪没人矮，气势被他自己的收手削了一截",
+          "modifier": -2,
+          "kind": "other",
+          "visibility": "public",
+          "id": "cond_92a9e8affa05",
+          "sourceBeat": 0
+        }
+      ],
+      "stress": 2,
+      "memories": [
+        {
+          "id": "mem_5cfe0ec83190",
+          "at": "三年之期",
+          "beatIndex": null,
+          "summary": "三年前废萧尘灵根时，萧尘没有求饶，只说了一句“你会后悔”。",
+          "detail": "他当时笑了。",
+          "importance": 4,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_5f615f71da63",
+          "at": "三年之期",
+          "beatIndex": null,
+          "summary": "萧家灭门那晚，他亲手烧了萧家的族谱。",
+          "detail": "有一页没烧干净，他留了三年。",
+          "importance": 5,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_1d72b34ff218",
+          "at": "三年之期",
+          "beatIndex": null,
+          "summary": "青云宗长老答应他，只要退婚宴办成，就举荐他进内门。",
+          "detail": "他等这一天等了三年。",
+          "importance": 4,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_a62e413b6cf3",
+          "at": "18:00",
+          "beatIndex": 0,
+          "summary": "我指了地，他没跪，全场都看着我那只手。",
+          "detail": "酒坛落在案上，发出一声闷响。萧尘没有看林震天指地的手。他抬手拍开泥封，酒气一下冲出来，混着雪水的冷腥味，把前排几个宾客呛得皱眉。坛底压住退婚书纸角，砚台边那颗墨珠滚了半圈，停住。“林家主，这坛酒我路上喝了两口——剩下的，正好够给你压纸。”\n\n林震天的手指还悬在半空。他指着青石地面，指了很久，久到火盆里的炭又裂了一声。台下的目光从他指头移到他脸上，又移开。他把手收进袖里，慢了一拍才开口：“萧尘，退婚书就在案上。跪下，落印，今日这顿酒我请你喝。”声音还是稳的，只是“跪下”两个字落进雪地里，没有回声——场心那身黑衣一寸没矮。\n\n林清雪在父亲开口前就动了。她走… 只有你知道：场子在往他那边滑，得在宾客开口议论之前把规矩重新钉死。",
+          "importance": 4,
+          "kind": "observation",
+          "source": "gm"
+        }
+      ],
+      "inventory": [
+        "玉核桃",
+        "家主令牌",
+        "退婚书印鉴"
+      ],
+      "flags": {}
+    },
+    "gu_changge": {
+      "id": "gu_changge",
+      "conditions": [
+        {
+          "name": "被反掷回来",
+          "description": "一句“敬谁”被原样掷回，开口前会先想半拍",
+          "modifier": -2,
+          "kind": "emotion",
+          "visibility": "private",
+          "id": "cond_ad78ec32a3a4",
+          "sourceBeat": 0
+        },
+        {
+          "name": "袖下换势",
+          "description": "压剑柄的手换过姿势，旁观者看出他没先前稳",
+          "modifier": -1,
+          "kind": "other",
+          "visibility": "public",
+          "id": "cond_d824d0433cc2",
+          "sourceBeat": 0
+        }
+      ],
+      "stress": 3,
+      "memories": [
+        {
+          "id": "mem_8197bbb064ea",
+          "at": "三年之期",
+          "beatIndex": null,
+          "summary": "师父夸他“百年一遇”那天，他其实连剑诀第三式都没练成。",
+          "detail": "师父没看出来，或者不想看出来。",
+          "importance": 4,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_a9181a0a1eec",
+          "at": "三年之期",
+          "beatIndex": null,
+          "summary": "丹药反噬的那个晚上，他吐了半盆血，没告诉任何人。",
+          "detail": "第二天他照样白衣登台。",
+          "importance": 5,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_615b11680f87",
+          "at": "三年之期",
+          "beatIndex": null,
+          "summary": "他见过萧尘师父的剑谱，只看了一页，就再也没睡着。",
+          "detail": "那一页上的剑意，他到现在也画不出来。",
+          "importance": 4,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_bf9ebb9bb226",
+          "at": "18:00",
+          "beatIndex": 0,
+          "summary": "我问他想敬谁，他把“谁先来喝”丢回给了我和林家主。",
+          "detail": "酒坛落在案上，发出一声闷响。萧尘没有看林震天指地的手。他抬手拍开泥封，酒气一下冲出来，混着雪水的冷腥味，把前排几个宾客呛得皱眉。坛底压住退婚书纸角，砚台边那颗墨珠滚了半圈，停住。“林家主，这坛酒我路上喝了两口——剩下的，正好够给你压纸。”\n\n林震天的手指还悬在半空。他指着青石地面，指了很久，久到火盆里的炭又裂了一声。台下的目光从他指头移到他脸上，又移开。他把手收进袖里，慢了一拍才开口：“萧尘，退婚书就在案上。跪下，落印，今日这顿酒我请你喝。”声音还是稳的，只是“跪下”两个字落进雪地里，没有回声——场心那身黑衣一寸没矮。\n\n林清雪在父亲开口前就动了。她走… 只有你知道：这坛酒是摆在案上的刀。谁去挪，谁就得当众答他一句。",
+          "importance": 4,
+          "kind": "observation",
+          "source": "gm"
+        }
+      ],
+      "inventory": [
+        "青云剑",
+        "少宗主玉牌",
+        "一瓶聚气丹"
+      ],
+      "flags": {}
+    }
+  },
+  "beats": [
+    {
+      "id": "beat_d4cb6bba9c86",
+      "index": 0,
+      "title": "玉核桃停了",
+      "phase": "complete",
+      "clock": {
+        "minutes": 1080,
+        "display": "18:00",
+        "dateLabel": "三年之期"
+      },
+      "timeJump": null,
+      "publicBrief": "雪水顺着萧尘的衣角滴在青石上，洇出一小片深色。演武场静得能听见火盆里炭块开裂的细响。三百宾客的目光从门口一路挪到他身上，又齐刷刷转向主位。林震天掌心里那两只玉核桃不转了，磕在一起发出很轻的一声。红绸被穿堂风掀起一角，拍在案上，退婚书压着的一方砚台沁出墨珠。顾长歌站在主位侧后方，白衣的袖口压着剑柄，剑穗上那枚青云宗玉牌晃了晃又静住。林清雪的大红嫁衣在火盆边格外扎眼，她垂着手，指尖离那卷退婚书不到一尺。宾客席里有人放下茶盏，有人伸长脖子去认萧尘的脸。萧尘提着那坛酒站在场心，酒坛泥封上的雪化了，正往下淌水。他肩头的雪没拍。",
+      "privateCues": [
+        {
+          "characterId": "xiao_chen",
+          "cue": "酒坛提绳勒进你虎口，坛身比刚出门时轻了些——这一路你已经喝过两口。林震天停在半空的那只手，指节上有一圈旧疤，跟三年前按在你后颈上的是同一只手。"
+        },
+        {
+          "characterId": "lin_qingxue",
+          "cue": "袖袋里那枚解毒丹贴着腕肉，冰得发疼。退婚书上你父亲那方私印已经先盖好了，红得刺眼，只空着你的名字和萧尘的。"
+        },
+        {
+          "characterId": "lin_zhentian",
+          "cue": "玉核桃一停，你才觉出掌心全是汗。萧尘站的那个位置，离火盆不远，离案三步——不是废物该有的步子，太稳了。"
+        },
+        {
+          "characterId": "gu_changge",
+          "cue": "萧尘进门到现在，目光扫过宾客、扫过长老、扫过案上退婚书，偏偏没在你身上停过半息。你握剑的手心有些潮。"
+        }
+      ],
+      "pressure": "三百双眼睛都等着林震天怎么接这句“还东西”，退婚书上的空印还空着。",
+      "sceneQuestion": "萧家被吞掉的东西里，第一件会是什么被当众摆上台面？",
+      "gmNote": "开场压场戏，让林震天先笑再开口、以“跪了自然还”的礼数反将回去；萧尘暂不提信和剑，只拿酒和一件具体旧物顶回去，把第一张牌压到最小。",
+      "actions": [
+        {
+          "id": "act_0543bd9637cd",
+          "characterId": "xiao_chen",
+          "category": "行动",
+          "summary": "拍开泥封，把酒坛搁到退婚书案上",
+          "deed": "萧尘走到案前，抬手拍开酒坛泥封，酒气冲出来。他把坛子稳稳搁在退婚书旁，坛底压住纸角，墨珠被震得滚了一滚。",
+          "effect": "让那卷退婚书被一坛酒压住，逼林震天先动手挪它，也让他当众开口。",
+          "hostile": false,
+          "description": "萧尘走到案前，抬手拍开酒坛泥封，酒气冲出来。他把坛子稳稳搁在退婚书旁，坛底压住纸角，墨珠被震得滚了一滚。",
+          "dialogue": "林家主，这坛酒我路上喝了两口——剩下的，正好够给你压纸。",
+          "thought": "林震天那只手我认得，三年前按在我后颈上的就是它。今天我不跪，先让他把腰弯下来。",
+          "goalProgress": "把退婚书从‘等着我签’变成‘得他亲手挪’，先夺了场上的主动。",
+          "stakes": "若他连眼皮都不抬，我就成了自己凑上去讨没趣的那个。",
+          "ability": "will",
+          "traitName": "三年不跪",
+          "targetId": "lin_zhentian",
+          "targetLabel": "林震天",
+          "status": "resolved",
+          "penalties": -2,
+          "penaltyNotes": [
+            "分心回应 -2"
+          ],
+          "generatedBy": "llm",
+          "createdAt": "2026-10-27T13:07:27.129Z",
+          "roll": {
+            "natural": 5,
+            "ability": "will",
+            "abilityValue": 10,
+            "traitName": "三年不跪",
+            "traitBonus": 2,
+            "conditionBonus": 0,
+            "conditionNotes": [],
+            "situationalBonus": 0,
+            "penalty": -2,
+            "penaltyNotes": [
+              "分心回应 -2"
+            ],
+            "total": 15,
+            "dc": 14,
+            "opponentTotal": null,
+            "margin": 1,
+            "tier": "success",
+            "criticalByNatural20": false
+          },
+          "outcome": "success",
+          "outcomeNote": ""
+        },
+        {
+          "id": "act_bb23425a6c48",
+          "characterId": "lin_qingxue",
+          "category": "交涉",
+          "summary": "当众递出退婚书，给萧尘留一条路",
+          "deed": "林清雪从案上拿起那卷退婚书，没有递给父亲，而是转身走下两级台阶，在离萧尘三步远的地方停住，双手将退婚书平平递出，指尖稳得没有一丝颤抖。",
+          "effect": "让萧尘看见退婚书上的印只差他的名字，也让他明白我不是在逼他跪，是在给他当众选择的机会。",
+          "hostile": false,
+          "description": "林清雪从案上拿起那卷退婚书，没有递给父亲，而是转身走下两级台阶，在离萧尘三步远的地方停住，双手将退婚书平平递出，指尖稳得没有一丝颤抖。",
+          "dialogue": "萧尘，这卷东西，我递给你。你要签，我认；你不签，我也认。",
+          "thought": "我不能让父亲先开口定调子。我要抢在所有人面前，把退婚书从我手里递出去，让萧尘知道这东西我认，但跪不跪由他自己选。",
+          "goalProgress": "把退婚的主动权从父亲手里抢过来一部分，避免萧尘被逼到当场拼命，保住他的命。",
+          "stakes": "若萧尘不接这卷退婚书，父亲会立刻以我失仪为由把我押下去，母亲那边就没人拖时间了。",
+          "ability": "presence",
+          "traitName": "冷脸",
+          "targetId": "xiao_chen",
+          "targetLabel": "萧尘",
+          "status": "resolved",
+          "penalties": 0,
+          "penaltyNotes": [],
+          "generatedBy": "llm",
+          "createdAt": "2026-10-27T13:07:27.378Z",
+          "roll": {
+            "natural": 3,
+            "ability": "presence",
+            "abilityValue": 8,
+            "traitName": "冷脸",
+            "traitBonus": 2,
+            "conditionBonus": 0,
+            "conditionNotes": [],
+            "situationalBonus": 0,
+            "penalty": 0,
+            "penaltyNotes": [],
+            "total": 13,
+            "dc": null,
+            "opponentTotal": 19,
+            "margin": -6,
+            "tier": "soft_failure",
+            "criticalByNatural20": false
+          },
+          "outcome": "soft_failure",
+          "outcomeNote": ""
+        },
+        {
+          "id": "act_ee74b2b62be2",
+          "characterId": "lin_zhentian",
+          "category": "交涉",
+          "summary": "开口压场，命萧尘跪下",
+          "deed": "林震天把玉核桃往案上一搁，缓步走到台边，居高临下看着场心的萧尘，抬手一指青石地面。",
+          "effect": "让三百宾客先看到萧尘跪下，把主动权抢回来。",
+          "hostile": true,
+          "description": "林震天把玉核桃往案上一搁，缓步走到台边，居高临下看着场心的萧尘，抬手一指青石地面。",
+          "dialogue": "萧尘。三年之期到了，退婚书就在案上。跪下，落印，今日这顿酒我请你喝。",
+          "thought": "萧尘站得太稳，不像三年前那个跪在地上求饶的废物。不能让他先开口，先把规矩压下去，让他跪。",
+          "goalProgress": "借当众压跪萧尘，把退婚宴办成，好在长老面前挣内门举荐。",
+          "stakes": "若不先压住他，宾客看的是我被一个废物问住，面子一失，退婚书就落不了印。",
+          "ability": "presence",
+          "traitName": "家主威压",
+          "targetId": "xiao_chen",
+          "targetLabel": "萧尘",
+          "status": "resolved",
+          "penalties": 0,
+          "penaltyNotes": [],
+          "generatedBy": "llm",
+          "createdAt": "2026-10-27T13:07:27.562Z",
+          "roll": {
+            "natural": 7,
+            "ability": "presence",
+            "abilityValue": 8,
+            "traitName": "家主威压",
+            "traitBonus": 2,
+            "conditionBonus": 0,
+            "conditionNotes": [],
+            "situationalBonus": 0,
+            "penalty": 0,
+            "penaltyNotes": [],
+            "total": 17,
+            "dc": null,
+            "opponentTotal": 19,
+            "margin": -2,
+            "tier": "soft_failure",
+            "criticalByNatural20": false
+          },
+          "outcome": "soft_failure",
+          "outcomeNote": ""
+        },
+        {
+          "id": "act_a80e18457435",
+          "characterId": "gu_changge",
+          "category": "交涉",
+          "summary": "抢先开口，替林家定调",
+          "deed": "顾长歌向前半步，白衣袖口拂过案沿，声音不高不低，正够三百宾客听清：“萧尘，退婚宴不是叙旧的地方。你提一坛酒来，是想敬谁？”",
+          "effect": "把场子的节奏先抓在自己手里，让宾客觉得萧尘是来闹事的，而不是来讨公道的。",
+          "hostile": true,
+          "description": "顾长歌向前半步，白衣袖口拂过案沿，声音不高不低，正够三百宾客听清：“萧尘，退婚宴不是叙旧的地方。你提一坛酒来，是想敬谁？”",
+          "dialogue": "萧尘，退婚宴不是叙旧的地方。你提一坛酒来，是想敬谁？",
+          "thought": "他连看都不看我一眼，这比骂我还难受。我若不先开口，倒像我怕了他。",
+          "goalProgress": "先声夺人，在众人面前把萧尘压成闹宴之徒，为踩死他铺路。",
+          "stakes": "若萧尘接得漂亮，先失面子的是我这个开口的人。",
+          "ability": "presence",
+          "traitName": "少宗主的名头",
+          "targetId": "xiao_chen",
+          "targetLabel": "萧尘",
+          "status": "resolved",
+          "penalties": 0,
+          "penaltyNotes": [],
+          "generatedBy": "llm",
+          "createdAt": "2026-10-27T13:07:29.741Z",
+          "roll": {
+            "natural": 2,
+            "ability": "presence",
+            "abilityValue": 7,
+            "traitName": "少宗主的名头",
+            "traitBonus": 2,
+            "conditionBonus": 0,
+            "conditionNotes": [],
+            "situationalBonus": 0,
+            "penalty": 0,
+            "penaltyNotes": [],
+            "total": 11,
+            "dc": null,
+            "opponentTotal": 19,
+            "margin": -8,
+            "tier": "soft_failure",
+            "criticalByNatural20": false
+          },
+          "outcome": "soft_failure",
+          "outcomeNote": ""
+        }
+      ],
+      "adjudications": [
+        {
+          "actionId": "act_0543bd9637cd",
+          "difficultyLabel": "标准",
+          "dc": 14,
+          "modifier": 0,
+          "reason": "搁坛压纸是一步就到的事，难的是逼林震天当众先伸手挪它、先开口接话——老狐狸完全可以不抬眼皮，让这坛酒自己尴尬。",
+          "risk": "林震天只扫一眼坛子便转开目光，宾客便把这一搁看作废物凑上去讨没趣。"
+        },
+        {
+          "actionId": "act_bb23425a6c48",
+          "difficultyLabel": "标准",
+          "dc": 13,
+          "modifier": 0,
+          "reason": "递书走下台阶本身不难，难的是这一递要穿过萧尘的戒心和林震天的威压，让两边都当众看见“她没在逼他跪”。",
+          "risk": "萧尘不接，退婚书悬在半空，林震天立刻以失仪为由喝她退下，母亲的拖延就断了。"
+        },
+        {
+          "actionId": "act_ee74b2b62be2",
+          "difficultyLabel": "困难",
+          "dc": 16,
+          "modifier": 0,
+          "reason": "当众逼跪本就在 13–16 的上沿，而对面是个把“三年不跪”刻进骨头、意志极硬的人，光靠家主威压压不弯他的膝盖。",
+          "risk": "萧尘站着不动，三百宾客看见的是林家家主一句话落空，退婚书的印更压不下去。"
+        },
+        {
+          "actionId": "act_a80e18457435",
+          "difficultyLabel": "标准",
+          "dc": 14,
+          "modifier": 0,
+          "reason": "抢先定调占了先开口的便宜，但要把“来闹事”这顶帽子扣稳，得看萧尘接不接得住、宾客信不信。",
+          "risk": "萧尘一句漂亮话把酒敬回去，先失面子的就成了开口定调的人。"
+        }
+      ],
+      "reactions": [
+        {
+          "id": "rxn_c5bf677daad0",
+          "characterId": "xiao_chen",
+          "incomingActionIds": [
+            "act_ee74b2b62be2",
+            "act_a80e18457435"
+          ],
+          "continueOriginal": true,
+          "summary": "酒压退婚书，反问敬谁",
+          "description": "萧尘拍开泥封，把酒坛稳稳搁在退婚书旁，坛底压住纸角；他看都不看林震天指地的指头，只侧过脸去接顾长歌的话。",
+          "dialogue": "顾少宗主问得好。这坛酒——敬三年前把我扔进乱葬岗的人，敬今日要我跪下落印的人。二位，谁先来喝？",
+          "thought": "林震天要我跪，顾长歌要定我的调——那就先把酒摆上去，再把这坛酒的账当着三百人算清。",
+          "ability": "will",
+          "traitName": "三年不跪",
+          "stance": "挡回",
+          "createdAt": "2026-10-27T13:07:40.180Z",
+          "roll": {
+            "natural": 10,
+            "ability": "will",
+            "abilityValue": 10,
+            "traitName": "三年不跪",
+            "traitBonus": 2,
+            "conditionBonus": 0,
+            "conditionNotes": [],
+            "situationalBonus": 0,
+            "penalty": -3,
+            "penaltyNotes": [
+              "分心兼顾原举动 -2",
+              "同时承受 2 个压力 -1"
+            ],
+            "total": 19,
+            "incomingTotals": {
+              "act_ee74b2b62be2": 17,
+              "act_a80e18457435": 11,
+              "act_bb23425a6c48": 13
+            }
+          }
+        }
+      ],
+      "narration": "酒坛落在案上，发出一声闷响。萧尘没有看林震天指地的手。他抬手拍开泥封，酒气一下冲出来，混着雪水的冷腥味，把前排几个宾客呛得皱眉。坛底压住退婚书纸角，砚台边那颗墨珠滚了半圈，停住。“林家主，这坛酒我路上喝了两口——剩下的，正好够给你压纸。”\n\n林震天的手指还悬在半空。他指着青石地面，指了很久，久到火盆里的炭又裂了一声。台下的目光从他指头移到他脸上，又移开。他把手收进袖里，慢了一拍才开口：“萧尘，退婚书就在案上。跪下，落印，今日这顿酒我请你喝。”声音还是稳的，只是“跪下”两个字落进雪地里，没有回声——场心那身黑衣一寸没矮。\n\n林清雪在父亲开口前就动了。她走下两级台阶，大红嫁衣的下摆扫过积雪，在三步外停住，双手把退婚书平平递出：“萧尘，这卷东西，我递给你。你要签，我认；你不签，我也认。”指尖压得稳，纸卷也端得直。萧尘没有伸手。他侧过脸去接的是另一个人的话。那卷退婚书就那么悬在她手里，悬着，纸边被穿堂风吹得轻轻翻卷。\n\n“顾少宗主问得好。”萧尘把一只手按在酒坛沿上，“这坛酒——敬三年前把我扔进乱葬岗的人，敬今日要我跪下落印的人。二位，谁先来喝？”\n\n顾长歌的袖口还搭在案沿。他那句“退婚宴不是叙旧的地方”才落地半句，就被这坛酒压回去了。白衣袖下，压剑柄的那只手换了换姿势，剑穗上的玉牌晃了一下，磕在鞘上，很轻，也没能遮住四周的低语。宾客席里有人把茶盏放下又端起，最终没喝。\n\n雪还在下。萧尘肩上的雪没拍，化了的顺着衣角往下滴。退婚书被坛子压着，还等一个名字；另一卷悬在林清雪手里，还等一只手。谁也没往前走一步。",
+      "outcomeNotes": [
+        {
+          "characterId": "xiao_chen",
+          "note": "酒坛压住退婚书纸角，他一句反问把林震天的“跪下”和顾长歌的“敬谁”同时挡回去，场心一步没让。"
+        },
+        {
+          "characterId": "lin_qingxue",
+          "note": "她走下台阶当众递出退婚书，萧尘没有接，纸卷悬在她手里，那点“给你一条路”的意思没能送到。"
+        },
+        {
+          "characterId": "lin_zhentian",
+          "note": "他指地命跪，被萧尘岔开，又自己把“跪下”说了一遍，三百宾客看着他的手指落空。"
+        },
+        {
+          "characterId": "gu_changge",
+          "note": "他抢先定调的“敬谁”被萧尘接过来反掷回去，玉牌磕鞘一声，没能遮住席间的低语。"
+        }
+      ],
+      "stateChanges": {
+        "characters": [
+          {
+            "characterId": "xiao_chen",
+            "stressDelta": 1,
+            "conditionsAdd": [
+              {
+                "name": "按坛不让",
+                "description": "一手压在酒坛沿上，站姿稳，下一步仍不退",
+                "modifier": 2,
+                "kind": "boon",
+                "visibility": "public"
+              },
+              {
+                "name": "被两头夹问",
+                "description": "同时应付林震天与顾长歌，先答哪边都会漏一边",
+                "modifier": -2,
+                "kind": "other",
+                "visibility": "private"
+              }
+            ],
+            "conditionsRemove": [],
+            "inventoryAdd": [],
+            "inventoryRemove": [],
+            "privateNote": "他要的不是签不签，是逼在场有人在三百人面前先答那句“谁先来喝”。",
+            "memory": {
+              "summary": "这坛酒压在退婚书上，谁先来挪它，谁就先低头。",
+              "importance": 4
+            }
+          },
+          {
+            "characterId": "lin_qingxue",
+            "stressDelta": 2,
+            "conditionsAdd": [
+              {
+                "name": "双手空悬",
+                "description": "退婚书递出没人接，指节开始发僵",
+                "modifier": -2,
+                "kind": "emotion",
+                "visibility": "public"
+              },
+              {
+                "name": "当众被岔开",
+                "description": "她第一次当众递话没被接，心里记着这次落空",
+                "modifier": -1,
+                "kind": "emotion",
+                "visibility": "private"
+              }
+            ],
+            "conditionsRemove": [],
+            "inventoryAdd": [
+              "退婚书（未落印）"
+            ],
+            "inventoryRemove": [],
+            "privateNote": "他没接。不是拒绝，是根本没往我这边看——比起我手里的卷子，他更想先咬顾长歌。",
+            "memory": {
+              "summary": "我把退婚书递出去，他把脸转向了别人。",
+              "importance": 3
+            }
+          },
+          {
+            "characterId": "lin_zhentian",
+            "stressDelta": 2,
+            "conditionsAdd": [
+              {
+                "name": "指地落空",
+                "description": "当众指地命跪没人矮，气势被他自己的收手削了一截",
+                "modifier": -2,
+                "kind": "other",
+                "visibility": "public"
+              }
+            ],
+            "conditionsRemove": [],
+            "inventoryAdd": [],
+            "inventoryRemove": [],
+            "privateNote": "场子在往他那边滑，得在宾客开口议论之前把规矩重新钉死。",
+            "memory": {
+              "summary": "我指了地，他没跪，全场都看着我那只手。",
+              "importance": 4
+            }
+          },
+          {
+            "characterId": "gu_changge",
+            "stressDelta": 3,
+            "conditionsAdd": [
+              {
+                "name": "被反掷回来",
+                "description": "一句“敬谁”被原样掷回，开口前会先想半拍",
+                "modifier": -2,
+                "kind": "emotion",
+                "visibility": "private"
+              },
+              {
+                "name": "袖下换势",
+                "description": "压剑柄的手换过姿势，旁观者看出他没先前稳",
+                "modifier": -1,
+                "kind": "other",
+                "visibility": "public"
+              }
+            ],
+            "conditionsRemove": [],
+            "inventoryAdd": [],
+            "inventoryRemove": [],
+            "privateNote": "这坛酒是摆在案上的刀。谁去挪，谁就得当众答他一句。",
+            "memory": {
+              "summary": "我问他想敬谁，他把“谁先来喝”丢回给了我和林家主。",
+              "importance": 4
+            }
+          }
+        ],
+        "world": {
+          "factsAdd": [
+            "萧尘把酒坛压在退婚书上，当众没有跪。",
+            "萧尘反问“谁先来喝”，林震天与顾长歌都没接这句。"
+          ],
+          "factsRemove": [],
+          "flagsSet": {
+            "wine_jar_on_documents": true,
+            "xiao_chen_knelt": false,
+            "lin_qingxue_documents_still_in_hand": true
+          },
+          "pressure": "退婚书被酒坛压着等人来挪，另一卷还悬在林清雪手里，三百宾客等着看谁先动。",
+          "sceneTitle": "谁先来喝"
+        }
+      },
+      "nextTimeJump": {
+        "elapsedMinutes": 4,
+        "label": "酒气还没散的那几分钟",
+        "reason": "坛口敞着，酒味在雪地里散不出去；宾客的低语越聚越密，主位必须在这几分钟里决定谁先下场挪坛。"
+      },
+      "ending": null,
+      "createdAt": "2026-10-27T13:07:10.783Z",
+      "completedAt": "2026-10-27T13:07:56.795Z"
+    }
+  ],
+  "progress": {
+    "phase": "idle",
+    "label": "等待继续",
+    "updatedAt": "2026-10-27T13:07:56.799Z"
+  },
+  "llm": {
+    "calls": 8,
+    "promptTokens": 20114,
+    "completionTokens": 5806,
+    "cachedTokens": 0,
+    "reasoningTokens": 1875,
+    "totalTokens": 25920,
+    "failures": 0
+  },
+  "ending": null,
+  "error": null,
+  "startedAt": "2026-10-27T13:07:10.782Z"
+}

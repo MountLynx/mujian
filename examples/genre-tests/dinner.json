@@ -1,0 +1,2091 @@
+{
+  "version": 1,
+  "id": "run_2aaa0d093715",
+  "seed": "genre-dinner-01",
+  "status": "paused",
+  "scenario": {
+    "id": "genre-dinner",
+    "title": "晚饭",
+    "subtitle": "冬至这天，三个人都在等对方先开口。",
+    "kicker": "类型实验 · 家庭现实主义 · 冬至",
+    "isPreset": true,
+    "world": {
+      "title": "晚饭",
+      "era": "当代 · 南方小城 · 冬至",
+      "tone": "克制的家庭现实主义。细小的尴尬与温度并置，不煽情，不控诉，不用巧合解决冲突。对白里有大量没说出口的话；允许答非所问、停顿和冷场。不要把它写成悬疑或苦情戏。",
+      "setting": "南方小城的老小区，六楼，没有电梯。父亲去世第三年。母亲周美芬退休前是小学语文老师，独自住在这里。女儿陈见月在北京工作七年，今天突然回来，没有提前说。外婆周阿婆八十二岁，记性时好时坏，最近搬来和母亲同住。屋里的暖气不足，餐桌上有四菜一汤，其中两道是女儿小时候爱吃的。窗外偶尔有人放冬至的鞭炮，声音很远。\n\n这个家里没有坏人。三个人都爱对方，也都用自己的方式让对方难受。",
+      "location": "老屋的餐厅与客厅：餐桌、旧冰箱、父亲留下的收音机、靠窗的藤椅。所有角色都在这里。",
+      "dateLabel": "冬至",
+      "startClock": "18:40",
+      "premise": "女儿没有打招呼就回了家，带回一个文件袋；母亲做了一桌菜，却不肯先问；外婆把女儿认成了年轻时的母亲。三个人要在末班高铁之前吃完这顿饭。",
+      "opening": "18:40。门铃响了三声，周美芬把火关小，擦了擦手，才去开门。\n\n陈见月站在门外，拖着一只小箱子，肩上落着雨。她比上次视频里瘦，头发剪短了。周美芬第一句话是“怎么不提前说”，第二句话是“进来，拖鞋在柜子里”。\n\n桌上已经摆了四副碗筷。外婆坐在靠窗的位置，把一只橘子剥得很慢，忽然抬头问：“美芬，你同学来了？”\n\n陈见月叫了一声外婆。老人看了她很久，笑了：“这姑娘长得像你。”\n\n文件袋压在行李箱的拉杆上，没有被拿进屋里。",
+      "directorNotes": "这是一个关于“谁先承认需要谁”的家庭场景。不要制造外部危机（停电、疾病发作、邻居闹事、追债），让压力来自沉默、记忆和一顿饭。\n\n母亲和女儿都可以撒谎、回避、试探；外婆的失忆不是笑料，也不是情节工具。对白要短，允许答非所问。不要在第一刻就揭示诊断或离婚。不要用旁白替任何角色说出他们没说的话。\n\n节奏要慢，四个时刻足够。结尾不必和解；让某个小动作留下来就够了。",
+      "hiddenCanon": "（仅总控可见，是人物与世界的骨架，不要求照本宣科。）\n\n1. 周美芬三个月前在社区医院查出轻度认知障碍，医生建议去省城复查。她把病历藏在米缸后面，还没告诉女儿。她最怕的不是病，是女儿因为可怜她才回来。\n\n2. 陈见月两周前离了婚，也辞了工作。她回来是想接母亲去北京同住；文件袋里是租房合同和一张医院预约单。但她看到母亲把外婆接来同住后，知道自己开不了口。\n\n3. 外婆周阿婆的记忆停在陈见月十岁那年。她其实常常认出外孙女，但每次认出来都会哭，于是学会了用“你同学”来遮掩。她不知道女儿的病情。\n\n4. 父亲去世后，母女俩有一个没有说破的约定：不在冬至吵架。原因与父亲最后一顿晚饭有关。\n\n5. 这顿饭不会解决任何事；如果有人说出一句真话，也只是说出一句，不会立刻改变生活。",
+      "initialFacts": [
+        "今天是冬至。",
+        "陈见月没有提前通知就回来了。",
+        "外婆最近搬来和老屋一起住，记性不好。",
+        "桌上摆着四副碗筷。",
+        "父亲三年前去世了。",
+        "陈见月订了 21:47 的末班高铁回北京。"
+      ],
+      "countdown": "末班高铁 21:47"
+    },
+    "characters": [
+      {
+        "id": "zhou_meifen",
+        "name": "周美芬",
+        "title": "退休小学语文老师 · 母亲",
+        "age": "58",
+        "pronouns": "她",
+        "publicProfile": "退休小学语文老师，说话慢，爱把菜夹到别人碗里。邻居都说她体面、能干，一个人把家收拾得井井有条。",
+        "appearance": "头发在脑后挽成一个小髻，围裙洗得发白，手背上有冬天裂开的口子。",
+        "personality": "习惯用照顾别人来掌控局面；不直接问，先观察；被戳穿时会突然变得很客气。她相信“把饭做好”就是爱，也相信不问就是体谅。",
+        "desire": "让女儿自己说这次回来是为什么，并且不要是因为可怜她。",
+        "fear": "成为女儿的负担；更怕女儿看穿她已经在忘事。",
+        "secret": "三个月前查出轻度认知障碍，病历藏在米缸后面，还没告诉女儿。",
+        "abilities": {
+          "physique": 4,
+          "agility": 4,
+          "perception": 7,
+          "intellect": 7,
+          "will": 8,
+          "presence": 6
+        },
+        "traits": [
+          {
+            "name": "把话咽回去",
+            "description": "越是要紧的话，越能忍住不说。",
+            "bonus": 2,
+            "ability": "will"
+          },
+          {
+            "name": "看火候",
+            "description": "能从别人的小动作里看出他今天不太对劲。",
+            "bonus": 1,
+            "ability": "perception"
+          }
+        ],
+        "possessions": [
+          "围裙",
+          "老花镜",
+          "米缸钥匙"
+        ],
+        "relationships": [
+          {
+            "targetId": "chen_jianyue",
+            "label": "女儿 / 三年没在家过冬至",
+            "attitude": "我欠她一个坦白，但我不想先开口。"
+          },
+          {
+            "targetId": "zhou_apo",
+            "label": "母亲 / 每天都在重新认识的人",
+            "attitude": "她是我妈，也是我每天要重新认识的人。"
+          }
+        ],
+        "memories": [
+          {
+            "summary": "女儿小时候最爱吃酒酿汤圆，糖桂花要单独放在小碟里。",
+            "detail": "今年她也做了，但忘了买糖桂花。",
+            "importance": 3
+          },
+          {
+            "summary": "丈夫最后一顿晚饭吃到一半，说“明年冬至去趟黄山”。",
+            "detail": "第二年冬至，他不在了。",
+            "importance": 5
+          },
+          {
+            "summary": "社区医院的医生说要尽快去省城复查，别拖。",
+            "detail": "她把病历折成四折，塞进米缸后面的塑料袋里。",
+            "importance": 5
+          }
+        ],
+        "conditions": []
+      },
+      {
+        "id": "chen_jianyue",
+        "name": "陈见月",
+        "title": "品牌策划 · 女儿",
+        "age": "31",
+        "pronouns": "她",
+        "publicProfile": "在北京做品牌策划，穿着利落，讲话快；每年只回来一两次。邻居记得她小时候嘴甜，现在看起来“有出息”。",
+        "appearance": "短发，深色大衣，拖一只登机箱；指甲修得很干净，右手无名指上有一圈浅浅的戒痕。",
+        "personality": "用玩笑和安排解决问题；害怕停顿；越紧张越像在开会。她习惯先替所有人想好方案，却很难说“我需要你”。",
+        "desire": "把母亲接到北京，确认自己不是一个人。",
+        "fear": "母亲不需要她；也怕自己回来得太晚。",
+        "secret": "两周前离了婚，也辞了工作；文件袋里是北京租房合同和一张给母亲挂的医院预约单。",
+        "abilities": {
+          "physique": 5,
+          "agility": 5,
+          "perception": 6,
+          "intellect": 8,
+          "will": 5,
+          "presence": 8
+        },
+        "traits": [
+          {
+            "name": "把难过讲成笑话",
+            "description": "越难受越会逗人笑，笑完自己更难受。",
+            "bonus": 2,
+            "ability": "presence"
+          },
+          {
+            "name": "做方案",
+            "description": "习惯把感情问题拆成可执行的步骤。",
+            "bonus": 2,
+            "ability": "intellect"
+          }
+        ],
+        "possessions": [
+          "文件袋",
+          "手机",
+          "一盒北京点心"
+        ],
+        "relationships": [
+          {
+            "targetId": "zhou_meifen",
+            "label": "母亲 / 电话里永远说“家里都好”",
+            "attitude": "我想抱她，但一开口就像在谈判。"
+          },
+          {
+            "targetId": "zhou_apo",
+            "label": "外婆 / 已经认不出她",
+            "attitude": "她认不出我时，我反而松了口气。"
+          }
+        ],
+        "memories": [
+          {
+            "summary": "父亲去世那天，她在北京开一个很重要的会，手机静音。",
+            "detail": "等她看到未接来电，母亲已经在殡仪馆了。",
+            "importance": 5
+          },
+          {
+            "summary": "母亲在电话里说“家里都好，你忙你的”。",
+            "detail": "她听见电话那头有医院的叫号声，但没有问。",
+            "importance": 4
+          },
+          {
+            "summary": "小时候母亲把汤圆里的糖桂花挑给她，说自己不爱吃甜的。",
+            "detail": "后来她发现母亲其实很爱吃甜。",
+            "importance": 3
+          }
+        ],
+        "conditions": []
+      },
+      {
+        "id": "zhou_apo",
+        "name": "周阿婆",
+        "title": "外婆 · 八十二岁",
+        "age": "82",
+        "pronouns": "她",
+        "publicProfile": "周美芬的母亲，耳朵背，喜欢剥橘子；说话常常跳到几十年前，对人客气得像是刚认识。",
+        "appearance": "瘦小，穿一件深蓝色棉袄，手腕上有一只旧银镯；指甲缝里有橘子皮的汁。",
+        "personality": "温和、固执，用旧时的礼数遮掩混乱；认不出人时就说“你同学”。她不想给任何人添麻烦，于是把所有求助都说成“没事”。",
+        "desire": "记住外孙女现在的样子；不要再给女儿添麻烦。",
+        "fear": "有一天连女儿也认不出。",
+        "secret": "她其实常常认出陈见月，但一认出来就会哭，所以故意叫“你同学”。",
+        "abilities": {
+          "physique": 2,
+          "agility": 2,
+          "perception": 5,
+          "intellect": 4,
+          "will": 7,
+          "presence": 6
+        },
+        "traits": [
+          {
+            "name": "旧时的礼数",
+            "description": "再乱的时候也记得给人让座、倒茶、说客气话。",
+            "bonus": 2,
+            "ability": "presence"
+          },
+          {
+            "name": "听不清",
+            "description": "耳朵背，常把别人的话听成另一个意思。",
+            "bonus": 1,
+            "ability": "perception"
+          }
+        ],
+        "possessions": [
+          "橘子",
+          "手帕",
+          "一只旧银镯"
+        ],
+        "relationships": [
+          {
+            "targetId": "zhou_meifen",
+            "label": "女儿 / 累了也不说",
+            "attitude": "美芬累了，我知道。"
+          },
+          {
+            "targetId": "chen_jianyue",
+            "label": "外孙女 / 像她妈妈年轻时",
+            "attitude": "这孩子回来，是有事。"
+          }
+        ],
+        "memories": [
+          {
+            "summary": "老头子走的那年冬至，家里也下着雨。",
+            "detail": "她记得那天煤炉灭了，美芬蹲在地上哭。",
+            "importance": 4
+          },
+          {
+            "summary": "外孙女十岁那年，在院子里追一只鸡，摔了一身泥。",
+            "detail": "她记得那件红棉袄，却记不清外孙女现在多大。",
+            "importance": 4
+          },
+          {
+            "summary": "美芬小时候发烧，她抱着走了三里地去医院。",
+            "detail": "那时候美芬也说过“妈，我没事”。",
+            "importance": 3
+          }
+        ],
+        "conditions": []
+      }
+    ],
+    "rules": {
+      "maxBeats": 4,
+      "difficultyGuidance": "这不是冒险场景。日常动作（夹菜、倒水、收碗、开电视）DC 8–10，除非有人正在拒绝或注视；真正困难的是把一句真话说出口、在对方回避时坚持、识破一个明显的谎言，DC 13–18。不要给普通家务设置高风险，也不要用 DC 惩罚角色“太会说话”。"
+    }
+  },
+  "settings": {
+    "maxBeats": 4,
+    "autoLimit": 4,
+    "thinking": "auto",
+    "model": "deepseek-flash"
+  },
+  "createdAt": "2026-10-27T10:53:59.528Z",
+  "updatedAt": "2026-10-27T10:57:22.231Z",
+  "clock": {
+    "minutes": 1149,
+    "display": "19:09",
+    "dateLabel": "冬至"
+  },
+  "world": {
+    "publicFacts": [
+      "今天是冬至。",
+      "陈见月没有提前通知就回来了。",
+      "外婆最近搬来和老屋一起住，记性不好。",
+      "桌上摆着四副碗筷。",
+      "父亲三年前去世了。",
+      "陈见月订了 21:47 的末班高铁回北京。",
+      "陈见月的文件袋底角被楼道地上的水洇湿了一块，里面的纸也软了边。",
+      "周美芬推碗时洒出一点汤在桌布上，已经用围裙角按掉，留下深色印子。",
+      "三个人都坐下了：周阿婆在靠里侧那把椅子上，陈见月坐在她旁边。",
+      "陈见月当着两人的面低声说了自己离婚、辞了工作，那几句被上汤的响动盖过，没有人正面接住。",
+      "陈见月说这次想多待几天，并且有件事要当面说，但没说是什么事。",
+      "陈见月把一张体检预约单和一份北京租房合同摊在桌上，当面说要接母亲去北京住。",
+      "周美芬把两张纸按在桌上没有收走，说“吃完饭再说”；周阿婆在饭桌上把陈见月叫成了“同学”。"
+    ],
+    "flags": {
+      "document_envelope_damp": true,
+      "soup_bowl_pushed_to_usual_seat": true,
+      "zhou_apo_standing_waiting": true,
+      "meal_seated": true,
+      "extra_place_setting_unaddressed": true,
+      "divorce_disclosed_half": true,
+      "meifen_suspects": true,
+      "invitation_to_beijing_made": true,
+      "meifen_deferred_answer": true,
+      "apo_called_jianyue_classmate": true
+    },
+    "pressure": "那两张纸还摊在汤盆旁边没人碰，末班车是 21:47，而饭才刚吃第一口。",
+    "sceneTitle": "汤凉之前"
+  },
+  "characters": {
+    "zhou_meifen": {
+      "id": "zhou_meifen",
+      "conditions": [
+        {
+          "name": "话被接走",
+          "description": "招呼人的话被女儿接了去，一时找不到自己该站的位置，主动开口会迟半拍",
+          "modifier": -2,
+          "kind": "emotion",
+          "abilities": [
+            "presence"
+          ],
+          "id": "cond_53899664ea79",
+          "sourceBeat": 1
+        },
+        {
+          "name": "被按住的主动权",
+          "description": "女儿当众说要接她走，她表面稳住，心里憋着一句没说完的话，容易在细节上挑刺",
+          "modifier": -2,
+          "kind": "emotion",
+          "abilities": [
+            "will",
+            "presence"
+          ],
+          "id": "cond_f00c30d152dd",
+          "sourceBeat": 3
+        }
+      ],
+      "stress": 7,
+      "memories": [
+        {
+          "id": "mem_47ef19485ef4",
+          "at": "冬至",
+          "beatIndex": null,
+          "summary": "女儿小时候最爱吃酒酿汤圆，糖桂花要单独放在小碟里。",
+          "detail": "今年她也做了，但忘了买糖桂花。",
+          "importance": 3,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_45180558946b",
+          "at": "冬至",
+          "beatIndex": null,
+          "summary": "丈夫最后一顿晚饭吃到一半，说“明年冬至去趟黄山”。",
+          "detail": "第二年冬至，他不在了。",
+          "importance": 5,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_384592aa32e1",
+          "at": "冬至",
+          "beatIndex": null,
+          "summary": "社区医院的医生说要尽快去省城复查，别拖。",
+          "detail": "她把病历折成四折，塞进米缸后面的塑料袋里。",
+          "importance": 5,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_0ce7531431f0",
+          "at": "18:40",
+          "beatIndex": 0,
+          "summary": "我问汤淡了还是正好，谁也没答我。",
+          "detail": "门一开，楼道里的声控灯亮了一下，又灭了。陈见月探身出去，手在拉杆箱边上摸到那只牛皮纸文件袋，抽出来时底下带起一线水——袋子靠着的地砖上积了一小片，是刚才鞋和伞留下的。她夹到腋下，回身，门已经被风推得合了一半，她用肩膀顶开，侧身进来，顺手把门带上。门吸“嗒”一声。她鞋跟周围的水印比刚才大了一圈，文件袋的一角颜色深了一块，她把它翻了个面夹着。\n\n桌边这边，周美芬舀了半勺汤，吹了两下，尝。她把勺子停在嘴边，眉头没动，也没松开，像是在等舌头给她一个说法。等来的只是含混。她说了那句“汤淡了……还是正好？”，声音后半截低下去。她把女儿那只碗往惯常的位置推，碗底在桌… 只有你知道：她其实没尝出咸淡，舌头像被什么压着；推碗那一下手比想的重，桌布上那块印子她记住了位置。",
+          "importance": 3,
+          "kind": "observation",
+          "source": "gm"
+        },
+        {
+          "id": "mem_ae4f1bbe8fa8",
+          "at": "18:48",
+          "beatIndex": 1,
+          "summary": "见月一句“我又不是领导”，把妈逗笑了，我这个当妈的还站着。",
+          "detail": "藤椅往外挪了半寸，又挪回去。周美芬托着母亲的胳膊肘往上带，周阿婆却没顺着那个方向走——她的手还搭在椅背上，指头仍旧往桌里侧指着，嘴里“坐呀，坐呀”没停。美芬那只手在半空停了一下，像递出去一样东西没人接。\n\n倒是见月从鞋柜那边绕过来，把外婆膝上的报纸和那只剥了一半的橘子往扶手边挪，手虚扶着，没真用力。她偏头朝母亲那边扬了扬下巴：“外婆您先坐，您这么一站，我们俩谁都不敢坐——妈，您也坐，我又不是领导来检查，还站着汇报。”\n\n周阿婆就笑了，笑得肩膀抖了一下，扶着桌沿慢慢往靠里侧那把椅子坐下去，坐稳了才拍拍旁边的座：“都坐呀——我这老太婆先坐了，你们还站着做什… 只有你知道：端汤盆进厨房时，她眼睛在那副多出来的碗筷上停了一下，没让别人看见。",
+          "importance": 3,
+          "kind": "observation",
+          "source": "gm"
+        },
+        {
+          "id": "mem_6b1d2967b221",
+          "at": "19:00",
+          "beatIndex": 2,
+          "summary": "见月说这回要多待几天，有件事得当面说。",
+          "detail": "锅盖扣回去的那一声之后，周美芬端着汤盆出来了。她走得很稳，抹布垫在盆底，手腕略沉，把盆放在桌子正中，勺子调了个方向，朝着见月。她没有坐下，一只手还搭在盆沿上，热气从她指缝里往上走。“见月，这回能待几天？票买的几点的——不是催你，我好算着什么时候给你热夜宵。”\n\n“九点四十七。”见月先朝外婆那边应了：路上不冷，车上人不多，吃过了。声音压得低。随后她伸手覆住外婆捏橘子的那只手，把话往里说了一层，说她离婚了，工作也辞了，先跟阿婆说一声。那几句话和盆底磕在桌面上的闷响、和灶上余火的嘶声挤在一处，落得并不清楚。周阿婆反手把她的手拢住，另一只手在她手背上拍了两下，… 只有你知道：上汤那会儿她好像说了个“离”字，被锅盖和盆底的响动盖过去了。我没敢问第二遍。",
+          "importance": 4,
+          "kind": "observation",
+          "source": "gm"
+        },
+        {
+          "id": "mem_591de5d11a15",
+          "at": "19:09",
+          "beatIndex": 3,
+          "summary": "“我不是回来报信的，我是回来接您的。”——当着阿婆的面说的。",
+          "detail": "筷子落下去，一筷子菜搁在碗沿上，周美芬把见月面前那只碗又往她手边推了推。“先吃两口。”她说，“你那件事，妈不催你——就是别等上了车才说，妈这耳朵，站台上听不清。”她的眼睛没往文件袋上放，只落在见月的手背上。围裙带子还在椅背后头拖着，她也没去管。\n\n见月没动那筷子菜。她把两张纸抚平，往桌子中央推，推过汤盆旁边，手就那么压着没收回。“妈，不等站台。就现在。”声音压得稳，像在会议室里念最后一页，“这个号是给您挂的，体检，我陪您去；这个是我在北京的房子，两居，有一间空着。”她停了一下，“我不是回来报信的，我是回来接您的。”\n\n阿婆把手里半个橘子往见月碗边一搁，… 只有你知道：她注意到见月压纸的那只手在抖，也注意到单子的边是湿的——她没问是怎么湿的。",
+          "importance": 4,
+          "kind": "observation",
+          "source": "gm"
+        }
+      ],
+      "inventory": [
+        "围裙",
+        "老花镜",
+        "米缸钥匙"
+      ],
+      "flags": {}
+    },
+    "chen_jianyue": {
+      "id": "chen_jianyue",
+      "conditions": [
+        {
+          "name": "鞋袜湿冷",
+          "description": "脚一直是凉的，站在玄关和走回桌边都坐不安稳",
+          "modifier": -2,
+          "kind": "other",
+          "abilities": [
+            "agility",
+            "will"
+          ],
+          "id": "cond_5ecd0cb5a64b",
+          "sourceBeat": 0
+        },
+        {
+          "name": "话说尽了没人接",
+          "description": "最要紧的话已经出口，接下来只能等，耐心和脸色都比平时难维持",
+          "modifier": -2,
+          "kind": "emotion",
+          "abilities": [
+            "will"
+          ],
+          "id": "cond_530051b02166",
+          "sourceBeat": 3
+        }
+      ],
+      "stress": 4,
+      "memories": [
+        {
+          "id": "mem_cdb4fadb3a7d",
+          "at": "冬至",
+          "beatIndex": null,
+          "summary": "父亲去世那天，她在北京开一个很重要的会，手机静音。",
+          "detail": "等她看到未接来电，母亲已经在殡仪馆了。",
+          "importance": 5,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_4699c5cfc181",
+          "at": "冬至",
+          "beatIndex": null,
+          "summary": "母亲在电话里说“家里都好，你忙你的”。",
+          "detail": "她听见电话那头有医院的叫号声，但没有问。",
+          "importance": 4,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_63c558987009",
+          "at": "冬至",
+          "beatIndex": null,
+          "summary": "小时候母亲把汤圆里的糖桂花挑给她，说自己不爱吃甜的。",
+          "detail": "后来她发现母亲其实很爱吃甜。",
+          "importance": 3,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_01311719777a",
+          "at": "18:40",
+          "beatIndex": 0,
+          "summary": "外婆站在藤椅边上等我坐，我却先出了一趟门。",
+          "detail": "门一开，楼道里的声控灯亮了一下，又灭了。陈见月探身出去，手在拉杆箱边上摸到那只牛皮纸文件袋，抽出来时底下带起一线水——袋子靠着的地砖上积了一小片，是刚才鞋和伞留下的。她夹到腋下，回身，门已经被风推得合了一半，她用肩膀顶开，侧身进来，顺手把门带上。门吸“嗒”一声。她鞋跟周围的水印比刚才大了一圈，文件袋的一角颜色深了一块，她把它翻了个面夹着。\n\n桌边这边，周美芬舀了半勺汤，吹了两下，尝。她把勺子停在嘴边，眉头没动，也没松开，像是在等舌头给她一个说法。等来的只是含混。她说了那句“汤淡了……还是正好？”，声音后半截低下去。她把女儿那只碗往惯常的位置推，碗底在桌… 只有你知道：袋子底角湿了，里面的纸边也软了。她把它翻了个面夹着，不想让人看见封面。",
+          "importance": 3,
+          "kind": "observation",
+          "source": "gm"
+        },
+        {
+          "id": "mem_2c058cf320b3",
+          "at": "18:48",
+          "beatIndex": 1,
+          "summary": "外婆叫我“同学”，我没纠正。",
+          "detail": "藤椅往外挪了半寸，又挪回去。周美芬托着母亲的胳膊肘往上带，周阿婆却没顺着那个方向走——她的手还搭在椅背上，指头仍旧往桌里侧指着，嘴里“坐呀，坐呀”没停。美芬那只手在半空停了一下，像递出去一样东西没人接。\n\n倒是见月从鞋柜那边绕过来，把外婆膝上的报纸和那只剥了一半的橘子往扶手边挪，手虚扶着，没真用力。她偏头朝母亲那边扬了扬下巴：“外婆您先坐，您这么一站，我们俩谁都不敢坐——妈，您也坐，我又不是领导来检查，还站着汇报。”\n\n周阿婆就笑了，笑得肩膀抖了一下，扶着桌沿慢慢往靠里侧那把椅子坐下去，坐稳了才拍拍旁边的座：“都坐呀——我这老太婆先坐了，你们还站着做什… 只有你知道：她数清了桌上是四副碗筷，多的那副没人动，她也没问。",
+          "importance": 3,
+          "kind": "observation",
+          "source": "gm"
+        },
+        {
+          "id": "mem_672ef82e884f",
+          "at": "19:00",
+          "beatIndex": 2,
+          "summary": "我把离婚说出口了，换回来的是一句“手怎么这么凉”。",
+          "detail": "锅盖扣回去的那一声之后，周美芬端着汤盆出来了。她走得很稳，抹布垫在盆底，手腕略沉，把盆放在桌子正中，勺子调了个方向，朝着见月。她没有坐下，一只手还搭在盆沿上，热气从她指缝里往上走。“见月，这回能待几天？票买的几点的——不是催你，我好算着什么时候给你热夜宵。”\n\n“九点四十七。”见月先朝外婆那边应了：路上不冷，车上人不多，吃过了。声音压得低。随后她伸手覆住外婆捏橘子的那只手，把话往里说了一层，说她离婚了，工作也辞了，先跟阿婆说一声。那几句话和盆底磕在桌面上的闷响、和灶上余火的嘶声挤在一处，落得并不清楚。周阿婆反手把她的手拢住，另一只手在她手背上拍了两下，… 只有你知道：我说了。阿婆只摸我的手，母亲只让我先喝汤。也许该等她们吃完饭。",
+          "importance": 4,
+          "kind": "observation",
+          "source": "gm"
+        },
+        {
+          "id": "mem_a75a4820d0ff",
+          "at": "19:09",
+          "beatIndex": 3,
+          "summary": "妈把掌心按在单子上，说“妈还没糊涂到要人替我做主的地步”。",
+          "detail": "筷子落下去，一筷子菜搁在碗沿上，周美芬把见月面前那只碗又往她手边推了推。“先吃两口。”她说，“你那件事，妈不催你——就是别等上了车才说，妈这耳朵，站台上听不清。”她的眼睛没往文件袋上放，只落在见月的手背上。围裙带子还在椅背后头拖着，她也没去管。\n\n见月没动那筷子菜。她把两张纸抚平，往桌子中央推，推过汤盆旁边，手就那么压着没收回。“妈，不等站台。就现在。”声音压得稳，像在会议室里念最后一页，“这个号是给您挂的，体检，我陪您去；这个是我在北京的房子，两居，有一间空着。”她停了一下，“我不是回来报信的，我是回来接您的。”\n\n阿婆把手里半个橘子往见月碗边一搁，… 只有你知道：外婆把她叫成“同学”，她听得清清楚楚，没有纠正。",
+          "importance": 3,
+          "kind": "observation",
+          "source": "gm"
+        }
+      ],
+      "inventory": [
+        "文件袋",
+        "手机",
+        "一盒北京点心",
+        "牛皮纸文件袋（底角被水洇湿）"
+      ],
+      "flags": {}
+    },
+    "zhou_apo": {
+      "id": "zhou_apo",
+      "conditions": [
+        {
+          "name": "心口一点影子",
+          "description": "她抓不住刚才那段话，只留下“这孩子有事”的模糊感觉，容易把眼前的事认岔",
+          "modifier": -1,
+          "kind": "emotion",
+          "abilities": [
+            "will"
+          ],
+          "id": "cond_1f435bf2f3cd",
+          "sourceBeat": 2
+        },
+        {
+          "name": "把桌子稳住了",
+          "description": "她这一顿话有人听、有人照做，之后开口更顺，也更愿意替两人打圆场",
+          "modifier": 2,
+          "kind": "boon",
+          "abilities": [
+            "presence"
+          ],
+          "id": "cond_0188cf5b79fc",
+          "sourceBeat": 3
+        }
+      ],
+      "stress": 0,
+      "memories": [
+        {
+          "id": "mem_3f8b9880439b",
+          "at": "冬至",
+          "beatIndex": null,
+          "summary": "老头子走的那年冬至，家里也下着雨。",
+          "detail": "她记得那天煤炉灭了，美芬蹲在地上哭。",
+          "importance": 4,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_4161eb45d816",
+          "at": "冬至",
+          "beatIndex": null,
+          "summary": "外孙女十岁那年，在院子里追一只鸡，摔了一身泥。",
+          "detail": "她记得那件红棉袄，却记不清外孙女现在多大。",
+          "importance": 4,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_c5a8823906a8",
+          "at": "冬至",
+          "beatIndex": null,
+          "summary": "美芬小时候发烧，她抱着走了三里地去医院。",
+          "detail": "那时候美芬也说过“妈，我没事”。",
+          "importance": 3,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_d1db52b975aa",
+          "at": "18:40",
+          "beatIndex": 0,
+          "summary": "我让她进来坐，她说来了来了，人却先出了门。",
+          "detail": "门一开，楼道里的声控灯亮了一下，又灭了。陈见月探身出去，手在拉杆箱边上摸到那只牛皮纸文件袋，抽出来时底下带起一线水——袋子靠着的地砖上积了一小片，是刚才鞋和伞留下的。她夹到腋下，回身，门已经被风推得合了一半，她用肩膀顶开，侧身进来，顺手把门带上。门吸“嗒”一声。她鞋跟周围的水印比刚才大了一圈，文件袋的一角颜色深了一块，她把它翻了个面夹着。\n\n桌边这边，周美芬舀了半勺汤，吹了两下，尝。她把勺子停在嘴边，眉头没动，也没松开，像是在等舌头给她一个说法。等来的只是含混。她说了那句“汤淡了……还是正好？”，声音后半截低下去。她把女儿那只碗往惯常的位置推，碗底在桌… 只有你知道：她记得这孩子小时候放学回来也是站在门口不进来，鞋一湿就喊冷；今天这孩子长得不一样了，她还是照老规矩招呼。",
+          "importance": 2,
+          "kind": "observation",
+          "source": "gm"
+        },
+        {
+          "id": "mem_d95ef22d202c",
+          "at": "18:48",
+          "beatIndex": 1,
+          "summary": "同学坐我旁边了，鞋是湿的，我让她先吃口热的。",
+          "detail": "藤椅往外挪了半寸，又挪回去。周美芬托着母亲的胳膊肘往上带，周阿婆却没顺着那个方向走——她的手还搭在椅背上，指头仍旧往桌里侧指着，嘴里“坐呀，坐呀”没停。美芬那只手在半空停了一下，像递出去一样东西没人接。\n\n倒是见月从鞋柜那边绕过来，把外婆膝上的报纸和那只剥了一半的橘子往扶手边挪，手虚扶着，没真用力。她偏头朝母亲那边扬了扬下巴：“外婆您先坐，您这么一站，我们俩谁都不敢坐——妈，您也坐，我又不是领导来检查，还站着汇报。”\n\n周阿婆就笑了，笑得肩膀抖了一下，扶着桌沿慢慢往靠里侧那把椅子坐下去，坐稳了才拍拍旁边的座：“都坐呀——我这老太婆先坐了，你们还站着做什…",
+          "importance": 2,
+          "kind": "event",
+          "source": "gm"
+        },
+        {
+          "id": "mem_1eeffbfc053b",
+          "at": "19:00",
+          "beatIndex": 2,
+          "summary": "见月的手凉，说有事要讲。",
+          "detail": "锅盖扣回去的那一声之后，周美芬端着汤盆出来了。她走得很稳，抹布垫在盆底，手腕略沉，把盆放在桌子正中，勺子调了个方向，朝着见月。她没有坐下，一只手还搭在盆沿上，热气从她指缝里往上走。“见月，这回能待几天？票买的几点的——不是催你，我好算着什么时候给你热夜宵。”\n\n“九点四十七。”见月先朝外婆那边应了：路上不冷，车上人不多，吃过了。声音压得低。随后她伸手覆住外婆捏橘子的那只手，把话往里说了一层，说她离婚了，工作也辞了，先跟阿婆说一声。那几句话和盆底磕在桌面上的闷响、和灶上余火的嘶声挤在一处，落得并不清楚。周阿婆反手把她的手拢住，另一只手在她手背上拍了两下，… 只有你知道：见月的手凉得不像话，她说了件要紧的事，我没听全。",
+          "importance": 3,
+          "kind": "observation",
+          "source": "gm"
+        },
+        {
+          "id": "mem_15e205be701d",
+          "at": "19:09",
+          "beatIndex": 3,
+          "summary": "汤要凉了，得让他们先喝一口，天塌不下来。",
+          "detail": "筷子落下去，一筷子菜搁在碗沿上，周美芬把见月面前那只碗又往她手边推了推。“先吃两口。”她说，“你那件事，妈不催你——就是别等上了车才说，妈这耳朵，站台上听不清。”她的眼睛没往文件袋上放，只落在见月的手背上。围裙带子还在椅背后头拖着，她也没去管。\n\n见月没动那筷子菜。她把两张纸抚平，往桌子中央推，推过汤盆旁边，手就那么压着没收回。“妈，不等站台。就现在。”声音压得稳，像在会议室里念最后一页，“这个号是给您挂的，体检，我陪您去；这个是我在北京的房子，两居，有一间空着。”她停了一下，“我不是回来报信的，我是回来接您的。”\n\n阿婆把手里半个橘子往见月碗边一搁，… 只有你知道：“同学”两个字出口时，她有一瞬间想不起这个远道回来的人是谁家的孩子，只知道自己该这么说。",
+          "importance": 2,
+          "kind": "observation",
+          "source": "gm"
+        }
+      ],
+      "inventory": [
+        "橘子",
+        "手帕",
+        "一只旧银镯"
+      ],
+      "flags": {}
+    }
+  },
+  "beats": [
+    {
+      "id": "beat_2c8a272f8252",
+      "index": 0,
+      "title": "四副碗筷",
+      "phase": "complete",
+      "clock": {
+        "minutes": 1120,
+        "display": "18:40",
+        "dateLabel": "冬至"
+      },
+      "timeJump": null,
+      "publicBrief": "楼道里的声控灯灭了又亮，陈见月的鞋在门口地砖上洇出一小片雨水印。周美芬把箱子往里挪了半步，轮子在旧地砖上刮出一声。暖气片只是温的；桌上四菜一汤已摆齐，汤面结了一层薄油。四副碗筷摆得齐整，靠墙那一副没人坐，位置也没人动。外婆坐在靠窗藤椅上剥橘子，白丝一丝一丝落在膝盖的旧报纸上，眼睛却一直往门口看。窗外远处响了一挂鞭炮，响完更静。收音机还开着，在播冬至的天气和夜里的雨。陈见月还站在玄关，箱子很小，像是没打算过夜。",
+      "privateCues": [
+        {
+          "characterId": "zhou_meifen",
+          "cue": "刚才在厨房，你手停在盐罐上，想不起自己到底放没放过盐。这是这三天里第五次。你把火关小时，特意看了一眼锅里的汤，像是在核对什么。"
+        },
+        {
+          "characterId": "chen_jianyue",
+          "cue": "母亲开门时先扶了一下门框才站稳，你注意到了。你还想起来，那个牛皮纸文件袋还靠在楼道里的箱子拉杆上，没拿进来。手机在口袋里，21:47 那张票还没退。"
+        },
+        {
+          "characterId": "zhou_apo",
+          "cue": "你其实认出来了，这就是见月；她十岁那年也是这样站在门口，肩上湿的。鼻子一酸，你赶紧低头去撕橘子上的白丝，撕得比刚才慢。"
+        }
+      ],
+      "pressure": "末班车 21:47 悬在屋里每个人的心里，而四副碗筷已经摆好，没人肯先去动那一副空着的。",
+      "sceneQuestion": "谁会先问出“这次回来待几天”，又会用什么话把它绕过去？",
+      "gmNote": "保持慢节奏；让那副空碗筷和门口没拿进来的文件袋成为沉默里的两个刺点，不要急着让人物开口。",
+      "actions": [
+        {
+          "id": "act_7629170807d0",
+          "characterId": "zhou_meifen",
+          "category": "行动",
+          "summary": "借尝汤绕到桌边，不碰空碗",
+          "description": "周美芬解下围裙一角擦了擦手，走到桌边拿起汤勺，舀了半勺汤吹了吹尝味，顺势把女儿那碗往她常坐的位置推了推，眼睛不往靠墙那副碗筷上看。",
+          "dialogue": "汤淡了……还是正好？月月，你先坐下，站着像什么客人。",
+          "thought": "汤是不是放过盐了，我得先尝一口，别在女儿面前出岔子。可这四个碗……先别去动那副空的，让月月自己开口。",
+          "goalProgress": "用上菜的方式让女儿落座，把“待几天”这个问题留给她自己先提。",
+          "stakes": "若显得太急切，女儿会以为我在催她走，或看穿我连盐都记不清。",
+          "ability": "perception",
+          "traitName": "看火候",
+          "targetId": null,
+          "status": "resolved",
+          "penalties": 0,
+          "penaltyNotes": [],
+          "generatedBy": "llm",
+          "createdAt": "2026-10-27T10:54:09.509Z",
+          "roll": {
+            "natural": 1,
+            "ability": "perception",
+            "abilityValue": 7,
+            "traitName": "看火候",
+            "traitBonus": 1,
+            "conditionBonus": 0,
+            "conditionNotes": [],
+            "situationalBonus": 0,
+            "penalty": 0,
+            "penaltyNotes": [],
+            "total": 9,
+            "dc": 10,
+            "opponentTotal": null,
+            "margin": -1,
+            "tier": "soft_failure",
+            "criticalByNatural20": false
+          },
+          "outcome": "soft_failure",
+          "outcomeNote": ""
+        },
+        {
+          "id": "act_1cfb56c0818a",
+          "characterId": "chen_jianyue",
+          "category": "行动",
+          "summary": "转身出门取回文件袋",
+          "description": "我把箱子往门里推了推，转身拉开门，走到楼道里把靠在拉杆上的牛皮纸文件袋抽出来，夹在腋下，再回身进屋，顺手把门带上。",
+          "dialogue": "东西落外头了，我拿一下。",
+          "thought": "那个文件袋还靠在楼道里，我不能让它先被看见——先把它拿进来，顺便给自己几秒钟想清楚怎么开口。",
+          "goalProgress": "先藏住离婚和辞职的证据，才有力气谈接母亲去北京的事。",
+          "stakes": "文件袋被母亲先看到，我所有铺垫都作废。",
+          "ability": "agility",
+          "traitName": null,
+          "targetId": null,
+          "status": "resolved",
+          "penalties": -2,
+          "penaltyNotes": [
+            "分心应战 -2"
+          ],
+          "generatedBy": "llm",
+          "createdAt": "2026-10-27T10:54:09.474Z",
+          "roll": {
+            "natural": 3,
+            "ability": "agility",
+            "abilityValue": 5,
+            "traitName": null,
+            "traitBonus": 0,
+            "conditionBonus": 0,
+            "conditionNotes": [],
+            "situationalBonus": 0,
+            "penalty": -2,
+            "penaltyNotes": [
+              "分心应战 -2"
+            ],
+            "total": 6,
+            "dc": 10,
+            "opponentTotal": null,
+            "margin": -4,
+            "tier": "soft_failure",
+            "criticalByNatural20": false
+          },
+          "outcome": "soft_failure",
+          "outcomeNote": ""
+        },
+        {
+          "id": "act_660b1d790f44",
+          "characterId": "zhou_apo",
+          "category": "交涉",
+          "summary": "用旧礼数招呼见月进门坐",
+          "description": "我把剥到一半的橘子放在膝盖的报纸上，扶着藤椅扶手慢慢站起，朝玄关那边抬了抬手，又指了指桌边靠里的那把椅子。",
+          "dialogue": "哎哟，站门口做什么，鞋湿了吧？进来坐，进来坐——饭要凉了。",
+          "thought": "别哭，一哭美芬又要问东问西。先把话头接住，让孩子进来坐下，别站在门口着凉。",
+          "goalProgress": "用招呼把她请进屋坐下，让她多待一会儿，也免得自己一开口就露出哭腔。",
+          "stakes": "若她只当是客套，仍站在玄关不肯落座，这顿饭就凉得更快，人也留不住。",
+          "ability": "presence",
+          "traitName": "旧时的礼数",
+          "targetId": "chen_jianyue",
+          "targetLabel": "陈见月",
+          "status": "resolved",
+          "penalties": 0,
+          "penaltyNotes": [],
+          "generatedBy": "llm",
+          "createdAt": "2026-10-27T10:54:09.466Z",
+          "roll": {
+            "natural": 7,
+            "ability": "presence",
+            "abilityValue": 6,
+            "traitName": "旧时的礼数",
+            "traitBonus": 2,
+            "conditionBonus": 0,
+            "conditionNotes": [],
+            "situationalBonus": 0,
+            "penalty": 0,
+            "penaltyNotes": [],
+            "total": 15,
+            "dc": null,
+            "opponentTotal": 15,
+            "margin": 0,
+            "tier": "success",
+            "criticalByNatural20": false
+          },
+          "outcome": "success",
+          "outcomeNote": ""
+        }
+      ],
+      "adjudications": [
+        {
+          "actionId": "act_7629170807d0",
+          "difficultyLabel": "容易",
+          "dc": 10,
+          "modifier": 0,
+          "reason": "尝汤、推碗、招呼女儿坐下都是日常动作，真正的难点只在别让目光落到那副空碗上，而这一点靠她多年“看火候”的习惯足以兜住。",
+          "risk": "她尝完一时拿不准咸淡，脱口说了句“我放过盐了呀”，女儿会听出母亲连这点事都记不牢。"
+        },
+        {
+          "actionId": "act_1cfb56c0818a",
+          "difficultyLabel": "容易",
+          "dc": 10,
+          "modifier": 0,
+          "reason": "文件袋就靠在门外的拉杆上，来回几步路，只是要赶在母亲跟出来或箱子挪动前把它收进腋下。",
+          "risk": "母亲趁这几秒把箱子往门里挪，顺手带倒了靠在一边的文件袋，那张医院预约单从封口滑出半角。"
+        },
+        {
+          "actionId": "act_660b1d790f44",
+          "difficultyLabel": "容易",
+          "dc": 11,
+          "modifier": 0,
+          "reason": "见月本就在门口犹豫要不要进来，外婆这一声招呼顺着旧礼数递过去，几乎不需要她信，只需要她肯落座；难点只在外婆自己起身时腿脚不稳。",
+          "risk": "她扶着藤椅起身时膝盖一软晃了下，见月赶紧上前搀扶，反被这份张罗推得更像个不敢久留的客人。"
+        }
+      ],
+      "reactions": [
+        {
+          "id": "rxn_98ec9489d7f9",
+          "characterId": "chen_jianyue",
+          "incomingActionIds": [
+            "act_660b1d790f44"
+          ],
+          "continueOriginal": true,
+          "summary": "应着外婆，还是先出门取文件袋",
+          "description": "我冲外婆抬了抬下巴算应下，手已经搭在门把上，拉开门探身出去，把文件袋从拉杆边抽出来夹在腋下。",
+          "dialogue": "哎，来了来了——东西落外头了，我拿一下，马上坐。",
+          "thought": "外婆这一抬手，我要是先应了她，妈就会顺着把话头接过去。文件袋得先拿进来，别的都能等。",
+          "ability": "agility",
+          "traitName": null,
+          "stance": "边应边抽身",
+          "createdAt": "2026-10-27T10:54:20.114Z",
+          "roll": {
+            "natural": 12,
+            "ability": "agility",
+            "abilityValue": 5,
+            "traitName": null,
+            "traitBonus": 0,
+            "conditionBonus": 0,
+            "conditionNotes": [],
+            "situationalBonus": 0,
+            "penalty": -2,
+            "penaltyNotes": [
+              "分心兼顾原行动 -2"
+            ],
+            "total": 15,
+            "incomingTotals": {
+              "act_660b1d790f44": 15
+            }
+          }
+        }
+      ],
+      "narration": "门一开，楼道里的声控灯亮了一下，又灭了。陈见月探身出去，手在拉杆箱边上摸到那只牛皮纸文件袋，抽出来时底下带起一线水——袋子靠着的地砖上积了一小片，是刚才鞋和伞留下的。她夹到腋下，回身，门已经被风推得合了一半，她用肩膀顶开，侧身进来，顺手把门带上。门吸“嗒”一声。她鞋跟周围的水印比刚才大了一圈，文件袋的一角颜色深了一块，她把它翻了个面夹着。\n\n桌边这边，周美芬舀了半勺汤，吹了两下，尝。她把勺子停在嘴边，眉头没动，也没松开，像是在等舌头给她一个说法。等来的只是含混。她说了那句“汤淡了……还是正好？”，声音后半截低下去。她把女儿那只碗往惯常的位置推，碗底在桌面上刮出一声短响，汤面晃出来一点，落在桌布上。她没往靠墙那一副碗筷看，只用围裙角把那点汤渍按掉，按了两下，布上留了个深印。\n\n“哎哟，站门口做什么，鞋湿了吧？进来坐，进来坐——饭要凉了。”周阿婆已经扶着藤椅扶手站起来，手抬了一下，指向桌里侧那把椅子，膝盖上的报纸和剥了一半的橘子还搁着，白丝散在上面。她说话时脸朝着玄关的方向，声音比屋里需要的大一些。\n\n陈见月冲那边抬了抬下巴，嘴里应“哎，来了来了——东西落外头了，我拿一下，马上坐”，人已经出了门。外婆没坐下，手一直搭在椅背上，就那样等着，眼睛盯着门的方向。等陈见月再进来、把文件袋放在鞋柜上，外婆还站着，又朝那把椅子指了指。\n\n汤面上那层薄油已经重新凝起来。靠墙那副碗筷摆得还是齐整的，筷子并拢，碗口朝上，谁也没动。窗外远处又响了一挂鞭炮，比刚才那挂更远，响完，屋里只剩下收音机里念夜里有雨的声音。",
+      "outcomeNotes": [
+        {
+          "characterId": "zhou_meifen",
+          "note": "尝了汤却没尝出个准数，推碗时洒出一点汤在桌布上，她按掉了，但话没能落地。"
+        },
+        {
+          "characterId": "chen_jianyue",
+          "note": "文件袋取回来了，但底角被楼道地砖上的水洇透，鞋也更湿了，人还没落座。"
+        },
+        {
+          "characterId": "zhou_apo",
+          "note": "成功把见月往桌边招呼了一回，人还站着等，没等到她坐下。"
+        }
+      ],
+      "stateChanges": {
+        "characters": [
+          {
+            "characterId": "zhou_meifen",
+            "stressDelta": 1,
+            "conditionsAdd": [
+              {
+                "name": "话没落地",
+                "description": "一句没得到回应的话悬在屋里，她接下来开口会更容易绕开正题",
+                "modifier": -2,
+                "kind": "emotion",
+                "abilities": [
+                  "will"
+                ]
+              }
+            ],
+            "conditionsRemove": [],
+            "inventoryAdd": [],
+            "inventoryRemove": [],
+            "privateNote": "她其实没尝出咸淡，舌头像被什么压着；推碗那一下手比想的重，桌布上那块印子她记住了位置。",
+            "memory": {
+              "summary": "我问汤淡了还是正好，谁也没答我。",
+              "importance": 3
+            }
+          },
+          {
+            "characterId": "chen_jianyue",
+            "stressDelta": 2,
+            "conditionsAdd": [
+              {
+                "name": "鞋袜湿冷",
+                "description": "脚一直是凉的，站在玄关和走回桌边都坐不安稳",
+                "modifier": -2,
+                "kind": "other",
+                "abilities": [
+                  "agility",
+                  "will"
+                ]
+              }
+            ],
+            "conditionsRemove": [],
+            "inventoryAdd": [
+              "牛皮纸文件袋（底角被水洇湿）"
+            ],
+            "inventoryRemove": [],
+            "privateNote": "袋子底角湿了，里面的纸边也软了。她把它翻了个面夹着，不想让人看见封面。",
+            "memory": {
+              "summary": "外婆站在藤椅边上等我坐，我却先出了一趟门。",
+              "importance": 3
+            }
+          },
+          {
+            "characterId": "zhou_apo",
+            "stressDelta": -1,
+            "conditionsAdd": [],
+            "conditionsRemove": [],
+            "inventoryAdd": [],
+            "inventoryRemove": [],
+            "privateNote": "她记得这孩子小时候放学回来也是站在门口不进来，鞋一湿就喊冷；今天这孩子长得不一样了，她还是照老规矩招呼。",
+            "memory": {
+              "summary": "我让她进来坐，她说来了来了，人却先出了门。",
+              "importance": 2
+            }
+          }
+        ],
+        "world": {
+          "factsAdd": [
+            "陈见月的文件袋底角被楼道地上的水洇湿了一块，里面的纸也软了边。",
+            "周美芬推碗时洒出一点汤在桌布上，已经用围裙角按掉，留下深色印子。"
+          ],
+          "factsRemove": [],
+          "flagsSet": {
+            "document_envelope_damp": true,
+            "soup_bowl_pushed_to_usual_seat": true,
+            "zhou_apo_standing_waiting": true
+          },
+          "pressure": "汤和菜都在凉，外婆还站着等见月落座，而靠墙那副碗筷始终没人提。",
+          "sceneTitle": "站在椅子边"
+        }
+      },
+      "nextTimeJump": {
+        "elapsedMinutes": 8,
+        "label": "门吸响过之后的第八分钟",
+        "reason": "见月往返楼道取文件袋、周美芬擦桌子、外婆站着等人坐下，这几件事耗掉了真正的时间，汤面已经重新凝油。"
+      },
+      "ending": null,
+      "createdAt": "2026-10-27T10:53:59.532Z",
+      "completedAt": "2026-10-27T10:54:34.361Z"
+    },
+    {
+      "id": "beat_60e22a41017f",
+      "index": 1,
+      "title": "谁先落座",
+      "phase": "complete",
+      "clock": {
+        "minutes": 1128,
+        "display": "18:48",
+        "dateLabel": "冬至"
+      },
+      "timeJump": {
+        "elapsedMinutes": 8,
+        "label": "门吸响过之后的第八分钟",
+        "reason": "见月往返楼道取文件袋、周美芬擦桌子、外婆站着等人坐下，这几件事耗掉了真正的时间，汤面已经重新凝油。"
+      },
+      "publicBrief": "汤盆里那层油已经凝成半透明的薄膜，靠边的菜也塌了色。周美芬把勺子搁回汤盆沿上，勺柄朝外，人没坐，一只手还按在围裙那个深色印子上。周阿婆扶着藤椅扶手没动，另一只手一直指着桌里侧那把椅子，指节有点发白，嘴里念着“坐呀，坐呀，菜要凉了”，声音一次比一次轻。陈见月站在鞋柜边，文件袋平放在柜面上，湿的那角把柜面的木纹染深了一小片，她两只手在袋口上按了一下又松开。窗外远处响过一挂鞭炮，散了之后，收音机里说今夜有雨，声音不大，字却清楚。",
+      "privateCues": [
+        {
+          "characterId": "zhou_meifen",
+          "cue": "你方才尝汤时忽然想不起自己到底放没放盐，锅里还剩半锅——这个念头像脚下一块砖松了。你眼睛落到鞋柜上那个湿了角的纸袋，袋子不厚，硬硬的一片轮廓。"
+        },
+        {
+          "characterId": "chen_jianyue",
+          "cue": "湿袜子贴在脚背上，脚趾冻得发木。你按文件袋时隔着纸摸到那张预约单的直角，纸边软了，像要化开。你忽然想起父亲在世时，靠墙那个位置总是他先坐下。"
+        },
+        {
+          "characterId": "zhou_apo",
+          "cue": "门口那姑娘头发梢滴着水，跟你记忆里某个人湿着头发跑进屋的样子叠了一下。你喉咙里有个名字要冒出来，你把它咽回去，拇指往橘子皮里按了按。"
+        }
+      ],
+      "pressure": "外婆还站着不肯坐，汤菜都在凉，桌上那副靠墙的空碗筷没人敢先提。",
+      "sceneQuestion": "谁会先坐下，谁又会先开口说那第四副碗筷？",
+      "gmNote": "让外婆的站立成为全场唯一的“动作”，母亲的记忆空白只在她自己身上发生，别让女儿看出端倪。",
+      "actions": [
+        {
+          "id": "act_99c29fcc758e",
+          "characterId": "zhou_meifen",
+          "category": "行动",
+          "summary": "扶外婆坐下，岔开她指椅子的手",
+          "description": "周美芬绕过桌角走到藤椅边，一手托住周阿婆的胳膊肘，一手把她搭在椅背上的手轻轻拢下来，往椅面上带，另一只脚把藤椅往外挪了半寸。",
+          "dialogue": "妈，您先坐，您站着我们谁也不敢动筷子。菜凉了我再热。",
+          "thought": "外婆这么站着，谁都不好坐下。先得把她安顿到椅子上，别让她再指着那把空椅子。",
+          "goalProgress": "先把场面稳住，才好等见月自己开口说回来的缘由。",
+          "stakes": "外婆执意不坐，饭桌僵着，见月更没机会说出这次为什么回来。",
+          "ability": "agility",
+          "traitName": null,
+          "targetId": "zhou_apo",
+          "targetLabel": "周阿婆",
+          "status": "resolved",
+          "penalties": 0,
+          "penaltyNotes": [],
+          "generatedBy": "llm",
+          "createdAt": "2026-10-27T10:54:42.799Z",
+          "roll": {
+            "natural": 6,
+            "ability": "agility",
+            "abilityValue": 4,
+            "traitName": null,
+            "traitBonus": 0,
+            "conditionBonus": 0,
+            "conditionNotes": [],
+            "situationalBonus": 0,
+            "penalty": 0,
+            "penaltyNotes": [],
+            "total": 10,
+            "dc": null,
+            "opponentTotal": 18,
+            "margin": -8,
+            "tier": "soft_failure",
+            "criticalByNatural20": false
+          },
+          "outcome": "soft_failure",
+          "outcomeNote": ""
+        },
+        {
+          "id": "act_0a79986a4adb",
+          "characterId": "chen_jianyue",
+          "category": "交涉",
+          "summary": "扶外婆坐下并招呼母亲入席",
+          "description": "陈见月绕过鞋柜走到藤椅边，伸手虚扶住外婆的胳膊，另一只手替她把膝上的报纸和橘子往旁边挪了挪，同时偏过头朝母亲那边扬了扬下巴，示意她别站着。",
+          "dialogue": "外婆您先坐，您这么一站，我们俩谁都不敢坐——妈，您也坐，我又不是领导来检查，还站着汇报。",
+          "thought": "外婆还站着不肯坐，这个家现在缺的只是一个先动的人。我先把话说得轻巧些，让所有人都有台阶下。",
+          "goalProgress": "先把桌上的僵局化开，让母亲有机会坐下来，她才能慢慢把接她去北京的话说出口。",
+          "stakes": "如果没人接这个台阶，外婆会一直站到腿软，这顿饭就彻底凉了。",
+          "ability": "presence",
+          "traitName": "把难过讲成笑话",
+          "targetId": "zhou_apo",
+          "targetLabel": "周阿婆",
+          "status": "resolved",
+          "penalties": -2,
+          "penaltyNotes": [
+            "分心应战 -2"
+          ],
+          "generatedBy": "llm",
+          "createdAt": "2026-10-27T10:54:42.824Z",
+          "roll": {
+            "natural": 20,
+            "ability": "presence",
+            "abilityValue": 8,
+            "traitName": "把难过讲成笑话",
+            "traitBonus": 2,
+            "conditionBonus": 0,
+            "conditionNotes": [],
+            "situationalBonus": 0,
+            "penalty": -2,
+            "penaltyNotes": [
+              "分心应战 -2"
+            ],
+            "total": 28,
+            "dc": null,
+            "opponentTotal": 18,
+            "margin": 10,
+            "tier": "critical_success",
+            "criticalByNatural20": true
+          },
+          "outcome": "critical_success",
+          "outcomeNote": ""
+        },
+        {
+          "id": "act_a2786b90cb8e",
+          "characterId": "zhou_apo",
+          "category": "行动",
+          "summary": "我带头坐下招呼大家吃饭",
+          "description": "我把藤椅上剥了一半的橘子挪到扶手边，一手扶着桌沿慢慢坐进靠里侧那把椅子，坐下后拍了拍旁边的座位，又抬眼看陈见月那边。",
+          "dialogue": "都坐呀——我这老太婆先坐了，你们还站着做什么？同学，来，坐阿婆旁边。",
+          "thought": "美芬站着不坐，孩子也站着，这桌菜再等就真凉透了。我这把老骨头先坐下，她们才好跟着坐。",
+          "goalProgress": "先落座打破僵局，让外孙女能坐下来，不必再站在门口。",
+          "stakes": "若还是没人坐，这桌冬至饭就真要凉在沉默里了。",
+          "ability": "presence",
+          "traitName": "旧时的礼数",
+          "targetId": "chen_jianyue",
+          "targetLabel": "陈见月",
+          "status": "resolved",
+          "penalties": -2,
+          "penaltyNotes": [
+            "分心应战 -2"
+          ],
+          "generatedBy": "llm",
+          "createdAt": "2026-10-27T10:54:42.397Z",
+          "roll": {
+            "natural": 19,
+            "ability": "presence",
+            "abilityValue": 6,
+            "traitName": "旧时的礼数",
+            "traitBonus": 2,
+            "conditionBonus": 0,
+            "conditionNotes": [],
+            "situationalBonus": 0,
+            "penalty": -2,
+            "penaltyNotes": [
+              "分心应战 -2"
+            ],
+            "total": 25,
+            "dc": null,
+            "opponentTotal": 14,
+            "margin": 11,
+            "tier": "critical_success",
+            "criticalByNatural20": false
+          },
+          "outcome": "critical_success",
+          "outcomeNote": ""
+        }
+      ],
+      "adjudications": [
+        {
+          "actionId": "act_99c29fcc758e",
+          "difficultyLabel": "容易",
+          "dc": 10,
+          "modifier": 0,
+          "reason": "外婆并未拒绝坐下，只是注意力还钉在那把空椅子上，托住胳膊肘带半步属于有基本照护经验就能做到的事，只因她指节发白、重心不肯松才不算十拿九稳。",
+          "risk": "外婆被带到椅面前却不肯把重心坐实，半悬着又伸手去指那把椅子，周美芬只好一直架着她的胳膊，自己更坐不下。"
+        },
+        {
+          "actionId": "act_0a79986a4adb",
+          "difficultyLabel": "容易",
+          "dc": 10,
+          "modifier": 0,
+          "reason": "虚扶比实扶更轻，外婆对陈见月本就有招呼的意愿，难处只在同时把母亲也拉进席面，属于一句话能不能把两个人都圈住的不确定。",
+          "risk": "外婆顺着她的手坐下了，母亲却仍按着围裙站在原地，那句玩笑落在半空，桌上的菜又凉一层。"
+        },
+        {
+          "actionId": "act_a2786b90cb8e",
+          "difficultyLabel": "容易",
+          "dc": 10,
+          "modifier": 0,
+          "reason": "藤椅就在身后、桌沿就在手边，是老人每天做的动作，只是八十二岁的膝盖和藤椅的轻脚让这一坐并非毫无意外。",
+          "risk": "坐下去时藤椅往后滑了半寸，她手在桌沿上一撑才稳住，剥了一半的橘子滚到地上，谁都得弯腰去捡。"
+        }
+      ],
+      "reactions": [
+        {
+          "id": "rxn_8f3781ac278e",
+          "characterId": "chen_jianyue",
+          "incomingActionIds": [
+            "act_a2786b90cb8e"
+          ],
+          "continueOriginal": true,
+          "summary": "借外婆落座把妈也按下来",
+          "description": "见月一边继续往藤椅边挪，虚扶外婆的胳膊替她把橘子挪开，一边顺着外婆的话应下来，笑着不纠正“同学”这个称呼，转头又朝母亲那边催一句，把两件事并成一件做。",
+          "dialogue": "好，好，阿婆先坐稳了——同学这就来。妈，您再站着，菜就真凉透了，我这同学可不敢动筷子。",
+          "thought": "外婆已经坐下了，还叫我“同学”——她又不认得我了。别纠正她，顺着她来，先把人按到桌边再说。",
+          "ability": "presence",
+          "traitName": "把难过讲成笑话",
+          "stance": "顺势配合",
+          "createdAt": "2026-10-27T10:54:54.756Z",
+          "roll": {
+            "natural": 6,
+            "ability": "presence",
+            "abilityValue": 8,
+            "traitName": "把难过讲成笑话",
+            "traitBonus": 2,
+            "conditionBonus": 0,
+            "conditionNotes": [],
+            "situationalBonus": 0,
+            "penalty": -2,
+            "penaltyNotes": [
+              "分心兼顾原行动 -2"
+            ],
+            "total": 14,
+            "incomingTotals": {
+              "act_a2786b90cb8e": 25
+            }
+          }
+        },
+        {
+          "id": "rxn_7874ea545560",
+          "characterId": "zhou_apo",
+          "incomingActionIds": [
+            "act_99c29fcc758e",
+            "act_0a79986a4adb"
+          ],
+          "continueOriginal": true,
+          "summary": "自己先坐稳，招呼大家入席",
+          "description": "我不挣她们的手，就着美芬托胳膊肘的劲儿慢慢往藤椅里坐，坐稳了才把橘子挪到扶手边，又抬手指指桌里侧那把椅子，冲见月点头。",
+          "dialogue": "哎，坐，坐——我这老太婆先坐下了，你们也坐。同学，来，坐阿婆旁边，鞋湿了不要紧，先吃口热的。",
+          "thought": "她们俩都来扶我，我偏要自己坐——坐下就坐下了，还能少给美芬添点乱。",
+          "ability": "presence",
+          "traitName": "旧时的礼数",
+          "stance": "顺势配合",
+          "createdAt": "2026-10-27T10:54:54.631Z",
+          "roll": {
+            "natural": 13,
+            "ability": "presence",
+            "abilityValue": 6,
+            "traitName": "旧时的礼数",
+            "traitBonus": 2,
+            "conditionBonus": 0,
+            "conditionNotes": [],
+            "situationalBonus": 0,
+            "penalty": -3,
+            "penaltyNotes": [
+              "分心兼顾原行动 -2",
+              "同时应对 2 个行动 -1"
+            ],
+            "total": 18,
+            "incomingTotals": {
+              "act_99c29fcc758e": 10,
+              "act_0a79986a4adb": 28
+            }
+          }
+        }
+      ],
+      "narration": "藤椅往外挪了半寸，又挪回去。周美芬托着母亲的胳膊肘往上带，周阿婆却没顺着那个方向走——她的手还搭在椅背上，指头仍旧往桌里侧指着，嘴里“坐呀，坐呀”没停。美芬那只手在半空停了一下，像递出去一样东西没人接。\n\n倒是见月从鞋柜那边绕过来，把外婆膝上的报纸和那只剥了一半的橘子往扶手边挪，手虚扶着，没真用力。她偏头朝母亲那边扬了扬下巴：“外婆您先坐，您这么一站，我们俩谁都不敢坐——妈，您也坐，我又不是领导来检查，还站着汇报。”\n\n周阿婆就笑了，笑得肩膀抖了一下，扶着桌沿慢慢往靠里侧那把椅子坐下去，坐稳了才拍拍旁边的座：“都坐呀——我这老太婆先坐了，你们还站着做什么？同学，来，坐阿婆旁边。鞋湿了不要紧，先吃口热的。”见月应“好，好，阿婆先坐稳了——同学这就来”，没纠正这个称呼，把橘子往阿婆手边推了推。\n\n美芬还站着。围裙上那块深色印子被她按了又按，按得那块布起了褶。她张了张嘴，“菜凉了我再热”这句先前已经说过，再说一遍像是不作数，于是没说，转身端起汤盆往厨房去。勺子挂在盆沿上，晃了两下，没掉。\n\n见月坐到外婆旁边，才觉出袜子贴在脚上，凉从脚底往上走。桌上四副碗筷摆得齐整，她看了一眼，又看了一眼，没伸手去动多出来的那一副。收音机里还在说今夜有雨，说得很慢，字咬得清楚。\n\n厨房里响起水声，接着是锅铲碰到灶沿的轻响。窗外又有一挂鞭炮，比刚才近些，散了以后，屋里安静得能听见汤在灶上开始响的那种细小的声音。",
+      "outcomeNotes": [
+        {
+          "characterId": "zhou_meifen",
+          "note": "她扶外婆的手没落上实处，招呼人的话被女儿接了去，最后自己端着汤盆去了厨房，还站着的那个人成了她。"
+        },
+        {
+          "characterId": "chen_jianyue",
+          "note": "她一句玩笑把场面化开，把外婆和母亲都按进了座位，自己坐到了外婆旁边，代价是湿袜子贴着脚。"
+        },
+        {
+          "characterId": "zhou_apo",
+          "note": "她先坐稳在靠里侧那把椅子上，把见月认成“同学”，也没人当面纠正。"
+        }
+      ],
+      "stateChanges": {
+        "characters": [
+          {
+            "characterId": "zhou_meifen",
+            "stressDelta": 2,
+            "conditionsAdd": [
+              {
+                "name": "话被接走",
+                "description": "招呼人的话被女儿接了去，一时找不到自己该站的位置，主动开口会迟半拍",
+                "modifier": -2,
+                "kind": "emotion",
+                "abilities": [
+                  "presence"
+                ]
+              }
+            ],
+            "conditionsRemove": [],
+            "inventoryAdd": [],
+            "inventoryRemove": [],
+            "privateNote": "端汤盆进厨房时，她眼睛在那副多出来的碗筷上停了一下，没让别人看见。",
+            "memory": {
+              "summary": "见月一句“我又不是领导”，把妈逗笑了，我这个当妈的还站着。",
+              "importance": 3
+            }
+          },
+          {
+            "characterId": "chen_jianyue",
+            "stressDelta": -2,
+            "conditionsAdd": [
+              {
+                "name": "破冰的余温",
+                "description": "一句玩笑把僵住的场面化开，接下来开口会顺一些",
+                "modifier": 2,
+                "kind": "boon",
+                "abilities": [
+                  "presence"
+                ]
+              }
+            ],
+            "conditionsRemove": [],
+            "inventoryAdd": [],
+            "inventoryRemove": [],
+            "privateNote": "她数清了桌上是四副碗筷，多的那副没人动，她也没问。",
+            "memory": {
+              "summary": "外婆叫我“同学”，我没纠正。",
+              "importance": 3
+            }
+          },
+          {
+            "characterId": "zhou_apo",
+            "stressDelta": -1,
+            "conditionsAdd": [],
+            "conditionsRemove": [],
+            "inventoryAdd": [],
+            "inventoryRemove": [],
+            "privateNote": "",
+            "memory": {
+              "summary": "同学坐我旁边了，鞋是湿的，我让她先吃口热的。",
+              "importance": 2
+            }
+          }
+        ],
+        "world": {
+          "factsAdd": [
+            "三个人都坐下了：周阿婆在靠里侧那把椅子上，陈见月坐在她旁边。",
+            "周美芬把汤盆端回厨房重新加热，桌上仍摆着四副碗筷。"
+          ],
+          "factsRemove": [],
+          "flagsSet": {
+            "meal_seated": true,
+            "extra_place_setting_unaddressed": true
+          },
+          "pressure": "汤在灶上热着，四副碗筷摆着，多出来的那一副谁也没提。",
+          "sceneTitle": "汤回锅的工夫"
+        }
+      },
+      "nextTimeJump": {
+        "elapsedMinutes": 12,
+        "label": "汤回锅的那十二分钟",
+        "reason": "把三个人安置到座位上、汤端回厨房重新烧开，再端回来，这段等待把时间推了过去。"
+      },
+      "ending": null,
+      "createdAt": "2026-10-27T10:54:34.367Z",
+      "completedAt": "2026-10-27T10:55:13.711Z"
+    },
+    {
+      "id": "beat_6f26056172c9",
+      "index": 2,
+      "title": "灶上汤响",
+      "phase": "complete",
+      "clock": {
+        "minutes": 1140,
+        "display": "19:00",
+        "dateLabel": "冬至"
+      },
+      "timeJump": {
+        "elapsedMinutes": 12,
+        "label": "汤回锅的那十二分钟",
+        "reason": "把三个人安置到座位上、汤端回厨房重新烧开，再端回来，这段等待把时间推了过去。"
+      },
+      "publicBrief": "厨房里水声停了，只剩下汤在灶上响——先是沿锅边一圈极细的嘶声，接着从底下冒上一个泡，破开，又冒上一个。葱花的味道从门框那里飘出来，跟着是姜，跟着一点猪油的腥甜。周美芬没有马上端汤出来。灶台那边传来一声很轻的“啪”，像是锅盖被掀开又扣回去，或者是抹布甩在台面上。客厅这边，周阿婆把剥好的橘子掰成两半，白丝挂在指头上，一半往见月手边推，一半自己捏着，没吃。收音机报了一声整点，声音被鞭炮盖住一半。灯是老式的圆灯泡，照得桌上四副碗筷都亮，靠墙那副的筷子架在小碟上，摆得比另三副还正。见月椅腿边的地砖上，文件袋那角洇湿的颜色已经发暗，硬了一点。",
+      "privateCues": [
+        {
+          "characterId": "zhou_meifen",
+          "cue": "你站在灶前，手扶着锅沿等它滚。客厅里两个人的说话声混在一起，你知道那是你妈和你女儿，却听不出在说什么，只听见调子很客气。你忽然想起诊室墙上那张纸，上面一行字被笔圈过，你已经记不清是哪个词——于是你把火关小了一点。"
+        },
+        {
+          "characterId": "chen_jianyue",
+          "cue": "口袋里手机贴着大腿震了一下，是订票软件在提醒发车时间。你伸手按住它没掏出来，指尖碰到文件袋的硬角——那里面一张纸的边已经软了。你闻见橘子皮的味道，忽然记起小时候外婆剥橘子会先把最大的一瓣递给你，而你现在不敢抬头看她手里的那一半要往哪去。"
+        },
+        {
+          "characterId": "zhou_apo",
+          "cue": "你看着旁边这孩子低着头按口袋，肩膀往里收，像个怕冷的。你心里有一点发紧，想说“你瘦了”，话到嘴边又改成了客气的腔调——你捏着手里那半个橘子，指头有点抖，怕自己一开口就露出来。"
+        }
+      ],
+      "pressure": "灶上的汤眼看要滚起来，周美芬端不端出来、什么时候端出来，都成了桌边两个人不得不等的事；而靠墙那副碗筷始终没人去动。",
+      "sceneQuestion": "这屋里第一句不带客套的话，会由谁、在对谁说出来？",
+      "gmNote": "让美芬在厨房多待几秒独处，别急着让她出场；那副多出的碗筷继续保持无人解释，压力来自它的位置而不是台词。",
+      "actions": [
+        {
+          "id": "act_6c8cbc45b274",
+          "characterId": "zhou_meifen",
+          "category": "交涉",
+          "summary": "端汤出来，先问女儿这次能待几天",
+          "description": "我把火关掉，用抹布垫着端起汤盆，稳步走回桌边，把汤盆放在桌子中央，勺子朝见月那边摆正。我没有马上坐下，手还搭在盆沿上，看着她。",
+          "dialogue": "见月，这回能待几天？票买的几点的——不是催你，我好算着什么时候给你热夜宵。",
+          "thought": "汤要滚了，我不能一直躲在厨房里。那副碗筷没人动，我也不去动它——但总得有人先开口，不如我来问一句真的。",
+          "goalProgress": "把客套的调子往正题上拧一拧，让她自己说出回来的缘由。",
+          "stakes": "若她只回一句客气的行程，这顿饭就再也落不到实话上。",
+          "ability": "will",
+          "traitName": "把话咽回去",
+          "targetId": "chen_jianyue",
+          "targetLabel": "陈见月",
+          "status": "resolved",
+          "penalties": 0,
+          "penaltyNotes": [],
+          "generatedBy": "llm",
+          "createdAt": "2026-10-27T10:55:23.377Z",
+          "roll": {
+            "natural": 15,
+            "ability": "will",
+            "abilityValue": 8,
+            "traitName": "把话咽回去",
+            "traitBonus": 2,
+            "conditionBonus": -2,
+            "conditionNotes": [
+              "话没落地 -2"
+            ],
+            "situationalBonus": 0,
+            "penalty": 0,
+            "penaltyNotes": [],
+            "total": 23,
+            "dc": null,
+            "opponentTotal": 18,
+            "margin": 5,
+            "tier": "success",
+            "criticalByNatural20": false
+          },
+          "outcome": "success",
+          "outcomeNote": ""
+        },
+        {
+          "id": "act_f847706ff37b",
+          "characterId": "chen_jianyue",
+          "category": "行动",
+          "summary": "按住外婆的手，说出离婚的事",
+          "description": "陈见月伸手轻轻覆住外婆捏着半瓣橘子的手，指头有点凉。她没看厨房方向，声音压低了一点，像怕被灶上的响动听见，又像故意让它听见。",
+          "dialogue": "阿婆，您别急着让我吃——我这次回来，不是出差路过。我离婚了，工作也辞了。先跟您说，您记不住也没关系，我再说一遍就行。",
+          "thought": "再不说点真的，这顿饭就要在客套里过完了。不能让妈一个人在厨房里忙，也不能让那副空碗筷一直摆在那儿。",
+          "goalProgress": "把最难的实情先对记性不好的外婆说出口，练一遍，才敢对母亲说。",
+          "stakes": "外婆听不清或转头就忘，我又得从头说一遍，还可能被厨房里的母亲听见半句。",
+          "ability": "will",
+          "traitName": null,
+          "targetId": "zhou_apo",
+          "targetLabel": "周阿婆",
+          "status": "resolved",
+          "penalties": -2,
+          "penaltyNotes": [
+            "分心应战 -2"
+          ],
+          "generatedBy": "llm",
+          "createdAt": "2026-10-27T10:55:23.438Z",
+          "roll": {
+            "natural": 6,
+            "ability": "will",
+            "abilityValue": 5,
+            "traitName": null,
+            "traitBonus": 0,
+            "conditionBonus": -2,
+            "conditionNotes": [
+              "鞋袜湿冷 -2"
+            ],
+            "situationalBonus": 0,
+            "penalty": -2,
+            "penaltyNotes": [
+              "分心应战 -2"
+            ],
+            "total": 7,
+            "dc": null,
+            "opponentTotal": 22,
+            "margin": -15,
+            "tier": "soft_failure",
+            "criticalByNatural20": false
+          },
+          "outcome": "soft_failure",
+          "outcomeNote": ""
+        },
+        {
+          "id": "act_d9e2800138af",
+          "characterId": "zhou_apo",
+          "category": "交涉",
+          "summary": "用旧礼数问外孙女路上的事",
+          "description": "我把手里那半个橘子放到见月面前的碟子边上，指头在碟沿上停了停，侧过身子朝着她，声音放得慢，像从前在院门口招呼放学回来的孩子。",
+          "dialogue": "同学，路上冷不冷？火车上人多不多？你——你吃饭了没有，就先坐这儿，阿婆给你留着橘子呢。",
+          "thought": "这孩子在按口袋，肩膀缩着，跟美芬小时候一个样。我不能叫她名字，一叫就要哭。问句别的，问句不疼的。",
+          "goalProgress": "我想借着客套话多看她两眼，把她现在的样子记牢些。",
+          "stakes": "若话说岔了、她当了真，这孩子会以为我认不得她，那比认出来更让她难受。",
+          "ability": "presence",
+          "traitName": "旧时的礼数",
+          "targetId": "chen_jianyue",
+          "targetLabel": "陈见月",
+          "status": "resolved",
+          "penalties": -2,
+          "penaltyNotes": [
+            "分心应战 -2"
+          ],
+          "generatedBy": "llm",
+          "createdAt": "2026-10-27T10:55:23.585Z",
+          "roll": {
+            "natural": 16,
+            "ability": "presence",
+            "abilityValue": 6,
+            "traitName": "旧时的礼数",
+            "traitBonus": 2,
+            "conditionBonus": 0,
+            "conditionNotes": [],
+            "situationalBonus": 0,
+            "penalty": -2,
+            "penaltyNotes": [
+              "分心应战 -2"
+            ],
+            "total": 22,
+            "dc": null,
+            "opponentTotal": 18,
+            "margin": 4,
+            "tier": "success",
+            "criticalByNatural20": false
+          },
+          "outcome": "success",
+          "outcomeNote": ""
+        }
+      ],
+      "adjudications": [
+        {
+          "actionId": "act_6c8cbc45b274",
+          "difficultyLabel": "标准",
+          "dc": 13,
+          "modifier": 0,
+          "reason": "端汤关火是寻常家务，真正有分量的是问出“待几天”后还站着等回答；这是常规但会被回避的试探，不需要专业本事，只需要一点不被敷衍带走的定力。",
+          "risk": "见月只答一句车次和“后天就走”，你手里还搭在盆沿上，那点想问的话就顺着汤的热气散掉了。"
+        },
+        {
+          "actionId": "act_f847706ff37b",
+          "difficultyLabel": "标准",
+          "dc": 15,
+          "modifier": 0,
+          "reason": "把离婚和辞职这两件事说出口，本身就是这顿饭里最需要用力的一句话；对象是记性时好时坏的外婆，话不会被追问，但可能被厨房听见，也无法收回。",
+          "risk": "外婆只“哦”了一声，转头去挑橘子上的白丝，而厨房那边的锅盖声停了一拍——你不确定母亲听见了多少。"
+        },
+        {
+          "actionId": "act_d9e2800138af",
+          "difficultyLabel": "容易",
+          "dc": 10,
+          "modifier": 0,
+          "reason": "招呼一个刚进门的孩子吃饭，是旧礼数里最熟的一套；难的只在“同学”这个称呼会落在谁心里，而阿婆只需把话说圆。",
+          "risk": "话说岔了，见月应得慢半拍，桌上就多出一段谁也不好补的空白。"
+        }
+      ],
+      "reactions": [
+        {
+          "id": "rxn_1ec4d7edb731",
+          "characterId": "chen_jianyue",
+          "incomingActionIds": [
+            "act_6c8cbc45b274",
+            "act_d9e2800138af"
+          ],
+          "continueOriginal": true,
+          "summary": "接住两问，话头往离婚上引",
+          "description": "见月没松开外婆的手，先朝外婆答一句路上不冷，随即抬眼看向母亲，把手按在文件袋上，声音放平，像在说一件已经想好的事。",
+          "dialogue": "阿婆，不冷，火车上人不多，我吃了——妈，票是九点四十七的。待几天……这回我想多待几天，正好有件事，得当面跟你们说。",
+          "thought": "妈这一问像在算我的行程，外婆那一问像在招呼陌生人——我要是现在说离婚，两句话全砸在她们脸上。先接住，别让话掉地上。",
+          "ability": "presence",
+          "traitName": "把难过讲成笑话",
+          "stance": "先接后转",
+          "createdAt": "2026-10-27T10:55:35.049Z",
+          "roll": {
+            "natural": 9,
+            "ability": "presence",
+            "abilityValue": 8,
+            "traitName": "把难过讲成笑话",
+            "traitBonus": 2,
+            "conditionBonus": 2,
+            "conditionNotes": [
+              "破冰的余温 +2"
+            ],
+            "situationalBonus": 0,
+            "penalty": -3,
+            "penaltyNotes": [
+              "分心兼顾原行动 -2",
+              "同时应对 2 个行动 -1"
+            ],
+            "total": 18,
+            "incomingTotals": {
+              "act_6c8cbc45b274": 23,
+              "act_d9e2800138af": 22
+            }
+          }
+        },
+        {
+          "id": "rxn_2db8ca291e8e",
+          "characterId": "zhou_apo",
+          "incomingActionIds": [
+            "act_f847706ff37b"
+          ],
+          "continueOriginal": true,
+          "summary": "放下客套，反握住她的手",
+          "description": "我把那半个橘子搁回碟子里，反手把见月覆上来的手拢住，另一只手在她手背上拍了拍。原先那句招呼路上的话咽了回去，只低头看了看她的手，又抬眼瞧她的脸。",
+          "dialogue": "手怎么这么凉……你慢慢说，阿婆听着呢。记不住也不要紧，你多讲两遍。",
+          "thought": "这孩子手这么凉，说的什么我没全听清，可她那句“不是出差路过”，像是有大事。我原先那一套客气话，这会儿说不出口了。",
+          "ability": "presence",
+          "traitName": "旧时的礼数",
+          "stance": "顺势接住",
+          "createdAt": "2026-10-27T10:55:35.000Z",
+          "roll": {
+            "natural": 16,
+            "ability": "presence",
+            "abilityValue": 6,
+            "traitName": "旧时的礼数",
+            "traitBonus": 2,
+            "conditionBonus": 0,
+            "conditionNotes": [],
+            "situationalBonus": 0,
+            "penalty": -2,
+            "penaltyNotes": [
+              "分心兼顾原行动 -2"
+            ],
+            "total": 22,
+            "incomingTotals": {
+              "act_f847706ff37b": 7
+            }
+          }
+        }
+      ],
+      "narration": "锅盖扣回去的那一声之后，周美芬端着汤盆出来了。她走得很稳，抹布垫在盆底，手腕略沉，把盆放在桌子正中，勺子调了个方向，朝着见月。她没有坐下，一只手还搭在盆沿上，热气从她指缝里往上走。“见月，这回能待几天？票买的几点的——不是催你，我好算着什么时候给你热夜宵。”\n\n“九点四十七。”见月先朝外婆那边应了：路上不冷，车上人不多，吃过了。声音压得低。随后她伸手覆住外婆捏橘子的那只手，把话往里说了一层，说她离婚了，工作也辞了，先跟阿婆说一声。那几句话和盆底磕在桌面上的闷响、和灶上余火的嘶声挤在一处，落得并不清楚。周阿婆反手把她的手拢住，另一只手在她手背上拍了两下，只低头看她的手。“手怎么这么凉……你慢慢说，阿婆听着呢。记不住也不要紧，你多讲两遍。”说完，她把碟子边那半个橘子又推近一点，问，那你路上吃饭了没有。\n\n见月没把手抽回来。她说吃了，又抬眼看母亲，掌心按在椅腿边那只文件袋上，袋子底角硬了，摸上去像一块结痂。“妈，票是九点四十七的。待几天……这回我想多待几天。正好有件事，得当面跟你们说。”\n\n周美芬的手还搭在盆沿。她像是听见了，又像是只听见了后半句。她拿起勺子，先给见月碗里舀了一勺，汤面上的油花被推开又合上。“先喝汤。”她说，“凉了就腥。”说完才慢慢坐下，围裙没解，腰后的带子垂在椅子外面。\n\n周阿婆把橘子皮拢成一小堆，抬头看了看靠墙那副碗筷——那副筷子架在小碟上，摆得比谁的都正。“你爸是不是又值夜班？”她问。桌上静了一下。周美芬没抬头，说：“妈，先喝汤。”声音不高，也没有第二句。\n\n窗外又响了两声鞭炮，很远，像隔着一层棉被。汤在盆里冒着细白的汽，四个碗都满着，谁也没先动筷。见月的手还放在文件袋上，袋口那截湿过的纸边翘了起来，露出里面一个字的半边。",
+      "outcomeNotes": [
+        {
+          "characterId": "zhou_meifen",
+          "note": "她把汤端稳、把两个问题问出了口，也换回了女儿“想多待几天”和“有件事要说”的回答，但没问出那件事是什么。"
+        },
+        {
+          "characterId": "chen_jianyue",
+          "note": "她把离婚和辞职说出了口，却被外婆的“手怎么这么凉”和上汤的响动接了过去，等于没真正说成。"
+        },
+        {
+          "characterId": "zhou_apo",
+          "note": "她按老礼数招呼了外孙女，握住了那只凉手，隐约觉出不对，却只记住了“手凉”和“有事要讲”。"
+        }
+      ],
+      "stateChanges": {
+        "characters": [
+          {
+            "characterId": "zhou_meifen",
+            "stressDelta": 2,
+            "conditionsAdd": [
+              {
+                "name": "竖着耳朵",
+                "description": "女儿说有件事要当面讲，她开始留意每句话的尾巴和女儿的手放在哪里",
+                "modifier": 2,
+                "kind": "emotion",
+                "abilities": [
+                  "perception"
+                ]
+              }
+            ],
+            "conditionsRemove": [],
+            "inventoryAdd": [],
+            "inventoryRemove": [],
+            "privateNote": "上汤那会儿她好像说了个“离”字，被锅盖和盆底的响动盖过去了。我没敢问第二遍。",
+            "memory": {
+              "summary": "见月说这回要多待几天，有件事得当面说。",
+              "importance": 4
+            }
+          },
+          {
+            "characterId": "chen_jianyue",
+            "stressDelta": 2,
+            "conditionsAdd": [
+              {
+                "name": "话没落地",
+                "description": "最难的那句已经出口，却被家常话接走，她不确定有没有人真的听见，再开口更难",
+                "modifier": -2,
+                "kind": "emotion",
+                "abilities": [
+                  "will"
+                ]
+              }
+            ],
+            "conditionsRemove": [
+              "破冰的余温"
+            ],
+            "inventoryAdd": [],
+            "inventoryRemove": [],
+            "privateNote": "我说了。阿婆只摸我的手，母亲只让我先喝汤。也许该等她们吃完饭。",
+            "memory": {
+              "summary": "我把离婚说出口了，换回来的是一句“手怎么这么凉”。",
+              "importance": 4
+            }
+          },
+          {
+            "characterId": "zhou_apo",
+            "stressDelta": 1,
+            "conditionsAdd": [
+              {
+                "name": "心口一点影子",
+                "description": "她抓不住刚才那段话，只留下“这孩子有事”的模糊感觉，容易把眼前的事认岔",
+                "modifier": -1,
+                "kind": "emotion",
+                "abilities": [
+                  "will"
+                ]
+              }
+            ],
+            "conditionsRemove": [],
+            "inventoryAdd": [],
+            "inventoryRemove": [],
+            "privateNote": "见月的手凉得不像话，她说了件要紧的事，我没听全。",
+            "memory": {
+              "summary": "见月的手凉，说有事要讲。",
+              "importance": 3
+            }
+          }
+        ],
+        "world": {
+          "factsAdd": [
+            "陈见月当着两人的面低声说了自己离婚、辞了工作，那几句被上汤的响动盖过，没有人正面接住。",
+            "陈见月说这次想多待几天，并且有件事要当面说，但没说是什么事。"
+          ],
+          "factsRemove": [
+            "周美芬把汤盆端回厨房重新加热，桌上仍摆着四副碗筷。"
+          ],
+          "flagsSet": {
+            "divorce_disclosed_half": true,
+            "meifen_suspects": true
+          },
+          "pressure": "汤已上桌，“有件事”悬在三个人中间：周美芬没有问第二遍，陈见月也没有再说第二遍。",
+          "sceneTitle": "汤热话凉"
+        }
+      },
+      "nextTimeJump": {
+        "elapsedMinutes": 9,
+        "label": "汤面上浮起一层薄油的第九分钟",
+        "reason": "上汤、落座、几轮夹菜与客套耗掉了这段时间，谁也没有把“那件事”再问一遍。"
+      },
+      "ending": null,
+      "createdAt": "2026-10-27T10:55:13.715Z",
+      "completedAt": "2026-10-27T10:56:11.130Z"
+    },
+    {
+      "id": "beat_6443bb7f4e9f",
+      "index": 3,
+      "title": "饭前还是饭后",
+      "phase": "complete",
+      "clock": {
+        "minutes": 1149,
+        "display": "19:09",
+        "dateLabel": "冬至"
+      },
+      "timeJump": {
+        "elapsedMinutes": 9,
+        "label": "汤面上浮起一层薄油的第九分钟",
+        "reason": "上汤、落座、几轮夹菜与客套耗掉了这段时间，谁也没有把“那件事”再问一遍。"
+      },
+      "publicBrief": "窗外的鞭炮隔一阵响两声，玻璃跟着轻轻一震，汤盆里的汽已经淡了，油在面上凝成一层薄薄的膜。周美芬把勺子往盆沿上磕了一下，站起来，围裙带子从椅背后面拖过去。她绕到靠墙那张矮柜前，把摆得最正的那副碗筷——小碟、筷子、一只空碗——端起来，摞进下层的碗柜，柜门合上时闷闷一响。“摆着也是落灰。”她说，声音朝着柜门。回来时她没马上坐下，一只手扶着桌沿，眼睛落在见月和见月手边那只湿了角的文件袋上。“你那件事，”她问，“是要饭前说，还是吃了饭说？”桌上剩三副碗筷，三个碗都还满着，谁也没先动筷。楼道里有人上楼，脚步在五楼半停住，又往上走了两级，没了声音。",
+      "privateCues": [
+        {
+          "characterId": "zhou_meifen",
+          "cue": "扶桌沿那只手垂下来时，围裙口袋里那个扁药盒的方角硌了掌心一下。她刚才明明说清了“摆着也是落灰”，此刻却一时想不起这句话之前自己说了什么，心里空了一小块，像粉笔字被擦过。"
+        },
+        {
+          "characterId": "chen_jianyue",
+          "cue": "文件袋湿掉的那一角贴着膝盖，隔着纸能摸出预约单硬挺的边。你低头看见自己无名指根一圈比旁边浅的皮肤，赶紧把手缩到桌下，指尖碰到椅腿，凉。"
+        },
+        {
+          "characterId": "zhou_apo",
+          "cue": "柜门一开，旧木头和樟脑的味儿飘过来。你一下想起很多年前的一个冬至，自己也是这样把一副碗筷收进柜子，那天收的是谁的，你想不起来，只记得收完以后屋里很静。"
+        }
+      ],
+      "pressure": "周美芬站在桌边等着回答，柜门已经合上，父亲的位子空了出来——见月要么现在说，要么就得在饭桌上把这句话咽回去。",
+      "sceneQuestion": "那句“有件事”会落在饭前，还是被这顿饭一直推到 21:47 的检票口？",
+      "gmNote": "让收音机和这顿凉下去的汤留在背景里；母亲收碗筷是试探，不是宣判，见月的回答决定第 4 刻往哪边倾。",
+      "actions": [
+        {
+          "id": "act_e94febd48a3c",
+          "characterId": "zhou_meifen",
+          "category": "交涉",
+          "summary": "先给女儿夹菜，把话头递过去",
+          "description": "周美芬把围裙带子在腰后拢了一下，重新坐下，伸手把见月面前那只碗往她手边推了推，又夹了一筷子她小时候爱吃的菜搁在碗沿上。她没看文件袋，眼睛落在见月的手上。",
+          "dialogue": "先吃两口。你那件事，妈不催你——就是别等上了车才说，妈这耳朵，站台上听不清。",
+          "thought": "我不能让她在饭桌上把这句话咽回去，也不能让妈再把话岔到汤上。我得先开口，把话头递到她手里——但不能先问，先问就是我在逼她。",
+          "goalProgress": "把“饭前说还是饭后说”这道题从女儿手里接过来，让她自己开口，而不是被我逼出来。",
+          "stakes": "若她仍旧绕开，这顿饭就会一路推到 21:47 的检票口，我欠她的坦白也再没有机会说。",
+          "ability": "presence",
+          "traitName": null,
+          "targetId": "chen_jianyue",
+          "targetLabel": "陈见月",
+          "status": "resolved",
+          "penalties": -2,
+          "penaltyNotes": [
+            "分心应战 -2"
+          ],
+          "generatedBy": "llm",
+          "createdAt": "2026-10-27T10:56:24.963Z",
+          "roll": {
+            "natural": 5,
+            "ability": "presence",
+            "abilityValue": 6,
+            "traitName": null,
+            "traitBonus": 0,
+            "conditionBonus": -2,
+            "conditionNotes": [
+              "话被接走 -2"
+            ],
+            "situationalBonus": 0,
+            "penalty": -2,
+            "penaltyNotes": [
+              "分心应战 -2"
+            ],
+            "total": 7,
+            "dc": null,
+            "opponentTotal": 3,
+            "margin": 4,
+            "tier": "success",
+            "criticalByNatural20": false
+          },
+          "outcome": "success",
+          "outcomeNote": ""
+        },
+        {
+          "id": "act_4c2272c928a9",
+          "characterId": "chen_jianyue",
+          "category": "交涉",
+          "summary": "把预约单和合同摊到母亲面前",
+          "description": "我弯腰把文件袋从椅腿边拿起来，抽出那张医院预约单和租房合同，抚平翘起的湿边，反着推到桌子中央、汤盆旁边。手没有收回来，压在那两张纸上。",
+          "dialogue": "妈，您别急着收碗。这个——是给您挂的号，体检，我陪您去。这个是我在北京的房子，两居，有一间是空着的。我不是回来报信的，我是回来接您的。",
+          "thought": "再绕就再也说不出口了。不解释、不谈判，先把文件袋放到桌上，让东西替我开口。",
+          "goalProgress": "把“接母亲去北京”从心里的话变成桌上看得见的东西，逼出一次真正的回应。",
+          "stakes": "如果她还是把话推开，我就只剩九点四十七那趟车可以下台阶。",
+          "ability": "will",
+          "traitName": null,
+          "targetId": "zhou_meifen",
+          "targetLabel": "周美芬",
+          "status": "resolved",
+          "penalties": -2,
+          "penaltyNotes": [
+            "分心应战 -2"
+          ],
+          "generatedBy": "llm",
+          "createdAt": "2026-10-27T10:56:24.692Z",
+          "roll": {
+            "natural": 15,
+            "ability": "will",
+            "abilityValue": 5,
+            "traitName": null,
+            "traitBonus": 0,
+            "conditionBonus": -4,
+            "conditionNotes": [
+              "鞋袜湿冷 -2",
+              "话没落地 -2"
+            ],
+            "situationalBonus": 1,
+            "penalty": -2,
+            "penaltyNotes": [
+              "分心应战 -2"
+            ],
+            "total": 15,
+            "dc": null,
+            "opponentTotal": 10,
+            "margin": 5,
+            "tier": "success",
+            "criticalByNatural20": false
+          },
+          "outcome": "success",
+          "outcomeNote": ""
+        },
+        {
+          "id": "act_a0ca246ce109",
+          "characterId": "zhou_apo",
+          "category": "交涉",
+          "summary": "阿婆插话替见月解围",
+          "description": "我把手里那半个橘子往见月碗边一搁，又抬手朝靠墙空着的那副碗筷的方向摆了一下，像是才想起来什么，转脸对着美芬，声音放得平平的。",
+          "dialogue": "美芬啊，先别问那件事。你看这汤，你端三回锅了。坐下，坐下——同学大老远回来的，先让她把这碗汤喝了。有什么事，吃完再说，天塌不下来。",
+          "thought": "美芬这么问，见月怕是又要往后缩。我这老太婆先插一句不打紧的话，把气儿缓一缓，孩子才有地方开口。",
+          "goalProgress": "把饭前那道追问岔开，让见月能坐稳一会儿，也让美芬先歇口气。",
+          "stakes": "要是这话没人接，问话就还得落回见月身上，饭桌上的僵劲儿散不了。",
+          "ability": "presence",
+          "traitName": "旧时的礼数",
+          "targetId": "zhou_meifen",
+          "targetLabel": "周美芬",
+          "status": "resolved",
+          "penalties": 0,
+          "penaltyNotes": [],
+          "generatedBy": "llm",
+          "createdAt": "2026-10-27T10:56:24.844Z",
+          "roll": {
+            "natural": 10,
+            "ability": "presence",
+            "abilityValue": 6,
+            "traitName": "旧时的礼数",
+            "traitBonus": 2,
+            "conditionBonus": 0,
+            "conditionNotes": [],
+            "situationalBonus": 0,
+            "penalty": 0,
+            "penaltyNotes": [],
+            "total": 18,
+            "dc": null,
+            "opponentTotal": 10,
+            "margin": 8,
+            "tier": "critical_success",
+            "criticalByNatural20": false
+          },
+          "outcome": "critical_success",
+          "outcomeNote": ""
+        }
+      ],
+      "adjudications": [
+        {
+          "actionId": "act_e94febd48a3c",
+          "difficultyLabel": "容易",
+          "dc": 10,
+          "modifier": 0,
+          "reason": "夹菜、递台阶本身是日常社交动作，若见月不主动抗拒并不难，阻力主要留给她的反应检定。",
+          "risk": "见月只低头喝汤，把话岔到菜咸淡上，文件袋被她按在膝盖边；这个话头就凉在汤盆边。"
+        },
+        {
+          "actionId": "act_4c2272c928a9",
+          "difficultyLabel": "标准",
+          "dc": 15,
+          "modifier": 1,
+          "reason": "把预约单和租房合同直接摊到母亲面前并要她改变生活安排，方法具体但正面撞上她的自尊和隐情，属于标准挑战。",
+          "risk": "周美芬只扫一眼预约单，把纸推回桌心说‘先吃饭’，随后整晚不再碰文件袋；见月再开口就像在逼她。"
+        },
+        {
+          "actionId": "act_a0ca246ce109",
+          "difficultyLabel": "容易",
+          "dc": 10,
+          "modifier": 0,
+          "reason": "外婆只是用家常话岔开问话，方式合乎旧时礼数，动作本身不难，关键是周美芬肯不肯接这个台阶。",
+          "risk": "周美芬不接台阶，仍站着把问话向见月重复一遍；阿婆那句‘同学’反而让桌上多一层尴尬。"
+        }
+      ],
+      "reactions": [
+        {
+          "id": "rxn_3d5c6d72d39a",
+          "characterId": "zhou_meifen",
+          "incomingActionIds": [
+            "act_4c2272c928a9",
+            "act_a0ca246ce109"
+          ],
+          "continueOriginal": true,
+          "summary": "按住预约单，把话头拐回汤上",
+          "description": "我原要夹菜的手没停，筷子落到见月碗沿，另一只手伸过去，掌心覆在那两张纸上，轻轻往下按了按，没抽走。眼睛先看阿婆，再落回见月脸上，声音放得平。",
+          "dialogue": "阿婆说得对，先喝汤。这个——先搁着，吃完饭再说。妈还没糊涂到要人替我做主的地步。",
+          "thought": "她连号都挂好了，这是早想好的，不是回来跟我商量的。我不能当着我妈的面跟她争，先把这页纸按下去。",
+          "ability": "will",
+          "traitName": "把话咽回去",
+          "stance": "先按后问",
+          "createdAt": "2026-10-27T10:56:58.452Z",
+          "roll": {
+            "natural": 5,
+            "ability": "will",
+            "abilityValue": 8,
+            "traitName": "把话咽回去",
+            "traitBonus": 2,
+            "conditionBonus": -2,
+            "conditionNotes": [
+              "话没落地 -2"
+            ],
+            "situationalBonus": 0,
+            "penalty": -3,
+            "penaltyNotes": [
+              "分心兼顾原行动 -2",
+              "同时应对 2 个行动 -1"
+            ],
+            "total": 10,
+            "incomingTotals": {
+              "act_4c2272c928a9": 15,
+              "act_a0ca246ce109": 18
+            }
+          }
+        },
+        {
+          "id": "rxn_ff5631359dcb",
+          "characterId": "chen_jianyue",
+          "incomingActionIds": [
+            "act_e94febd48a3c"
+          ],
+          "continueOriginal": true,
+          "summary": "手压单子，饭前把话挑明",
+          "description": "我没去碰那筷子菜，手仍按在推到桌心的两张纸上，把湿边又抚了一下，抬眼看母亲。声音压得稳，像在会议室里说最后一页。",
+          "dialogue": "妈，不等站台。就现在——这个号是给您挂的，体检，我陪您去；这个是我在北京的房子，两居，有一间空着。我不是回来报信的，我是回来接您的。",
+          "thought": "她越说“不催”，我越像被人按在椅背上。算了，就现在。手别抖。",
+          "ability": "will",
+          "traitName": null,
+          "stance": "顺势硬推",
+          "createdAt": "2026-10-27T10:56:58.054Z",
+          "roll": {
+            "natural": 4,
+            "ability": "will",
+            "abilityValue": 5,
+            "traitName": null,
+            "traitBonus": 0,
+            "conditionBonus": -4,
+            "conditionNotes": [
+              "鞋袜湿冷 -2",
+              "话没落地 -2"
+            ],
+            "situationalBonus": 0,
+            "penalty": -2,
+            "penaltyNotes": [
+              "分心兼顾原行动 -2"
+            ],
+            "total": 3,
+            "incomingTotals": {
+              "act_e94febd48a3c": 7
+            }
+          }
+        }
+      ],
+      "narration": "筷子落下去，一筷子菜搁在碗沿上，周美芬把见月面前那只碗又往她手边推了推。“先吃两口。”她说，“你那件事，妈不催你——就是别等上了车才说，妈这耳朵，站台上听不清。”她的眼睛没往文件袋上放，只落在见月的手背上。围裙带子还在椅背后头拖着，她也没去管。\n\n见月没动那筷子菜。她把两张纸抚平，往桌子中央推，推过汤盆旁边，手就那么压着没收回。“妈，不等站台。就现在。”声音压得稳，像在会议室里念最后一页，“这个号是给您挂的，体检，我陪您去；这个是我在北京的房子，两居，有一间空着。”她停了一下，“我不是回来报信的，我是回来接您的。”\n\n阿婆把手里半个橘子往见月碗边一搁，抬手朝靠墙矮柜那边摆了一下，像才想起什么：“美芬啊，先别问那件事。你看这汤，你端三回锅了。坐下，坐下——同学大老远回来的，先让她把这碗汤喝了。有什么事，吃完再说，天塌不下来。”她说着就把汤勺捞在手里，先给见月舀了一勺，又给美芬舀，勺子磕在盆沿，汤面上那层油膜破了。美芬到底坐下了。\n\n坐下之后，她另一只手才伸过去，掌心覆在那两张纸上，往下按了按，没抽走，也没翻看。她先看阿婆，再看回女儿。“阿婆说得对，先喝汤。这个——先搁着，吃完饭再说。妈还没糊涂到要人替我做主的地步。”\n\n一时没人说话。鞭炮在外头响了两声，玻璃跟着轻轻一震。见月听清了“同学”两个字，没纠正，只把手从纸上挪开，端起了碗。那两张纸还摊在汤盆旁边，湿边翘着，谁也没有再碰。美芬喝了一口，放下碗，忽然问：“末班车几点？”问完她自己也像觉得问早了，低头去挑碗里的姜丝。",
+      "outcomeNotes": [
+        {
+          "characterId": "zhou_meifen",
+          "note": "她把话头递了出去，也被女儿当众安排了一次去处；她用“吃完饭再说”把决定权按回自己手里，但那两张纸留在了桌上。"
+        },
+        {
+          "characterId": "chen_jianyue",
+          "note": "她把预约单和租房合同摊开、把“接您去北京”说完整了，得到了母亲一句“先搁着”，没得到答复。"
+        },
+        {
+          "characterId": "zhou_apo",
+          "note": "她一句插话把要僵住的饭桌拉了回来，还亲手给两人盛了汤；同时把见月叫成了“同学”。"
+        }
+      ],
+      "stateChanges": {
+        "characters": [
+          {
+            "characterId": "zhou_meifen",
+            "stressDelta": 2,
+            "conditionsAdd": [
+              {
+                "name": "被按住的主动权",
+                "description": "女儿当众说要接她走，她表面稳住，心里憋着一句没说完的话，容易在细节上挑刺",
+                "modifier": -2,
+                "kind": "emotion",
+                "abilities": [
+                  "will",
+                  "presence"
+                ]
+              }
+            ],
+            "conditionsRemove": [
+              "话没落地",
+              "竖着耳朵"
+            ],
+            "inventoryAdd": [],
+            "inventoryRemove": [],
+            "privateNote": "她注意到见月压纸的那只手在抖，也注意到单子的边是湿的——她没问是怎么湿的。",
+            "memory": {
+              "summary": "“我不是回来报信的，我是回来接您的。”——当着阿婆的面说的。",
+              "importance": 4
+            }
+          },
+          {
+            "characterId": "chen_jianyue",
+            "stressDelta": 2,
+            "conditionsAdd": [
+              {
+                "name": "话说尽了没人接",
+                "description": "最要紧的话已经出口，接下来只能等，耐心和脸色都比平时难维持",
+                "modifier": -2,
+                "kind": "emotion",
+                "abilities": [
+                  "will"
+                ]
+              }
+            ],
+            "conditionsRemove": [
+              "话没落地"
+            ],
+            "inventoryAdd": [],
+            "inventoryRemove": [],
+            "privateNote": "外婆把她叫成“同学”，她听得清清楚楚，没有纠正。",
+            "memory": {
+              "summary": "妈把掌心按在单子上，说“妈还没糊涂到要人替我做主的地步”。",
+              "importance": 3
+            }
+          },
+          {
+            "characterId": "zhou_apo",
+            "stressDelta": -1,
+            "conditionsAdd": [
+              {
+                "name": "把桌子稳住了",
+                "description": "她这一顿话有人听、有人照做，之后开口更顺，也更愿意替两人打圆场",
+                "modifier": 2,
+                "kind": "boon",
+                "abilities": [
+                  "presence"
+                ]
+              }
+            ],
+            "conditionsRemove": [],
+            "inventoryAdd": [],
+            "inventoryRemove": [],
+            "privateNote": "“同学”两个字出口时，她有一瞬间想不起这个远道回来的人是谁家的孩子，只知道自己该这么说。",
+            "memory": {
+              "summary": "汤要凉了，得让他们先喝一口，天塌不下来。",
+              "importance": 2
+            }
+          }
+        ],
+        "world": {
+          "factsAdd": [
+            "陈见月把一张体检预约单和一份北京租房合同摊在桌上，当面说要接母亲去北京住。",
+            "周美芬把两张纸按在桌上没有收走，说“吃完饭再说”；周阿婆在饭桌上把陈见月叫成了“同学”。"
+          ],
+          "factsRemove": [
+            "陈见月没有说明这次要当面说的是什么事。"
+          ],
+          "flagsSet": {
+            "invitation_to_beijing_made": true,
+            "meifen_deferred_answer": true,
+            "apo_called_jianyue_classmate": true
+          },
+          "pressure": "那两张纸还摊在汤盆旁边没人碰，末班车是 21:47，而饭才刚吃第一口。",
+          "sceneTitle": "汤凉之前"
+        }
+      },
+      "nextTimeJump": {
+        "elapsedMinutes": 12,
+        "label": "一顿饭吃到一半的十二分钟",
+        "reason": "摊牌之后没人再提那两张纸，三个人靠喝汤、夹菜和说些别的话把这段时间填了过去。"
+      },
+      "ending": null,
+      "createdAt": "2026-10-27T10:56:11.136Z",
+      "completedAt": "2026-10-27T10:57:22.230Z"
+    }
+  ],
+  "progress": {
+    "phase": "idle",
+    "label": "等待继续",
+    "updatedAt": "2026-10-27T10:57:22.234Z"
+  },
+  "llm": {
+    "calls": 31,
+    "promptTokens": 98097,
+    "completionTokens": 31198,
+    "cachedTokens": 16512,
+    "reasoningTokens": 18186,
+    "totalTokens": 129295,
+    "failures": 0
+  },
+  "ending": null,
+  "error": null,
+  "startedAt": "2026-10-27T10:53:59.531Z"
+}

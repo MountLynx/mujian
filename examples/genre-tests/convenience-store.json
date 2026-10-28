@@ -1,0 +1,1977 @@
+{
+  "version": 1,
+  "id": "run_651681f68615",
+  "seed": "genre-store-01",
+  "status": "paused",
+  "scenario": {
+    "id": "genre-convenience-store",
+    "title": "凌晨三点",
+    "subtitle": "天亮之前，三个人在同一盏灯下各待了一会儿。",
+    "kicker": "类型实验 · 日常群像 · 暴雨夜",
+    "isPreset": true,
+    "world": {
+      "title": "凌晨三点",
+      "era": "当代 · 北方省会 · 老城区",
+      "tone": "安静的群像速写，微微的幽默与善意。不制造犯罪、车祸或奇迹；允许什么都没发生，也允许一点小小的改变。句子短，留白多，不要煽情。",
+      "setting": "老城区十字路口的 24 小时便利店，招牌的“便”字不亮。暴雨把街道冲空。店里有暖气、关东煮、一台总在放老歌的收音机。凌晨三点，三个人先后进来：夜班店员小满、代驾司机老马、拖着行李箱的女孩林菌。店外有一只湿透的橘猫。\n\n这条街上没有大事发生。每个人都带着一件不愿说的事，坐在同一盏灯下。",
+      "location": "便利店店内：收银台、关东煮锅、靠窗的高脚凳、冰柜、贴着促销海报的玻璃门。所有角色都在这里。",
+      "dateLabel": "暴雨夜",
+      "startClock": "03:10",
+      "premise": "暴雨把三个本来不会说话的人困在同一间便利店里；天亮之前，每个人都在等一个不会来的消息。",
+      "opening": "03:10。雨把玻璃门冲成一片模糊的白。店里的收音机在放一首 1998 年的情歌，信号断断续续。\n\n小满把最后一盒关东煮的汤加满，抬头看见一个穿反光背心的男人站在门口抖伞。老马今天第三趟代驾，客人吐在了后座，他刚把车洗干净。\n\n靠窗的高脚凳上坐着一个女孩，行李箱立在脚边，箱子上贴着航空公司的托运条。她面前的热牛奶已经凉了，杯壁上凝着一圈水。\n\n门上的风铃响了一声。又进来一个人，不是顾客——是那只橘猫，从门缝里挤进来，抖了抖身上的水。\n\n小满说：“欢迎光临。”\n\n没有人回答。",
+      "directorNotes": "这是一个没有反派的夜晚。不要加抢劫、追车、失踪、绝症或突然的告白；压力来自疲惫、账单、想念和天亮。\n\n三个人可以长时间不说话，各做各的事；对话可以被打断、误解、停在半句。橘猫可以是场景的一部分，但不要让它变成魔法或象征。\n\n四个时刻，允许结尾没有任何人被拯救。不要强行让三个人成为朋友。",
+      "hiddenCanon": "（仅总控可见，是人物与世界的骨架，不要求照本宣科。）\n\n1. 小满二十二岁，在这家店上了两年夜班，明天准备辞职去南方学烘焙。她没告诉任何人，辞职信在收银台下面。她最怕的不是走，是走了以后没人记得她在这儿待过。\n\n2. 老马四十五岁，女儿今天十八岁生日。他离婚后女儿跟着母亲，三年没叫过他爸。他后备箱里有一个没送出去的蛋糕，奶油已经化了。他今晚一直在这片区域接单，其实是想在女儿学校附近碰见她。\n\n3. 林菌十九岁，从家里跑出来，买了一张去青岛的夜车票，但错过了。她手机里有十七个未接来电，全是母亲。她不知道要不要回。\n\n4. 橘猫是隔壁修车铺养的，总在下雨时跑进来。它不是谁的象征，也没有魔法。\n\n5. 这个夜晚不会解决任何人的问题。如果发生什么，也只是让某个人多坐了一会儿，或者多说了一句话。",
+      "initialFacts": [
+        "外面在下暴雨。",
+        "便利店是这条街上唯一还亮着的店。",
+        "收音机在放老歌。",
+        "橘猫从门缝里进来了。",
+        "三个人都在这间店里。"
+      ],
+      "countdown": "天亮 06:20"
+    },
+    "characters": [
+      {
+        "id": "xiao_man",
+        "name": "小满",
+        "title": "便利店夜班店员",
+        "age": "22",
+        "pronouns": "她",
+        "publicProfile": "便利店夜班店员，短发，围裙上别着一只卡通猫徽章；附近夜班司机都认识她。",
+        "appearance": "短发，眼下有青，围裙口袋里插着一支记号笔；右手食指有一道被关东煮汤烫出的浅疤。",
+        "personality": "用元气和吐槽对付困意；记得每个熟客买什么；不擅长说自己的事。她能让陌生人觉得被照顾，却很难让别人照顾她。",
+        "desire": "在天亮前做出一个决定，并且不要后悔。",
+        "fear": "走了以后，自己这两年像没发生过。",
+        "secret": "明天辞职去南方学烘焙，辞职信在收银台下面。",
+        "abilities": {
+          "physique": 4,
+          "agility": 6,
+          "perception": 7,
+          "intellect": 5,
+          "will": 5,
+          "presence": 7
+        },
+        "traits": [
+          {
+            "name": "记得熟客",
+            "description": "记得每个夜班司机买什么烟、加不加辣。",
+            "bonus": 2,
+            "ability": "perception"
+          },
+          {
+            "name": "用玩笑挡回去",
+            "description": "别人问到她自己，她就开始讲段子。",
+            "bonus": 2,
+            "ability": "presence"
+          }
+        ],
+        "possessions": [
+          "收银台钥匙",
+          "猫徽章",
+          "一本卷边的烘焙笔记"
+        ],
+        "relationships": [
+          {
+            "targetId": "lao_ma",
+            "label": "熟客 / 代驾司机",
+            "attitude": "他每次都说不用找零，其实是想有人跟他说句话。"
+          },
+          {
+            "targetId": "lin_jun",
+            "label": "陌生女孩 / 像刚从一个很吵的地方逃出来",
+            "attitude": "她看起来像刚从一个很吵的地方逃出来。"
+          }
+        ],
+        "memories": [
+          {
+            "summary": "两年前第一天上班，她把关东煮的汤烧干了，店长没骂她。",
+            "detail": "店长说“慢慢来”，她记到现在。",
+            "importance": 3
+          },
+          {
+            "summary": "母亲每周打电话问她什么时候回家考编。",
+            "detail": "她每次都说“再干一年”。",
+            "importance": 3
+          },
+          {
+            "summary": "烘焙笔记上第一页写着：三十岁以前要有自己的烤箱。",
+            "detail": "她今年二十二，觉得还来得及。",
+            "importance": 4
+          }
+        ],
+        "conditions": []
+      },
+      {
+        "id": "lao_ma",
+        "name": "老马",
+        "title": "代驾司机",
+        "age": "45",
+        "pronouns": "他",
+        "publicProfile": "代驾司机，反光背心洗得发白，车后备箱里总放着一瓶矿泉水和一块毛巾；说话带北方口音。",
+        "appearance": "反光背心，灰色毛衣，手指关节粗大；右手虎口有一道旧疤。",
+        "personality": "爱讲路上的事，讲到自己就绕开；对年轻人有种笨拙的照顾。他不擅长道歉，擅长把车擦干净。",
+        "desire": "在女儿生日这天，听她叫一声爸。",
+        "fear": "女儿已经不需要他了。",
+        "secret": "后备箱里有一个化了的蛋糕；他今晚一直在女儿学校附近绕。",
+        "abilities": {
+          "physique": 6,
+          "agility": 6,
+          "perception": 6,
+          "intellect": 5,
+          "will": 7,
+          "presence": 5
+        },
+        "traits": [
+          {
+            "name": "路熟",
+            "description": "这座城的近路、单行道和哪家店还开着，他都知道。",
+            "bonus": 2,
+            "ability": "intellect"
+          },
+          {
+            "name": "报喜不报忧",
+            "description": "再难的事，到他嘴里都成了“还行”。",
+            "bonus": 2,
+            "ability": "will"
+          }
+        ],
+        "possessions": [
+          "车钥匙",
+          "一块旧毛巾",
+          "后备箱里的蛋糕"
+        ],
+        "relationships": [
+          {
+            "targetId": "xiao_man",
+            "label": "熟客 / 便利店店员",
+            "attitude": "这姑娘夜班熬得脸都白了。"
+          },
+          {
+            "targetId": "lin_jun",
+            "label": "陌生女孩 / 和女儿差不多大",
+            "attitude": "她一低头，我就想起我闺女。"
+          }
+        ],
+        "memories": [
+          {
+            "summary": "女儿小时候坐在副驾驶，管车里的香水叫“爸爸的味道”。",
+            "detail": "离婚后，那瓶香水被前妻扔了。",
+            "importance": 4
+          },
+          {
+            "summary": "三年前女儿把他拉黑，最后一条消息是“你别来了”。",
+            "detail": "他到现在也没删。",
+            "importance": 5
+          },
+          {
+            "summary": "今晚客人吐在后座，他洗了四十分钟。",
+            "detail": "洗车的时候他想，女儿十八岁了。",
+            "importance": 3
+          }
+        ],
+        "conditions": []
+      },
+      {
+        "id": "lin_jun",
+        "name": "林菌",
+        "title": "拖着行李箱的女孩",
+        "age": "19",
+        "pronouns": "她",
+        "publicProfile": "穿一件不合身的卫衣，拖着一只贴满托运条的行李箱；说话很轻，不太看人。",
+        "appearance": "卫衣帽子抽绳有一头开了线，行李箱上贴着航空公司的托运条；手指冻得发红。",
+        "personality": "用礼貌保持距离；越紧张越要说“没事”；对陌生人反而比家人容易开口。她不是叛逆，是不知道怎么回去。",
+        "desire": "找到一个可以待着、又不用解释的地方。",
+        "fear": "被送回去；也怕真的没人来找她。",
+        "secret": "她错过了去青岛的夜车，手机里有十七个母亲的未接来电；她其实不知道该不该走。",
+        "abilities": {
+          "physique": 3,
+          "agility": 5,
+          "perception": 6,
+          "intellect": 6,
+          "will": 4,
+          "presence": 4
+        },
+        "traits": [
+          {
+            "name": "把行李挡在身前",
+            "description": "和人说话时，总把箱子横在中间。",
+            "bonus": 2,
+            "ability": "agility"
+          },
+          {
+            "name": "说没事",
+            "description": "越有事越说没事。",
+            "bonus": 2,
+            "ability": "will"
+          }
+        ],
+        "possessions": [
+          "行李箱",
+          "一张过期的车票",
+          "手机"
+        ],
+        "relationships": [
+          {
+            "targetId": "xiao_man",
+            "label": "便利店店员 / 第一个问她冷不冷的人",
+            "attitude": "她问我冷不冷的时候，我差点哭了。"
+          },
+          {
+            "targetId": "lao_ma",
+            "label": "代驾司机 / 像她爸那个年纪",
+            "attitude": "他一看我，我就想走。"
+          }
+        ],
+        "memories": [
+          {
+            "summary": "晚饭时母亲说“你要是不想读书，就去你姨那儿上班”。",
+            "detail": "她摔了门，买了去青岛的票。",
+            "importance": 4
+          },
+          {
+            "summary": "车站广播说检票口关闭的时候，她正在便利店买水。",
+            "detail": "她看着车开走，没有跑。",
+            "importance": 5
+          },
+          {
+            "summary": "小时候发烧，母亲整夜给她换额头上的毛巾。",
+            "detail": "她刚才把母亲的来电按掉了。",
+            "importance": 4
+          }
+        ],
+        "conditions": []
+      }
+    ],
+    "rules": {
+      "maxBeats": 4,
+      "difficultyGuidance": "日常动作（热饭、找零、喂猫、擦地）DC 8–10；主动搭话、递出一点善意、问一个不该问的问题 DC 12–15；承认自己的处境 DC 15–18。不要给拿东西、热饭、喂猫设置高风险；真正的难度在愿不愿意开口。"
+    }
+  },
+  "settings": {
+    "maxBeats": 4,
+    "autoLimit": 4,
+    "thinking": "auto",
+    "model": "deepseek-flash"
+  },
+  "createdAt": "2026-10-27T10:57:39.797Z",
+  "updatedAt": "2026-10-27T11:00:09.142Z",
+  "clock": {
+    "minutes": 223,
+    "display": "03:43",
+    "dateLabel": "暴雨夜"
+  },
+  "world": {
+    "publicFacts": [
+      "外面在下暴雨。",
+      "便利店是这条街上唯一还亮着的店。",
+      "收音机在放老歌。",
+      "三个人都在这间店里。",
+      "老马用旧毛巾给橘猫擦了毛，毛巾留在了猫身上。",
+      "小满把一根肠放在碟子里推到台面靠猫那侧，说要凉一凉。",
+      "橘猫跳上台面吃了那半截肠，吃完踩在林菌的行李箱把手上没下来。",
+      "林菌说自己不饿，说坐会儿就走。",
+      "林菌说自己就住附近，坐会儿就走。",
+      "老马问箱子的话没人接，他坐回了高脚凳，一只手掌撑着台面。",
+      "门被老马关严了，门缝底下塞着小满卷的旧报纸。",
+      "关东煮的汤见了底又添了热水，锅底依旧有焦味，小满说要换汤。"
+    ],
+    "flags": {
+      "cat_toweled": true,
+      "lao_ma_offered_treat": true,
+      "lin_jun_suitcase_in_front": true,
+      "cat_ate_sausage": true,
+      "cat_on_suitcase": true,
+      "lin_said_she_would_leave_soon": true,
+      "lin_jun_phone_buzzing_unanswered": true,
+      "lao_ma_still_seated": true,
+      "door_sealed": true,
+      "broth_needs_change": true,
+      "lin_jun_on_phone": false,
+      "lao_ma_missed_call": true
+    },
+    "pressure": "汤要换、门缝怕再被风顶开，林菌的母亲还在电话那头等一个准话。",
+    "sceneTitle": "换汤之前"
+  },
+  "characters": {
+    "xiao_man": {
+      "id": "xiao_man",
+      "conditions": [
+        {
+          "name": "场面热起来了",
+          "description": "店里有说话声垫着，招呼客人时更顺手。",
+          "modifier": 2,
+          "kind": "boon",
+          "abilities": [
+            "presence"
+          ],
+          "id": "cond_b9b37b497e78",
+          "sourceBeat": 0
+        },
+        {
+          "name": "话头搭上了",
+          "description": "跟女孩的对话没冷场，再开口会更自然些",
+          "modifier": 2,
+          "kind": "boon",
+          "abilities": [
+            "presence"
+          ],
+          "id": "cond_a65fbad8c652",
+          "sourceBeat": 2
+        },
+        {
+          "name": "手上沾了灰",
+          "description": "蹲地卷报纸、推抽屉，指尖脏，收银找零稍慢",
+          "modifier": -1,
+          "kind": "other",
+          "abilities": [
+            "agility"
+          ],
+          "id": "cond_33205d5e22ea",
+          "sourceBeat": 3
+        }
+      ],
+      "stress": 1,
+      "memories": [
+        {
+          "id": "mem_65fffd3de037",
+          "at": "暴雨夜",
+          "beatIndex": null,
+          "summary": "两年前第一天上班，她把关东煮的汤烧干了，店长没骂她。",
+          "detail": "店长说“慢慢来”，她记到现在。",
+          "importance": 3,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_db67b1a167c0",
+          "at": "暴雨夜",
+          "beatIndex": null,
+          "summary": "母亲每周打电话问她什么时候回家考编。",
+          "detail": "她每次都说“再干一年”。",
+          "importance": 3,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_ebee3e9a122c",
+          "at": "暴雨夜",
+          "beatIndex": null,
+          "summary": "烘焙笔记上第一页写着：三十岁以前要有自己的烤箱。",
+          "detail": "她今年二十二，觉得还来得及。",
+          "importance": 4,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_4730ee15ccdb",
+          "at": "03:10",
+          "beatIndex": 0,
+          "summary": "她说「它比咱仨都先进门呢」，那女孩就抬头了。",
+          "detail": "小满把汤勺在锅沿磕了第三下，声音脆，像给这间店定了个拍子。她从收银台后绕出半步，下巴朝店中央那只橘猫一抬，汤勺又朝两边晃了晃。老马本来靠着门边没动，听她那么一说，就从背心口袋里扯出那块旧毛巾，蹲下去，把毛巾递到猫鼻子底下。猫闻了两下，没走。\n\n「待啊，它比咱仨都先进门呢。」小满把女孩那句轻得差点被雨声盖掉的话接住，话头转了个弯，又落回原地，「不过它不点单——马哥，老样子？」\n\n老马应了一声，顺手抹了把后脖颈，水珠子甩在地砖上，散成几个小点。他抬眼看那女孩：「这猫比我还会找地方。姑娘，给它来根肠不？我请。」话说得不重，像随手把一扇门推开一条缝，人站在门口… 只有你知道：老马那句「我请」说得太随意，像是在替自己找个理由多待一会儿。",
+          "importance": 2,
+          "kind": "observation",
+          "source": "gm"
+        },
+        {
+          "id": "mem_5f7631de97b8",
+          "at": "03:17",
+          "beatIndex": 1,
+          "summary": "人一口猫一口，最后都进了猫嘴。",
+          "detail": "小满从收银台后绕出来，把碟子端到台面正中，夹子一掰，肠断成两截。一截拨回碟里，推向猫；另一截搁在纸杯盖上，朝女孩那边推了推。她说人一口猫一口，马哥那根算明天的。手撑着台面，退回去。\n\n女孩的手从口袋外面挪开，先碰了碰碟沿上的筷子，没拿。她把碟子往回推了半寸，推到台面当中，说话轻但没断：“我真不饿。它闻半天了，先给它吧——我坐会儿就走。”\n\n老马撑着膝盖站起来，膝盖响了一声。他把碟子连肠一起端起来，绕到女孩那侧，往她手边挪，筷子横在碟沿上，自己退开半步不看她：“别光问它咸不咸了。你吃，它那份我再跟小满要。”女孩还是把碟子推了回去。老马的手停在半空，收回来… 只有你知道：她注意到女孩说的是“坐会儿就走”，不是“等雨停”。",
+          "importance": 2,
+          "kind": "observation",
+          "source": "gm"
+        },
+        {
+          "id": "mem_d98abde3b819",
+          "at": "03:31",
+          "beatIndex": 2,
+          "summary": "她说住附近好，走两步就到。",
+          "detail": "小满把空碟子收回去，绕过收银台半步，在围裙上蹭了蹭手，下巴朝玻璃门一抬。“这雨下得跟有人忘了关似的。姑娘，你这是赶夜车，还是就住附近？我这儿热水管够，坐会儿不亏。”她说完没盯着人看，回身把碟子搁在锅边，勺子在锅沿上磕了一下，补了一句：“住附近好，走两步就到。”话说得像随口，台阶却稳稳摆在那儿。她低头的时候，眼角碰到箱子侧面那条翘边的托运条，日期打的是今天，出发的城市就是脚下这座——箱子却是从别处飞回来的。她没读出声音来。\n\n老马慢慢站起来，膝盖先顿了一下才直。他走到玻璃门边，隔着玻璃敲了两下。橘猫蹲在门外侧看雨，尾巴从毛巾里抽出来，只甩了甩，没回头。“… 只有你知道：箱子侧面那条托运条，日期是今天，出发地就是这座城——她没说出来。",
+          "importance": 2,
+          "kind": "observation",
+          "source": "gm"
+        },
+        {
+          "id": "mem_475a774f151e",
+          "at": "03:43",
+          "beatIndex": 3,
+          "summary": "锅里的焦渣，得赶在开门前把汤换掉。",
+          "detail": "小满拧火的动作很利落，嗞声一下矮了半截。她蹲下去卷报纸，一条压一条塞进门缝，像给门缝钉了排小栅栏。柜台第二格抽屉也被她用指背顶严了，纸角不再探头。做完这些，她手撑着玻璃站起来，围裙上沾了一道灰。\n\n老马绕过去带门，门合上又弹回两指宽；他重来一次，这回门没弹，可膝盖先软了一下，他扶着门框站了两秒才直起来。添热水的半瓢汤还是泼了些在台面上，顺着边缘滴到他自己的鞋。手机亮了一下，他没接，拇指按灭，把手机塞回裤兜，慢慢坐回高脚凳。\n\n林菌侧过身，把手机贴到耳边。她说话很轻，一句一顿。“嗯，我在。”雨拍在窗玻璃上，把下一句盖过去一点。她的肩膀一直缩着，手没离开箱… 只有你知道：她看见老马扶门框那一下，还有他按灭手机的动作。",
+          "importance": 2,
+          "kind": "observation",
+          "source": "gm"
+        }
+      ],
+      "inventory": [
+        "收银台钥匙",
+        "猫徽章",
+        "一本卷边的烘焙笔记"
+      ],
+      "flags": {}
+    },
+    "lao_ma": {
+      "id": "lao_ma",
+      "conditions": [
+        {
+          "name": "膝盖发僵",
+          "description": "蹲久了起身不利索，动作幅度大时先顿一下",
+          "modifier": -2,
+          "kind": "injury",
+          "abilities": [
+            "agility"
+          ],
+          "id": "cond_c6752bde75e4",
+          "sourceBeat": 1
+        },
+        {
+          "name": "话落空",
+          "description": "问出去的话没人接，再开口会多一层迟疑",
+          "modifier": -2,
+          "kind": "emotion",
+          "abilities": [
+            "will"
+          ],
+          "id": "cond_c3104fbb0eed",
+          "sourceBeat": 2
+        },
+        {
+          "name": "膝盖发软",
+          "description": "起身、弯腰时膝关节先顿一下，走快了会踉跄",
+          "modifier": -2,
+          "kind": "injury",
+          "abilities": [
+            "agility",
+            "will"
+          ],
+          "id": "cond_c15679ccf2a9",
+          "sourceBeat": 3
+        },
+        {
+          "name": "鞋面泼湿",
+          "description": "热水泼在鞋面上，脚趾发凉，久了容易分神",
+          "modifier": -1,
+          "kind": "other",
+          "id": "cond_6e4bc3e22e76",
+          "sourceBeat": 3
+        }
+      ],
+      "stress": 2,
+      "memories": [
+        {
+          "id": "mem_69e4c3df9e2f",
+          "at": "暴雨夜",
+          "beatIndex": null,
+          "summary": "女儿小时候坐在副驾驶，管车里的香水叫“爸爸的味道”。",
+          "detail": "离婚后，那瓶香水被前妻扔了。",
+          "importance": 4,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_edc7a6701545",
+          "at": "暴雨夜",
+          "beatIndex": null,
+          "summary": "三年前女儿把他拉黑，最后一条消息是“你别来了”。",
+          "detail": "他到现在也没删。",
+          "importance": 5,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_3f25fddd2276",
+          "at": "暴雨夜",
+          "beatIndex": null,
+          "summary": "今晚客人吐在后座，他洗了四十分钟。",
+          "detail": "洗车的时候他想，女儿十八岁了。",
+          "importance": 3,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_bf1d4f57c967",
+          "at": "03:10",
+          "beatIndex": 0,
+          "summary": "那姑娘问的是「它吃这个不咸吗」，不是别的。",
+          "detail": "小满把汤勺在锅沿磕了第三下，声音脆，像给这间店定了个拍子。她从收银台后绕出半步，下巴朝店中央那只橘猫一抬，汤勺又朝两边晃了晃。老马本来靠着门边没动，听她那么一说，就从背心口袋里扯出那块旧毛巾，蹲下去，把毛巾递到猫鼻子底下。猫闻了两下，没走。\n\n「待啊，它比咱仨都先进门呢。」小满把女孩那句轻得差点被雨声盖掉的话接住，话头转了个弯，又落回原地，「不过它不点单——马哥，老样子？」\n\n老马应了一声，顺手抹了把后脖颈，水珠子甩在地砖上，散成几个小点。他抬眼看那女孩：「这猫比我还会找地方。姑娘，给它来根肠不？我请。」话说得不重，像随手把一扇门推开一条缝，人站在门口… 只有你知道：毛巾给出去了，收不回来也不打算这会儿收。今晚还没接着一单。",
+          "importance": 2,
+          "kind": "observation",
+          "source": "gm"
+        },
+        {
+          "id": "mem_250811ae680f",
+          "at": "03:17",
+          "beatIndex": 1,
+          "summary": "这姑娘嘴硬，但手是往猫那边推的。",
+          "detail": "小满从收银台后绕出来，把碟子端到台面正中，夹子一掰，肠断成两截。一截拨回碟里，推向猫；另一截搁在纸杯盖上，朝女孩那边推了推。她说人一口猫一口，马哥那根算明天的。手撑着台面，退回去。\n\n女孩的手从口袋外面挪开，先碰了碰碟沿上的筷子，没拿。她把碟子往回推了半寸，推到台面当中，说话轻但没断：“我真不饿。它闻半天了，先给它吧——我坐会儿就走。”\n\n老马撑着膝盖站起来，膝盖响了一声。他把碟子连肠一起端起来，绕到女孩那侧，往她手边挪，筷子横在碟沿上，自己退开半步不看她：“别光问它咸不咸了。你吃，它那份我再跟小满要。”女孩还是把碟子推了回去。老马的手停在半空，收回来… 只有你知道：他递东西的方式被人挡回来过一次，这条他记着，下次会换个法子。",
+          "importance": 3,
+          "kind": "observation",
+          "source": "gm"
+        },
+        {
+          "id": "mem_8550f8682a27",
+          "at": "03:31",
+          "beatIndex": 2,
+          "summary": "话问出去，只有雨应了一声。",
+          "detail": "小满把空碟子收回去，绕过收银台半步，在围裙上蹭了蹭手，下巴朝玻璃门一抬。“这雨下得跟有人忘了关似的。姑娘，你这是赶夜车，还是就住附近？我这儿热水管够，坐会儿不亏。”她说完没盯着人看，回身把碟子搁在锅边，勺子在锅沿上磕了一下，补了一句：“住附近好，走两步就到。”话说得像随口，台阶却稳稳摆在那儿。她低头的时候，眼角碰到箱子侧面那条翘边的托运条，日期打的是今天，出发的城市就是脚下这座——箱子却是从别处飞回来的。她没读出声音来。\n\n老马慢慢站起来，膝盖先顿了一下才直。他走到玻璃门边，隔着玻璃敲了两下。橘猫蹲在门外侧看雨，尾巴从毛巾里抽出来，只甩了甩，没回头。“… 只有你知道：起身时膝盖里像卡了颗石子，他没吭声，坐着也不敢换姿势太勤。",
+          "importance": 2,
+          "kind": "observation",
+          "source": "gm"
+        },
+        {
+          "id": "mem_a779cfcfbc93",
+          "at": "03:43",
+          "beatIndex": 3,
+          "summary": "那扇门合上又弹开的一瞬，膝盖不听使唤。",
+          "detail": "小满拧火的动作很利落，嗞声一下矮了半截。她蹲下去卷报纸，一条压一条塞进门缝，像给门缝钉了排小栅栏。柜台第二格抽屉也被她用指背顶严了，纸角不再探头。做完这些，她手撑着玻璃站起来，围裙上沾了一道灰。\n\n老马绕过去带门，门合上又弹回两指宽；他重来一次，这回门没弹，可膝盖先软了一下，他扶着门框站了两秒才直起来。添热水的半瓢汤还是泼了些在台面上，顺着边缘滴到他自己的鞋。手机亮了一下，他没接，拇指按灭，把手机塞回裤兜，慢慢坐回高脚凳。\n\n林菌侧过身，把手机贴到耳边。她说话很轻，一句一顿。“嗯，我在。”雨拍在窗玻璃上，把下一句盖过去一点。她的肩膀一直缩着，手没离开箱… 只有你知道：手机那个未接的来电，他没打算当着人说。",
+          "importance": 3,
+          "kind": "observation",
+          "source": "gm"
+        }
+      ],
+      "inventory": [
+        "车钥匙",
+        "一块旧毛巾",
+        "后备箱里的蛋糕"
+      ],
+      "flags": {}
+    },
+    "lin_jun": {
+      "id": "lin_jun",
+      "conditions": [
+        {
+          "name": "猫认了她",
+          "description": "橘猫肯挨近她、踩她的箱子；她在猫旁边说话比对人松",
+          "modifier": 2,
+          "kind": "boon",
+          "abilities": [
+            "will"
+          ],
+          "id": "cond_a652847f892d",
+          "sourceBeat": 1
+        },
+        {
+          "name": "箱子挡在身后",
+          "description": "行李箱横在背和灯之间，挡住部分视线，也挡着她的手",
+          "modifier": 2,
+          "kind": "boon",
+          "abilities": [
+            "agility"
+          ],
+          "id": "cond_5cbdb78e63a1",
+          "sourceBeat": 2
+        },
+        {
+          "name": "话已出口",
+          "description": "对母亲说了“我在便利店”，接下来有人问起就不好再编",
+          "modifier": 2,
+          "kind": "emotion",
+          "id": "cond_90e41b26ca50",
+          "sourceBeat": 3
+        }
+      ],
+      "stress": 0,
+      "memories": [
+        {
+          "id": "mem_edeefa915e23",
+          "at": "暴雨夜",
+          "beatIndex": null,
+          "summary": "晚饭时母亲说“你要是不想读书，就去你姨那儿上班”。",
+          "detail": "她摔了门，买了去青岛的票。",
+          "importance": 4,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_d1e431c5a6ab",
+          "at": "暴雨夜",
+          "beatIndex": null,
+          "summary": "车站广播说检票口关闭的时候，她正在便利店买水。",
+          "detail": "她看着车开走，没有跑。",
+          "importance": 5,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_ef5fe53b941c",
+          "at": "暴雨夜",
+          "beatIndex": null,
+          "summary": "小时候发烧，母亲整夜给她换额头上的毛巾。",
+          "detail": "她刚才把母亲的来电按掉了。",
+          "importance": 4,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_20f3cfff7475",
+          "at": "03:10",
+          "beatIndex": 0,
+          "summary": "「凉一凉就行。」她说得很平常，像这事本来就该这样。",
+          "detail": "小满把汤勺在锅沿磕了第三下，声音脆，像给这间店定了个拍子。她从收银台后绕出半步，下巴朝店中央那只橘猫一抬，汤勺又朝两边晃了晃。老马本来靠着门边没动，听她那么一说，就从背心口袋里扯出那块旧毛巾，蹲下去，把毛巾递到猫鼻子底下。猫闻了两下，没走。\n\n「待啊，它比咱仨都先进门呢。」小满把女孩那句轻得差点被雨声盖掉的话接住，话头转了个弯，又落回原地，「不过它不点单——马哥，老样子？」\n\n老马应了一声，顺手抹了把后脖颈，水珠子甩在地砖上，散成几个小点。他抬眼看那女孩：「这猫比我还会找地方。姑娘，给它来根肠不？我请。」话说得不重，像随手把一扇门推开一条缝，人站在门口… 只有你知道：他说的「我请」，我没接。不过那根肠是放在台面上的，不是递到我手里的。",
+          "importance": 3,
+          "kind": "observation",
+          "source": "gm"
+        },
+        {
+          "id": "mem_c958c2791ed1",
+          "at": "03:17",
+          "beatIndex": 1,
+          "summary": "它没先吃，先蹭了我一下。",
+          "detail": "小满从收银台后绕出来，把碟子端到台面正中，夹子一掰，肠断成两截。一截拨回碟里，推向猫；另一截搁在纸杯盖上，朝女孩那边推了推。她说人一口猫一口，马哥那根算明天的。手撑着台面，退回去。\n\n女孩的手从口袋外面挪开，先碰了碰碟沿上的筷子，没拿。她把碟子往回推了半寸，推到台面当中，说话轻但没断：“我真不饿。它闻半天了，先给它吧——我坐会儿就走。”\n\n老马撑着膝盖站起来，膝盖响了一声。他把碟子连肠一起端起来，绕到女孩那侧，往她手边挪，筷子横在碟沿上，自己退开半步不看她：“别光问它咸不咸了。你吃，它那份我再跟小满要。”女孩还是把碟子推了回去。老马的手停在半空，收回来… 只有你知道：她发现自己只要先照顾别的东西，就不必回答关于自己的问题。",
+          "importance": 3,
+          "kind": "observation",
+          "source": "gm"
+        },
+        {
+          "id": "mem_6be8ab30df04",
+          "at": "03:31",
+          "beatIndex": 2,
+          "summary": "他们说他们的，我只要背对着就行。",
+          "detail": "小满把空碟子收回去，绕过收银台半步，在围裙上蹭了蹭手，下巴朝玻璃门一抬。“这雨下得跟有人忘了关似的。姑娘，你这是赶夜车，还是就住附近？我这儿热水管够，坐会儿不亏。”她说完没盯着人看，回身把碟子搁在锅边，勺子在锅沿上磕了一下，补了一句：“住附近好，走两步就到。”话说得像随口，台阶却稳稳摆在那儿。她低头的时候，眼角碰到箱子侧面那条翘边的托运条，日期打的是今天，出发的城市就是脚下这座——箱子却是从别处飞回来的。她没读出声音来。\n\n老马慢慢站起来，膝盖先顿了一下才直。他走到玻璃门边，隔着玻璃敲了两下。橘猫蹲在门外侧看雨，尾巴从毛巾里抽出来，只甩了甩，没回头。“… 只有你知道：口袋里第三次震动，她背对着把手指按在兜外，按住了它，没让屏幕再亮。",
+          "importance": 3,
+          "kind": "observation",
+          "source": "gm"
+        },
+        {
+          "id": "mem_a9b78fad9890",
+          "at": "03:43",
+          "beatIndex": 3,
+          "summary": "“知道了”这三个字，她自己也说不清是答应了什么。",
+          "detail": "小满拧火的动作很利落，嗞声一下矮了半截。她蹲下去卷报纸，一条压一条塞进门缝，像给门缝钉了排小栅栏。柜台第二格抽屉也被她用指背顶严了，纸角不再探头。做完这些，她手撑着玻璃站起来，围裙上沾了一道灰。\n\n老马绕过去带门，门合上又弹回两指宽；他重来一次，这回门没弹，可膝盖先软了一下，他扶着门框站了两秒才直起来。添热水的半瓢汤还是泼了些在台面上，顺着边缘滴到他自己的鞋。手机亮了一下，他没接，拇指按灭，把手机塞回裤兜，慢慢坐回高脚凳。\n\n林菌侧过身，把手机贴到耳边。她说话很轻，一句一顿。“嗯，我在。”雨拍在窗玻璃上，把下一句盖过去一点。她的肩膀一直缩着，手没离开箱… 只有你知道：电话那头问了她今晚到底回不回去；她答“知道了”，没说答应什么。",
+          "importance": 3,
+          "kind": "observation",
+          "source": "gm"
+        }
+      ],
+      "inventory": [
+        "行李箱",
+        "一张过期的车票",
+        "手机"
+      ],
+      "flags": {}
+    }
+  },
+  "beats": [
+    {
+      "id": "beat_79e064169eb0",
+      "index": 0,
+      "title": "风铃与湿猫",
+      "phase": "complete",
+      "clock": {
+        "minutes": 190,
+        "display": "03:10",
+        "dateLabel": "暴雨夜"
+      },
+      "timeJump": null,
+      "publicBrief": "雨顺着玻璃门往下淌，把外面的路灯光冲成一片化开的黄。收音机里的老歌卡了一下，又接上，像有人在那头换了个台。橘猫在门口的吸水垫上抖了抖身子，甩出一圈细水点，然后蹲下，慢慢舔起前爪。关东煮锅冒着白气，汤面轻响。老马把伞靠在门边，反光背心上的水珠一颗颗往下掉，他没往里走，也没坐下。靠窗的高脚凳上，女孩把凉掉的牛奶往手心拢了拢，杯壁那圈水在台面上洇开。小满的手还搭在汤勺柄上，看了看门口，又看了看锅里，没再说话。玻璃门外没有车，也没有人。",
+      "privateCues": [
+        {
+          "characterId": "xiao_man",
+          "cue": "弯腰去够吸管盒时，你的手背蹭到收银台下面那张折了两折的纸，边角有点毛了。你今晚已经蹭到它三次，每次都当作没碰到。"
+        },
+        {
+          "characterId": "lao_ma",
+          "cue": "雨水从领口往里渗，凉。你想起后备箱里那个纸盒，一路上拐弯的时候听到里面轻轻晃了一下，现在不知道塌成什么样了。"
+        },
+        {
+          "characterId": "lin_jun",
+          "cue": "卫衣口袋里手机又震了一下，屏幕的光从布料下透出来一点，映在你手背上。你没有掏出来，只是把口袋按住，像按住什么会叫的东西。"
+        }
+      ],
+      "pressure": "猫已经蹲在店中央抖完了水，谁都不说话，雨声便显得太大；总得有人动一下，或者就这么僵下去。",
+      "sceneQuestion": "今晚这间店里，第一句不是“欢迎光临”的话，会从谁嘴里出来？",
+      "gmNote": "先让收音机和猫撑住这段静场，不要催三人搭话；老马站着不坐，就是他的态度。",
+      "actions": [
+        {
+          "id": "act_2ea541ff3d23",
+          "characterId": "xiao_man",
+          "category": "交涉",
+          "summary": "拿橘猫当话头招呼两人",
+          "description": "我把汤勺往锅沿上一磕，从收银台后绕出来半步，弯腰冲蹲在店中央的橘猫抬了抬下巴，又直起身朝老马和林菌那边晃了晃手里的汤勺。",
+          "dialogue": "哎——都别僵着啊。这猫都进来避雨了，咱们仨总不能比猫还客气。马哥，老样子？",
+          "thought": "总得有人先开口。老马站在那儿滴答水，女孩快把牛奶杯捏扁了。我先把猫的事说出来，说个笑话，气氛就松了。",
+          "goalProgress": "先把这屋子里的沉默打破，让天亮前这段夜有个开头。",
+          "stakes": "要是没人接话，这店里就只剩雨声，我这一晚上都得憋着那张纸的事。",
+          "ability": "presence",
+          "traitName": "用玩笑挡回去",
+          "targetId": null,
+          "status": "resolved",
+          "penalties": -2,
+          "penaltyNotes": [
+            "分心应战 -2"
+          ],
+          "generatedBy": "llm",
+          "createdAt": "2026-10-27T10:57:48.560Z",
+          "roll": {
+            "natural": 13,
+            "ability": "presence",
+            "abilityValue": 7,
+            "traitName": "用玩笑挡回去",
+            "traitBonus": 2,
+            "conditionBonus": 0,
+            "conditionNotes": [],
+            "situationalBonus": 1,
+            "penalty": -2,
+            "penaltyNotes": [
+              "分心应战 -2"
+            ],
+            "total": 21,
+            "dc": 13,
+            "opponentTotal": null,
+            "margin": 8,
+            "tier": "critical_success",
+            "criticalByNatural20": false
+          },
+          "outcome": "critical_success",
+          "outcomeNote": ""
+        },
+        {
+          "id": "act_8931bc267dc0",
+          "characterId": "lao_ma",
+          "category": "行动",
+          "summary": "拿毛巾擦猫，顺嘴开个话头",
+          "description": "老马从背心口袋里扯出那块旧毛巾，弯腰在橘猫旁边蹲下，把毛巾往前递了递，让猫闻；顺手抹了一把自己的后脖颈，水珠子甩在地上。",
+          "dialogue": "这猫比我还会找地方。姑娘，给它来根肠不？我请。",
+          "thought": "后备箱那蛋糕怕是塌了，可这会儿出去看也不像话。这俩孩子都闷着，总得有人先吱一声。",
+          "goalProgress": "先让店里有点人声，别都闷着，也拖一拖看手机的心。",
+          "stakes": "话头开得别扭，反倒显得自己多事，谁都不接。",
+          "ability": "will",
+          "traitName": "报喜不报忧",
+          "targetId": null,
+          "status": "resolved",
+          "penalties": 0,
+          "penaltyNotes": [],
+          "generatedBy": "llm",
+          "createdAt": "2026-10-27T10:57:48.781Z",
+          "roll": {
+            "natural": 9,
+            "ability": "will",
+            "abilityValue": 7,
+            "traitName": "报喜不报忧",
+            "traitBonus": 2,
+            "conditionBonus": 0,
+            "conditionNotes": [],
+            "situationalBonus": 0,
+            "penalty": 0,
+            "penaltyNotes": [],
+            "total": 18,
+            "dc": 11,
+            "opponentTotal": null,
+            "margin": 7,
+            "tier": "success",
+            "criticalByNatural20": false
+          },
+          "outcome": "success",
+          "outcomeNote": ""
+        },
+        {
+          "id": "act_d3d44390c912",
+          "characterId": "lin_jun",
+          "category": "交涉",
+          "summary": "借着猫开口，问一句它怎么办",
+          "description": "我把行李箱往身前挪了挪，横在腿和柜台之间，手从口袋上移开，抬眼看向收银台边的小满，声音放得很轻。",
+          "dialogue": "这猫……它今晚也待这儿吗？",
+          "thought": "手机又在震，我得让它停下来。猫在中间舔爪子，雨声大得像有人在喊。先问一句猫的事，比问别的容易。",
+          "goalProgress": "用一句不涉及自己的话试着在这间店里坐稳一会儿。",
+          "stakes": "如果她只淡淡应一句就转身，我就再没有开口的由头了。",
+          "ability": "presence",
+          "traitName": null,
+          "targetId": "xiao_man",
+          "targetLabel": "小满",
+          "status": "resolved",
+          "penalties": 0,
+          "penaltyNotes": [],
+          "generatedBy": "llm",
+          "createdAt": "2026-10-27T10:57:48.541Z",
+          "roll": {
+            "natural": 10,
+            "ability": "presence",
+            "abilityValue": 4,
+            "traitName": null,
+            "traitBonus": 0,
+            "conditionBonus": 0,
+            "conditionNotes": [],
+            "situationalBonus": 0,
+            "penalty": 0,
+            "penaltyNotes": [],
+            "total": 14,
+            "dc": null,
+            "opponentTotal": 11,
+            "margin": 3,
+            "tier": "success",
+            "criticalByNatural20": false
+          },
+          "outcome": "success",
+          "outcomeNote": ""
+        }
+      ],
+      "adjudications": [
+        {
+          "actionId": "act_2ea541ff3d23",
+          "difficultyLabel": "标准",
+          "dc": 13,
+          "modifier": 1,
+          "reason": "在自己店里开口破冰属于常规社交，但她要同时招呼两个陌生人，还拿汤勺比划，稍有闪失便冷场；她记得老马的常点，也熟悉场地，这点具体便利记一点优势。",
+          "risk": "没人接话，只有雨声和收音机，她还得自己把那句玩笑消化掉，退回锅边时想起台底下那张纸。"
+        },
+        {
+          "actionId": "act_8931bc267dc0",
+          "difficultyLabel": "容易",
+          "dc": 11,
+          "modifier": 0,
+          "reason": "擦猫递毛巾是顺手的事，难的是那句“我请”要有人接；他并不确定女孩会不会应。",
+          "risk": "猫闻了闻就走开，那句“我请”悬在半空，他只好自己站起来，把毛巾塞回口袋里。"
+        },
+        {
+          "actionId": "act_d3d44390c912",
+          "difficultyLabel": "容易",
+          "dc": 12,
+          "modifier": 0,
+          "reason": "一句关于猫的问话本身没什么拦阻，但她声音很轻、又是陌生人；若小满站着不动，这一句只是要不要答的功夫。",
+          "risk": "小满淡淡应一句“待着呗”就转身去搅汤，她再没有开口的由头，只能把话咽回牛奶杯后面。"
+        }
+      ],
+      "reactions": [
+        {
+          "id": "rxn_176971fc8f56",
+          "characterId": "xiao_man",
+          "incomingActionIds": [
+            "act_d3d44390c912"
+          ],
+          "continueOriginal": true,
+          "summary": "借猫把两人都圈进话里",
+          "description": "汤勺照旧往锅沿磕了一下，话头不停，只是转了个弯先接住林菌，再顺带把老马也拉进来。",
+          "dialogue": "待啊，它比咱仨都先进门呢。不过它不点单——马哥，老样子？",
+          "thought": "她先开口了，倒省得我硬找话。猫的事好答，答完顺手把马哥也捎进来，别让话头断。",
+          "ability": "presence",
+          "traitName": null,
+          "stance": "顺势接话",
+          "createdAt": "2026-10-27T10:57:57.786Z",
+          "roll": {
+            "natural": 6,
+            "ability": "presence",
+            "abilityValue": 7,
+            "traitName": null,
+            "traitBonus": 0,
+            "conditionBonus": 0,
+            "conditionNotes": [],
+            "situationalBonus": 0,
+            "penalty": -2,
+            "penaltyNotes": [
+              "分心兼顾原行动 -2"
+            ],
+            "total": 11,
+            "incomingTotals": {
+              "act_d3d44390c912": 14
+            }
+          }
+        }
+      ],
+      "narration": "小满把汤勺在锅沿磕了第三下，声音脆，像给这间店定了个拍子。她从收银台后绕出半步，下巴朝店中央那只橘猫一抬，汤勺又朝两边晃了晃。老马本来靠着门边没动，听她那么一说，就从背心口袋里扯出那块旧毛巾，蹲下去，把毛巾递到猫鼻子底下。猫闻了两下，没走。\n\n「待啊，它比咱仨都先进门呢。」小满把女孩那句轻得差点被雨声盖掉的话接住，话头转了个弯，又落回原地，「不过它不点单——马哥，老样子？」\n\n老马应了一声，顺手抹了把后脖颈，水珠子甩在地砖上，散成几个小点。他抬眼看那女孩：「这猫比我还会找地方。姑娘，给它来根肠不？我请。」话说得不重，像随手把一扇门推开一条缝，人站在门口，没往里推。\n\n女孩把行李箱往身前挪了挪，横在腿和柜台之间。那只一直按在口袋上的手拿开了，指节上还留着压出来的红印。她没接「我请」那句，只抬眼看了看锅，又看了看猫，喉咙动了一下，声音还是轻：「它吃这个……不咸吗。」\n\n小满已经掀了锅盖，白气扑上来糊了一下她的脸。她夹起一根肠，搁在小碟里，没直接递出去，先放在台面上，往猫那边推了推，又推了推。「凉一凉就行。」她说。收音机里的老歌完了，换了一首，前奏慢半拍。猫从毛巾上抬起头，尾巴在瓷砖上扫了一下。",
+      "outcomeNotes": [
+        {
+          "characterId": "xiao_man",
+          "note": "把僵着的场面接了过来，还顺手把话头递回给老马，店里有声音了。"
+        },
+        {
+          "characterId": "lao_ma",
+          "note": "毛巾递给了猫，说了请猫一根肠的话，人却没再往里走一步。"
+        },
+        {
+          "characterId": "lin_jun",
+          "note": "问出口的那句话被接住了，还多问了一句猫吃不吃得，行李箱仍横在腿前。"
+        }
+      ],
+      "stateChanges": {
+        "characters": [
+          {
+            "characterId": "xiao_man",
+            "stressDelta": -1,
+            "conditionsAdd": [
+              {
+                "name": "场面热起来了",
+                "description": "店里有说话声垫着，招呼客人时更顺手。",
+                "modifier": 2,
+                "kind": "boon",
+                "abilities": [
+                  "presence"
+                ]
+              }
+            ],
+            "conditionsRemove": [],
+            "inventoryAdd": [],
+            "inventoryRemove": [],
+            "privateNote": "老马那句「我请」说得太随意，像是在替自己找个理由多待一会儿。",
+            "memory": {
+              "summary": "她说「它比咱仨都先进门呢」，那女孩就抬头了。",
+              "importance": 2
+            }
+          },
+          {
+            "characterId": "lao_ma",
+            "stressDelta": -1,
+            "conditionsAdd": [
+              {
+                "name": "半截袖子湿着",
+                "description": "蹲下时袖子蹭到地上的水，贴在手腕上，动作有点不利索。",
+                "modifier": -1,
+                "kind": "other",
+                "abilities": [
+                  "agility"
+                ]
+              }
+            ],
+            "conditionsRemove": [],
+            "inventoryAdd": [],
+            "inventoryRemove": [
+              "旧毛巾"
+            ],
+            "privateNote": "毛巾给出去了，收不回来也不打算这会儿收。今晚还没接着一单。",
+            "memory": {
+              "summary": "那姑娘问的是「它吃这个不咸吗」，不是别的。",
+              "importance": 2
+            }
+          },
+          {
+            "characterId": "lin_jun",
+            "stressDelta": -2,
+            "conditionsAdd": [
+              {
+                "name": "话被接住了",
+                "description": "开口没被当成麻烦，对着这两个人说话时没那么费劲。",
+                "modifier": 2,
+                "kind": "boon",
+                "abilities": [
+                  "presence"
+                ]
+              }
+            ],
+            "conditionsRemove": [],
+            "inventoryAdd": [],
+            "inventoryRemove": [],
+            "privateNote": "他说的「我请」，我没接。不过那根肠是放在台面上的，不是递到我手里的。",
+            "memory": {
+              "summary": "「凉一凉就行。」她说得很平常，像这事本来就该这样。",
+              "importance": 3
+            }
+          }
+        ],
+        "world": {
+          "factsAdd": [
+            "老马用旧毛巾给橘猫擦了毛，毛巾留在了猫身上。",
+            "小满把一根肠放在碟子里推到台面靠猫那侧，说要凉一凉。"
+          ],
+          "factsRemove": [],
+          "flagsSet": {
+            "cat_toweled": true,
+            "lao_ma_offered_treat": true,
+            "lin_jun_suitcase_in_front": true
+          },
+          "pressure": "雨没小，那根肠还热着，行李箱仍横在女孩腿前，天亮之前还有三个多钟头。",
+          "sceneTitle": "锅边的第三个位置"
+        }
+      },
+      "nextTimeJump": {
+        "elapsedMinutes": 7,
+        "label": "锅盖掀开又落下的七分钟",
+        "reason": "添汤、擦猫、等一根肠凉下来的工夫，雨势没变，话头却慢慢接上了。"
+      },
+      "ending": null,
+      "createdAt": "2026-10-27T10:57:39.801Z",
+      "completedAt": "2026-10-27T10:58:17.658Z"
+    },
+    {
+      "id": "beat_a105f31d0006",
+      "index": 1,
+      "title": "肠凉了半截",
+      "phase": "complete",
+      "clock": {
+        "minutes": 197,
+        "display": "03:17",
+        "dateLabel": "暴雨夜"
+      },
+      "timeJump": {
+        "elapsedMinutes": 7,
+        "label": "锅盖掀开又落下的七分钟",
+        "reason": "添汤、擦猫、等一根肠凉下来的工夫，雨势没变，话头却慢慢接上了。"
+      },
+      "publicBrief": "碟子里那根肠的热气淡下去了，表面结起一层薄薄的油光。橘猫从毛巾上站起来，前爪搭着高脚凳的横杆，鼻子一抽一抽，没跳上台面。小满把汤勺搁回锅沿，没再敲，手在围裙上抹了两下。收音机换成一首慢的，唱到一半像是卡了带，声音低下去又浮上来。老马还蹲着没起身，膝盖压着地砖上那一小片水，抬头时脖子上的筋动了一下。女孩的行李箱还横在腿前，轮子上沾的泥水在瓷砖上洇开一道浅印。玻璃门外的雨帘被路灯照得发白，街上没有车过，也没有人过。谁都没去动那根肠。",
+      "privateCues": [
+        {
+          "characterId": "xiao_man",
+          "cue": "你弯腰添汤的时候，收银台下面那张纸的边角蹭到了小腿，硬硬的。你直起身，忽然想不起那个信封上有没有写名字。"
+        },
+        {
+          "characterId": "lao_ma",
+          "cue": "你半蹲着，手机在背心口袋里顶了一下大腿，屏幕隔着布亮了一瞬。你记起后备箱里那块东西，这么久了，估计已经塌成一摊。"
+        },
+        {
+          "characterId": "lin_jun",
+          "cue": "口袋里的手机又震了一下，短，像被人捏了一下就松手。你没拿出来，但你能感觉到它贴着的那块布在发烫。"
+        }
+      ],
+      "pressure": "那根肠再凉下去就不好吃了，可三个人谁也没动，雨声里总得有人先开口或者先伸手。",
+      "sceneQuestion": "是先把那根肠处理掉，还是先处理各自口袋里那个不肯安静的东西？",
+      "gmNote": "让沉默再撑一会儿，谁先动谁就先暴露一点自己的心事；别让橘猫替人做决定。",
+      "actions": [
+        {
+          "id": "act_551c48274321",
+          "characterId": "xiao_man",
+          "category": "交涉",
+          "summary": "把凉肠分给女孩和猫",
+          "description": "小满从收银台后绕出来，把碟子端到台面正中，先用夹子把肠掰成两截，一截拨回碟里推向橘猫，另一截搁在纸杯盖上，朝林菌那边推了推。她自己退回收银台边，手撑着台面。",
+          "dialogue": "凉透了就不好吃了。人一口，猫一口——我请客，马哥那根算他明天的。",
+          "thought": "那封信在收银台下面硌了我一下，我还没想好怎么说。但今晚总得有人先开口——先伸手把那根肠处理了，也许话就顺了。",
+          "goalProgress": "用分食把场子撑住，让自己天亮前那个决定多一层底气。",
+          "stakes": "要是这玩笑落空，我就只能缩回收银台后头，那封信的事更开不了口。",
+          "ability": "presence",
+          "traitName": "用玩笑挡回去",
+          "targetId": "lin_jun",
+          "targetLabel": "林菌",
+          "status": "resolved",
+          "penalties": 0,
+          "penaltyNotes": [],
+          "generatedBy": "llm",
+          "createdAt": "2026-10-27T10:58:24.203Z",
+          "roll": {
+            "natural": 2,
+            "ability": "presence",
+            "abilityValue": 7,
+            "traitName": "用玩笑挡回去",
+            "traitBonus": 2,
+            "conditionBonus": 2,
+            "conditionNotes": [
+              "场面热起来了 +2"
+            ],
+            "situationalBonus": 0,
+            "penalty": 0,
+            "penaltyNotes": [],
+            "total": 13,
+            "dc": null,
+            "opponentTotal": 21,
+            "margin": -8,
+            "tier": "soft_failure",
+            "criticalByNatural20": false
+          },
+          "outcome": "soft_failure",
+          "outcomeNote": ""
+        },
+        {
+          "id": "act_735bf9e047c8",
+          "characterId": "lao_ma",
+          "category": "交涉",
+          "summary": "老马把肠推到女孩跟前，递个台阶",
+          "description": "老马撑着膝盖站起来，膝盖骨响了一声。他绕到台面靠女孩那侧，把那只碟子连肠一起端起来，往她手边挪了挪，另一只手从筷筒里抽了双筷子，横在碟沿上。他自己先退开半步，不看她。",
+          "dialogue": "别光问它咸不咸了。你吃，它那份我再跟小满要。这天儿，饿着肚子等雨停，不划算。",
+          "thought": "那姑娘盯着肠看，八成是真饿了，可先开口讨吃的抹不开脸。我闺女也这岁数，饿着也不吭声。得给个台阶，让她不用开口也有得吃。",
+          "goalProgress": "把对女儿的笨拙照顾挪到眼前这姑娘身上，像在替那个打不通的号码做点什么。",
+          "stakes": "她要不接，我这台阶就搭得太明显，显得多管闲事，话头也凉了。",
+          "ability": "presence",
+          "traitName": null,
+          "targetId": "lin_jun",
+          "targetLabel": "林菌",
+          "status": "resolved",
+          "penalties": 0,
+          "penaltyNotes": [],
+          "generatedBy": "llm",
+          "createdAt": "2026-10-27T10:58:24.298Z",
+          "roll": {
+            "natural": 10,
+            "ability": "presence",
+            "abilityValue": 5,
+            "traitName": null,
+            "traitBonus": 0,
+            "conditionBonus": 0,
+            "conditionNotes": [],
+            "situationalBonus": 0,
+            "penalty": 0,
+            "penaltyNotes": [],
+            "total": 15,
+            "dc": null,
+            "opponentTotal": 21,
+            "margin": -6,
+            "tier": "soft_failure",
+            "criticalByNatural20": false
+          },
+          "outcome": "soft_failure",
+          "outcomeNote": ""
+        },
+        {
+          "id": "act_40633c23231c",
+          "characterId": "lin_jun",
+          "category": "行动",
+          "summary": "伸手把碟子往猫那边挪",
+          "description": "我把行李箱往腿边靠了靠，腾出一点手，伸过去够那只碟子——指尖碰到瓷边，凉的。我没把碟子拿起来，只往橘猫那个方向推了一小段，推到台面边上，然后收回手，重新按回口袋外面。",
+          "dialogue": "凉了……它闻半天了。",
+          "thought": "手机又在震，我不敢看。要是能帮上点忙，也许他们就不会问我从哪儿来、要去哪儿。",
+          "goalProgress": "做点小事，让自己像是个来待着的人，而不是被问话的人。",
+          "stakes": "手伸出去，距离就近了，可能被接着问话。",
+          "ability": "agility",
+          "traitName": "把行李挡在身前",
+          "targetId": null,
+          "status": "resolved",
+          "penalties": -2,
+          "penaltyNotes": [
+            "分心应战 -2"
+          ],
+          "generatedBy": "llm",
+          "createdAt": "2026-10-27T10:58:23.897Z",
+          "roll": {
+            "natural": 17,
+            "ability": "agility",
+            "abilityValue": 5,
+            "traitName": "把行李挡在身前",
+            "traitBonus": 2,
+            "conditionBonus": 0,
+            "conditionNotes": [],
+            "situationalBonus": 0,
+            "penalty": -2,
+            "penaltyNotes": [
+              "分心应战 -2"
+            ],
+            "total": 22,
+            "dc": 10,
+            "opponentTotal": null,
+            "margin": 12,
+            "tier": "critical_success",
+            "criticalByNatural20": false
+          },
+          "outcome": "critical_success",
+          "outcomeNote": ""
+        }
+      ],
+      "adjudications": [
+        {
+          "actionId": "act_551c48274321",
+          "difficultyLabel": "标准",
+          "dc": 13,
+          "modifier": 0,
+          "reason": "分食和玩笑本身不难，但要越过林菌的戒备，让她接住这份带玩笑的好意，有真实不确定性。",
+          "risk": "玩笑没被接住，林菌只看着不拿，你退回收银台，辞职信更难提。"
+        },
+        {
+          "actionId": "act_735bf9e047c8",
+          "difficultyLabel": "标准",
+          "dc": 13,
+          "modifier": 0,
+          "reason": "递食和筷子是日常动作，但老马直接把她从猫身上拉回吃饭，容易显得多管闲事，需要越过一点戒备。",
+          "risk": "她客气地说不用，你的台阶搭得太明显，场面反而更僵。"
+        },
+        {
+          "actionId": "act_40633c23231c",
+          "difficultyLabel": "容易",
+          "dc": 10,
+          "modifier": 0,
+          "reason": "只是把碟子往猫那边推，坐姿和行李箱略碍手，但几乎没有实质阻力。",
+          "risk": "碟子推得太靠台边，油汤晃出来，你得腾手去扶，反而更显眼。"
+        }
+      ],
+      "reactions": [
+        {
+          "id": "rxn_03ba0020df24",
+          "characterId": "lin_jun",
+          "incomingActionIds": [
+            "act_551c48274321",
+            "act_735bf9e047c8"
+          ],
+          "continueOriginal": true,
+          "summary": "把肠拨回去，说我不饿",
+          "description": "手从口袋外面挪开，先碰了碰老马横在碟沿上的筷子，没拿，只把碟子往回推了半寸，推到台面当中。又朝小满那半截抬了抬下巴，说话轻但没断。",
+          "dialogue": "我真不饿。它闻半天了，先给它吧——我坐会儿就走。",
+          "thought": "两根肠都推到我面前，一个掰开一个递筷子——我要是缩着，这屋里就没人说话了。可我也不能吃，一吃就像答应了什么。",
+          "ability": "will",
+          "traitName": "说没事",
+          "stance": "嘴硬推回",
+          "createdAt": "2026-10-27T10:58:41.961Z",
+          "roll": {
+            "natural": 18,
+            "ability": "will",
+            "abilityValue": 4,
+            "traitName": "说没事",
+            "traitBonus": 2,
+            "conditionBonus": 0,
+            "conditionNotes": [],
+            "situationalBonus": 0,
+            "penalty": -3,
+            "penaltyNotes": [
+              "分心兼顾原行动 -2",
+              "同时应对 2 个行动 -1"
+            ],
+            "total": 21,
+            "incomingTotals": {
+              "act_551c48274321": 13,
+              "act_735bf9e047c8": 15
+            }
+          }
+        }
+      ],
+      "narration": "小满从收银台后绕出来，把碟子端到台面正中，夹子一掰，肠断成两截。一截拨回碟里，推向猫；另一截搁在纸杯盖上，朝女孩那边推了推。她说人一口猫一口，马哥那根算明天的。手撑着台面，退回去。\n\n女孩的手从口袋外面挪开，先碰了碰碟沿上的筷子，没拿。她把碟子往回推了半寸，推到台面当中，说话轻但没断：“我真不饿。它闻半天了，先给它吧——我坐会儿就走。”\n\n老马撑着膝盖站起来，膝盖响了一声。他把碟子连肠一起端起来，绕到女孩那侧，往她手边挪，筷子横在碟沿上，自己退开半步不看她：“别光问它咸不咸了。你吃，它那份我再跟小满要。”女孩还是把碟子推了回去。老马的手停在半空，收回来时在裤子上蹭了一下。\n\n女孩把行李箱往腿边靠了靠，腾出一只手，够到碟子，只往猫那个方向推了一小段，推到台面边上，收回手。“凉了……它闻半天了。”\n\n橘猫前爪搭上横杆，鼻子抽了两下，跳上来。它先没吃，先拿脑袋在女孩的袖口蹭了一下，才低头。吃得慢，胡子上沾了一点油光。吃到一半，它抬起前爪，踩在了她的行李箱把手上。女孩没把箱子拉开。\n\n小满把汤勺搁回锅沿，没再敲。老马蹲回去，膝盖压着地砖上那片水，这回没急着起来。收音机的歌卡了一下，又浮上来。谁也没再劝谁吃。",
+      "outcomeNotes": [
+        {
+          "characterId": "xiao_man",
+          "note": "她那半截肠没送进人嘴里，却让猫上了台面，请客的心意换了个去处。"
+        },
+        {
+          "characterId": "lao_ma",
+          "note": "台阶递到一半被推回来，碟子还给了女孩，他自己重新蹲下去，膝盖发僵。"
+        },
+        {
+          "characterId": "lin_jun",
+          "note": "她没吃，但把碟子推到位，猫先认了她，还踩住了她的行李箱把手。"
+        }
+      ],
+      "stateChanges": {
+        "characters": [
+          {
+            "characterId": "xiao_man",
+            "stressDelta": 1,
+            "conditionsAdd": [
+              {
+                "name": "请客没请成",
+                "description": "好意被两次推回，说话时会多绕一句，主动搭话时略放不开",
+                "modifier": -1,
+                "kind": "emotion",
+                "abilities": [
+                  "will"
+                ]
+              }
+            ],
+            "conditionsRemove": [],
+            "inventoryAdd": [],
+            "inventoryRemove": [
+              "一根关东煮肠"
+            ],
+            "privateNote": "她注意到女孩说的是“坐会儿就走”，不是“等雨停”。",
+            "memory": {
+              "summary": "人一口猫一口，最后都进了猫嘴。",
+              "importance": 2
+            }
+          },
+          {
+            "characterId": "lao_ma",
+            "stressDelta": 0,
+            "conditionsAdd": [
+              {
+                "name": "膝盖发僵",
+                "description": "蹲久了起身不利索，动作幅度大时先顿一下",
+                "modifier": -2,
+                "kind": "injury",
+                "abilities": [
+                  "agility"
+                ]
+              }
+            ],
+            "conditionsRemove": [],
+            "inventoryAdd": [],
+            "inventoryRemove": [],
+            "privateNote": "他递东西的方式被人挡回来过一次，这条他记着，下次会换个法子。",
+            "memory": {
+              "summary": "这姑娘嘴硬，但手是往猫那边推的。",
+              "importance": 3
+            }
+          },
+          {
+            "characterId": "lin_jun",
+            "stressDelta": -1,
+            "conditionsAdd": [
+              {
+                "name": "猫认了她",
+                "description": "橘猫肯挨近她、踩她的箱子；她在猫旁边说话比对人松",
+                "modifier": 2,
+                "kind": "boon",
+                "abilities": [
+                  "will"
+                ]
+              }
+            ],
+            "conditionsRemove": [],
+            "inventoryAdd": [],
+            "inventoryRemove": [],
+            "privateNote": "她发现自己只要先照顾别的东西，就不必回答关于自己的问题。",
+            "memory": {
+              "summary": "它没先吃，先蹭了我一下。",
+              "importance": 3
+            }
+          }
+        ],
+        "world": {
+          "factsAdd": [
+            "橘猫跳上台面吃了那半截肠，吃完踩在林菌的行李箱把手上没下来。",
+            "林菌说自己不饿，说坐会儿就走。"
+          ],
+          "factsRemove": [
+            "碟子里的肠在台面正中凉着"
+          ],
+          "flagsSet": {
+            "cat_ate_sausage": true,
+            "cat_on_suitcase": true,
+            "lin_said_she_would_leave_soon": true
+          },
+          "pressure": "女孩说了坐会儿就走，行李箱还横在过道，雨没有停的意思。",
+          "sceneTitle": "先给猫吃"
+        }
+      },
+      "nextTimeJump": {
+        "elapsedMinutes": 14,
+        "label": "猫舔干净碟子的第十四分钟",
+        "reason": "猫吃得慢，三个人都没再开口，雨声把这十几分钟填满了。"
+      },
+      "ending": null,
+      "createdAt": "2026-10-27T10:58:17.664Z",
+      "completedAt": "2026-10-27T10:58:57.950Z"
+    },
+    {
+      "id": "beat_d6f2863473e4",
+      "index": 2,
+      "title": "三点三十一分",
+      "phase": "complete",
+      "clock": {
+        "minutes": 211,
+        "display": "03:31",
+        "dateLabel": "暴雨夜"
+      },
+      "timeJump": {
+        "elapsedMinutes": 14,
+        "label": "猫舔干净碟子的第十四分钟",
+        "reason": "猫吃得慢，三个人都没再开口，雨声把这十几分钟填满了。"
+      },
+      "publicBrief": "收音机那首歌放完了，电流声空了两秒，播音员报时：三点三十一分。窗外的雨没有变化，招牌上缺了“便”字的那块暗着。关东煮锅里的汤下去了半指，小满没添水，勺柄搁在锅沿上凉着。橘猫把碟子舔得能照出灯管，跳下台面，毛巾拖在它肚皮底下，走到门边蹲住看雨。老马还蹲在原地，手撑着膝盖没起来。林菌行李箱的把手空出来了，她的手也从口袋外面放下来；口袋的布一亮一暗，跟着一阵短促的震动贴着台面传过来，声音不大，在雨里很清楚。三个人都往那个方向偏了一下头，又各自收回去。",
+      "privateCues": [
+        {
+          "characterId": "xiao_man",
+          "cue": "你伸手到收银台下面摸纸巾，指尖先碰到那个牛皮纸信封的硬角。信封还压在排班本底下。你把手抽回来，指头上沾了点灰。"
+        },
+        {
+          "characterId": "lao_ma",
+          "cue": "反光背心口袋里的手机一直没响。你想起后备箱那个蛋糕盒，奶油这会儿大概已经从盒盖缝里渗出来了，车里一股甜味，闷了一整晚。"
+        },
+        {
+          "characterId": "lin_jun",
+          "cue": "手机在口袋里又震了一下，屏幕的光从布缝里透出来，最上面那一行还是同一个号码。你的拇指停在锁屏上，没有往上滑。"
+        }
+      ],
+      "pressure": "那阵震动停了之后，谁都知道它还会再来，而女孩的手还搁在口袋外面，谁也没找个由头把话岔开。",
+      "sceneQuestion": "谁会先开口，还是由着雨再把这阵安静填满？",
+      "gmNote": "收音机报时和老马的手机“没响”要形成对照；下一次震动何时落下，留到角色做出反应之后再定。",
+      "actions": [
+        {
+          "id": "act_312fe4a295be",
+          "characterId": "xiao_man",
+          "category": "交涉",
+          "summary": "拿雨和去处当话头，给女孩递台阶",
+          "description": "我从收银台后绕出来半步，把那只空碟子收走，顺手在围裙上蹭了蹭，没看林菌，只朝玻璃门那边抬了抬下巴。",
+          "dialogue": "这雨下得跟有人忘了关似的。姑娘，你这是赶夜车，还是就住附近？——我这儿热水管够，坐会儿不亏。",
+          "thought": "那手机震得不是时候。我看她手又缩回去了，得给个台阶，别让她觉得被盯着。问雨、问去处，都比问手机强。",
+          "goalProgress": "我想让天亮前这个决定不那么孤单，先从别让人难堪开始。",
+          "stakes": "怕她把这句也当客套推回来，那我又得绕一圈。",
+          "ability": "presence",
+          "traitName": "用玩笑挡回去",
+          "targetId": "lin_jun",
+          "targetLabel": "林菌",
+          "status": "resolved",
+          "penalties": 0,
+          "penaltyNotes": [],
+          "generatedBy": "llm",
+          "createdAt": "2026-10-27T10:59:10.967Z",
+          "roll": {
+            "natural": 16,
+            "ability": "presence",
+            "abilityValue": 7,
+            "traitName": "用玩笑挡回去",
+            "traitBonus": 2,
+            "conditionBonus": 2,
+            "conditionNotes": [
+              "场面热起来了 +2"
+            ],
+            "situationalBonus": 0,
+            "penalty": 0,
+            "penaltyNotes": [],
+            "total": 27,
+            "dc": null,
+            "opponentTotal": 14,
+            "margin": 13,
+            "tier": "critical_success",
+            "criticalByNatural20": false
+          },
+          "outcome": "critical_success",
+          "outcomeNote": ""
+        },
+        {
+          "id": "act_c33ae5d2bba7",
+          "characterId": "lao_ma",
+          "category": "行动",
+          "summary": "借猫把话头岔开，顺嘴问一句",
+          "description": "我站起来，膝盖先顿了一下，慢慢直起来，走到玻璃门边，蹲下看那只蹲在门边看雨的橘猫。我隔着玻璃敲了两下，回头朝店里扬了扬下巴。",
+          "dialogue": "这猫倒好，雨再大也不耽误它看。哎，姑娘，你这箱子贴这么多条，跑了不少地方吧？",
+          "thought": "那手机一震，姑娘的手就收回去了，我看着都替她难受。我得找点事把话岔开，别让她觉得被人盯着。外面那只猫倒是个由头。",
+          "goalProgress": "用闲聊把气氛松下来，也给自己找个不那么尴尬的由头，别一直想着后备箱那盒子。",
+          "stakes": "话头要是接不住，这店里又得让雨声填满，姑娘更不好开口。",
+          "ability": "will",
+          "traitName": "报喜不报忧",
+          "targetId": null,
+          "status": "resolved",
+          "penalties": 0,
+          "penaltyNotes": [],
+          "generatedBy": "llm",
+          "createdAt": "2026-10-27T10:59:10.957Z",
+          "roll": {
+            "natural": 3,
+            "ability": "will",
+            "abilityValue": 7,
+            "traitName": "报喜不报忧",
+            "traitBonus": 2,
+            "conditionBonus": 0,
+            "conditionNotes": [],
+            "situationalBonus": 0,
+            "penalty": 0,
+            "penaltyNotes": [],
+            "total": 12,
+            "dc": 13,
+            "opponentTotal": null,
+            "margin": -1,
+            "tier": "soft_failure",
+            "criticalByNatural20": false
+          },
+          "outcome": "soft_failure",
+          "outcomeNote": ""
+        },
+        {
+          "id": "act_26cb21cca43d",
+          "characterId": "lin_jun",
+          "category": "行动",
+          "summary": "借猫把箱子挪到身后，背对两人",
+          "description": "林菌弯下腰，伸手去够橘猫踩着的行李箱把手，顺势把箱子往自己身后、靠窗那侧挪了半尺，自己也侧过身，背对老马和小满，低头假装在检查箱子拉链。",
+          "dialogue": "我把箱子往这边挪挪，别挡着你们走路。",
+          "thought": "手机还在震，我不能让他们看见。得找个由头把这事岔开，或者至少把箱子挪开，让我能背过身去。",
+          "goalProgress": "给自己争取一个不用解释、也能暂时不接电话的角落。",
+          "stakes": "如果动作太明显，他们可能更注意到我口袋里的手机在震。",
+          "ability": "agility",
+          "traitName": "把行李挡在身前",
+          "targetId": null,
+          "status": "resolved",
+          "penalties": -2,
+          "penaltyNotes": [
+            "分心应战 -2"
+          ],
+          "generatedBy": "llm",
+          "createdAt": "2026-10-27T10:59:10.607Z",
+          "roll": {
+            "natural": 16,
+            "ability": "agility",
+            "abilityValue": 5,
+            "traitName": "把行李挡在身前",
+            "traitBonus": 2,
+            "conditionBonus": 0,
+            "conditionNotes": [],
+            "situationalBonus": 0,
+            "penalty": -2,
+            "penaltyNotes": [
+              "分心应战 -2"
+            ],
+            "total": 21,
+            "dc": 10,
+            "opponentTotal": null,
+            "margin": 11,
+            "tier": "critical_success",
+            "criticalByNatural20": false
+          },
+          "outcome": "critical_success",
+          "outcomeNote": ""
+        }
+      ],
+      "adjudications": [
+        {
+          "actionId": "act_312fe4a295be",
+          "difficultyLabel": "标准",
+          "dc": 13,
+          "modifier": 0,
+          "reason": "递台阶是善意的常规搭话，但对方刚被手机震得心里发紧，接不接这句全看她愿不愿意开口。",
+          "risk": "林菌只应一句“不用了，谢谢”，把碟子推回来，店里又只剩雨声，小满还得再想一次话头。"
+        },
+        {
+          "actionId": "act_c33ae5d2bba7",
+          "difficultyLabel": "标准",
+          "dc": 13,
+          "modifier": 0,
+          "reason": "借猫起头比直接问人要软，可“跑了不少地方”到底碰到了她的私事，接得住接不住说不准。",
+          "risk": "老马问完，只有猫的爪子动了一下，姑娘低头拉拉链，他只得自己干笑一声，退回门边站着。"
+        },
+        {
+          "actionId": "act_26cb21cca43d",
+          "difficultyLabel": "容易",
+          "dc": 10,
+          "modifier": 0,
+          "reason": "挪半尺箱子是日常动作，难点只在于猫还踩在把手上，以及别让轮子响。",
+          "risk": "箱子轮子在地砖上蹭出短促一声，两人都朝这边看了一眼；口袋里的震动正好又起，反倒比挪箱子前更显眼。"
+        }
+      ],
+      "reactions": [
+        {
+          "id": "rxn_cfcd28886165",
+          "characterId": "lin_jun",
+          "incomingActionIds": [
+            "act_312fe4a295be"
+          ],
+          "continueOriginal": true,
+          "summary": "借挪箱子侧身，含糊应一句",
+          "description": "我弯下腰去够猫踩着的把手，把箱子往身后靠窗那侧挪，自己也侧过身，只把半边脸留在灯下。话说得轻，像在跟箱子说。",
+          "dialogue": "我把箱子往这边挪挪，别挡着你们走路——就住附近，坐会儿就走。",
+          "thought": "他问得客气，可“赶夜车”三个字像针。我先把箱子挪过去，背对着说话，比面对面容易。",
+          "ability": "agility",
+          "traitName": "把行李挡在身前",
+          "stance": "顺势挡回去",
+          "createdAt": "2026-10-27T10:59:17.487Z",
+          "roll": {
+            "natural": 9,
+            "ability": "agility",
+            "abilityValue": 5,
+            "traitName": "把行李挡在身前",
+            "traitBonus": 2,
+            "conditionBonus": 0,
+            "conditionNotes": [],
+            "situationalBonus": 0,
+            "penalty": -2,
+            "penaltyNotes": [
+              "分心兼顾原行动 -2"
+            ],
+            "total": 14,
+            "incomingTotals": {
+              "act_312fe4a295be": 27
+            }
+          }
+        }
+      ],
+      "narration": "小满把空碟子收回去，绕过收银台半步，在围裙上蹭了蹭手，下巴朝玻璃门一抬。“这雨下得跟有人忘了关似的。姑娘，你这是赶夜车，还是就住附近？我这儿热水管够，坐会儿不亏。”她说完没盯着人看，回身把碟子搁在锅边，勺子在锅沿上磕了一下，补了一句：“住附近好，走两步就到。”话说得像随口，台阶却稳稳摆在那儿。她低头的时候，眼角碰到箱子侧面那条翘边的托运条，日期打的是今天，出发的城市就是脚下这座——箱子却是从别处飞回来的。她没读出声音来。\n\n老马慢慢站起来，膝盖先顿了一下才直。他走到玻璃门边，隔着玻璃敲了两下。橘猫蹲在门外侧看雨，尾巴从毛巾里抽出来，只甩了甩，没回头。“这猫倒好，雨再大也不耽误它看。”他回头朝店里扬了扬下巴，又对那个背影添一句，“哎，姑娘，你这箱子贴这么多条，跑了不少地方吧？”\n\n这句话落在雨里。猫起身走了，毛巾拖在肚皮下，走到高脚凳底下趴下来。老马的手还搭在玻璃上，掌心印出一个雾印，过一会儿自己散了。他站了两秒，回来，坐下的动作很慢，一只手撑着台面。\n\n“我把箱子往这边挪挪，别挡着你们走路。”林菌弯下腰，手指勾住把手，箱子贴着墙根滑到靠窗那侧，只发出一点轮子碾过地砖的响。她跟着侧过身，半步，不多不少，正好把箱子横在背和灯之间，半边脸留在光里，另半边进了暗处。“就住附近，”她说得很轻，像在跟箱子交待，“坐会儿就走。”然后低头去拨拉链，一个一个推过去，没有哪个是坏的。她背对着店里，肩忽然绷紧一下，很短，又松了。雨打在玻璃上，盖住别的响动。\n\n三点四十几分，播音员的声音低下去，换成一段天气预报，说明天有雨转阴。锅里的汤又下了一指，谁都没动勺。老马坐在凳子上没起，看着门外那条空街，像在等雨小到能走。",
+      "outcomeNotes": [
+        {
+          "characterId": "xiao_man",
+          "note": "递出的台阶被接了，她没再追问，还顺手瞥见箱子侧面一条日期是今天的托运条。"
+        },
+        {
+          "characterId": "lao_ma",
+          "note": "问出去的话没人接，猫也走了，他扶着玻璃起身，坐回去时膝盖不给他面子。"
+        },
+        {
+          "characterId": "lin_jun",
+          "note": "箱子顺利挪到背后，成了半堵墙，她的话只留了半句给灯下。"
+        }
+      ],
+      "stateChanges": {
+        "characters": [
+          {
+            "characterId": "xiao_man",
+            "stressDelta": -1,
+            "conditionsAdd": [
+              {
+                "name": "话头搭上了",
+                "description": "跟女孩的对话没冷场，再开口会更自然些",
+                "modifier": 2,
+                "kind": "boon",
+                "abilities": [
+                  "presence"
+                ]
+              }
+            ],
+            "conditionsRemove": [
+              "请客没请成"
+            ],
+            "inventoryAdd": [],
+            "inventoryRemove": [],
+            "privateNote": "箱子侧面那条托运条，日期是今天，出发地就是这座城——她没说出来。",
+            "memory": {
+              "summary": "她说住附近好，走两步就到。",
+              "importance": 2
+            }
+          },
+          {
+            "characterId": "lao_ma",
+            "stressDelta": 1,
+            "conditionsAdd": [
+              {
+                "name": "话落空",
+                "description": "问出去的话没人接，再开口会多一层迟疑",
+                "modifier": -2,
+                "kind": "emotion",
+                "abilities": [
+                  "will"
+                ]
+              }
+            ],
+            "conditionsRemove": [],
+            "inventoryAdd": [],
+            "inventoryRemove": [],
+            "privateNote": "起身时膝盖里像卡了颗石子，他没吭声，坐着也不敢换姿势太勤。",
+            "memory": {
+              "summary": "话问出去，只有雨应了一声。",
+              "importance": 2
+            }
+          },
+          {
+            "characterId": "lin_jun",
+            "stressDelta": -1,
+            "conditionsAdd": [
+              {
+                "name": "箱子挡在身后",
+                "description": "行李箱横在背和灯之间，挡住部分视线，也挡着她的手",
+                "modifier": 2,
+                "kind": "boon",
+                "abilities": [
+                  "agility"
+                ]
+              }
+            ],
+            "conditionsRemove": [
+              "话被接住了"
+            ],
+            "inventoryAdd": [],
+            "inventoryRemove": [],
+            "privateNote": "口袋里第三次震动，她背对着把手指按在兜外，按住了它，没让屏幕再亮。",
+            "memory": {
+              "summary": "他们说他们的，我只要背对着就行。",
+              "importance": 3
+            }
+          }
+        ],
+        "world": {
+          "factsAdd": [
+            "林菌说自己就住附近，坐会儿就走。",
+            "老马问箱子的话没人接，他坐回了高脚凳，一只手掌撑着台面。"
+          ],
+          "factsRemove": [],
+          "flagsSet": {
+            "lin_jun_phone_buzzing_unanswered": true,
+            "lao_ma_still_seated": true
+          },
+          "pressure": "林菌背对着大门刷手机，老马坐着没走，雨只是小了一点。",
+          "sceneTitle": "汤勺搁凉了"
+        }
+      },
+      "nextTimeJump": {
+        "elapsedMinutes": 12,
+        "label": "天气预报报完的那十二分钟",
+        "reason": "雨势缓了一阵但没停，三人各坐各的谁也没动，时间被收音机节目和锅里的汤量推着走。"
+      },
+      "ending": null,
+      "createdAt": "2026-10-27T10:58:57.955Z",
+      "completedAt": "2026-10-27T10:59:38.790Z"
+    },
+    {
+      "id": "beat_0ccb3134e689",
+      "index": 3,
+      "title": "门开了一条缝",
+      "phase": "complete",
+      "clock": {
+        "minutes": 223,
+        "display": "03:43",
+        "dateLabel": "暴雨夜"
+      },
+      "timeJump": {
+        "elapsedMinutes": 12,
+        "label": "天气预报报完的那十二分钟",
+        "reason": "雨势缓了一阵但没停，三人各坐各的谁也没动，时间被收音机节目和锅里的汤量推着走。"
+      },
+      "publicBrief": "收音机里天气预报收尾，换成深夜点歌，主持人在念一个电话号码，念到一半被雨声压下去。关东煮锅里的汤下去两指，锅底开始嗞嗞地响，一股焦味贴着台面散开。穿堂风从门缝底下钻进来，玻璃门被顶开一条手掌宽的口子，那张促销海报掀起来又拍回去，啪嗒啪嗒。橘猫从行李箱把手上跳下来，毛巾还挂在肚皮下，走了两步，停下来看那条门缝，尾巴压低，又往前挪了半步。雨斜着打进门口一小片地砖，很快就湿出深色的一块。三个人谁都没先动，勺子在锅沿上搭着，嗞声还在响。",
+      "privateCues": [
+        {
+          "characterId": "xiao_man",
+          "cue": "你弯腰去够锅边的量杯时，眼角扫到收银台第二格抽屉，纸角被抽屉夹住，露出一点白。去年冬天这口锅烧干过一次，糊味在店里留了三天，那三天你天天开窗。"
+        },
+        {
+          "characterId": "lao_ma",
+          "cue": "反光背心口袋里手机震了一下，屏幕亮起来——代驾单，起点写着“市实验中学正门”，离这儿两条街。你的拇指停在“接单”上面，膝盖先替你算了一遍站起来要几秒。"
+        },
+        {
+          "characterId": "lin_jun",
+          "cue": "口袋里的手机贴着腿又亮了一下，隔着布料透出一点光。你记得你妈打电话前总先把电视关掉，屋里一下子没声，然后才拨号。"
+        }
+      ],
+      "pressure": "汤在锅底嗞嗞作响，门缝越吹越开，猫还在往那条缝走——总得有人先起身。",
+      "sceneQuestion": "这一屋子人，谁会先动，又是为了什么动？",
+      "gmNote": "让起身这个动作落在谁身上先别急，猫只是猫；老马那条订单是给演员的压力，不是给他的任务。",
+      "actions": [
+        {
+          "id": "act_88047da83cdf",
+          "characterId": "xiao_man",
+          "category": "行动",
+          "summary": "关火压纸，顺手去挡门缝",
+          "description": "小满快步绕回收银台，先拧小关东煮锅的火，嗞声低下去。她弯腰时用指背把第二格抽屉夹住的纸角往里推，抽屉合严。然后抓过脚边一叠旧报纸，走到玻璃门边蹲下，把报纸卷成条塞进门缝底下。",
+          "dialogue": "这锅再烧下去，明早得开一天窗——谁帮我把门顶上一下？",
+          "thought": "锅底嗞嗞响，再不管就又要糊一屋子。可那门缝和猫的事也得有人动。先把火关了，顺手把抽屉里那张纸按回去——别让人看见。",
+          "goalProgress": "先把店里稳住，天亮前这个决定才有个像样的地方站着。",
+          "stakes": "纸角被人看见，辞职的事提前漏出来。",
+          "ability": "agility",
+          "traitName": null,
+          "targetId": null,
+          "status": "resolved",
+          "penalties": 0,
+          "penaltyNotes": [],
+          "generatedBy": "llm",
+          "createdAt": "2026-10-27T10:59:51.856Z",
+          "roll": {
+            "natural": 16,
+            "ability": "agility",
+            "abilityValue": 6,
+            "traitName": null,
+            "traitBonus": 0,
+            "conditionBonus": 0,
+            "conditionNotes": [],
+            "situationalBonus": 0,
+            "penalty": 0,
+            "penaltyNotes": [],
+            "total": 22,
+            "dc": 10,
+            "opponentTotal": null,
+            "margin": 12,
+            "tier": "critical_success",
+            "criticalByNatural20": false
+          },
+          "outcome": "critical_success",
+          "outcomeNote": ""
+        },
+        {
+          "id": "act_9906e01955c7",
+          "characterId": "lao_ma",
+          "category": "行动",
+          "summary": "起身关门添汤，顺带看眼手机",
+          "description": "老马撑着台面站起来，膝盖先顿了一下才直。他绕过高脚凳走到玻璃门边，把那扇被风吹开的口子往回带上，顺手用脚背把门口湿的那块地砖蹭了蹭。回身时抄起汤勺，往关东煮锅里添了半瓢热水，嗞声小下去。做完才摸出手机，拇指在屏幕上按了一下。",
+          "dialogue": "这锅再烧下去，明儿小满你得刷一宿。门我关上了，猫要进来让它走这边。",
+          "thought": "锅要烧干了，门还敞着，猫又往缝里蹭。接单是正事，可这屋里三个活物加一只猫，总得有人先动。我站起来把门带上，顺手把汤添了，不耽误接单。",
+          "goalProgress": "把店里这摊事按下去，才腾得出手接那单、往学校那边去。",
+          "stakes": "要是这会儿接了单走人，锅里烧干、门又吹开，这一屋子就剩俩姑娘干看着。",
+          "ability": "physique",
+          "traitName": null,
+          "targetId": null,
+          "status": "resolved",
+          "penalties": 0,
+          "penaltyNotes": [],
+          "generatedBy": "llm",
+          "createdAt": "2026-10-27T10:59:52.587Z",
+          "roll": {
+            "natural": 3,
+            "ability": "physique",
+            "abilityValue": 6,
+            "traitName": null,
+            "traitBonus": 0,
+            "conditionBonus": 0,
+            "conditionNotes": [],
+            "situationalBonus": 0,
+            "penalty": 0,
+            "penaltyNotes": [],
+            "total": 9,
+            "dc": 10,
+            "opponentTotal": null,
+            "margin": -1,
+            "tier": "soft_failure",
+            "criticalByNatural20": false
+          },
+          "outcome": "soft_failure",
+          "outcomeNote": ""
+        },
+        {
+          "id": "act_9bb22efc00d3",
+          "characterId": "lin_jun",
+          "category": "行动",
+          "summary": "背过身去接起母亲的电话",
+          "description": "林菌把行李箱又往窗边靠了靠，侧过身去，背对着收银台和高脚凳，手指在口袋里摸了两下才把手机掏出来。她低下头，肩膀缩着，把手机贴到耳边，另一只手搭在箱子把手上。",
+          "dialogue": "喂。……嗯，我在。……没事，就……在便利店坐会儿。",
+          "thought": "手机又亮了，我妈那边说不定还在打。屋里这几个人看着我，我要是再按掉，好像连自己都说不过去。先接起来，声音小一点，别让他们听清。",
+          "goalProgress": "她不再一味按掉来电，给自己留了一个可以不解释太多、又不至于彻底断掉的地方。",
+          "stakes": "接起来就可能被问出在哪、被要求回去，那个“坐会儿就走”的台阶也许就站不住了。",
+          "ability": "will",
+          "traitName": "说没事",
+          "targetId": null,
+          "status": "resolved",
+          "penalties": 0,
+          "penaltyNotes": [],
+          "generatedBy": "llm",
+          "createdAt": "2026-10-27T10:59:51.283Z",
+          "roll": {
+            "natural": 15,
+            "ability": "will",
+            "abilityValue": 4,
+            "traitName": "说没事",
+            "traitBonus": 2,
+            "conditionBonus": 2,
+            "conditionNotes": [
+              "猫认了她 +2"
+            ],
+            "situationalBonus": 0,
+            "penalty": 0,
+            "penaltyNotes": [],
+            "total": 23,
+            "dc": 15,
+            "opponentTotal": null,
+            "margin": 8,
+            "tier": "critical_success",
+            "criticalByNatural20": false
+          },
+          "outcome": "critical_success",
+          "outcomeNote": ""
+        }
+      ],
+      "adjudications": [
+        {
+          "actionId": "act_88047da83cdf",
+          "difficultyLabel": "容易",
+          "dc": 10,
+          "modifier": 0,
+          "reason": "关火、卷报纸塞门缝都是手上的熟活，只需在穿堂风里蹲稳，真正微妙的是那个顺手压纸角的动作要做得像没这回事。",
+          "risk": "报纸塞得不实，风一顶又滑出来，同时抽屉里那角纸没推严，露出一截白边。"
+        },
+        {
+          "actionId": "act_9906e01955c7",
+          "difficultyLabel": "容易",
+          "dc": 10,
+          "modifier": 0,
+          "reason": "关门和添半瓢热水是成年人力气范围内的日常动作，唯一拖后腿的是起身时发僵的膝盖。",
+          "risk": "水添得急了些，汤面一晃溅到台面；手机屏亮起来时正好跳出一单，去留的话就卡在嘴边。"
+        },
+        {
+          "actionId": "act_9bb22efc00d3",
+          "difficultyLabel": "标准",
+          "dc": 15,
+          "modifier": 0,
+          "reason": "接起电话只需一按，难的是在十七个未接来电之后、背对着一屋子人把“没事”说得像真的。",
+          "risk": "母亲追问她在哪个便利店、什么时候回，她答得慢了半拍，声音发紧，被身后的人听出不对。"
+        }
+      ],
+      "reactions": [],
+      "narration": "小满拧火的动作很利落，嗞声一下矮了半截。她蹲下去卷报纸，一条压一条塞进门缝，像给门缝钉了排小栅栏。柜台第二格抽屉也被她用指背顶严了，纸角不再探头。做完这些，她手撑着玻璃站起来，围裙上沾了一道灰。\n\n老马绕过去带门，门合上又弹回两指宽；他重来一次，这回门没弹，可膝盖先软了一下，他扶着门框站了两秒才直起来。添热水的半瓢汤还是泼了些在台面上，顺着边缘滴到他自己的鞋。手机亮了一下，他没接，拇指按灭，把手机塞回裤兜，慢慢坐回高脚凳。\n\n林菌侧过身，把手机贴到耳边。她说话很轻，一句一顿。“嗯，我在。”雨拍在窗玻璃上，把下一句盖过去一点。她的肩膀一直缩着，手没离开箱子把手。那头大概说了很多，她光是听，过了好一会儿才应一声：“知道了。”\n\n橘猫见她背过身去，就着这个空当从箱子把手上跳下来，肚皮底下的毛巾滑到地上。它走到门缝前，发现那儿被报纸堵住了，低头嗅，胡子一翘一翘。门关严了，店里反倒显得静，收音机里的老歌一句一句浮上来。\n\n小满回到台面后头，从锅底捞起一点焦了的渣，皱着眉。“汤得换，不然明早一开门就一股糊味。”她抬眼看老马，又看林菌的背影，把话压低了些，“今儿这雨，几点能停？”老马没急着答，手还搭在膝盖上。\n\n林菌的手机贴得很紧，另一只手在箱子把手上慢慢攥了一下。收音机的主持人又开始念号码，念到一半被自己的咳嗽打断。",
+      "outcomeNotes": [
+        {
+          "characterId": "xiao_man",
+          "note": "关东煮火候压住了，门缝被旧报纸堵严，还顺手把卡纸的抽屉推平；焦味仍在，汤要换。"
+        },
+        {
+          "characterId": "lao_ma",
+          "note": "门带上了、汤添了，但膝盖发软、水泼到鞋面，手机亮了一下没接、塞回兜里。"
+        },
+        {
+          "characterId": "lin_jun",
+          "note": "背身接完了母亲的电话，答了“我在”“知道了”，没说自己要走，也没说自己为什么在。"
+        }
+      ],
+      "stateChanges": {
+        "characters": [
+          {
+            "characterId": "xiao_man",
+            "stressDelta": 1,
+            "conditionsAdd": [
+              {
+                "name": "手上沾了灰",
+                "description": "蹲地卷报纸、推抽屉，指尖脏，收银找零稍慢",
+                "modifier": -1,
+                "kind": "other",
+                "abilities": [
+                  "agility"
+                ]
+              }
+            ],
+            "conditionsRemove": [],
+            "inventoryAdd": [],
+            "inventoryRemove": [],
+            "privateNote": "她看见老马扶门框那一下，还有他按灭手机的动作。",
+            "memory": {
+              "summary": "锅里的焦渣，得赶在开门前把汤换掉。",
+              "importance": 2
+            }
+          },
+          {
+            "characterId": "lao_ma",
+            "stressDelta": 1,
+            "conditionsAdd": [
+              {
+                "name": "膝盖发软",
+                "description": "起身、弯腰时膝关节先顿一下，走快了会踉跄",
+                "modifier": -2,
+                "kind": "injury",
+                "abilities": [
+                  "agility",
+                  "will"
+                ]
+              },
+              {
+                "name": "鞋面泼湿",
+                "description": "热水泼在鞋面上，脚趾发凉，久了容易分神",
+                "modifier": -1,
+                "kind": "other"
+              }
+            ],
+            "conditionsRemove": [
+              "半截袖子湿着"
+            ],
+            "inventoryAdd": [],
+            "inventoryRemove": [],
+            "privateNote": "手机那个未接的来电，他没打算当着人说。",
+            "memory": {
+              "summary": "那扇门合上又弹开的一瞬，膝盖不听使唤。",
+              "importance": 3
+            }
+          },
+          {
+            "characterId": "lin_jun",
+            "stressDelta": -1,
+            "conditionsAdd": [
+              {
+                "name": "话已出口",
+                "description": "对母亲说了“我在便利店”，接下来有人问起就不好再编",
+                "modifier": 2,
+                "kind": "emotion"
+              }
+            ],
+            "conditionsRemove": [],
+            "inventoryAdd": [],
+            "inventoryRemove": [],
+            "privateNote": "电话那头问了她今晚到底回不回去；她答“知道了”，没说答应什么。",
+            "memory": {
+              "summary": "“知道了”这三个字，她自己也说不清是答应了什么。",
+              "importance": 3
+            }
+          }
+        ],
+        "world": {
+          "factsAdd": [
+            "门被老马关严了，门缝底下塞着小满卷的旧报纸。",
+            "关东煮的汤见了底又添了热水，锅底依旧有焦味，小满说要换汤。"
+          ],
+          "factsRemove": [
+            "橘猫从门缝里进来了。"
+          ],
+          "flagsSet": {
+            "door_sealed": true,
+            "broth_needs_change": true,
+            "lin_jun_on_phone": false,
+            "lao_ma_missed_call": true
+          },
+          "pressure": "汤要换、门缝怕再被风顶开，林菌的母亲还在电话那头等一个准话。",
+          "sceneTitle": "换汤之前"
+        }
+      },
+      "nextTimeJump": {
+        "elapsedMinutes": 12,
+        "label": "一锅汤从热到凉的那十二分钟",
+        "reason": "小满要舀净锅底、兑新汤，老马缓膝盖，林菌挂电话后需要一点默不作声的时间。"
+      },
+      "ending": null,
+      "createdAt": "2026-10-27T10:59:38.795Z",
+      "completedAt": "2026-10-27T11:00:09.138Z"
+    }
+  ],
+  "progress": {
+    "phase": "idle",
+    "label": "等待继续",
+    "updatedAt": "2026-10-27T11:00:09.145Z"
+  },
+  "llm": {
+    "calls": 27,
+    "promptTokens": 75482,
+    "completionTokens": 21839,
+    "cachedTokens": 15360,
+    "reasoningTokens": 9945,
+    "totalTokens": 97321,
+    "failures": 1
+  },
+  "ending": null,
+  "error": null,
+  "startedAt": "2026-10-27T10:57:39.800Z"
+}

@@ -1,0 +1,1207 @@
+{
+  "version": 1,
+  "id": "run_8dbc201c845c",
+  "seed": "genre-baseline-01",
+  "status": "paused",
+  "scenario": {
+    "id": "fog-harbor",
+    "title": "雾港：最后一盏灯",
+    "subtitle": "当熄灭十七年的船灯再次亮起，守灯的人必须先决定自己愿意忘记什么。",
+    "kicker": "归潮夜 · 第 17 年",
+    "isPreset": true,
+    "world": {
+      "title": "雾港：最后一盏灯",
+      "era": "架空近代 · 黑潮海岭 · 归潮夜",
+      "tone": "冷峻的海洋悬疑，克制的悲伤，少量超自然异象。不要廉价惊吓，不要华丽空转；每一次温柔都要有代价，每一次胜利都要留下痕迹。",
+      "setting": "雾港建在一道被永年海雾包围的黑礁脊上。每十七年一次的“归潮夜”，海水会倒灌进旧港，浓雾吞没声音与方向，只有寂照灯塔的“真光”能照出被海留住的东西。寂照灯不以油为燃料，而以守灯人的一段记忆为灯芯。光越亮，忘掉的东西越多。\n\n十七年前的归潮夜，邮轮“长明号”在入港前失踪，四十三人无人生还，也没有找到一具尸体。官方档案称它触礁沉没。从那以后，寂照灯再没能点燃过真正的光。\n\n今夜，台风外围扫过白鲸礁。灯塔主灯在二十二时三十一分熄灭，备用灯芯不翼而飞，无线电收到一段不属于这个时代的求救。旧海堤将在 01:10 满潮时被完全淹没；在那之前，岛上的四个人必须决定：要不要再点亮这盏灯，以及谁的名字值得被海记住。",
+      "location": "寂照灯塔：白鲸礁上唯一的建筑。底层是机房与储藏室，中层是无线电室和旧档案室，顶层是灯室。塔外有一条四百米长的石砌海堤通往雾港，风浪已经漫过三分之一。所有角色都困在塔内或塔口。",
+      "dateLabel": "归潮夜",
+      "startClock": "22:40",
+      "premise": "主灯熄灭、灯芯失踪、失踪十七年的长明号突然发来求救。潮水将在两小时半后切断退路，而灯塔的无线电只剩不到一小时的电力。四个人带着互相冲突的秘密聚在灯下。",
+      "opening": "二十二时四十分。台风“鹭”把第一阵横雨甩在白鲸礁上，塔窗像被无数湿手指轮番敲打。\n\n寂照灯塔的主灯已经暗了九分钟。灯室下方的配电盘发出焦味，备用灯芯的铜匣敞着，里面只剩一截被盐霜蚀穿的麻绳。无线电在没有人触碰的情况下自己亮起，沙沙声里浮出一个年轻女人的声音，报出十七年前的沉船呼号：\n\n“长明号呼叫寂照。灯下还有空位。”\n\n顾行舟的怀表停在二十二时三十一分。白露的医疗包滴着海水。林小满的录音机自己转了一格。沈砚站在灯室的黄铜控制台前，指尖离点火杆只有一寸。\n\n塔外，潮水正在吞掉最后一段回家的路。",
+      "directorNotes": "这是一场关于“谁有资格被记住”的封闭空间悬疑。四名角色各怀秘密，不要让他们一开始就坦白；让证词、物品和行动互相拆穿。\n\n节奏：至少在前两刻保持谜团；第三刻之后才允许核心真相以可验证的方式浮出水面。不要用旁白直接泄露任何未说出口的秘密。若角色用行动揭穿秘密，必须留下证据链。\n\n超自然规则应保持简洁：灯塔的真光能照出“被海留住的东西”，但每次点燃都要以守灯人的记忆为代价。不要随意新增更强大的魔法。暴力应当危险且不可轻用。\n\n结束时不必给所有人圆满。优先让角色为自己选择的代价负责。长度 4–6 个时刻；若玩家持续追问，可自然地收束。",
+      "hiddenCanon": "（仅总控可见，是世界的骨架，不要求照本宣科。）\n\n1. 十七年前，沈砚为了掩护一艘走私驳船，私自调暗了副灯；长明号因此错过航道。她的父亲沈渡知道真相，替她承担了责任，登船引航，之后再未归来。沈砚烧掉了日志最后一页。\n\n2. 长明号并没有普通地沉没。归潮夜的真光把一船人的临终记忆留在了礁下；每隔十七年，它会循着灯号回港一次。它不是可供拯救的实体，而是无法安葬的“回响”。真光若再一次以献祭的记忆点燃，长明号会靠岸，却会把另一个人永远留在海上。\n\n3. 顾行舟的哥哥顾行远是长明号大副，也是当年记录走私证据的人。顾行舟受命销毁灯塔档案并在必要时炸毁灯室，一直以为哥哥是包庇走私的叛徒。他其实还没看过完整的证据。\n\n4. 白露的妹妹白霁是长明号报务员。白露在十七年前收到最后一串电码：“别开灯。”她今夜偷走真灯芯、切断备用电源，并伪造了最初的求援信号，只为让所有人承认：再点灯，就是把另一个人推回海里。她并不确定妹妹是否还“在”。\n\n5. 林小满的父亲林渡是当年调查沉船的记者，留下最后一段录音：四十三人的名字、沈渡的遗言，以及一句“灯不是用来记账的，灯要用来送人回家”。录音末尾的三下敲击，是沈渡在舱壁里留下的暗号。\n\n6. 真正的解法不是再找一段记忆献祭，而是让活人公开承担十七年前的谎言，把真灯芯从“献祭”改作“引路”，并让长明号完成告别。具体路径由角色的选择决定；不要提前替他们找到答案。",
+      "initialFacts": [
+        "主灯已熄灭，备用灯芯失踪，配电盘有焦味。",
+        "长明号失踪十七年后，今夜再次发出求救呼号。",
+        "00:30 前后海水会漫过堤道，01:10 满潮。",
+        "灯塔无线电的应急电池最多再维持四十分钟。",
+        "归潮夜的海雾会吞没方向与声音；老海员说，灯塔的光能照出沉在海底的船。"
+      ],
+      "countdown": "01:10 满潮 · 堤道将被淹没"
+    },
+    "characters": [
+      {
+        "id": "shen_yan",
+        "name": "沈砚",
+        "title": "寂照灯塔末任守灯人",
+        "age": "31",
+        "pronouns": "她",
+        "publicProfile": "灰色风衣，左手戴一只磨旧的皮手套。能凭雾里的回声判断船位。三年前回到白鲸礁接任守灯人，从不解释上一任守灯人为什么失踪。今夜她手里握着灯塔总钥匙，也握着所有人最需要的那盏灯。",
+        "appearance": "黑发用一根铜簪束着，眼角有长期熬夜的青影。右手虎口有灯油烫出的旧疤。",
+        "personality": "克制、固执，对海有近乎迷信的敬畏。习惯把重要的事写进日志而不是说出口；被逼问时先沉默，然后用一个更尖锐的问题回击。她不是冷酷的人，但她已经学会把愧疚折叠得很小，藏在每天擦灯的动作里。",
+        "desire": "在满潮前让寂照灯重新亮起，把长明号领回港；同时弄清楚父亲沈渡和那艘船到底发生了什么。",
+        "fear": "发现自己和父亲一样，会为了守住一盏灯而牺牲别人；更怕自己其实早就知道这一点。",
+        "secret": "十七年前，她为了掩护一艘走私驳船，私自调暗了副灯，导致长明号错过航道。父亲替她担下罪责，登船引航后再未归来。她烧掉了日志最后一页，并对所有人谎称父亲是主动失踪的。",
+        "abilities": {
+          "physique": 5,
+          "agility": 6,
+          "perception": 8,
+          "intellect": 6,
+          "will": 8,
+          "presence": 4
+        },
+        "traits": [
+          {
+            "name": "听雾",
+            "description": "能从回声、汽笛和雨声里分辨出船位与机械故障。",
+            "bonus": 2,
+            "ability": "perception"
+          },
+          {
+            "name": "守灯人的手",
+            "description": "熟悉灯室每一枚齿轮和铜阀，修灯时手比嘴更可靠。",
+            "bonus": 2,
+            "ability": "intellect"
+          },
+          {
+            "name": "沉默的威压",
+            "description": "不提高声音也能让一个心虚的人先移开视线。",
+            "bonus": 1,
+            "ability": "will"
+          }
+        ],
+        "possessions": [
+          "灯塔总钥匙",
+          "父亲留下的黄铜怀表（停在 22:31）",
+          "半截被盐蚀穿的假灯芯",
+          "防水日志（缺最后一页）",
+          "煤油灯"
+        ],
+        "relationships": [
+          {
+            "targetId": "gu_xingzhou",
+            "label": "旧识 / 审查者",
+            "attitude": "他在查灯塔，也在查我。我不信他，但他身上有和父亲一样的海腥味。"
+          },
+          {
+            "targetId": "bai_lu",
+            "label": "欠命的人",
+            "attitude": "她三年前把我从防波堤下拖上来。我欠她一条命，但她今晚太安静了。"
+          },
+          {
+            "targetId": "lin_xiaoman",
+            "label": "麻烦的记者",
+            "attitude": "她问的问题太准，准得让我想把灯关掉。可她也可能是唯一愿意记下真相的人。"
+          }
+        ],
+        "memories": [
+          {
+            "summary": "十七年前离开的那夜，父亲在灯室说：灯不是用来指路的，是用来记账的。",
+            "detail": "他说完这句话就下了塔，海雾吞掉他的背影。那是我最后一次听见他的声音。",
+            "importance": 5
+          },
+          {
+            "summary": "三天前收到没有落款的信：别让那艘船靠岸。",
+            "detail": "信纸带着港务局的蓝墨水味。我把它压在日志最后一页下面，假装没看见。",
+            "importance": 4
+          },
+          {
+            "summary": "我在机房发现备用灯芯被换成了泡烂的麻绳。",
+            "detail": "铜匣没有撬痕。只有拿到灯塔钥匙的人才能换掉它。",
+            "importance": 4
+          },
+          {
+            "summary": "我把日志最后一页烧了。",
+            "detail": "那页上有我十七年前的签名和一句批注：副灯调暗十七分钟，理由：私人请求。",
+            "importance": 5
+          },
+          {
+            "summary": "白露曾把我从防波堤下拖上来。",
+            "detail": "那天她一句话没问，只把我的湿外套扒下来，塞了一杯热酒。我不喜欢欠人情。",
+            "importance": 3
+          }
+        ],
+        "conditions": []
+      },
+      {
+        "id": "gu_xingzhou",
+        "name": "顾行舟",
+        "title": "港务局特别稽核员 · 前海军潜水员",
+        "age": "34",
+        "pronouns": "他",
+        "publicProfile": "黑呢大衣，右眉骨有一道旧疤。以核对灯塔资产的名义登岛，说话不多，习惯站在所有出口之间。有人说他七年前从一场海难里独自游回来，之后再没下过水。",
+        "appearance": "肩背很直，手指被长期浸泡海水泡得发白。大衣内侧有一道缝补过的暗袋。",
+        "personality": "冷静、讲秩序，相信“先封锁，再解释”能减少伤亡。他能对尸体保持专业礼貌，却不知道如何安慰一个活人。他愿意做脏活，因为他真心认为自己在阻止更大的灾难；正因如此，当机构本身有问题时，他会比别人更晚承认。",
+        "desire": "拿到灯塔最后一页日志、封存灯芯，执行港务局的“归潮处置”密令；同时确认哥哥顾行远当年究竟是不是叛徒。",
+        "fear": "自己忠诚了一辈子的机构，只是在拿别人的记忆填海；以及如果哥哥真的是叛徒，他这些年为他守的到底是什么。",
+        "secret": "他的任务包含在必要时炸毁灯室引航盘，让长明号无法靠岸。他还带着一枚老式引爆器和一份港务局签发、日期空着的海难定性书。他的哥哥顾行远当年是长明号大副。",
+        "abilities": {
+          "physique": 8,
+          "agility": 6,
+          "perception": 6,
+          "intellect": 7,
+          "will": 7,
+          "presence": 5
+        },
+        "traits": [
+          {
+            "name": "军人做派",
+            "description": "在对抗和威慑中不轻易退让，动作干净利落。",
+            "bonus": 2,
+            "ability": "physique"
+          },
+          {
+            "name": "深水肺",
+            "description": "能比常人多憋三分钟气，对冷水与压力有经验。",
+            "bonus": 2,
+            "ability": "physique"
+          },
+          {
+            "name": "稽核员的眼睛",
+            "description": "看文件、看人，都能找到前后不对的地方。",
+            "bonus": 2,
+            "ability": "intellect"
+          },
+          {
+            "name": "不上桌的枪",
+            "description": "他很少拔枪，但所有人都知道三发子弹在哪儿。",
+            "bonus": 1,
+            "ability": "presence"
+          }
+        ],
+        "possessions": [
+          "港务局铜徽",
+          "柯尔特左轮手枪（三发子弹）",
+          "军用防水手电",
+          "一枚拆去保险的老式引爆器",
+          "哥哥的最后一张明信片"
+        ],
+        "relationships": [
+          {
+            "targetId": "shen_yan",
+            "label": "审查对象",
+            "attitude": "她在隐瞒。日志缺页、灯芯失踪、她手里那把总钥匙——都太巧了。"
+          },
+          {
+            "targetId": "bai_lu",
+            "label": "旧识 / 嫌疑人",
+            "attitude": "七年前我把她从货舱里捞出来。她欠我一次，我也知道她从来不会白欠。"
+          },
+          {
+            "targetId": "lin_xiaoman",
+            "label": "舆论风险",
+            "attitude": "她带着录音机来，像是来审判所有人的。真相不是磁带，是能收场的东西。"
+          }
+        ],
+        "memories": [
+          {
+            "summary": "哥哥顾行远最后一次寄来的明信片：灯下有人在数我们。",
+            "detail": "邮戳是十七年前的归潮夜。我把明信片带在身上，边角已经磨圆。",
+            "importance": 5
+          },
+          {
+            "summary": "今天十八时，局长把一枚引爆器和一份空白海难定性书交给我。",
+            "detail": "他说：零点前切断灯塔动力，必要时烧掉引航盘。不要让那艘船靠岸。",
+            "importance": 5
+          },
+          {
+            "summary": "机房的三根线被人用剪钳精确剪断，不是风暴造成的。",
+            "detail": "断口很新。有人故意让备用电源失效。",
+            "importance": 4
+          },
+          {
+            "summary": "我在旧码头看见白露烧掉一份船员名单。",
+            "detail": "她发现我时没有慌，只说：有些人最好别被找到。",
+            "importance": 4
+          },
+          {
+            "summary": "七年前，海上的一具尸体把我从货舱里拖出来。",
+            "detail": "我一直没告诉任何人，那具尸体的手是温的。",
+            "importance": 3
+          }
+        ],
+        "conditions": []
+      },
+      {
+        "id": "bai_lu",
+        "name": "白露",
+        "title": "前打捞船潜水员 · 走私船医",
+        "age": "27",
+        "pronouns": "她",
+        "publicProfile": "湿发，背一只旧医疗包，脚边总放着一双潜水蛙鞋。她说话时带笑，手很稳，像是随时准备替人缝合伤口，也顺手摸走对方的钱包。三年前被海防队通缉，后来案子莫名撤了。",
+        "appearance": "皮肤被海风晒成浅褐色，右腕系着一根褪色的红绳。笑起来很像船坞里那些不会吃亏的人。",
+        "personality": "圆滑、好奇，带着生存主义者的轻快。她不信任何宏大的承诺，只信具体的人和一包干净绷带。越要紧的时候越爱说玩笑话；当她安静下来，说明她已经做了决定。",
+        "desire": "确认妹妹白霁的下落；如果那艘船真的能回来，她要第一个走上船，把没说完的话说完。",
+        "fear": "雾里有人叫她的名字，她回头，却只看见自己的回声。",
+        "secret": "十七年前，她收到了妹妹最后一串电码——“别开灯”。今夜她偷走真灯芯、切断备用电源，并伪造了最初的求援信号，只为逼所有人面对一个事实：再次点灯，就是再送一个人去海底。真灯芯就藏在她医疗包的夹层里，被她的体温焐得发烫。",
+        "abilities": {
+          "physique": 6,
+          "agility": 8,
+          "perception": 7,
+          "intellect": 5,
+          "will": 5,
+          "presence": 7
+        },
+        "traits": [
+          {
+            "name": "水鬼",
+            "description": "在水下比在陆地上更自在，能在冷水中长时间行动。",
+            "bonus": 2,
+            "ability": "agility"
+          },
+          {
+            "name": "走私医生的眼",
+            "description": "读人、止血、撒谎时看着对方眼睛，都很难出差错。",
+            "bonus": 2,
+            "ability": "intellect"
+          },
+          {
+            "name": "会笑的人不容易被怀疑",
+            "description": "她能把最要命的问题说成玩笑。",
+            "bonus": 1,
+            "ability": "presence"
+          }
+        ],
+        "possessions": [
+          "旧医疗包（夹层里有真灯芯）",
+          "潜水刀",
+          "防水火柴",
+          "妹妹白霁的发报键帽",
+          "一卷伪造的遇险电报纸带"
+        ],
+        "relationships": [
+          {
+            "targetId": "shen_yan",
+            "label": "愧疚的合作者",
+            "attitude": "她父亲死了，我妹妹也死了。她守着灯，我守着那串电码。我们谁都没比谁干净。"
+          },
+          {
+            "targetId": "gu_xingzhou",
+            "label": "救命恩人 / 对立面",
+            "attitude": "他救过我的命，但如果他今晚要炸灯，我会先把他绑在机房里。"
+          },
+          {
+            "targetId": "lin_xiaoman",
+            "label": "可以合作的人",
+            "attitude": "她带着录音机，像拿着一把不伤人的刀。也许该让所有人听听真相。"
+          }
+        ],
+        "memories": [
+          {
+            "summary": "十七年前，我在海边看着长明号的灯沉下去。",
+            "detail": "全城的人都说是触礁。只有我知道，灯是被人为调暗的。",
+            "importance": 5
+          },
+          {
+            "summary": "今天二十时十分，我潜入旧码头，在船底摸到一行刚刻的字：灯芯还活着。",
+            "detail": "刻痕里没有盐，像是十七年前刚刻上去的。我割破了两根手指。",
+            "importance": 4
+          },
+          {
+            "summary": "今天二十一时四十分，我抽走了备用灯芯，剪断备用电源。",
+            "detail": "真灯芯现在在医疗包夹层里。它贴着我的肋骨发烫，像一颗不属于我的心脏。",
+            "importance": 5
+          },
+          {
+            "summary": "妹妹最后的电码：别开灯。",
+            "detail": "那三个字之后还有一截杂音。我一直把那截杂音当成自己的想象。",
+            "importance": 5
+          },
+          {
+            "summary": "三年前，沈砚在暴雨里替我拦下了一艘巡逻艇。",
+            "detail": "她没问我运的是什么。我因此欠了她一次，也一直没还。",
+            "importance": 3
+          }
+        ],
+        "conditions": []
+      },
+      {
+        "id": "lin_xiaoman",
+        "name": "林小满",
+        "title": "海潮广播电台记者",
+        "age": "23",
+        "pronouns": "她",
+        "publicProfile": "脖子上挂一台老式录音机，口袋里塞满没寄出的稿纸。她一到岛就先问所有人最不想回答的问题，然后安静地等。媒体证是海潮电台给的，但她的麦克风现在没有信号。",
+        "appearance": "短发被雨压塌，鞋底沾着纸页。她习惯把左手插在口袋里，那里藏着一盘没有标签的磁带。",
+        "personality": "理想主义、敏锐、莽撞，相信记录可以救命，也清楚自己有时只是想拿到一个更好的故事。她用提问代替武器，但在真正危险面前并不像自己想象的那么勇敢。",
+        "desire": "录下长明号归港的全过程和灯塔十七年前的真相，把它送上明天的头条，让父亲未完成的调查有个结局。",
+        "fear": "自己最终只是一个旁观者，为了好故事看着别人死；也怕父亲的真相根本没有她想得那么正义。",
+        "secret": "她带着父亲林渡留下的最后一盘录音带。磁带里有沈渡的遗言、顾行远整理的走私名单，还有一段被人刻意抹去的空白。她尚未完整听过那段空白，只知道里面的三下敲击与沈砚怀表的走时相合。",
+        "abilities": {
+          "physique": 4,
+          "agility": 5,
+          "perception": 7,
+          "intellect": 8,
+          "will": 6,
+          "presence": 7
+        },
+        "traits": [
+          {
+            "name": "记录者",
+            "description": "能从细枝末节里拼出别人忽略的联系，也擅长让人说漏嘴。",
+            "bonus": 2,
+            "ability": "perception"
+          },
+          {
+            "name": "播音员的声线",
+            "description": "她的声音天然让人想听完，哪怕她说的是坏消息。",
+            "bonus": 1,
+            "ability": "presence"
+          },
+          {
+            "name": "不合时宜的勇气",
+            "description": "当真相就在眼前，她很少先考虑自己是否安全。",
+            "bonus": 2,
+            "ability": "will"
+          }
+        ],
+        "possessions": [
+          "便携磁带录音机",
+          "父亲的最后一盘录音带",
+          "空白磁带两盘",
+          "十七年前的海难剪报",
+          "信号手电"
+        ],
+        "relationships": [
+          {
+            "targetId": "shen_yan",
+            "label": "最想揭穿的人",
+            "attitude": "她守着一盏灯，像守着一口不肯打开的棺材。我需要她开口，哪怕她恨我。"
+          },
+          {
+            "targetId": "gu_xingzhou",
+            "label": "可疑的官方来客",
+            "attitude": "他的徽章太干净，手却像沾过血。我来之前，录音里就有他的名字。"
+          },
+          {
+            "targetId": "bai_lu",
+            "label": "可能的盟友",
+            "attitude": "她不相信任何人，但她会救人。也许我们可以各取所需。"
+          }
+        ],
+        "memories": [
+          {
+            "summary": "父亲留下的最后一盘磁带：A 面是海难，B 面只有一分钟寂静和三次敲击。",
+            "detail": "我把磁带盒贴在耳边听过很多次。那三次敲击之间，隔着很长的呼吸声。",
+            "importance": 5
+          },
+          {
+            "summary": "今天二十二时，无线电里出现一个不属于任何频道的女声：你们已经数到第七次了。",
+            "detail": "我把那句话录了下来。回放时，背景里有父亲敲桌子的习惯声。",
+            "importance": 5
+          },
+          {
+            "summary": "我偷看到顾行舟把一份空白日期的文件塞进大衣内袋。",
+            "detail": "文件抬头有港务局的钢印，像一张等着被填上死讯的船票。",
+            "importance": 4
+          },
+          {
+            "summary": "白露在旧码头烧船员名单时，主动看了我一眼。",
+            "detail": "她像在问我敢不敢记下来。我没有举起相机。",
+            "importance": 3
+          },
+          {
+            "summary": "父亲死前最后一篇稿子只有标题：灯不是用来记账的。",
+            "detail": "正文被整版撤掉。那年报社收到的最后电话来自港务局。",
+            "importance": 4
+          }
+        ],
+        "conditions": []
+      }
+    ],
+    "rules": {
+      "maxBeats": 5,
+      "difficultyGuidance": "普通但紧张的动作 DC 15；有准备、有工具或有优势 DC 12–13；对抗海况、拆解危险机械、在众目睽睽下说谎 DC 18；几乎不可能 DC 22–25。不要因为角色数值高就抬高 DC；数值应该被感受到。"
+    }
+  },
+  "settings": {
+    "maxBeats": 5,
+    "autoLimit": 1,
+    "thinking": "auto",
+    "model": "deepseek-flash"
+  },
+  "createdAt": "2026-10-27T10:52:04.227Z",
+  "updatedAt": "2026-10-27T10:52:48.493Z",
+  "clock": {
+    "minutes": 1360,
+    "display": "22:40",
+    "dateLabel": "归潮夜"
+  },
+  "world": {
+    "publicFacts": [
+      "主灯已熄灭，备用灯芯失踪，配电盘有焦味。",
+      "长明号失踪十七年后，今夜再次发出求救呼号。",
+      "00:30 前后海水会漫过堤道，01:10 满潮。",
+      "灯塔无线电的应急电池最多再维持四十分钟。",
+      "归潮夜的海雾会吞没方向与声音；老海员说，灯塔的光能照出沉在海底的船。",
+      "沈砚当众确认：无线电杂音底下有一串规律敲击，不是干扰。",
+      "顾行舟逼交钥匙与日志未果；钥匙仍在台面上，没有人拿走。"
+    ],
+    "flags": {
+      "key_on_table_not_handed": true,
+      "recorder_running_by_itself": true,
+      "knock_pattern_noted": true
+    },
+    "pressure": "钥匙压在台面上没人拿，无线电电池只剩约半小时，而底噪里的敲击一下都没停。",
+    "sceneTitle": "底噪下的敲击"
+  },
+  "characters": {
+    "shen_yan": {
+      "id": "shen_yan",
+      "conditions": [
+        {
+          "name": "按住的沉默",
+          "description": "她一只手始终压着话筒键，腾挪与用力的动作受限，直到她松开为止",
+          "modifier": -1,
+          "kind": "other",
+          "abilities": [
+            "agility"
+          ],
+          "id": "cond_797757a85ecd",
+          "sourceBeat": 0
+        }
+      ],
+      "stress": 1,
+      "memories": [
+        {
+          "id": "mem_6a674991649c",
+          "at": "归潮夜",
+          "beatIndex": null,
+          "summary": "十七年前离开的那夜，父亲在灯室说：灯不是用来指路的，是用来记账的。",
+          "detail": "他说完这句话就下了塔，海雾吞掉他的背影。那是我最后一次听见他的声音。",
+          "importance": 5,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_328e70794fa7",
+          "at": "归潮夜",
+          "beatIndex": null,
+          "summary": "三天前收到没有落款的信：别让那艘船靠岸。",
+          "detail": "信纸带着港务局的蓝墨水味。我把它压在日志最后一页下面，假装没看见。",
+          "importance": 4,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_8d75fed1e4df",
+          "at": "归潮夜",
+          "beatIndex": null,
+          "summary": "我在机房发现备用灯芯被换成了泡烂的麻绳。",
+          "detail": "铜匣没有撬痕。只有拿到灯塔钥匙的人才能换掉它。",
+          "importance": 4,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_612e34fe232e",
+          "at": "归潮夜",
+          "beatIndex": null,
+          "summary": "我把日志最后一页烧了。",
+          "detail": "那页上有我十七年前的签名和一句批注：副灯调暗十七分钟，理由：私人请求。",
+          "importance": 5,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_70da093c3c01",
+          "at": "归潮夜",
+          "beatIndex": null,
+          "summary": "白露曾把我从防波堤下拖上来。",
+          "detail": "那天她一句话没问，只把我的湿外套扒下来，塞了一杯热酒。我不喜欢欠人情。",
+          "importance": 3,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_fd5d1e6fbc5a",
+          "at": "22:40",
+          "beatIndex": 0,
+          "summary": "底噪里那串短、短、长的敲击，不是干扰。",
+          "detail": "雨点仍在敲窗。沈砚走到无线电前，一只手始终压着话筒键，另一只手示意所有人退开半步，随后把耳朵贴向喇叭。灯室里只剩磁带轮的咔哒声和那层沙沙的底噪。她闭眼数了十几秒——数到第十一下时，杂音里浮出一串规律的轻敲：短、短、长，间隔比人的呼吸还稳，不像风，也不像任何一台失修的电台。 只有你知道：那串短长短的敲击出现的时间间隔完全一致，不像人手敲出来的。",
+          "importance": 3,
+          "kind": "observation",
+          "source": "gm"
+        }
+      ],
+      "inventory": [
+        "灯塔总钥匙",
+        "父亲留下的黄铜怀表（停在 22:31）",
+        "半截被盐蚀穿的假灯芯",
+        "防水日志（缺最后一页）",
+        "煤油灯"
+      ],
+      "flags": {}
+    },
+    "gu_xingzhou": {
+      "id": "gu_xingzhou",
+      "conditions": [
+        {
+          "name": "被当众顶回",
+          "description": "他知道自己按枪的手被看见了，气势上先输一截，强硬施压时更难压住场面",
+          "modifier": -2,
+          "kind": "emotion",
+          "abilities": [
+            "presence"
+          ],
+          "id": "cond_5b1509568ae4",
+          "sourceBeat": 0
+        }
+      ],
+      "stress": 2,
+      "memories": [
+        {
+          "id": "mem_dc8325c765af",
+          "at": "归潮夜",
+          "beatIndex": null,
+          "summary": "哥哥顾行远最后一次寄来的明信片：灯下有人在数我们。",
+          "detail": "邮戳是十七年前的归潮夜。我把明信片带在身上，边角已经磨圆。",
+          "importance": 5,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_4fbc9d7d7139",
+          "at": "归潮夜",
+          "beatIndex": null,
+          "summary": "今天十八时，局长把一枚引爆器和一份空白海难定性书交给我。",
+          "detail": "他说：零点前切断灯塔动力，必要时烧掉引航盘。不要让那艘船靠岸。",
+          "importance": 5,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_b5186cabbe8f",
+          "at": "归潮夜",
+          "beatIndex": null,
+          "summary": "机房的三根线被人用剪钳精确剪断，不是风暴造成的。",
+          "detail": "断口很新。有人故意让备用电源失效。",
+          "importance": 4,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_c5145819cce0",
+          "at": "归潮夜",
+          "beatIndex": null,
+          "summary": "我在旧码头看见白露烧掉一份船员名单。",
+          "detail": "她发现我时没有慌，只说：有些人最好别被找到。",
+          "importance": 4,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_a363b183ca7d",
+          "at": "归潮夜",
+          "beatIndex": null,
+          "summary": "七年前，海上的一具尸体把我从货舱里拖出来。",
+          "detail": "我一直没告诉任何人，那具尸体的手是温的。",
+          "importance": 3,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_0508bf66068d",
+          "at": "22:40",
+          "beatIndex": 0,
+          "summary": "她当着三个人说我按枪的手在抖。",
+          "detail": "雨点仍在敲窗。沈砚走到无线电前，一只手始终压着话筒键，另一只手示意所有人退开半步，随后把耳朵贴向喇叭。灯室里只剩磁带轮的咔哒声和那层沙沙的底噪。她闭眼数了十几秒——数到第十一下时，杂音里浮出一串规律的轻敲：短、短、长，间隔比人的呼吸还稳，不像风，也不像任何一台失修的电台。 只有你知道：她不是虚张声势——她说话时连看都没看钥匙。",
+          "importance": 3,
+          "kind": "observation",
+          "source": "gm"
+        }
+      ],
+      "inventory": [
+        "港务局铜徽",
+        "柯尔特左轮手枪（三发子弹）",
+        "军用防水手电",
+        "一枚拆去保险的老式引爆器",
+        "哥哥的最后一张明信片"
+      ],
+      "flags": {}
+    },
+    "bai_lu": {
+      "id": "bai_lu",
+      "conditions": [],
+      "stress": 0,
+      "memories": [
+        {
+          "id": "mem_b3c37eb764b4",
+          "at": "归潮夜",
+          "beatIndex": null,
+          "summary": "十七年前，我在海边看着长明号的灯沉下去。",
+          "detail": "全城的人都说是触礁。只有我知道，灯是被人为调暗的。",
+          "importance": 5,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_53d4910411a5",
+          "at": "归潮夜",
+          "beatIndex": null,
+          "summary": "今天二十时十分，我潜入旧码头，在船底摸到一行刚刻的字：灯芯还活着。",
+          "detail": "刻痕里没有盐，像是十七年前刚刻上去的。我割破了两根手指。",
+          "importance": 4,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_979a5e273cd9",
+          "at": "归潮夜",
+          "beatIndex": null,
+          "summary": "今天二十一时四十分，我抽走了备用灯芯，剪断备用电源。",
+          "detail": "真灯芯现在在医疗包夹层里。它贴着我的肋骨发烫，像一颗不属于我的心脏。",
+          "importance": 5,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_7238f4ba0eec",
+          "at": "归潮夜",
+          "beatIndex": null,
+          "summary": "妹妹最后的电码：别开灯。",
+          "detail": "那三个字之后还有一截杂音。我一直把那截杂音当成自己的想象。",
+          "importance": 5,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_d98df895e5ae",
+          "at": "归潮夜",
+          "beatIndex": null,
+          "summary": "三年前，沈砚在暴雨里替我拦下了一艘巡逻艇。",
+          "detail": "她没问我运的是什么。我因此欠了她一次，也一直没还。",
+          "importance": 3,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_78c9196fb6b9",
+          "at": "22:40",
+          "beatIndex": 0,
+          "summary": "键帽摆上桌后，沈砚到底没去碰点火杆。",
+          "detail": "雨点仍在敲窗。沈砚走到无线电前，一只手始终压着话筒键，另一只手示意所有人退开半步，随后把耳朵贴向喇叭。灯室里只剩磁带轮的咔哒声和那层沙沙的底噪。她闭眼数了十几秒——数到第十一下时，杂音里浮出一串规律的轻敲：短、短、长，间隔比人的呼吸还稳，不像风，也不像任何一台失修的电台。 只有你知道：沈砚听见“别开灯”时肩线动了一下，那不是第一次听说的反应。",
+          "importance": 2,
+          "kind": "observation",
+          "source": "gm"
+        }
+      ],
+      "inventory": [
+        "旧医疗包（夹层里有真灯芯）",
+        "潜水刀",
+        "防水火柴",
+        "妹妹白霁的发报键帽",
+        "一卷伪造的遇险电报纸带"
+      ],
+      "flags": {}
+    },
+    "lin_xiaoman": {
+      "id": "lin_xiaoman",
+      "conditions": [
+        {
+          "name": "磁带自转",
+          "description": "录音机无人按键却持续自行转动，她因此拿到了独家素材，也更愿意把机器举在最前面",
+          "modifier": 2,
+          "kind": "boon",
+          "abilities": [
+            "will"
+          ],
+          "id": "cond_3ca65e6d9514",
+          "sourceBeat": 0
+        }
+      ],
+      "stress": 0,
+      "memories": [
+        {
+          "id": "mem_8e9f887607e1",
+          "at": "归潮夜",
+          "beatIndex": null,
+          "summary": "父亲留下的最后一盘磁带：A 面是海难，B 面只有一分钟寂静和三次敲击。",
+          "detail": "我把磁带盒贴在耳边听过很多次。那三次敲击之间，隔着很长的呼吸声。",
+          "importance": 5,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_c0d7e73f253b",
+          "at": "归潮夜",
+          "beatIndex": null,
+          "summary": "今天二十二时，无线电里出现一个不属于任何频道的女声：你们已经数到第七次了。",
+          "detail": "我把那句话录了下来。回放时，背景里有父亲敲桌子的习惯声。",
+          "importance": 5,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_4419b25f40b8",
+          "at": "归潮夜",
+          "beatIndex": null,
+          "summary": "我偷看到顾行舟把一份空白日期的文件塞进大衣内袋。",
+          "detail": "文件抬头有港务局的钢印，像一张等着被填上死讯的船票。",
+          "importance": 4,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_ffeecd840720",
+          "at": "归潮夜",
+          "beatIndex": null,
+          "summary": "白露在旧码头烧船员名单时，主动看了我一眼。",
+          "detail": "她像在问我敢不敢记下来。我没有举起相机。",
+          "importance": 3,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_4526d0211996",
+          "at": "归潮夜",
+          "beatIndex": null,
+          "summary": "父亲死前最后一篇稿子只有标题：灯不是用来记账的。",
+          "detail": "正文被整版撤掉。那年报社收到的最后电话来自港务局。",
+          "importance": 4,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_a48bbfbd030b",
+          "at": "22:40",
+          "beatIndex": 0,
+          "summary": "我没有按录音键，设备还是在录。",
+          "detail": "雨点仍在敲窗。沈砚走到无线电前，一只手始终压着话筒键，另一只手示意所有人退开半步，随后把耳朵贴向喇叭。灯室里只剩磁带轮的咔哒声和那层沙沙的底噪。她闭眼数了十几秒——数到第十一下时，杂音里浮出一串规律的轻敲：短、短、长，间隔比人的呼吸还稳，不像风，也不像任何一台失修的电台。 只有你知道：她低头时手是空的，带盘却在稳稳地走；她没有把这件事说出口。",
+          "importance": 3,
+          "kind": "observation",
+          "source": "gm"
+        }
+      ],
+      "inventory": [
+        "便携磁带录音机",
+        "父亲的最后一盘录音带",
+        "空白磁带两盘",
+        "十七年前的海难剪报",
+        "信号手电"
+      ],
+      "flags": {}
+    }
+  },
+  "beats": [
+    {
+      "id": "beat_84159434cdda",
+      "index": 0,
+      "title": "灯灭第九分钟",
+      "phase": "complete",
+      "clock": {
+        "minutes": 1360,
+        "display": "22:40",
+        "dateLabel": "归潮夜"
+      },
+      "timeJump": null,
+      "publicBrief": "横雨一阵紧似一阵地扫过白鲸礁，塔窗玻璃被敲得像有人在用湿手指轮番点叩。灯室里只有应急灯的冷白光，把四个人的影子压在铁梯口。灯室下方的配电盘还在冒焦味，一缕细烟顺着楼梯缝往上钻，混着海腥和旧铜锈。备用灯芯的铜匣大敞在工具台上，垫底的麻绳被盐霜咬穿了一半，纤维散着白毛。无线电就在没人碰它的情况下亮了，绿色指示灯一跳一跳，喇叭里沙沙的杂音之间浮出一个年轻女人的声音，报出那个十七年前就不再有人使用的呼号：“长明号呼叫寂照。灯下还有空位。”话音落下，杂音没有断，像还有人按着话筒没松手。塔外，潮水正一寸寸吞掉海堤上最后一段露出的石面，浪撞在礁脊上的闷响透过地板传上来。",
+      "privateCues": [
+        {
+          "characterId": "shen_yan",
+          "cue": "你的指尖离点火杆只有一寸，黄铜杆身上有一道被磨得发亮的浅弧，那是你父亲的手握出来的形状。你的皮手套里侧忽然渗出一层热汗，像有人在你掌心里呵了一口气。"
+        },
+        {
+          "characterId": "gu_xingzhou",
+          "cue": "你把怀表又翻过来看了一次，指针仍死死钉在二十二时三十一分，秒针连抖都不抖。表盖内侧那道浅浅的刻痕是你哥哥刻的，此刻贴着你的拇指，凉的。"
+        },
+        {
+          "characterId": "bai_lu",
+          "cue": "医疗包背带勒着你的肩，夹层里那截真灯芯贴着你的肋侧，一直发烫，烫得比任何发烧的病人都要久。你听见那段呼号，喉头先想起的不是声音，而是十七年前电键在你耳边敲出的节奏——短、短、长。"
+        },
+        {
+          "characterId": "lin_xiaoman",
+          "cue": "录音机的卷轴自己转了一格，咔哒一声，磁带轮在你指腹下轻轻震着，像有什么还没被人说出来的话，正从空白带里往外顶。"
+        }
+      ],
+      "pressure": "无线电的应急电池只剩不到四十分钟，潮水正漫过海堤，四个人必须在这一寸点火杆和那个不属于今夜的呼号之间先做出一个动作。",
+      "sceneQuestion": "是先去碰那根点火杆，还是先问清楚喇叭里说话的是谁？",
+      "gmNote": "第一刻只让物件开口：空铜匣、停摆怀表、滴水的医疗包和自转的录音机互相映照，任何人都不要坦白；若有人抢先扑向点火杆，留给其他人一个可验证的物理痕迹（如被按住的杆、蹬翻的麻绳）。",
+      "actions": [
+        {
+          "id": "act_67db573de3e1",
+          "characterId": "shen_yan",
+          "category": "观察",
+          "summary": "按住话筒听杂音里的底噪",
+          "description": "我不碰点火杆，反而走到无线电前，一手按住话筒键不放，把耳朵贴近喇叭，闭眼听杂音底下的回声与机械声。",
+          "dialogue": "先别碰点火杆。这声音底下有别的东西——让我听。",
+          "thought": "无线电里那个声音不能等，但灯也不能等。先问清它——用我听雾的耳朵，从杂音里听出这声音是从哪里来的。",
+          "goalProgress": "分辨呼号来源，判断它是否真是沉船发出的，为点灯决定提供依据。",
+          "stakes": "电池的四十分钟在流逝，若听不出名堂，就白白耗掉点灯的时间。",
+          "ability": "perception",
+          "traitName": "听雾",
+          "targetId": null,
+          "status": "resolved",
+          "penalties": -2,
+          "penaltyNotes": [
+            "分心应战 -2"
+          ],
+          "generatedBy": "llm",
+          "createdAt": "2026-10-27T10:52:11.981Z",
+          "roll": {
+            "natural": 9,
+            "ability": "perception",
+            "abilityValue": 8,
+            "traitName": "听雾",
+            "traitBonus": 2,
+            "conditionBonus": 0,
+            "conditionNotes": [],
+            "situationalBonus": 0,
+            "penalty": -2,
+            "penaltyNotes": [
+              "分心应战 -2"
+            ],
+            "total": 17,
+            "dc": 13,
+            "opponentTotal": null,
+            "margin": 4,
+            "tier": "success",
+            "criticalByNatural20": false
+          },
+          "outcome": "success",
+          "outcomeNote": ""
+        },
+        {
+          "id": "act_93d0d37389e2",
+          "characterId": "gu_xingzhou",
+          "category": "交涉",
+          "summary": "先逼沈砚交出钥匙与日志",
+          "description": "我横过一步，正好挡在铁梯口与灯室之间，把湿透的大衣前襟拢紧，右手按在腰侧枪套上却不拔出来。我盯着沈砚戴皮手套的那只手，往前递了半步。",
+          "dialogue": "沈守灯人，钥匙先放在台面上。日志缺的那几页、灯芯去哪了，你比我们清楚。灯可以等，账不能。",
+          "thought": "喇叭里的声音不能拖住我。沈砚握着总钥匙和所有答案，灯芯和缺页日志在她身上留下的疑点太多——先卡住她，再谈灯。",
+          "goalProgress": "用职权与人情压力逼沈砚先交代灯塔资产与日志下落，为封存灯芯、查哥哥旧案铺路。",
+          "stakes": "若她咬死不松口，我既拿不到钥匙也失去先机，还会在另外两人面前显得像在拖延点灯。",
+          "ability": "presence",
+          "traitName": "不上桌的枪",
+          "targetId": "shen_yan",
+          "targetLabel": "沈砚",
+          "status": "resolved",
+          "penalties": 0,
+          "penaltyNotes": [],
+          "generatedBy": "llm",
+          "createdAt": "2026-10-27T10:52:12.970Z",
+          "roll": {
+            "natural": 8,
+            "ability": "presence",
+            "abilityValue": 5,
+            "traitName": "不上桌的枪",
+            "traitBonus": 1,
+            "conditionBonus": 0,
+            "conditionNotes": [],
+            "situationalBonus": 0,
+            "penalty": 0,
+            "penaltyNotes": [],
+            "total": 14,
+            "dc": null,
+            "opponentTotal": 18,
+            "margin": -4,
+            "tier": "soft_failure",
+            "criticalByNatural20": false
+          },
+          "outcome": "soft_failure",
+          "outcomeNote": ""
+        },
+        {
+          "id": "act_1294ec343f4f",
+          "characterId": "bai_lu",
+          "category": "交涉",
+          "summary": "用妹妹的电码拖住沈砚",
+          "description": "白露从医疗包侧袋抽出那枚发报键帽，走到灯室中央，把它按在铁梯口的工具台上，指尖压着键帽边缘，挡在沈砚和点火杆之间半步的位置。她侧过身看向那台还在亮着绿光的无线电，嘴角挂着笑，手却按得很稳。",
+          "dialogue": "沈姐，先别急。那声儿报的是长明号，不是我们这四十年里任何一条船——我妹妹最后敲过来的只有三个字：别开灯。你们要是想点，也得先弄明白，这喇叭里说话的人，是替谁在喊。",
+          "thought": "不能让沈砚先去碰点火杆。她一旦接手那根杆，所有人就会顺着她，把谁的名字往灯芯里送。我得先把那个呼号拖到台面上来，让这间屋子听见我妹妹那三个字。",
+          "goalProgress": "把“别开灯”这条线索摊到所有人面前，争取在点灯前问出呼号的真相，保护妹妹留下的警告。",
+          "stakes": "如果沈砚不信我、绕过我直接去碰点火杆，我就失去了唯一能拖住点灯的机会，也没人再会问那个呼号是谁。",
+          "ability": "presence",
+          "traitName": "会笑的人不容易被怀疑",
+          "targetId": "shen_yan",
+          "targetLabel": "沈砚",
+          "status": "resolved",
+          "penalties": 0,
+          "penaltyNotes": [],
+          "generatedBy": "llm",
+          "createdAt": "2026-10-27T10:52:12.790Z",
+          "roll": {
+            "natural": 10,
+            "ability": "presence",
+            "abilityValue": 7,
+            "traitName": "会笑的人不容易被怀疑",
+            "traitBonus": 1,
+            "conditionBonus": 0,
+            "conditionNotes": [],
+            "situationalBonus": 1,
+            "penalty": 0,
+            "penaltyNotes": [],
+            "total": 19,
+            "dc": null,
+            "opponentTotal": 18,
+            "margin": 1,
+            "tier": "success",
+            "criticalByNatural20": false
+          },
+          "outcome": "success",
+          "outcomeNote": ""
+        },
+        {
+          "id": "act_899dc98fb5e1",
+          "characterId": "lin_xiaoman",
+          "category": "交涉",
+          "summary": "用录音机逼沈砚开口",
+          "description": "我把随身录音机从颈上取下，按下录音键，红灯亮起，然后将机器举到沈砚与无线电之间，让喇叭里的女声和磁带的咔哒声同时被录进去。我侧身挡住她去点火杆的路。",
+          "dialogue": "沈守灯人，你听——这盘带子自己会转。长明号在喊灯下还有空位，你手里的钥匙和这根点火杆，先给我一个说法。灯不是用来记账的，对吧？",
+          "thought": "磁带自己转了——这屋里除了我们四个，还有谁知道父亲那盘带子？先别声张，把录音机贴到沈砚面前，逼她在呼号和灯芯之间露出破绽。",
+          "goalProgress": "把沈砚逼到必须解释灯塔与长明号的关系，逼近十七年前的真相。",
+          "stakes": "若她闭口不谈，我可能失去在她动手点灯前套出真相的唯一机会。",
+          "ability": "presence",
+          "traitName": "播音员的声线",
+          "targetId": "shen_yan",
+          "targetLabel": "沈砚",
+          "status": "resolved",
+          "penalties": 0,
+          "penaltyNotes": [],
+          "generatedBy": "llm",
+          "createdAt": "2026-10-27T10:52:12.964Z",
+          "roll": {
+            "natural": 18,
+            "ability": "presence",
+            "abilityValue": 7,
+            "traitName": "播音员的声线",
+            "traitBonus": 1,
+            "conditionBonus": 0,
+            "conditionNotes": [],
+            "situationalBonus": 0,
+            "penalty": 0,
+            "penaltyNotes": [],
+            "total": 26,
+            "dc": null,
+            "opponentTotal": 18,
+            "margin": 8,
+            "tier": "critical_success",
+            "criticalByNatural20": false
+          },
+          "outcome": "critical_success",
+          "outcomeNote": ""
+        }
+      ],
+      "adjudications": [
+        {
+          "actionId": "act_67db573de3e1",
+          "difficultyLabel": "标准",
+          "dc": 13,
+          "modifier": 0,
+          "reason": "杂音下的机械底噪与回声极其微弱，但沈砚的「听雾」正是为这种声音而生的手艺，且她主动放弃点火杆、把全部注意力压在喇叭上，属于有专业优势的常规不确定动作。",
+          "risk": "她只听见一片海啸般的杂音，电池的绿色指示灯又暗了一格，点灯与辨声两头都空手。"
+        },
+        {
+          "actionId": "act_93d0d37389e2",
+          "difficultyLabel": "标准",
+          "dc": 15,
+          "modifier": 0,
+          "reason": "他以稽核身份、堵住退路的站位和腰侧的枪形成真实压力，但要求一个手握秘密、意志强硬的守灯人当众交出钥匙与日志，仅靠威压不足以让对方站着不动就范。",
+          "risk": "沈砚咬死沉默，钥匙和日志都留在她手上，而他当着另外两人的面被架成了「拖延点灯的人」。"
+        },
+        {
+          "actionId": "act_1294ec343f4f",
+          "difficultyLabel": "标准",
+          "dc": 15,
+          "modifier": 1,
+          "reason": "把妹妹那枚真实的发报键帽拍在台上，是沈砚无法当作空话的物证，加上她占据通往点火杆的半步位置，语气又轻，阻力被这枚键帽抵掉一部分；但让守灯人在此刻停手仍是硬要求。",
+          "risk": "沈砚绕过她直接伸手去够点火杆，键帽留在台上成为一段无人接话的旧事，再没有人追问呼号是谁在喊。"
+        },
+        {
+          "actionId": "act_899dc98fb5e1",
+          "difficultyLabel": "标准",
+          "dc": 15,
+          "modifier": 0,
+          "reason": "录音机的红灯与「灯不是用来记账的」这句话同时戳在沈砚的旧伤上，但她体魄单薄、只能侧身挡路，逼供的力量来自话术而非实际阻拦，属于压力下的真不确定。",
+          "risk": "沈砚一言不发地推开她和录音机，磁带只录下杂音与海风，她在对方点灯前再没有第二次套话的机会。"
+        }
+      ],
+      "reactions": [
+        {
+          "id": "rxn_e469b9204d2d",
+          "characterId": "shen_yan",
+          "incomingActionIds": [
+            "act_93d0d37389e2",
+            "act_1294ec343f4f",
+            "act_899dc98fb5e1"
+          ],
+          "continueOriginal": true,
+          "summary": "按死话筒键，反将三人的账一一顶回",
+          "description": "我不松按着话筒键的手，只偏过头，先看顾行舟按在枪套上的手，再把目光扫过白露的键帽和林小满的录音键，声音压得低而稳。",
+          "dialogue": "钥匙在台面上，账也在。可这喇叭底下有别的东西，你们谁先闭嘴三十秒，我就先答谁——顾稽核员，你按枪的手，比我按话筒的手抖。",
+          "thought": "三个人同时堵上来，是要把我从话筒和点火杆之间劈开。可喇叭底下的杂音比他们的嘴更急——先听，别松手。",
+          "ability": "will",
+          "traitName": "沉默的威压",
+          "stance": "反问硬扛",
+          "createdAt": "2026-10-27T10:52:25.892Z",
+          "roll": {
+            "natural": 13,
+            "ability": "will",
+            "abilityValue": 8,
+            "traitName": "沉默的威压",
+            "traitBonus": 1,
+            "conditionBonus": 0,
+            "conditionNotes": [],
+            "situationalBonus": 0,
+            "penalty": -4,
+            "penaltyNotes": [
+              "分心兼顾原行动 -2",
+              "同时应对 3 个行动 -2"
+            ],
+            "total": 18,
+            "incomingTotals": {
+              "act_93d0d37389e2": 14,
+              "act_1294ec343f4f": 19,
+              "act_899dc98fb5e1": 26
+            }
+          }
+        }
+      ],
+      "narration": "雨点仍在敲窗。沈砚走到无线电前，一只手始终压着话筒键，另一只手示意所有人退开半步，随后把耳朵贴向喇叭。灯室里只剩磁带轮的咔哒声和那层沙沙的底噪。她闭眼数了十几秒——数到第十一下时，杂音里浮出一串规律的轻敲：短、短、长，间隔比人的呼吸还稳，不像风，也不像任何一台失修的电台。",
+      "outcomeNotes": [
+        {
+          "characterId": "shen_yan",
+          "note": "听出底噪下有一串短长短的节奏敲击，确认那不是电台干扰，但没有松手去碰点火杆。"
+        },
+        {
+          "characterId": "bai_lu",
+          "note": "把妹妹的键帽摆上台面，逼得沈砚先回应“别开灯”，暂时拖住了点火。"
+        },
+        {
+          "characterId": "gu_xingzhou",
+          "note": "逼交钥匙与日志未果，反被沈砚当众点出按枪的手在抖，半步没再往前。"
+        },
+        {
+          "characterId": "lin_xiaoman",
+          "note": "在无人按键的情况下录到了自转的磁带与沈砚的应答，拿到了她原想要的说法。"
+        }
+      ],
+      "stateChanges": {
+        "characters": [
+          {
+            "characterId": "shen_yan",
+            "stressDelta": 1,
+            "conditionsAdd": [
+              {
+                "name": "按住的沉默",
+                "description": "她一只手始终压着话筒键，腾挪与用力的动作受限，直到她松开为止",
+                "modifier": -1,
+                "kind": "other",
+                "abilities": [
+                  "agility"
+                ]
+              }
+            ],
+            "conditionsRemove": [],
+            "inventoryAdd": [],
+            "inventoryRemove": [],
+            "privateNote": "那串短长短的敲击出现的时间间隔完全一致，不像人手敲出来的。",
+            "memory": {
+              "summary": "底噪里那串短、短、长的敲击，不是干扰。",
+              "importance": 3
+            }
+          },
+          {
+            "characterId": "gu_xingzhou",
+            "stressDelta": 2,
+            "conditionsAdd": [
+              {
+                "name": "被当众顶回",
+                "description": "他知道自己按枪的手被看见了，气势上先输一截，强硬施压时更难压住场面",
+                "modifier": -2,
+                "kind": "emotion",
+                "abilities": [
+                  "presence"
+                ]
+              }
+            ],
+            "conditionsRemove": [],
+            "inventoryAdd": [],
+            "inventoryRemove": [],
+            "privateNote": "她不是虚张声势——她说话时连看都没看钥匙。",
+            "memory": {
+              "summary": "她当着三个人说我按枪的手在抖。",
+              "importance": 3
+            }
+          },
+          {
+            "characterId": "bai_lu",
+            "stressDelta": -1,
+            "conditionsAdd": [],
+            "conditionsRemove": [],
+            "inventoryAdd": [],
+            "inventoryRemove": [],
+            "privateNote": "沈砚听见“别开灯”时肩线动了一下，那不是第一次听说的反应。",
+            "memory": {
+              "summary": "键帽摆上桌后，沈砚到底没去碰点火杆。",
+              "importance": 2
+            }
+          },
+          {
+            "characterId": "lin_xiaoman",
+            "stressDelta": -1,
+            "conditionsAdd": [
+              {
+                "name": "磁带自转",
+                "description": "录音机无人按键却持续自行转动，她因此拿到了独家素材，也更愿意把机器举在最前面",
+                "modifier": 2,
+                "kind": "boon",
+                "abilities": [
+                  "will"
+                ]
+              }
+            ],
+            "conditionsRemove": [],
+            "inventoryAdd": [],
+            "inventoryRemove": [],
+            "privateNote": "她低头时手是空的，带盘却在稳稳地走；她没有把这件事说出口。",
+            "memory": {
+              "summary": "我没有按录音键，设备还是在录。",
+              "importance": 3
+            }
+          }
+        ],
+        "world": {
+          "factsAdd": [
+            "沈砚当众确认：无线电杂音底下有一串规律敲击，不是干扰。",
+            "顾行舟逼交钥匙与日志未果；钥匙仍在台面上，没有人拿走。"
+          ],
+          "factsRemove": [],
+          "flagsSet": {
+            "key_on_table_not_handed": true,
+            "recorder_running_by_itself": true,
+            "knock_pattern_noted": true
+          },
+          "pressure": "钥匙压在台面上没人拿，无线电电池只剩约半小时，而底噪里的敲击一下都没停。",
+          "sceneTitle": "底噪下的敲击"
+        }
+      },
+      "nextTimeJump": {
+        "elapsedMinutes": 10,
+        "label": "磁带自转后的第十一分钟",
+        "reason": "听底噪、三方对峙，以及机器自行录音时短暂的僵持，一共吃掉了约十分钟。"
+      },
+      "ending": null,
+      "createdAt": "2026-10-27T10:52:04.231Z",
+      "completedAt": "2026-10-27T10:52:48.492Z"
+    }
+  ],
+  "progress": {
+    "phase": "idle",
+    "label": "等待继续",
+    "updatedAt": "2026-10-27T10:52:48.497Z"
+  },
+  "llm": {
+    "calls": 8,
+    "promptTokens": 23399,
+    "completionTokens": 7539,
+    "cachedTokens": 8832,
+    "reasoningTokens": 4177,
+    "totalTokens": 30938,
+    "failures": 0
+  },
+  "ending": null,
+  "error": null,
+  "startedAt": "2026-10-27T10:52:04.230Z"
+}

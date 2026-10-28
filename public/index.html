@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b1215" />
+    <meta
+      name="description"
+      content="幕间 — 由导演与角色共同推演的可推演情节的 LLM 叙事框架。"
+    />
+    <title>幕间 · Mise-en-scène</title>
+    <script>
+      try {
+        document.documentElement.dataset.theme =
+          localStorage.getItem('mes.theme') || 'dark';
+      } catch {
+        /* 保持默认暗色 */
+      }
+    </script>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/css/tokens.css" />
+    <link rel="stylesheet" href="/css/base.css" />
+    <link rel="stylesheet" href="/css/components.css" />
+    <link rel="stylesheet" href="/css/views.css" />
+  </head>
+  <body>
+    <div id="app" class="app-root" aria-live="polite">
+      <div class="boot">
+        <div class="boot__mark">
+          <svg viewBox="0 0 64 64" aria-hidden="true">
+            <path d="M32 4 58 20v24L32 60 6 44V20Z" />
+            <path d="M32 4v56M6 20l52 24M58 20 6 44" />
+          </svg>
+        </div>
+        <p>潮声正在就位</p>
+      </div>
+    </div>
+
+    <div id="modal-layer" class="modal-layer" hidden></div>
+    <div id="toast-layer" class="toast-layer" aria-live="polite"></div>
+
+    <noscript>
+      <div class="noscript">幕间需要启用 JavaScript 才能运行。</div>
+    </noscript>
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>

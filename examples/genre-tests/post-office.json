@@ -1,0 +1,1495 @@
+{
+  "version": 1,
+  "id": "run_e41db9e6ed52",
+  "seed": "genre-post-office-01",
+  "status": "paused",
+  "scenario": {
+    "id": "genre-post-office",
+    "title": "末班邮局",
+    "subtitle": "有些信不是寄不出去，是不知道该写给谁。",
+    "kicker": "类型实验 · 爱情 / 双人戏 · 暴雨夜",
+    "isPreset": true,
+    "world": {
+      "title": "末班邮局",
+      "era": "当代 · 江城老城区 · 邮局拆除前夜",
+      "tone": "潮湿、安静、克制的爱情故事。对白留白，动作小而准确；不靠误会拖剧情，不写狗血，不安排绝症或第三者。允许没有结果，也允许两个人只是把一封信放到桌上。",
+      "setting": "老城区的邮政所明天早上八点拆除。今晚是最后一个营业夜。暴雨把梧桐叶打落在台阶上。邮局里还亮着一盏日光灯，柜台上的电子秤坏了，墙上的挂钟慢七分钟。街对面新开的便利店亮得刺眼。\n\n苏晚与程野八年前是恋人。苏晚去了南方，程野留在江城。两人没有再联系，也没有正式告别。",
+      "location": "旧邮局营业厅：绿色柜台、一排铁皮信箱、三张等候椅、卷帘门、墙上的挂钟。所有角色都在这里。",
+      "dateLabel": "邮局最后一夜",
+      "startClock": "23:50",
+      "premise": "苏晚在邮局关门前进来，要寄一封信；柜台后值最后一班的人是程野。两人八年没见，谁都没有先解释为什么在这里。",
+      "opening": "23:50。雨把卷帘门敲得像有人在外面拍门。\n\n程野正在把最后一批挂号信装进帆布袋。日光灯有一根坏了，剩下的那根把柜台照得发青。墙上的钟慢了七分钟，他没有去调。\n\n门被推开，风把一张“暂停营业”的纸吹到地上。苏晚收起伞，站在门口，裤脚湿了一截。她手里拿着一个牛皮纸信封，没有写地址。\n\n两个人都没有说话。电子秤的显示屏闪了一下，又灭了。\n\n“还能寄吗？”她先开口。\n\n程野把帆布袋放下：“看寄到哪。”",
+      "directorNotes": "这是一个双人爱情场景，不是悬疑，也不是对抗。不要引入第三者、疾病、车祸、黑帮或突然的秘密身世。压力来自八年没说的话、这封信的内容、以及天亮后的离开。\n\n允许角色说谎、绕弯、沉默、答非所问；允许他们谈论天气、邮票、修表铺，就是不谈正事。不要用旁白解释他们的感情；让动作和台词承担。\n\n两到四个时刻。结尾不必在一起，也不必彻底告别。",
+      "hiddenCanon": "（仅总控可见，是人物与世界的骨架，不要求照本宣科。）\n\n1. 苏晚八年前离开，是因为程野没有挽留。她当时在车站等到最后一班车，程野没有来。她这次回来是处理母亲的房子，明天下午的飞机回深圳。信是八年前写的，一直没有寄出，收件人写的是“程野”，地址栏空着。\n\n2. 程野留下，是因为父亲那年病倒，他必须接手家里的修表铺。他写给苏晚的信有十七封，都没有寄；他每年在她生日那天去一次车站，坐到末班车开走。\n\n3. 两人都没有新的伴侣。苏晚没有结婚；程野没有。但他们都以为对方已经开始了新生活。\n\n4. 这封信里没有求复合，只有一句“那天我在车站等到十一点四十”。程野不知道这件事。\n\n5. 邮局里没有奇迹。信能不能寄出去，不改变明天早上八点拆除。",
+      "initialFacts": [
+        "旧邮局明天早上八点拆除，今晚是最后一夜。",
+        "苏晚八年没有回江城。",
+        "程野在这间邮局值最后一班。",
+        "外面在下暴雨。",
+        "墙上的钟慢七分钟。"
+      ],
+      "countdown": "天亮 · 08:00 拆除"
+    },
+    "characters": [
+      {
+        "id": "cheng_ye",
+        "name": "程野",
+        "title": "旧邮局最后一班的营业员",
+        "age": "32",
+        "pronouns": "他",
+        "publicProfile": "旧邮局最后一班的营业员，话少，手很稳；邻居说他这些年一直没离开老城区，在巷口替父亲守着修表铺。",
+        "appearance": "深绿色邮政马甲，袖口磨得起毛；左手拇指有一道修表留下的旧伤。",
+        "personality": "用做具体的事来回避情绪；对别人的问题回答得很准确，对自己的问题答非所问。他不是冷淡，是怕一开口就收不住。",
+        "desire": "知道苏晚这些年过得好不好，并且不要显得自己还在等。",
+        "fear": "她只是来办事，而自己又把这一夜当成别的什么。",
+        "secret": "他写了十七封没有寄出的信；每年她生日那天，他会去车站坐到末班车开走。",
+        "abilities": {
+          "physique": 5,
+          "agility": 6,
+          "perception": 7,
+          "intellect": 6,
+          "will": 7,
+          "presence": 4
+        },
+        "traits": [
+          {
+            "name": "手稳",
+            "description": "修表练出来的手，做细活时不抖。",
+            "bonus": 2,
+            "ability": "agility"
+          },
+          {
+            "name": "答非所问",
+            "description": "越是要紧的问题，越会绕到天气、邮票和旧事上。",
+            "bonus": 2,
+            "ability": "will"
+          }
+        ],
+        "possessions": [
+          "帆布袋",
+          "修表用的放大镜",
+          "一串旧钥匙"
+        ],
+        "relationships": [
+          {
+            "targetId": "su_wan",
+            "label": "八年前的恋人 / 不告而别",
+            "attitude": "我有一整套准备好的话，但一句都不能用。"
+          }
+        ],
+        "memories": [
+          {
+            "summary": "八年前，苏晚在车站等他，他因为父亲突然病倒没有去。",
+            "detail": "他后来听说她坐末班车走了，没有再回头。",
+            "importance": 5
+          },
+          {
+            "summary": "父亲病倒那晚，修表铺的灯亮了一夜。",
+            "detail": "从那以后，他再也没有离开过老城区。",
+            "importance": 4
+          },
+          {
+            "summary": "苏晚爱吃薄荷糖，总把糖纸折成小船。",
+            "detail": "他抽屉里还留着几只。",
+            "importance": 2
+          }
+        ],
+        "conditions": []
+      },
+      {
+        "id": "su_wan",
+        "name": "苏晚",
+        "title": "深圳的花店老板 · 回江城处理旧屋",
+        "age": "31",
+        "pronouns": "她",
+        "publicProfile": "在深圳开一家小花店，穿深色大衣，讲话直接；老同学说她这些年在南方过得不错。",
+        "appearance": "深色大衣，裤脚湿了一截，手里一把湿伞；耳朵上戴一对很小的珍珠耳钉。",
+        "personality": "习惯先安排好自己的退路，再谈感情；越在意越要装作只是顺路。她用“我明天就走”来保护自己，也用同一句话试探别人。",
+        "desire": "把那封信处理掉——寄出去、烧掉，或者亲手交给他，然后真正离开。",
+        "fear": "发现程野已经不再等她；也怕自己其实还在等。",
+        "secret": "八年前她在车站等到十一点四十，程野没有来；她明天下午回深圳，这次回来是卖母亲的房子。",
+        "abilities": {
+          "physique": 4,
+          "agility": 5,
+          "perception": 7,
+          "intellect": 7,
+          "will": 6,
+          "presence": 7
+        },
+        "traits": [
+          {
+            "name": "先走一步",
+            "description": "习惯在别人开口之前替自己留好退路。",
+            "bonus": 2,
+            "ability": "agility"
+          },
+          {
+            "name": "把真话包在玩笑里",
+            "description": "越认真越要说得像随口一提。",
+            "bonus": 2,
+            "ability": "presence"
+          }
+        ],
+        "possessions": [
+          "牛皮纸信封",
+          "一把湿伞",
+          "回深圳的机票"
+        ],
+        "relationships": [
+          {
+            "targetId": "cheng_ye",
+            "label": "八年前的恋人 / 留在原地的人",
+            "attitude": "我来之前想好了一百种开场，没有一种用得上。"
+          }
+        ],
+        "memories": [
+          {
+            "summary": "八年前，她在车站等到十一点四十，末班车开走，程野没有来。",
+            "detail": "她把那封写好的信带回南方，一直放在花店的抽屉里。",
+            "importance": 5
+          },
+          {
+            "summary": "母亲上个月走了，老屋要卖，她必须回来签字。",
+            "detail": "她本来打算签完字就走，不告诉任何人。",
+            "importance": 4
+          },
+          {
+            "summary": "程野修表时会低头，左眼比右眼靠近表盘一点。",
+            "detail": "她以前喜欢坐在柜台对面看他修表。",
+            "importance": 3
+          }
+        ],
+        "conditions": []
+      }
+    ],
+    "rules": {
+      "maxBeats": 4,
+      "difficultyGuidance": "日常动作（倒水、递伞、关门、找邮票）DC 8–10；把一句真话说出口、问一个可能改变关系的问题、在对方回避时坚持，DC 13–18；彻底摊牌 DC 18–20。不要给倒水、递伞、关门设置高风险；除非动作本身是在逼近对方。不要因为角色“会说话”就抬高 DC。"
+    }
+  },
+  "settings": {
+    "maxBeats": 4,
+    "autoLimit": 4,
+    "thinking": "auto",
+    "model": "deepseek-flash"
+  },
+  "createdAt": "2026-10-27T10:53:59.551Z",
+  "updatedAt": "2026-10-27T11:00:06.492Z",
+  "clock": {
+    "minutes": 1463,
+    "display": "00:23 · 次日",
+    "dateLabel": "邮局最后一夜"
+  },
+  "world": {
+    "publicFacts": [
+      "旧邮局明天早上八点拆除，今晚是最后一夜。",
+      "苏晚八年没有回江城。",
+      "程野在这间邮局值最后一班。",
+      "外面在下暴雨。",
+      "墙上的钟慢七分钟。",
+      "苏晚带来了一封正反两面都没写地址的牛皮纸信封，现在在程野手里。",
+      "程野说没写地址的信也能寄，条件是寄件人留下名字。",
+      "旧邮戳的印泥已干成硬壳，试盖只留下一圈认不出日期的模糊红影。",
+      "程野收拾时把一沓挂号单散在地上，苏晚捡起了其中几张。",
+      "印泥盒的硬壳被撬裂，一小片碎屑掉进柜台缝里不见了，只剩裂口处化开一小圈暗红。",
+      "苏晚从柜台后翻出一只旧暖壶，倒出的水只是温的；那张发黄的旧挂号单仍在柜台下开着的抽屉里，她指尖压着它的一角。",
+      "程野把放大镜推到苏晚手边，并说八年前往这只抽屉里塞过一叠东西，没看内容。",
+      "苏晚从抽屉缝里抽出半张旧单子翻到背面，就着灯看那道横折痕；随后接过放大镜压在纸上。"
+    ],
+    "flags": {
+      "unaddressed_letter_in_cheng_ye_hands": true,
+      "sender_name_not_yet_given": true,
+      "postmark_dry": true,
+      "slips_scattered": true,
+      "su_wan_handed_slips_back": true,
+      "old_form_in_drawer": true,
+      "ink_pad_cracked": true,
+      "mirror_handed_to_suwan": true,
+      "old_slip_backside_seen": true
+    },
+    "pressure": "门缝渗进的水已淹过台阶第一级，正沿地砖向柜台爬；抽屉还开着，纸只抽出半寸。",
+    "sceneTitle": "水线爬上地砖"
+  },
+  "characters": {
+    "cheng_ye": {
+      "id": "cheng_ye",
+      "conditions": [
+        {
+          "name": "掌心的空信封",
+          "description": "他手里握着一封没写地址的信，注意力被它分走一部分，处理其他事情时容易慢半拍。",
+          "modifier": -2,
+          "kind": "other",
+          "abilities": [
+            "will"
+          ],
+          "id": "cond_d0078801eb96",
+          "sourceBeat": 0
+        },
+        {
+          "name": "手里的活不成样子",
+          "description": "越想收尾越出错，注意力被散落的单子和干掉的印泥牵走，做细活与稳住表情都打折。",
+          "modifier": -2,
+          "kind": "emotion",
+          "abilities": [
+            "will"
+          ],
+          "id": "cond_f761321f0fdc",
+          "sourceBeat": 1
+        },
+        {
+          "name": "撬裂的印泥",
+          "description": "他当着她的面说“能救”，硬壳却裂了、碎屑掉进柜台缝；再碰那块干红时手会先顿一下。",
+          "modifier": -2,
+          "kind": "emotion",
+          "abilities": [
+            "agility"
+          ],
+          "id": "cond_098515f90a84",
+          "sourceBeat": 2
+        },
+        {
+          "name": "话递出去一半",
+          "description": "主动让出抽屉里的一段旧事的解释权，心里悬着，接下来的说服或追问容易迟疑。",
+          "modifier": -2,
+          "kind": "emotion",
+          "abilities": [
+            "perception",
+            "will"
+          ],
+          "id": "cond_b7f47e4bb195",
+          "sourceBeat": 3
+        }
+      ],
+      "stress": 4,
+      "memories": [
+        {
+          "id": "mem_03bf6544c3e0",
+          "at": "邮局最后一夜",
+          "beatIndex": null,
+          "summary": "八年前，苏晚在车站等他，他因为父亲突然病倒没有去。",
+          "detail": "他后来听说她坐末班车走了，没有再回头。",
+          "importance": 5,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_e6ebbbd2571e",
+          "at": "邮局最后一夜",
+          "beatIndex": null,
+          "summary": "父亲病倒那晚，修表铺的灯亮了一夜。",
+          "detail": "从那以后，他再也没有离开过老城区。",
+          "importance": 4,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_4f5e2ad0e318",
+          "at": "邮局最后一夜",
+          "beatIndex": null,
+          "summary": "苏晚爱吃薄荷糖，总把糖纸折成小船。",
+          "detail": "他抽屉里还留着几只。",
+          "importance": 2,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_1760d1f44ced",
+          "at": "23:50",
+          "beatIndex": 0,
+          "summary": "她说“先回答我那个问题”的时候，手指压着信没有松。",
+          "detail": "苏晚走到柜台前，把伞收拢，靠在绿色的柜沿上。伞尖的水顺着漆面淌下来，在台面上洇出一小片深色。她把牛皮纸信封翻了个面，扣在柜台上，掌心压着边角，没有推过去。\n\n“最后一夜还开着，你们这儿……是打算把信一封封退回去，还是照收不误？”\n\n程野的手没有收回来。他解开了帆布袋的绳结，把袋子推到柜台一角，腾出右手来，掌心朝上，越过柜台，停在她面前。他的目光从信封的边角移到她压着纸的手指上，又落回她脸上。雨声很大，他把声音压得很低，像在柜台后面说一件最普通不过的业务。\n\n“照收。地址没写的，也能寄——只要寄件人肯留下名字。”\n\n她抬眼看他，指尖反而更用力了些。“先回… 只有你知道：信封正反两面都是空的，纸角受潮发软，还留着一小片湿印，是她掌心压出来的。",
+          "importance": 3,
+          "kind": "observation",
+          "source": "gm"
+        },
+        {
+          "id": "mem_70093c6391d9",
+          "at": "23:57",
+          "beatIndex": 1,
+          "summary": "她问：收了我的信，谁替我记着它去过哪儿。",
+          "detail": "程野把挂号单叠成齐整的一沓，往抽屉里塞的时候，袖口带到了最上面那张。整沓纸斜着滑出去，散在柜台上，两三张飘过台沿，落在苏晚脚边。他伸手去够，手肘又碰上印泥盒，盖子翻开，里面那团红已经干成一块硬壳。他没出声，把盒盖拾起来，用指腹按了按，收回手。\n\n他抽出那只旧邮戳，在废纸角上试盖了一下。只有一圈模糊的红影，日期那几个数字认不出来。\n\n“十七号是老周家的，搬走五六年了。”他说，眼睛还看着那圈红影，“信箱不清，是因为清出来的信没人领——不是没人记着它去过哪儿。”\n\n苏晚的手还指着十七号的锁孔，指尖在掉漆的边沿停了一停，收回来。她本来是备好一句轻的话的，说完就… 只有你知道：她弯腰捡纸的样子和八年前没什么两样，只是不再等他先开口。",
+          "importance": 3,
+          "kind": "observation",
+          "source": "gm"
+        },
+        {
+          "id": "mem_bbc5082d4da8",
+          "at": "00:09 · 次日",
+          "beatIndex": 2,
+          "summary": "她的手探进抽屉缝，把那张纸往自己那边挪了半掌，压住不动。",
+          "detail": "程野把那张发黄的旧单子翻过去，正面朝下压进柜台下开着的抽屉里，抽屉没推严，留了一道缝。然后他拧开印泥盒，指甲抵住硬壳的边往上撬。干了的红不是软的，是整块贴着盒底的硬壳。撬到第二下，壳面顺着一条旧裂纹裂开，一小片碎屑弹起来，落到柜台后头不见了。他停住，放大镜还捏在手里，镜片对着盒里那块更小的红。刚才那句“能救。得加点水，慢慢化。”还搁在两个人中间。\n\n苏晚没接他的话。她绕到柜台侧面，把大衣袖子一截一截撸到肘上，弯腰在柜台后翻，摸出一只蒙灰的暖壶，摇了摇，还有水。她拧开盖，倒进旁边那只空茶杯，热气不多，只是温的。她把杯子搁到灯下的台面上，另一只手探进那道抽… 只有你知道：他知道自己为什么先把那张单子翻过去、压进抽屉；也知道撬坏的不只是印泥。",
+          "importance": 3,
+          "kind": "observation",
+          "source": "gm"
+        },
+        {
+          "id": "mem_6b209e3283f2",
+          "at": "00:23 · 次日",
+          "beatIndex": 3,
+          "summary": "她问：“是让我看，还是你自己也想看？”我没有答。",
+          "detail": "放大镜推过去，停在苏晚的指尖和纸角之间，镜柄朝她，像是等人自己决定要不要拿。程野把手收回来，搁在暖壶盖旁，指节朝下，没有再去碰印泥。那道横折痕在白灯下投出一线很淡的影。\n\n苏晚没先拿镜子。她把杯里最后一点温水喂进裂口，低头看那圈暗红怎样收住，另一只手的指腹把纸从抽屉缝里抽出半寸，翻到背面，凑到灯下。横折痕，收笔处一个顿点，墨色比正面深。过了一小会儿，她才用两根手指捏起放大镜，镜面压在纸上，压得很稳。\n\n“对着光看——”她说，声音压得低，“你这话，是让我看，还是你自己也想看？”\n\n程野没有立刻答。灯嗡了一声，柜台上那片纸的边缘在镜片下发白。他说的是抽屉里… 只有你知道：她没先接镜子，先喂了那滴水，才把纸翻过来——她其实一直在等背面的字。",
+          "importance": 3,
+          "kind": "observation",
+          "source": "gm"
+        }
+      ],
+      "inventory": [
+        "帆布袋",
+        "修表用的放大镜",
+        "一串旧钥匙",
+        "未写地址的牛皮纸信封",
+        "旧邮戳",
+        "干掉的红印泥盒"
+      ],
+      "flags": {}
+    },
+    "su_wan": {
+      "id": "su_wan",
+      "conditions": [
+        {
+          "name": "袖子挽到肘上",
+          "description": "热水在手边，活计由她接手，做细活时手更稳。",
+          "modifier": 2,
+          "kind": "boon",
+          "abilities": [
+            "agility"
+          ],
+          "id": "cond_043aeb572266",
+          "sourceBeat": 2
+        },
+        {
+          "name": "灯下看得太清",
+          "description": "旧单背面的折痕与顿点已经看清，心神被那几笔墨牵住，接下来的观察更专注但更易分心于细节。",
+          "modifier": 2,
+          "kind": "other",
+          "abilities": [
+            "perception"
+          ],
+          "id": "cond_73668065db0c",
+          "sourceBeat": 3
+        }
+      ],
+      "stress": 1,
+      "memories": [
+        {
+          "id": "mem_b92b76229997",
+          "at": "邮局最后一夜",
+          "beatIndex": null,
+          "summary": "八年前，她在车站等到十一点四十，末班车开走，程野没有来。",
+          "detail": "她把那封写好的信带回南方，一直放在花店的抽屉里。",
+          "importance": 5,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_7d4e9f89c851",
+          "at": "邮局最后一夜",
+          "beatIndex": null,
+          "summary": "母亲上个月走了，老屋要卖，她必须回来签字。",
+          "detail": "她本来打算签完字就走，不告诉任何人。",
+          "importance": 4,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_38ff8fbaa9f7",
+          "at": "邮局最后一夜",
+          "beatIndex": null,
+          "summary": "程野修表时会低头，左眼比右眼靠近表盘一点。",
+          "detail": "她以前喜欢坐在柜台对面看他修表。",
+          "importance": 3,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_182520cea5db",
+          "at": "23:50",
+          "beatIndex": 0,
+          "summary": "他把手伸过来的时候没有催，只是一直等着，最后是她先松的手。",
+          "detail": "苏晚走到柜台前，把伞收拢，靠在绿色的柜沿上。伞尖的水顺着漆面淌下来，在台面上洇出一小片深色。她把牛皮纸信封翻了个面，扣在柜台上，掌心压着边角，没有推过去。\n\n“最后一夜还开着，你们这儿……是打算把信一封封退回去，还是照收不误？”\n\n程野的手没有收回来。他解开了帆布袋的绳结，把袋子推到柜台一角，腾出右手来，掌心朝上，越过柜台，停在她面前。他的目光从信封的边角移到她压着纸的手指上，又落回她脸上。雨声很大，他把声音压得很低，像在柜台后面说一件最普通不过的业务。\n\n“照收。地址没写的，也能寄——只要寄件人肯留下名字。”\n\n她抬眼看他，指尖反而更用力了些。“先回… 只有你知道：信离手的一瞬间比她想的重一点。他一句都没多问，只说了“留下名字”。",
+          "importance": 4,
+          "kind": "observation",
+          "source": "gm"
+        },
+        {
+          "id": "mem_d0a03df7fbf9",
+          "at": "23:57",
+          "beatIndex": 1,
+          "summary": "不是没人记着它去过哪儿。",
+          "detail": "程野把挂号单叠成齐整的一沓，往抽屉里塞的时候，袖口带到了最上面那张。整沓纸斜着滑出去，散在柜台上，两三张飘过台沿，落在苏晚脚边。他伸手去够，手肘又碰上印泥盒，盖子翻开，里面那团红已经干成一块硬壳。他没出声，把盒盖拾起来，用指腹按了按，收回手。\n\n他抽出那只旧邮戳，在废纸角上试盖了一下。只有一圈模糊的红影，日期那几个数字认不出来。\n\n“十七号是老周家的，搬走五六年了。”他说，眼睛还看着那圈红影，“信箱不清，是因为清出来的信没人领——不是没人记着它去过哪儿。”\n\n苏晚的手还指着十七号的锁孔，指尖在掉漆的边沿停了一停，收回来。她本来是备好一句轻的话的，说完就… 只有你知道：他说“不是没人记着它去过哪儿”时没有看她。她不确定那句是说信箱，还是说别的。",
+          "importance": 4,
+          "kind": "observation",
+          "source": "gm"
+        },
+        {
+          "id": "mem_c5848fbc91c6",
+          "at": "00:09 · 次日",
+          "beatIndex": 2,
+          "summary": "纸背起了槽，隔着纸也硌手。",
+          "detail": "程野把那张发黄的旧单子翻过去，正面朝下压进柜台下开着的抽屉里，抽屉没推严，留了一道缝。然后他拧开印泥盒，指甲抵住硬壳的边往上撬。干了的红不是软的，是整块贴着盒底的硬壳。撬到第二下，壳面顺着一条旧裂纹裂开，一小片碎屑弹起来，落到柜台后头不见了。他停住，放大镜还捏在手里，镜片对着盒里那块更小的红。刚才那句“能救。得加点水，慢慢化。”还搁在两个人中间。\n\n苏晚没接他的话。她绕到柜台侧面，把大衣袖子一截一截撸到肘上，弯腰在柜台后翻，摸出一只蒙灰的暖壶，摇了摇，还有水。她拧开盖，倒进旁边那只空茶杯，热气不多，只是温的。她把杯子搁到灯下的台面上，另一只手探进那道抽… 只有你知道：隔着纸背，那道压深的铅笔痕从指下过去，像半个字，又像一道横线，后面就断了。",
+          "importance": 4,
+          "kind": "observation",
+          "source": "gm"
+        },
+        {
+          "id": "mem_a618aa860a20",
+          "at": "00:23 · 次日",
+          "beatIndex": 3,
+          "summary": "他推进来的不是答案，是让我自己去对抽屉里的那叠东西。",
+          "detail": "放大镜推过去，停在苏晚的指尖和纸角之间，镜柄朝她，像是等人自己决定要不要拿。程野把手收回来，搁在暖壶盖旁，指节朝下，没有再去碰印泥。那道横折痕在白灯下投出一线很淡的影。\n\n苏晚没先拿镜子。她把杯里最后一点温水喂进裂口，低头看那圈暗红怎样收住，另一只手的指腹把纸从抽屉缝里抽出半寸，翻到背面，凑到灯下。横折痕，收笔处一个顿点，墨色比正面深。过了一小会儿，她才用两根手指捏起放大镜，镜面压在纸上，压得很稳。\n\n“对着光看——”她说，声音压得低，“你这话，是让我看，还是你自己也想看？”\n\n程野没有立刻答。灯嗡了一声，柜台上那片纸的边缘在镜片下发白。他说的是抽屉里… 只有你知道：背面有一道横折痕，收笔处一个顿点，墨色比正面深——像是写过字，又被折进深处。",
+          "importance": 4,
+          "kind": "observation",
+          "source": "gm"
+        }
+      ],
+      "inventory": [
+        "牛皮纸信封",
+        "一把湿伞",
+        "回深圳的机票",
+        "一只蒙灰的旧暖壶",
+        "放大镜（镜柄朝她推来）"
+      ],
+      "flags": {}
+    }
+  },
+  "beats": [
+    {
+      "id": "beat_5d55987d37ec",
+      "index": 0,
+      "title": "最后一班寄件",
+      "phase": "complete",
+      "clock": {
+        "minutes": 1430,
+        "display": "23:50",
+        "dateLabel": "邮局最后一夜"
+      },
+      "timeJump": null,
+      "publicBrief": "雨点砸在卷帘门上，声音像有人隔着铁皮拍门。营业厅只剩一根日光灯管亮着，把绿色柜台照得发青，铁皮信箱上的编号漆掉了一半。墙上的挂钟指着二十三点四十三分，实际已经二十三点五十分，慢七分钟，没人去调。苏晚站在门口，伞尖滴着水，裤脚湿了一截，手里一只牛皮纸信封，正面空着，没写地址。程野把帆布袋放在柜台上，袋口露出挂号信的边角。坏掉的电子秤屏幕闪了一下，灭了。风从门缝钻进来，把“暂停营业”的纸吹到椅子底下。",
+      "privateCues": [
+        {
+          "characterId": "cheng_ye",
+          "cue": "你听见自己把“看寄到哪”说出口，语气比想要平。手指在帆布袋的绳结上多绕了一圈。她真的站在这里，湿着裤脚，像八年前某个雨夜你没能赶上的那一班。"
+        },
+        {
+          "characterId": "su_wan",
+          "cue": "信封的边角被你在门口攥得发软。八年没见，他比记忆里瘦，手还是那么稳。你忽然不确定自己希望他认出来，还是希望他只当普通顾客。"
+        }
+      ],
+      "pressure": "她手里的信还没有地址；他若照章办事，就得问收件人是谁、往哪儿寄——或者先把纸接过来。",
+      "sceneQuestion": "这封没写地址的信，今晚会被程野当作一件普通业务，还是被他认出寄件人的字？",
+      "gmNote": "让苏晚停在门口三步内，不要急着走近柜台；程野的手可以停在帆布袋上，两人之间保持旧柜台的宽度。",
+      "actions": [
+        {
+          "id": "act_3204b5d3d5c5",
+          "characterId": "cheng_ye",
+          "category": "行动",
+          "summary": "伸手接过那封无地址的信",
+          "description": "程野解开帆布袋的绳结，把袋子推到柜台一角，腾出手，掌心朝上越过绿色柜台，停在苏晚面前，等她递信。",
+          "dialogue": "先给我看看。",
+          "thought": "她手里的信封空着地址。按规矩我该问收件人，可我更想先接过那张纸——看看是不是她的字。",
+          "goalProgress": "用一件具体的事把这一夜从业务里拉出来，也给自己一个不用先开口的理由。",
+          "stakes": "若她直接报出收件人、把信推回来，我就得承认自己只是在这里值班。",
+          "ability": "agility",
+          "traitName": "手稳",
+          "targetId": "su_wan",
+          "targetLabel": "苏晚",
+          "status": "resolved",
+          "penalties": -2,
+          "penaltyNotes": [
+            "分心应战 -2"
+          ],
+          "generatedBy": "llm",
+          "createdAt": "2026-10-27T10:54:09.007Z",
+          "roll": {
+            "natural": 9,
+            "ability": "agility",
+            "abilityValue": 6,
+            "traitName": "手稳",
+            "traitBonus": 2,
+            "conditionBonus": 0,
+            "conditionNotes": [],
+            "situationalBonus": 0,
+            "penalty": -2,
+            "penaltyNotes": [
+              "分心应战 -2"
+            ],
+            "total": 15,
+            "dc": null,
+            "opponentTotal": 13,
+            "margin": 2,
+            "tier": "success",
+            "criticalByNatural20": false
+          },
+          "outcome": "success",
+          "outcomeNote": ""
+        },
+        {
+          "id": "act_850b6e3ebc05",
+          "characterId": "su_wan",
+          "category": "交涉",
+          "summary": "湿伞搁上柜台，先开口",
+          "description": "苏晚走到柜台前，把湿伞收拢靠在柜沿，伞尖的水在绿漆上洇开一小片。她把牛皮纸信封翻了个面扣在柜台上，没有推过去，手指仍压着边角。",
+          "dialogue": "最后一夜还开着，你们这儿……是打算把信一封封退回去，还是照收不误？",
+          "thought": "他还没抬头。我要是现在把信递过去，就成了一个普通顾客——可这信上什么都没有。不如先拿别的东西挡一下，看看他认不认得我。",
+          "goalProgress": "先用一句玩笑探他的反应，决定这信要不要递出去。",
+          "stakes": "若他只把我当普通顾客，我就再没有第二次开口的由头。",
+          "ability": "presence",
+          "traitName": "把真话包在玩笑里",
+          "targetId": "cheng_ye",
+          "targetLabel": "程野",
+          "status": "resolved",
+          "penalties": -2,
+          "penaltyNotes": [
+            "分心应战 -2"
+          ],
+          "generatedBy": "llm",
+          "createdAt": "2026-10-27T10:54:08.990Z",
+          "roll": {
+            "natural": 14,
+            "ability": "presence",
+            "abilityValue": 7,
+            "traitName": "把真话包在玩笑里",
+            "traitBonus": 2,
+            "conditionBonus": 0,
+            "conditionNotes": [],
+            "situationalBonus": 0,
+            "penalty": -2,
+            "penaltyNotes": [
+              "分心应战 -2"
+            ],
+            "total": 21,
+            "dc": null,
+            "opponentTotal": 23,
+            "margin": -2,
+            "tier": "soft_failure",
+            "criticalByNatural20": false
+          },
+          "outcome": "soft_failure",
+          "outcomeNote": ""
+        }
+      ],
+      "adjudications": [
+        {
+          "actionId": "act_3204b5d3d5c5",
+          "difficultyLabel": "标准",
+          "dc": 13,
+          "modifier": 0,
+          "reason": "隔着柜台伸手接信本身不难，难的是掌心朝上停在那里等——这一步把选择权递给了她，而对方仍可以不动。",
+          "risk": "你的手在绿漆上方悬了几秒，最后只能收回去解帆布袋的绳结；她看见你其实只是想找个由头。"
+        },
+        {
+          "actionId": "act_850b6e3ebc05",
+          "difficultyLabel": "标准",
+          "dc": 13,
+          "modifier": 0,
+          "reason": "收伞、翻信、压住边角都是轻易动作，但把“最后一夜收不收信”问成一个玩笑，需要对方愿意跟着这个话头走。",
+          "risk": "程野照着规章平铺直叙地答“无地址按退件处理”，话头就断在那里，你的信连柜台都没能递出去。"
+        }
+      ],
+      "reactions": [
+        {
+          "id": "rxn_df2cad4dbbb2",
+          "characterId": "cheng_ye",
+          "incomingActionIds": [
+            "act_850b6e3ebc05"
+          ],
+          "continueOriginal": true,
+          "summary": "手仍伸着，先把话绕到规矩上",
+          "description": "手没有收回来，掌心仍朝上停在柜台上方；目光从信封边角移到她压着纸的手指，又落回她脸上。雨声大，我把声音放低些，像在柜台后说一件再普通不过的业务。",
+          "dialogue": "照收。地址没写的，也能寄——只要寄件人肯留下名字。",
+          "thought": "她这么问，是在试我，还是在给自己找台阶？信扣着不推过来，手指压着边角——她也没想好。",
+          "ability": "will",
+          "traitName": "答非所问",
+          "stance": "答非所问",
+          "createdAt": "2026-10-27T10:54:14.588Z",
+          "roll": {
+            "natural": 16,
+            "ability": "will",
+            "abilityValue": 7,
+            "traitName": "答非所问",
+            "traitBonus": 2,
+            "conditionBonus": 0,
+            "conditionNotes": [],
+            "situationalBonus": 0,
+            "penalty": -2,
+            "penaltyNotes": [
+              "分心兼顾原行动 -2"
+            ],
+            "total": 23,
+            "incomingTotals": {
+              "act_850b6e3ebc05": 21
+            }
+          }
+        },
+        {
+          "id": "rxn_e413e5781abd",
+          "characterId": "su_wan",
+          "incomingActionIds": [
+            "act_3204b5d3d5c5"
+          ],
+          "continueOriginal": true,
+          "summary": "按住信封，把问题抛回给他",
+          "description": "她没有把信递过去，手掌仍压着牛皮纸的边角，只把湿伞往柜沿推了推。她抬眼看他，话说得像随口一问，指尖却没有松开。",
+          "dialogue": "先回答我那个问题。最后一夜了，你们是退信，还是照收不误？",
+          "thought": "他伸手了。我要是把信推过去，就等于什么都没说。先不递，把话头攥在自己手里。",
+          "ability": "presence",
+          "traitName": "把真话包在玩笑里",
+          "stance": "按住反将",
+          "createdAt": "2026-10-27T10:54:14.211Z",
+          "roll": {
+            "natural": 6,
+            "ability": "presence",
+            "abilityValue": 7,
+            "traitName": "把真话包在玩笑里",
+            "traitBonus": 2,
+            "conditionBonus": 0,
+            "conditionNotes": [],
+            "situationalBonus": 0,
+            "penalty": -2,
+            "penaltyNotes": [
+              "分心兼顾原行动 -2"
+            ],
+            "total": 13,
+            "incomingTotals": {
+              "act_3204b5d3d5c5": 15
+            }
+          }
+        }
+      ],
+      "narration": "苏晚走到柜台前，把伞收拢，靠在绿色的柜沿上。伞尖的水顺着漆面淌下来，在台面上洇出一小片深色。她把牛皮纸信封翻了个面，扣在柜台上，掌心压着边角，没有推过去。\n\n“最后一夜还开着，你们这儿……是打算把信一封封退回去，还是照收不误？”\n\n程野的手没有收回来。他解开了帆布袋的绳结，把袋子推到柜台一角，腾出右手来，掌心朝上，越过柜台，停在她面前。他的目光从信封的边角移到她压着纸的手指上，又落回她脸上。雨声很大，他把声音压得很低，像在柜台后面说一件最普通不过的业务。\n\n“照收。地址没写的，也能寄——只要寄件人肯留下名字。”\n\n她抬眼看他，指尖反而更用力了些。“先回答我那个问题。最后一夜了，你们是退信，还是照收不误？”\n\n话在两个人之间停了一下。程野没有把手放下来，也没有再答第二遍。他只是等。最后是她的手指先松开——很轻的一下，牛皮纸从柜面上被抬起来，落到他的掌心里。信封正反两面都是空的，纸角被雨气泡得有些发软，边上还留着一小片她掌心的湿印。\n\n苏晚的手停在半空，随即收回去，扶住伞柄。她把脸偏了一点，看向那排掉漆的铁皮信箱，像是在数编号。日光灯管嗡了一声，光暗下去半格，又亮回来。门缝里的风把椅底那张“暂停营业”的纸又吹远了一寸。",
+      "outcomeNotes": [
+        {
+          "characterId": "cheng_ye",
+          "note": "他拿到了那封没写地址的信，但也把苏晚的问题挡了回去，只留下“寄件人留下名字”这句规矩。"
+        },
+        {
+          "characterId": "su_wan",
+          "note": "她没能把信按在自己手里，也没能让他先正面回答问题；信落到了他手上，她的手上只剩一片水印。"
+        }
+      ],
+      "stateChanges": {
+        "characters": [
+          {
+            "characterId": "cheng_ye",
+            "stressDelta": 1,
+            "conditionsAdd": [
+              {
+                "name": "掌心的空信封",
+                "description": "他手里握着一封没写地址的信，注意力被它分走一部分，处理其他事情时容易慢半拍。",
+                "modifier": -2,
+                "kind": "other",
+                "abilities": [
+                  "will"
+                ]
+              }
+            ],
+            "conditionsRemove": [],
+            "inventoryAdd": [
+              "未写地址的牛皮纸信封"
+            ],
+            "inventoryRemove": [],
+            "privateNote": "信封正反两面都是空的，纸角受潮发软，还留着一小片湿印，是她掌心压出来的。",
+            "memory": {
+              "summary": "她说“先回答我那个问题”的时候，手指压着信没有松。",
+              "importance": 3
+            }
+          },
+          {
+            "characterId": "su_wan",
+            "stressDelta": 2,
+            "conditionsAdd": [
+              {
+                "name": "话没落到地上",
+                "description": "她要的那个正面回答没有拿到，气势落空，接下来开口会更容易迟疑或说岔。",
+                "modifier": -2,
+                "kind": "emotion",
+                "abilities": [
+                  "presence"
+                ]
+              }
+            ],
+            "conditionsRemove": [],
+            "inventoryAdd": [],
+            "inventoryRemove": [
+              "未写地址的牛皮纸信封"
+            ],
+            "privateNote": "信离手的一瞬间比她想的重一点。他一句都没多问，只说了“留下名字”。",
+            "memory": {
+              "summary": "他把手伸过来的时候没有催，只是一直等着，最后是她先松的手。",
+              "importance": 4
+            }
+          }
+        ],
+        "world": {
+          "factsAdd": [
+            "苏晚带来了一封正反两面都没写地址的牛皮纸信封，现在在程野手里。",
+            "程野说没写地址的信也能寄，条件是寄件人留下名字。"
+          ],
+          "factsRemove": [],
+          "flagsSet": {
+            "unaddressed_letter_in_cheng_ye_hands": true,
+            "sender_name_not_yet_given": true
+          },
+          "pressure": "信在他手里，收件人和寄件人两栏都还空着，而柜台上那片水印正在慢慢干掉。",
+          "sceneTitle": "名字还没落下"
+        }
+      },
+      "nextTimeJump": {
+        "elapsedMinutes": 7,
+        "label": "信封易手后的第七分钟",
+        "reason": "两人都没再立刻开口，只是一人整理柜台、一人看着信箱，雨势稍缓，墙上的挂钟又往前走了一小格。"
+      },
+      "ending": null,
+      "createdAt": "2026-10-27T10:53:59.555Z",
+      "completedAt": "2026-10-27T10:54:26.371Z"
+    },
+    {
+      "id": "beat_2ecf86f6f908",
+      "index": 1,
+      "title": "挂号与留名",
+      "phase": "complete",
+      "clock": {
+        "minutes": 1437,
+        "display": "23:57",
+        "dateLabel": "邮局最后一夜"
+      },
+      "timeJump": {
+        "elapsedMinutes": 7,
+        "label": "信封易手后的第七分钟",
+        "reason": "两人都没再立刻开口，只是一人整理柜台、一人看着信箱，雨势稍缓，墙上的挂钟又往前走了一小格。"
+      },
+      "publicBrief": "日光灯管又嗡了一声，程野把空信封放到柜台上，用镇纸压住一角，转身去拉出抽屉，翻出一沓挂号单和一支笔。他抽出最上面一张，搁在信封旁边，笔尖朝着苏晚的方向，没有说话。雨势缓下来，只余屋檐下的滴答声，一滴一滴敲在台阶的铁皮雨搭上。苏晚仍站在信箱那边，指尖搭在编号“17”的投递口边缘，像在数它掉漆的纹路。墙上的挂钟指向零点零四分，慢七分钟。街对面便利店的灯白得刺眼，透过水痕蒙住的玻璃，在柜台地面上投出一小片冷光。门缝里的风把“暂停营业”的纸吹到了等候椅脚下，纸上湿了一半。",
+      "privateCues": [
+        {
+          "characterId": "cheng_ye",
+          "cue": "挂号单的复写纸有点旧，边角发脆。你翻到“寄件人姓名”那一栏时，指腹忽然想起修表铺抽屉里那十七个没封口的信封——它们也是这样空着这一栏。"
+        },
+        {
+          "characterId": "su_wan",
+          "cue": "你数到第十七号信箱，发现它的锁孔里塞着一小片梧桐叶，叶梗发黑，像有几年了。你忽然不确定，这间邮局里还有没有一样东西是今晚刚碰过的。"
+        }
+      ],
+      "pressure": "程野把挂号单和笔搁在信封旁边，等她填下名字；她一旦落笔，这封信就不再只是她一个人能收回的东西。",
+      "sceneQuestion": "她会写下自己的名字，还是让那支笔一直躺在柜台上？",
+      "gmNote": "保持安静，让挂号单和笔成为第三个人；不要催苏晚落笔，让沉默自己施压。",
+      "actions": [
+        {
+          "id": "act_7138693386d7",
+          "characterId": "cheng_ye",
+          "category": "行动",
+          "summary": "把挂号单挪开，翻出旧邮戳",
+          "description": "程野把压在信封旁的挂号单抽回来，叠齐，塞回抽屉里，动作不快不慢。然后他弯腰从柜台下层摸出那只旧邮戳和一小盒印泥，搁在台面上，用袖口擦了擦戳面的灰，像是给自己找一件收尾的活。",
+          "dialogue": "拆之前得把这些归置了。邮戳明天也要上交。",
+          "thought": "她刚才问的是退信还是照收，现在笔就在她手边，我不能再催。我得做点手上的活，让那支笔看起来不是专门摆给她的一道题。",
+          "goalProgress": "用整理物件的动作把选择权留在她那边，同时不让自己显得在等她落笔。",
+          "stakes": "如果她把这当成我回避，那封没写地址的信可能就真的只是一封退回去的废纸。",
+          "ability": "agility",
+          "traitName": "手稳",
+          "targetId": null,
+          "status": "resolved",
+          "penalties": -2,
+          "penaltyNotes": [
+            "分心应战 -2"
+          ],
+          "generatedBy": "llm",
+          "createdAt": "2026-10-27T10:54:31.979Z",
+          "roll": {
+            "natural": 1,
+            "ability": "agility",
+            "abilityValue": 6,
+            "traitName": "手稳",
+            "traitBonus": 2,
+            "conditionBonus": 0,
+            "conditionNotes": [],
+            "situationalBonus": 0,
+            "penalty": -2,
+            "penaltyNotes": [
+              "分心应战 -2"
+            ],
+            "total": 7,
+            "dc": 8,
+            "opponentTotal": null,
+            "margin": -1,
+            "tier": "soft_failure",
+            "criticalByNatural20": false
+          },
+          "outcome": "soft_failure",
+          "outcomeNote": ""
+        },
+        {
+          "id": "act_a682182efc79",
+          "characterId": "su_wan",
+          "category": "交涉",
+          "summary": "指着十七号信箱岔开话题",
+          "description": "苏晚把扶伞的手松开，走到信箱那排前面，伸手指了指十七号锁孔里那片发黑的梧桐叶，回头看他，语气像随口一提。",
+          "dialogue": "十七号锁孔里塞了片叶子，怕是有几年没人开过了。你们这儿连信箱都不清，收了我的信，谁替我记着它去过哪儿？",
+          "thought": "我本来想好了要退路，可他一句都不问，只等。越是这样我越不想先乱。先把话头拨到那些信箱上——这间邮局里总该有一样东西能替我挡住这一下。",
+          "goalProgress": "把落空的正面回答绕开，试探他是否真的会把信当回事，也替自己争取一点不打紧的余地。",
+          "stakes": "若他顺着我的话答得太轻，我会觉得自己今晚多留的这几分钟是白费的。",
+          "ability": "presence",
+          "traitName": "把真话包在玩笑里",
+          "targetId": "cheng_ye",
+          "targetLabel": "程野",
+          "status": "resolved",
+          "penalties": 0,
+          "penaltyNotes": [],
+          "generatedBy": "llm",
+          "createdAt": "2026-10-27T10:54:31.855Z",
+          "roll": {
+            "natural": 4,
+            "ability": "presence",
+            "abilityValue": 7,
+            "traitName": "把真话包在玩笑里",
+            "traitBonus": 2,
+            "conditionBonus": -2,
+            "conditionNotes": [
+              "话没落到地上 -2"
+            ],
+            "situationalBonus": 0,
+            "penalty": 0,
+            "penaltyNotes": [],
+            "total": 11,
+            "dc": null,
+            "opponentTotal": 20,
+            "margin": -9,
+            "tier": "soft_failure",
+            "criticalByNatural20": false
+          },
+          "outcome": "soft_failure",
+          "outcomeNote": ""
+        }
+      ],
+      "adjudications": [
+        {
+          "actionId": "act_7138693386d7",
+          "difficultyLabel": "轻而易举",
+          "dc": 8,
+          "modifier": 0,
+          "reason": "在熟悉的柜台抽屉里找邮戳并擦灰，是没有阻力的收尾杂事。",
+          "risk": "你翻找时碰散了挂号单，纸页滑到地上，收拾的沉默反而更像回避。"
+        },
+        {
+          "actionId": "act_a682182efc79",
+          "difficultyLabel": "标准",
+          "dc": 13,
+          "modifier": 0,
+          "reason": "借信箱锁孔里的叶子起话头很轻，但这句话会碰到多年没人开的旧事，而程野正回避正面回答。",
+          "risk": "他顺着“没人清”答一句公事，把问题轻轻挡回去，你那点试探落空，再开口会更难。"
+        }
+      ],
+      "reactions": [
+        {
+          "id": "rxn_d1b927d871e8",
+          "characterId": "cheng_ye",
+          "incomingActionIds": [
+            "act_a682182efc79"
+          ],
+          "continueOriginal": true,
+          "summary": "擦着邮戳答她信箱的事",
+          "description": "他没停下手里的活，旧邮戳在袖口上又蹭了两下，搁到台面中央。抬眼顺着她指的方向望了一眼十七号，语气平得像在报数。",
+          "dialogue": "十七号是老周家的，搬走五六年了。信箱不清，是因为清出来的信没人领——不是没人记着它去过哪儿。",
+          "thought": "她不肯接笔，偏去数那排信箱——她是想把话岔开，还是想看我会不会急。我要是追着解释，就输了。",
+          "ability": "will",
+          "traitName": "答非所问",
+          "stance": "顺势接话",
+          "createdAt": "2026-10-27T10:54:44.848Z",
+          "roll": {
+            "natural": 15,
+            "ability": "will",
+            "abilityValue": 7,
+            "traitName": "答非所问",
+            "traitBonus": 2,
+            "conditionBonus": -2,
+            "conditionNotes": [
+              "掌心的空信封 -2"
+            ],
+            "situationalBonus": 0,
+            "penalty": -2,
+            "penaltyNotes": [
+              "分心兼顾原行动 -2"
+            ],
+            "total": 20,
+            "incomingTotals": {
+              "act_a682182efc79": 11
+            }
+          }
+        }
+      ],
+      "narration": "程野把挂号单叠成齐整的一沓，往抽屉里塞的时候，袖口带到了最上面那张。整沓纸斜着滑出去，散在柜台上，两三张飘过台沿，落在苏晚脚边。他伸手去够，手肘又碰上印泥盒，盖子翻开，里面那团红已经干成一块硬壳。他没出声，把盒盖拾起来，用指腹按了按，收回手。\n\n他抽出那只旧邮戳，在废纸角上试盖了一下。只有一圈模糊的红影，日期那几个数字认不出来。\n\n“十七号是老周家的，搬走五六年了。”他说，眼睛还看着那圈红影，“信箱不清，是因为清出来的信没人领——不是没人记着它去过哪儿。”\n\n苏晚的手还指着十七号的锁孔，指尖在掉漆的边沿停了一停，收回来。她本来是备好一句轻的话的，说完就能笑着翻过去。现在那句话在喉咙里搁了浅。她低下头，看见脚边那张挂号单，弯下腰去捡。\n\n纸是潮的，边角已经软了。她捡起两张，第三张压在等候椅的腿底下，抽出来时蹭了一道灰。直起身，她没把单子直接递到他手里，先搁在台面上，让纸自己滑过去一点。\n\n屋檐下的水滴慢了。日光灯又嗡一声，灯管里抖出一点灰白。街对面便利店的冷光透进来，把柜台上散开的单子照得一张比一张薄。墙上的钟指着零点十六。\n\n“这印泥还能救吗。”她问，声音比刚才低。\n\n程野用指甲刮了刮那块硬壳，没有立刻答。",
+      "outcomeNotes": [
+        {
+          "characterId": "cheng_ye",
+          "note": "想靠收拾东西稳住手，结果散了一地挂号单，旧邮戳试盖只有一圈认不出日期的模糊红影。"
+        },
+        {
+          "characterId": "su_wan",
+          "note": "用十七号信箱的玩笑岔开话题，被程野一句实话正面接住，准备好的轻松话没能说出口。"
+        }
+      ],
+      "stateChanges": {
+        "characters": [
+          {
+            "characterId": "cheng_ye",
+            "stressDelta": 1,
+            "conditionsAdd": [
+              {
+                "name": "手里的活不成样子",
+                "description": "越想收尾越出错，注意力被散落的单子和干掉的印泥牵走，做细活与稳住表情都打折。",
+                "modifier": -2,
+                "kind": "emotion",
+                "abilities": [
+                  "will"
+                ]
+              }
+            ],
+            "conditionsRemove": [],
+            "inventoryAdd": [
+              "旧邮戳",
+              "干掉的红印泥盒"
+            ],
+            "inventoryRemove": [],
+            "privateNote": "她弯腰捡纸的样子和八年前没什么两样，只是不再等他先开口。",
+            "memory": {
+              "summary": "她问：收了我的信，谁替我记着它去过哪儿。",
+              "importance": 3
+            }
+          },
+          {
+            "characterId": "su_wan",
+            "stressDelta": 1,
+            "conditionsAdd": [
+              {
+                "name": "话被堵回去",
+                "description": "想用玩笑绕过的话被人正面接住，一时接不上第二句，开口前会先掂量。",
+                "modifier": -2,
+                "kind": "emotion",
+                "abilities": [
+                  "presence",
+                  "will"
+                ]
+              }
+            ],
+            "conditionsRemove": [
+              "话没落到地上"
+            ],
+            "inventoryAdd": [],
+            "inventoryRemove": [],
+            "privateNote": "他说“不是没人记着它去过哪儿”时没有看她。她不确定那句是说信箱，还是说别的。",
+            "memory": {
+              "summary": "不是没人记着它去过哪儿。",
+              "importance": 4
+            }
+          }
+        ],
+        "world": {
+          "factsAdd": [
+            "旧邮戳的印泥已干成硬壳，试盖只留下一圈认不出日期的模糊红影。",
+            "程野收拾时把一沓挂号单散在地上，苏晚捡起了其中几张。"
+          ],
+          "factsRemove": [],
+          "flagsSet": {
+            "postmark_dry": true,
+            "slips_scattered": true,
+            "su_wan_handed_slips_back": true
+          },
+          "pressure": "印泥干透，邮戳盖不出清楚日期；柜台上散着的单子里，有一张的边缘比其余的旧得多。",
+          "sceneTitle": "干掉的印泥"
+        }
+      },
+      "nextTimeJump": {
+        "elapsedMinutes": 12,
+        "label": "挂号单落地之后的第十二分钟",
+        "reason": "弯腰捡纸、重新叠齐、试盖邮戳和一句没能接上的沉默，一共耗掉的时间；屋檐的滴水从急转成零星。"
+      },
+      "ending": null,
+      "createdAt": "2026-10-27T10:54:26.375Z",
+      "completedAt": "2026-10-27T10:55:05.029Z"
+    },
+    {
+      "id": "beat_9eaf9002152c",
+      "index": 2,
+      "title": "一张旧单子",
+      "phase": "complete",
+      "clock": {
+        "minutes": 1449,
+        "display": "00:09 · 次日",
+        "dateLabel": "邮局最后一夜"
+      },
+      "timeJump": {
+        "elapsedMinutes": 12,
+        "label": "挂号单落地之后的第十二分钟",
+        "reason": "弯腰捡纸、重新叠齐、试盖邮戳和一句没能接上的沉默，一共耗掉的时间；屋檐的滴水从急转成零星。"
+      },
+      "publicBrief": "屋檐的滴水已经零星。日光灯嗡了一声，把柜台上散开的挂号单照得一张比一张薄。苏晚搁在台面的那几张里，最上面一张的边缘比其余的旧得多，纸色发黄，四角发毛，印在上面那行邮资的小字是早几年才有的版式。把它翻过来，背面有一行铅笔字，笔尖压得深，纸背起了槽；潮气把石墨洇开，只留下半个字和一道像数字的横线，认不全。街对面的便利店有人在拖地，冷光晃了一下。程野掌心里还是那只空信封。墙上的挂钟慢七分钟，仍旧敲在零点十六。",
+      "privateCues": [
+        {
+          "characterId": "cheng_ye",
+          "cue": "那张单子角上的铅笔编号是你自己的手迹——父亲教你的老规矩，备用单压在旧秤抽屉底下时用铅笔编号。那沓纸你六年前就换掉了，不该还有一张留在这边的柜台上。"
+        },
+        {
+          "characterId": "su_wan",
+          "cue": "潮纸和胶水的气味让你想起八年前自己就站在这一段柜台前，指甲抠过同一个漆面缺口，买了一枚邮票贴上信封右上角，又在走出门之前把它撕了下来。"
+        }
+      ],
+      "pressure": "要盖出能用的邮戳，得先救活那块干印泥；而那张旧单子此刻就摊在两个人之间的台面上，翻过去还是压下去，总得选一样。",
+      "sceneQuestion": "那张八年前的旧单子，是把它当成废纸收进抽屉，还是让它留在台面上被另一个人看见？",
+      "gmNote": "让旧单子成为可被藏起或被推过去的实物；除非玩家主动，任何一方都不要说出真相。",
+      "actions": [
+        {
+          "id": "act_18eee902a4c5",
+          "characterId": "cheng_ye",
+          "category": "行动",
+          "summary": "收走旧单，动手救印泥",
+          "description": "程野左手把台面上那张发黄的旧挂号单翻过去，压进柜台下的抽屉里，动作不急。右手拧开印泥盒，用指甲撬起硬壳的一角，又从帆布袋里摸出放大镜，凑近看那块干红。",
+          "dialogue": "能救。得加点水，慢慢化。",
+          "thought": "那张旧单子不能就这么摊着。先收进抽屉，把印泥救活再说——她问的是印泥，我就答印泥。",
+          "goalProgress": "把旧单子藏起来，同时不让她觉得我在躲，用修印泥这件事把话头接住。",
+          "stakes": "如果救不活印泥，今晚这封信就盖不上戳，她留下的名字也落不到纸上。",
+          "ability": "agility",
+          "traitName": "手稳",
+          "targetId": null,
+          "status": "resolved",
+          "penalties": 0,
+          "penaltyNotes": [],
+          "generatedBy": "llm",
+          "createdAt": "2026-10-27T10:55:18.698Z",
+          "roll": {
+            "natural": 1,
+            "ability": "agility",
+            "abilityValue": 6,
+            "traitName": "手稳",
+            "traitBonus": 2,
+            "conditionBonus": 0,
+            "conditionNotes": [],
+            "situationalBonus": 0,
+            "penalty": 0,
+            "penaltyNotes": [],
+            "total": 9,
+            "dc": 13,
+            "opponentTotal": null,
+            "margin": -4,
+            "tier": "soft_failure",
+            "criticalByNatural20": false
+          },
+          "outcome": "soft_failure",
+          "outcomeNote": ""
+        },
+        {
+          "id": "act_2000d8caea20",
+          "characterId": "su_wan",
+          "category": "行动",
+          "summary": "主动帮忙救印泥，顺手按住旧单子",
+          "description": "苏晚绕到柜台侧面，把大衣袖子往上撸了一截，伸手去够印泥盒和旁边一只空茶杯。她拿起盒子凑到灯下看，同时把台面上那张发黄的旧单子往自己这一侧挪了半掌，指尖压住它的边。",
+          "dialogue": "拿点热水来。干成这样，硬刮是刮不开的——你们邮局就没个暖壶？",
+          "thought": "印泥干了，他要修；我要是能帮上一手，就不用干站着。那张旧单子还压在台面上，先别让他看见背面。",
+          "goalProgress": "借修印泥留在柜台边，把那封没地址的信继续往前推一步。",
+          "stakes": "手一忙，旧单子背面的字可能被他先看见。",
+          "ability": "agility",
+          "traitName": "先走一步",
+          "targetId": null,
+          "status": "resolved",
+          "penalties": 0,
+          "penaltyNotes": [],
+          "generatedBy": "llm",
+          "createdAt": "2026-10-27T10:55:19.253Z",
+          "roll": {
+            "natural": 9,
+            "ability": "agility",
+            "abilityValue": 5,
+            "traitName": "先走一步",
+            "traitBonus": 2,
+            "conditionBonus": 0,
+            "conditionNotes": [],
+            "situationalBonus": 0,
+            "penalty": 0,
+            "penaltyNotes": [],
+            "total": 16,
+            "dc": 10,
+            "opponentTotal": null,
+            "margin": 6,
+            "tier": "success",
+            "criticalByNatural20": false
+          },
+          "outcome": "success",
+          "outcomeNote": ""
+        }
+      ],
+      "adjudications": [
+        {
+          "actionId": "act_18eee902a4c5",
+          "difficultyLabel": "标准",
+          "dc": 13,
+          "modifier": 0,
+          "reason": "干成硬壳的印泥要靠加水和慢化来软化，手劲和分寸都差不得，但他手稳，又没有时间压力，属于常规但仍有真实不确定性的活计；把旧单子压进抽屉只是顺手，不额外加难。",
+          "risk": "硬壳被撬裂成碎块，再也化不开，而那几张旧单子被他压进抽屉时折了角，背面的铅笔字蹭得更糊。"
+        },
+        {
+          "actionId": "act_2000d8caea20",
+          "difficultyLabel": "容易",
+          "dc": 10,
+          "modifier": 0,
+          "reason": "端水、看印泥、把一张纸往自己这边挪半掌，都是日常小动作，只要手上有基本的分寸就能做到；真正难的不是这一下，而是他会不会看见，那由他的反应检定对抗。",
+          "risk": "袖子带倒那只空茶杯，水漫过台面，旧单子被泡开一角，铅笔字彻底认不出。"
+        }
+      ],
+      "reactions": [],
+      "narration": "程野把那张发黄的旧单子翻过去，正面朝下压进柜台下开着的抽屉里，抽屉没推严，留了一道缝。然后他拧开印泥盒，指甲抵住硬壳的边往上撬。干了的红不是软的，是整块贴着盒底的硬壳。撬到第二下，壳面顺着一条旧裂纹裂开，一小片碎屑弹起来，落到柜台后头不见了。他停住，放大镜还捏在手里，镜片对着盒里那块更小的红。刚才那句“能救。得加点水，慢慢化。”还搁在两个人中间。\n\n苏晚没接他的话。她绕到柜台侧面，把大衣袖子一截一截撸到肘上，弯腰在柜台后翻，摸出一只蒙灰的暖壶，摇了摇，还有水。她拧开盖，倒进旁边那只空茶杯，热气不多，只是温的。她把杯子搁到灯下的台面上，另一只手探进那道抽屉缝，把那张旧单子往自己这一侧挪了半掌，指腹压住它的边。\n\n纸背起了槽，隔着纸也硌手。那道压深的铅笔痕从指下过去，一半像字，一半像一道横线，后面就断了。她没有把纸翻回来，指尖停在那里没动。\n\n水淋在裂口上。干红吸进去，颜色沉下去，只有裂口边缘先软，软出一小圈暗红，别处还硬着。灯管又嗡了一声。程野把放大镜搁到台面上，手停在盒沿旁边，没有再去碰那块红。街对面拖地的人直起腰，冷光横过来，从卷帘门的缝里切进一道。墙上的挂钟还是慢七分钟，走到零点二十三。",
+      "outcomeNotes": [
+        {
+          "characterId": "cheng_ye",
+          "note": "他把旧单子翻面收进抽屉，却在撬印泥时把硬壳撬裂、丢了一小片碎屑，先前说下的“能救”落了空。"
+        },
+        {
+          "characterId": "su_wan",
+          "note": "她找来了温水和暖壶，接过了化印泥的活，并把手压在那张旧单子的边上。"
+        }
+      ],
+      "stateChanges": {
+        "characters": [
+          {
+            "characterId": "cheng_ye",
+            "stressDelta": 1,
+            "conditionsAdd": [
+              {
+                "name": "撬裂的印泥",
+                "description": "他当着她的面说“能救”，硬壳却裂了、碎屑掉进柜台缝；再碰那块干红时手会先顿一下。",
+                "modifier": -2,
+                "kind": "emotion",
+                "abilities": [
+                  "agility"
+                ]
+              }
+            ],
+            "conditionsRemove": [],
+            "inventoryAdd": [],
+            "inventoryRemove": [],
+            "privateNote": "他知道自己为什么先把那张单子翻过去、压进抽屉；也知道撬坏的不只是印泥。",
+            "memory": {
+              "summary": "她的手探进抽屉缝，把那张纸往自己那边挪了半掌，压住不动。",
+              "importance": 3
+            }
+          },
+          {
+            "characterId": "su_wan",
+            "stressDelta": -1,
+            "conditionsAdd": [
+              {
+                "name": "袖子挽到肘上",
+                "description": "热水在手边，活计由她接手，做细活时手更稳。",
+                "modifier": 2,
+                "kind": "boon",
+                "abilities": [
+                  "agility"
+                ]
+              }
+            ],
+            "conditionsRemove": [],
+            "inventoryAdd": [
+              "一只蒙灰的旧暖壶"
+            ],
+            "inventoryRemove": [],
+            "privateNote": "隔着纸背，那道压深的铅笔痕从指下过去，像半个字，又像一道横线，后面就断了。",
+            "memory": {
+              "summary": "纸背起了槽，隔着纸也硌手。",
+              "importance": 4
+            }
+          }
+        ],
+        "world": {
+          "factsAdd": [
+            "印泥盒的硬壳被撬裂，一小片碎屑掉进柜台缝里不见了，只剩裂口处化开一小圈暗红。",
+            "苏晚从柜台后翻出一只旧暖壶，倒出的水只是温的；那张发黄的旧挂号单仍在柜台下开着的抽屉里，她指尖压着它的一角。"
+          ],
+          "factsRemove": [],
+          "flagsSet": {
+            "old_form_in_drawer": true,
+            "ink_pad_cracked": true
+          },
+          "pressure": "印泥只在裂口化开一小圈，其余还硬着；抽屉没关严，那张翻面压着的旧单子仍在苏晚指下。",
+          "sceneTitle": "一点温水"
+        }
+      },
+      "nextTimeJump": {
+        "elapsedMinutes": 14,
+        "label": "温水渗进干红的第十四分钟",
+        "reason": "干透的印泥只能一滴一滴喂水、等它自己往下渗，中途不能刮，两人只能守着它。"
+      },
+      "ending": null,
+      "createdAt": "2026-10-27T10:55:05.034Z",
+      "completedAt": "2026-10-27T10:59:39.320Z"
+    },
+    {
+      "id": "beat_b39465fa37f7",
+      "index": 3,
+      "title": "第十四分钟",
+      "phase": "complete",
+      "clock": {
+        "minutes": 1463,
+        "display": "00:23 · 次日",
+        "dateLabel": "邮局最后一夜"
+      },
+      "timeJump": {
+        "elapsedMinutes": 14,
+        "label": "温水渗进干红的第十四分钟",
+        "reason": "干透的印泥只能一滴一滴喂水、等它自己往下渗，中途不能刮，两人只能守着它。"
+      },
+      "publicBrief": "暖壶放在柜台面上，壶口对着印泥盒的方向，像还在等下一滴。苏晚的左手搭在壶盖上，右手伸在抽屉缝里，指腹压着那张纸的边。湿气从缝里渗上来，把抽屉里那股陈纸味顶到了灯下。印泥裂口化开的那一圈暗红没有继续扩大，边缘又收住了，颜色像一小块半凝的血；旁边那块硬壳上的旧裂纹还在，缝里嵌着看不见的灰。程野两只手都停在盒沿边上，放大镜离他右手三寸，他没去拿。日光灯每隔一会儿就嗡一声，每次嗡完，屋里就静得能听见柜台下抽屉里那点纸的回潮声。墙上的钟走到零点三十，慢着那七分钟。卷帘门外的雨不再是整片砸下来，变成一股一股顺着门缝往里探的水线，门前的水洼已经漫过了台阶的第一级。街对面便利店的人拖完地，靠在门框上抽烟，冷光把他半个人照得发白，他往邮局这边看了一眼，又低头看手机。",
+      "privateCues": [
+        {
+          "characterId": "cheng_ye",
+          "cue": "你看见她拇指压住的位置，正好是那张单子折过两折的旧痕上。你忽然记起八年前自己也在这只抽屉里塞过一小叠纸，塞的时候没看内容。纸上那道铅笔痕是横着划过去的，短，收笔重，像写到一半就丢了。"
+        },
+        {
+          "characterId": "su_wan",
+          "cue": "纸背的槽比你刚才摸到时更软了一点——不是水，是回潮，这间屋子今晚所有的东西都在出汗。你指腹下面那道铅痕的收笔处有一个极小的顿点，像有人写到最后把笔尖按住了。你不知道那是字，还是当年谁压单子时钢笔漏下来的。"
+        }
+      ],
+      "pressure": "暖壶倒出的水只够再喂两三次，而印泥裂口已经收住不再往下渗；墙上的钟慢七分钟，可外面雨漫过台阶的速度不慢。",
+      "sceneQuestion": "那封信要能寄出去，寄件人这一栏的名字，是谁先写下来？",
+      "gmNote": "本刻让印泥的停滞和雨水的上涨形成对照：屋里的东西化不开，屋外的水却要进来了。别催他们谈正事，让水声替时间说话。",
+      "actions": [
+        {
+          "id": "act_f0faa997c5e7",
+          "characterId": "cheng_ye",
+          "category": "行动",
+          "summary": "把放大镜推到她手边，让她看那道痕",
+          "description": "程野把放大镜从台面上拿起来，没有看它，直接推到苏晚压着纸的那只手旁边，镜柄朝着她的指尖。然后他把手收回来，搁在暖壶盖旁边，指节朝下，没再碰印泥。",
+          "dialogue": "你压着的那张，折痕是横的。我八年前往这只抽屉里塞过一叠东西，没看内容——你要是想对，就对着光看。",
+          "thought": "那道铅笔痕我见过。不是我写的，但我知道它为什么被折起来。她压着它，我得先让她知道我没打算藏什么。",
+          "goalProgress": "把话题从印泥和信引到她手里那张旧单子上，逼自己不再绕弯。",
+          "stakes": "她会觉得我在翻旧账，或者更糟——她什么也没说，只是把纸收进口袋。",
+          "ability": "perception",
+          "traitName": null,
+          "targetId": "su_wan",
+          "targetLabel": "苏晚",
+          "status": "resolved",
+          "penalties": 0,
+          "penaltyNotes": [],
+          "generatedBy": "llm",
+          "createdAt": "2026-10-27T10:59:49.254Z",
+          "roll": {
+            "natural": 7,
+            "ability": "perception",
+            "abilityValue": 7,
+            "traitName": null,
+            "traitBonus": 0,
+            "conditionBonus": 0,
+            "conditionNotes": [],
+            "situationalBonus": 1,
+            "penalty": 0,
+            "penaltyNotes": [],
+            "total": 15,
+            "dc": null,
+            "opponentTotal": 24,
+            "margin": -9,
+            "tier": "soft_failure",
+            "criticalByNatural20": false
+          },
+          "outcome": "soft_failure",
+          "outcomeNote": ""
+        },
+        {
+          "id": "act_f37473148667",
+          "characterId": "su_wan",
+          "category": "调查",
+          "summary": "借喂水的由头，翻看旧单子背面",
+          "description": "苏晚把茶杯端起来，往印泥裂口里又喂了一滴水，趁低头看红的工夫，另一只手把那半张露在抽屉缝外的旧单子缓缓抽出来，翻到背面，凑到日光灯下。",
+          "dialogue": "这单子压得挺深……你刚才翻它的时候，看见背面有字吗？",
+          "thought": "那张旧单子背面的槽，越摸越像谁写了字又按住笔尖。我得看清它，但不能让他觉得我在翻他的旧账。",
+          "goalProgress": "先弄清这张旧单子和那封信的来历，再决定要不要留下名字。",
+          "stakes": "若被他看出我是在查他压下的东西，两人之间那点没戳破的余地就没了。",
+          "ability": "perception",
+          "traitName": null,
+          "targetId": null,
+          "status": "resolved",
+          "penalties": -2,
+          "penaltyNotes": [
+            "分心应战 -2"
+          ],
+          "generatedBy": "llm",
+          "createdAt": "2026-10-27T10:59:49.393Z",
+          "roll": {
+            "natural": 18,
+            "ability": "perception",
+            "abilityValue": 7,
+            "traitName": null,
+            "traitBonus": 0,
+            "conditionBonus": 0,
+            "conditionNotes": [],
+            "situationalBonus": 1,
+            "penalty": -2,
+            "penaltyNotes": [
+              "分心应战 -2"
+            ],
+            "total": 24,
+            "dc": 13,
+            "opponentTotal": null,
+            "margin": 11,
+            "tier": "critical_success",
+            "criticalByNatural20": false
+          },
+          "outcome": "critical_success",
+          "outcomeNote": ""
+        }
+      ],
+      "adjudications": [
+        {
+          "actionId": "act_f0faa997c5e7",
+          "difficultyLabel": "标准",
+          "dc": 13,
+          "modifier": 1,
+          "reason": "这不是要求，而是递出实物和一个可核对的说法；放大镜和“折痕是横的”给了她具体线索，但她仍可以装作没听懂，结果取决于她接不接。",
+          "risk": "她把那张纸对折收进口袋，说一句“回头再看”，抽屉就这么关上了，你把话收不回来。"
+        },
+        {
+          "actionId": "act_f37473148667",
+          "difficultyLabel": "标准",
+          "dc": 13,
+          "modifier": 1,
+          "reason": "喂水的动作提供了正当掩护，但纸已经受潮发软，抽屉缝窄，他又隔着柜台坐着，抽出并翻面仍可能发出声响或撕坏。",
+          "risk": "湿纸在缝隙边缘被扯开一道口子，裂的正好是背面有字的那一侧，字迹跟着纸屑留在抽屉里。"
+        }
+      ],
+      "reactions": [
+        {
+          "id": "rxn_2b16427295a2",
+          "characterId": "su_wan",
+          "incomingActionIds": [
+            "act_f0faa997c5e7"
+          ],
+          "continueOriginal": true,
+          "summary": "就着灯光翻纸，先不接话只接镜子",
+          "description": "苏晚没去碰镜柄，先把茶杯里最后一小滴水喂进裂口，趁低头，指腹把纸抽出来半寸翻到背面，就着灯看那道横折痕和收笔的顿点；然后才用两根手指捏起放大镜，镜面压在纸上，不看他。",
+          "dialogue": "对着光看——你这话，是让我看，还是你自己也想看？",
+          "thought": "他这一句像是把门推开了半扇——八年前塞进抽屉的东西，他真没看？还是留着等我。放大镜就在手边，可我一拿，就等于认了我想看。",
+          "ability": "perception",
+          "traitName": null,
+          "stance": "顺势接住",
+          "createdAt": "2026-10-27T11:00:00.144Z",
+          "roll": {
+            "natural": 19,
+            "ability": "perception",
+            "abilityValue": 7,
+            "traitName": null,
+            "traitBonus": 0,
+            "conditionBonus": 0,
+            "conditionNotes": [],
+            "situationalBonus": 0,
+            "penalty": -2,
+            "penaltyNotes": [
+              "分心兼顾原行动 -2"
+            ],
+            "total": 24,
+            "incomingTotals": {
+              "act_f0faa997c5e7": 15
+            }
+          }
+        }
+      ],
+      "narration": "放大镜推过去，停在苏晚的指尖和纸角之间，镜柄朝她，像是等人自己决定要不要拿。程野把手收回来，搁在暖壶盖旁，指节朝下，没有再去碰印泥。那道横折痕在白灯下投出一线很淡的影。\n\n苏晚没先拿镜子。她把杯里最后一点温水喂进裂口，低头看那圈暗红怎样收住，另一只手的指腹把纸从抽屉缝里抽出半寸，翻到背面，凑到灯下。横折痕，收笔处一个顿点，墨色比正面深。过了一小会儿，她才用两根手指捏起放大镜，镜面压在纸上，压得很稳。\n\n“对着光看——”她说，声音压得低，“你这话，是让我看，还是你自己也想看？”\n\n程野没有立刻答。灯嗡了一声，柜台上那片纸的边缘在镜片下发白。他说的是抽屉里塞过一叠东西，没看内容；她手上的这张，是八年前从这只抽屉里被塞进去的其中一张，还是别的什么，此刻只看得见折痕、墨点和一条被岁月磨浅的边。\n\n门外雨势缓了些，可从门缝探进来的水线已经把台阶第一级淹掉，水正沿着地砖往柜台方向爬。墙上的钟仍在慢那七分钟。街对面抽烟的人把烟头踩灭，开门回去，便利店的冷光一下收进门里，邮局这边就更暗了一格，只剩下日光灯的嗡声和两人之间那张纸的干响。\n\n苏晚的指尖还压在纸上，放大镜把她的呼吸映成一小片圆。抽屉没有关，暖壶的壶口仍对着印泥盒。谁都没把手收回去。",
+      "outcomeNotes": [
+        {
+          "characterId": "cheng_ye",
+          "note": "把放大镜推了过去，却没得到顺势的回应；他等于先把话递出去一半，另一半还悬在对方手上。"
+        },
+        {
+          "characterId": "su_wan",
+          "note": "成功把旧单子抽出半寸翻到背面，看到横折痕与收笔顿点，并接过了放大镜。"
+        }
+      ],
+      "stateChanges": {
+        "characters": [
+          {
+            "characterId": "cheng_ye",
+            "stressDelta": 1,
+            "conditionsAdd": [
+              {
+                "name": "话递出去一半",
+                "description": "主动让出抽屉里的一段旧事的解释权，心里悬着，接下来的说服或追问容易迟疑。",
+                "modifier": -2,
+                "kind": "emotion",
+                "abilities": [
+                  "perception",
+                  "will"
+                ]
+              }
+            ],
+            "conditionsRemove": [],
+            "inventoryAdd": [],
+            "inventoryRemove": [],
+            "privateNote": "她没先接镜子，先喂了那滴水，才把纸翻过来——她其实一直在等背面的字。",
+            "memory": {
+              "summary": "她问：“是让我看，还是你自己也想看？”我没有答。",
+              "importance": 3
+            }
+          },
+          {
+            "characterId": "su_wan",
+            "stressDelta": -1,
+            "conditionsAdd": [
+              {
+                "name": "灯下看得太清",
+                "description": "旧单背面的折痕与顿点已经看清，心神被那几笔墨牵住，接下来的观察更专注但更易分心于细节。",
+                "modifier": 2,
+                "kind": "other",
+                "abilities": [
+                  "perception"
+                ]
+              }
+            ],
+            "conditionsRemove": [
+              "话被堵回去"
+            ],
+            "inventoryAdd": [
+              "放大镜（镜柄朝她推来）"
+            ],
+            "inventoryRemove": [],
+            "privateNote": "背面有一道横折痕，收笔处一个顿点，墨色比正面深——像是写过字，又被折进深处。",
+            "memory": {
+              "summary": "他推进来的不是答案，是让我自己去对抽屉里的那叠东西。",
+              "importance": 4
+            }
+          }
+        ],
+        "world": {
+          "factsAdd": [
+            "程野把放大镜推到苏晚手边，并说八年前往这只抽屉里塞过一叠东西，没看内容。",
+            "苏晚从抽屉缝里抽出半张旧单子翻到背面，就着灯看那道横折痕；随后接过放大镜压在纸上。"
+          ],
+          "factsRemove": [],
+          "flagsSet": {
+            "mirror_handed_to_suwan": true,
+            "old_slip_backside_seen": true
+          },
+          "pressure": "门缝渗进的水已淹过台阶第一级，正沿地砖向柜台爬；抽屉还开着，纸只抽出半寸。",
+          "sceneTitle": "水线爬上地砖"
+        }
+      },
+      "nextTimeJump": {
+        "elapsedMinutes": 12,
+        "label": "灯下那半寸纸之后的第十二分钟",
+        "reason": "两人都在看那张纸和放大镜里的折痕，雨水从门缝漫进来，谁也没先开口，时间被这几笔墨和脚边的水拖过去了。"
+      },
+      "ending": null,
+      "createdAt": "2026-10-27T10:59:39.324Z",
+      "completedAt": "2026-10-27T11:00:06.490Z"
+    }
+  ],
+  "progress": {
+    "phase": "idle",
+    "label": "等待继续",
+    "updatedAt": "2026-10-27T11:00:06.495Z"
+  },
+  "llm": {
+    "calls": 24,
+    "promptTokens": 64237,
+    "completionTokens": 20246,
+    "cachedTokens": 15104,
+    "reasoningTokens": 10151,
+    "totalTokens": 84483,
+    "failures": 0
+  },
+  "ending": null,
+  "error": null,
+  "startedAt": "2026-10-27T10:53:59.554Z"
+}
