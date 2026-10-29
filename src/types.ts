@@ -281,7 +281,7 @@ export interface ActionRecord {
   penalties: number;
   penaltyNotes: string[];
   /** The engine can transparently mark a rare deterministic fallback. */
-  generatedBy?: 'llm' | 'fallback';
+  generatedBy?: 'llm' | 'fallback' | 'player';
   createdAt: string;
 }
 
@@ -313,7 +313,11 @@ export type BeatPhase =
   | 'reactions'
   | 'rolling'
   | 'resolution'
-  | 'complete';
+  | 'complete'
+  /** Play mode only: the engine is waiting for the human to declare a deed. */
+  | 'player_action'
+  /** Play mode only: the engine is waiting for the human to answer a hostile action. */
+  | 'player_reaction';
 
 export interface OutcomeNote {
   characterId: string;
@@ -437,7 +441,22 @@ export interface WorldState {
   sceneTitle: string;
 }
 
-export type RunStatus = 'ready' | 'running' | 'paused' | 'ended' | 'error';
+export type RunStatus = 'ready' | 'running' | 'paused' | 'ended' | 'error' | 'awaiting';
+
+/** Play mode only: what kind of input the engine is waiting for. */
+export type PlayAwaiting = 'action' | 'reaction';
+
+/**
+ * Present when a human plays one character of an otherwise AI-run scene.
+ * The engine pauses at `awaiting`, and the server redacts the run until `recapAt`.
+ */
+export interface PlayConfig {
+  characterId: string;
+  awaiting: PlayAwaiting | null;
+  /** Set when the full record has been unlocked for recap; recap ends the run. */
+  recapAt: string | null;
+  createdAt: string;
+}
 
 export interface WorldLink {
   worldId: string;
@@ -470,6 +489,8 @@ export interface Run {
   worldLink?: WorldLink | null;
   /** Set once the scene's outcome has been sealed back into the world ledger. */
   worldSceneSealed?: boolean;
+  /** Present when one of the characters is played by the human user. */
+  play?: PlayConfig | null;
 }
 
 export interface RunSummary {
@@ -485,6 +506,8 @@ export interface RunSummary {
   currentBeatTitle: string | null;
   worldId?: string;
   worldTitle?: string;
+  /** Set for 扮演模式 summaries, so the home card can name the player's role. */
+  playCharacterName?: string;
 }
 
 /** LLM-facing action proposal schema. */

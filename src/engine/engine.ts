@@ -5,6 +5,7 @@ import {
   type CharacterStateChange,
   type ExternalEventProposal,
   type ExternalEventResult,
+  type PlayAwaiting,
   type PrivateCue,
   type ReactionRecord,
   type ResolutionDraft,
@@ -143,6 +144,10 @@ export class RunEngine {
 
   async advanceOne(): Promise<Run> {
     if (this.run.ending) throw new Error('本场已经结束。');
+    if (this.run.play?.recapAt) throw new Error('本场已经复盘并结束，不能继续推进。');
+    if (this.run.play?.awaiting) {
+      throw new Error('这一场正在等待玩家输入，请先完成你的举动或回应。');
+    }
     this.run.status = 'running';
     this.run.error = null;
     this.run.startedAt ??= nowIso();
@@ -152,9 +157,15 @@ export class RunEngine {
     try {
       const beat = await this.ensureBeat();
       if (beat.phase === 'opening') await this.runOpening(beat);
+      const waitingAfterOpening = this.playerPhase(beat);
+      if (waitingAfterOpening) return await this.awaitPlayer(waitingAfterOpening, beat);
       if (beat.phase === 'actions') await this.runActions(beat);
+      const waitingAfterActions = this.playerPhase(beat);
+      if (waitingAfterActions) return await this.awaitPlayer(waitingAfterActions, beat);
       if (beat.phase === 'adjudication') await this.runAdjudication(beat);
       if (beat.phase === 'reactions') await this.runReactions(beat);
+      const waitingAfterReactions = this.playerPhase(beat);
+      if (waitingAfterReactions) return await this.awaitPlayer(waitingAfterReactions, beat);
       if (beat.phase === 'rolling') await this.runRolls(beat);
       if (beat.phase === 'resolution') await this.runResolution(beat);
       if (beat.phase !== 'complete') {
@@ -252,9 +263,43 @@ export class RunEngine {
     beat.gmNote = draft.gmNote;
     this.run.world.pressure = beat.pressure;
     this.run.world.sceneTitle = beat.title;
-    beat.phase = 'actions';
+    const playerId = this.run.play?.characterId ?? null;
+    const playerNeedsToDeclare =
+      Boolean(playerId) && !beat.actions.some((action) => action.characterId === playerId);
+    // In play mode the human declares before anyone else so their own action is
+    // never shaped by information they could not have had.
+    beat.phase = playerNeedsToDeclare ? 'player_action' : 'actions';
     this.log(`第 ${beat.index + 1} 刻开场：${beat.title}`);
     await this.save();
+  }
+
+  /** Which player input this beat needs, if any. */
+  private playerPhase(beat: Beat): PlayAwaiting | null {
+    if (!this.run.play) return null;
+    if (beat.phase === 'player_action') return 'action';
+    if (beat.phase === 'player_reaction') return 'reaction';
+    return null;
+  }
+
+  /** Park the run until the human submits a deed or a reaction. */
+  private async awaitPlayer(kind: PlayAwaiting, beat: Beat): Promise<Run> {
+    if (!this.run.play) throw new Error('引擎没有接到玩家角色，无法等待输入。');
+    this.run.play.awaiting = kind;
+    this.run.status = 'awaiting';
+    this.run.error = null;
+    this.setProgress(
+      'idle',
+      kind === 'action' ? '轮到你行动' : '轮到你回应',
+      kind === 'action'
+        ? '你只能依据自己知道的信息宣告 deed / effect；其他人也在各自决定。'
+        : '有敌意举动递到你面前。你只能依据自己知道的信息选择回应。',
+    );
+    this.log(
+      kind === 'action' ? '等待玩家宣告举动' : '等待玩家回应敌意',
+      { beat: beat.index + 1 },
+    );
+    await this.save();
+    return this.run;
   }
 
   private completePrivateCues(cues: PrivateCue[]): PrivateCue[] {
@@ -270,11 +315,19 @@ export class RunEngine {
   }
 
   private async runActions(beat: Beat): Promise<void> {
+    const playerId = this.run.play?.characterId ?? null;
     const existing = new Set(beat.actions.map((action) => action.characterId));
+    const playerPending = Boolean(playerId) && !existing.has(playerId!);
     const pending = this.run.scenario.characters.filter(
-      (character) => !character.passive && !existing.has(character.id),
+      (character) =>
+        !character.passive && !existing.has(character.id) && character.id !== playerId,
     );
     if (!pending.length) {
+      if (playerPending) {
+        beat.phase = 'player_action';
+        await this.save();
+        return;
+      }
       beat.phase = 'adjudication';
       await this.save();
       return;
@@ -368,6 +421,11 @@ export class RunEngine {
     if (failures.length) {
       throw new Error(`有角色的行动未能生成，重试只会补写缺失的人。\n${failures.join('\n')}`);
     }
+    if (playerPending) {
+      beat.phase = 'player_action';
+      await this.save();
+      return;
+    }
     beat.phase = 'adjudication';
     await this.save();
   }
@@ -431,6 +489,7 @@ export class RunEngine {
   }
 
   private async runReactions(beat: Beat): Promise<void> {
+    const playerId = this.run.play?.characterId ?? null;
     const targets = new Set(
       beat.actions
         .filter((action) => action.hostile !== false)
@@ -439,8 +498,11 @@ export class RunEngine {
         .filter((id) => !this.run.scenario.characters.find((entry) => entry.id === id)?.passive),
     );
     const existing = new Set(beat.reactions.map((reaction) => reaction.characterId));
-    const pending = [...targets].filter((id) => !existing.has(id));
-    if (!pending.length) {
+    const playerTargeted = Boolean(
+      playerId && targets.has(playerId) && !existing.has(playerId),
+    );
+    const pending = [...targets].filter((id) => !existing.has(id) && id !== playerId);
+    if (!pending.length && !playerTargeted) {
       beat.phase = 'rolling';
       await this.save();
       return;
@@ -456,8 +518,12 @@ export class RunEngine {
     }
     this.setProgress(
       'reactions',
-      `被卷入者正在回应 · ${pending.length} 人`,
-      '他们可以选择继续原举动并承担分心，或放下原举动。',
+      playerTargeted
+        ? '有敌意举动递到你面前'
+        : `被卷入者正在回应 · ${pending.length} 人`,
+      playerTargeted
+        ? '你可以继续原举动并承担分心，或放下它专心回应。'
+        : '他们可以选择继续原举动并承担分心，或放下原举动。',
       actorStates,
     );
     await this.save();
@@ -531,6 +597,11 @@ export class RunEngine {
     await this.save();
     if (failures.length) {
       throw new Error(`有角色未能做出回应，重试只会补写缺失的人。\n${failures.join('\n')}`);
+    }
+    if (playerTargeted) {
+      beat.phase = 'player_reaction';
+      await this.save();
+      return;
     }
     beat.phase = 'rolling';
     await this.save();

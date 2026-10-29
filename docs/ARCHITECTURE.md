@@ -4,6 +4,8 @@
 
 系统分两层：`世界层` 负责时间、区域/势力/线程、并发事件、事实与知识传播、场景调度；`聚焦层` 里，`导演 LLM` 负责局部处境与裁定，`角色 LLM` 只拿到自己的可知信息并宣告 deed/effect，`确定性规则层` 负责 DC 对比、对抗、惩罚、骰点和结果分级，`编排器` 负责阶段、重试、持久化与事件驱动时间。
 
+聚焦层有两种运行模式：**推演模式**里全部主动角色由角色 LLM 扮演；**扮演模式**里恰好一名主动角色由真人控制，其余角色仍由 LLM 扮演。两者的调用顺序、裁定与骰点相同，区别只是玩家输入替代了一次行动/回应调用，且服务端按该角色的认知边界裁切返回数据（见下文“扮演模式”）。
+
 ```text
                 ┌────────────────────────────┐
                 │       导演 LLM (GM)        │
@@ -61,6 +63,61 @@
 
 ---
 
+## 扮演模式：同一条流水线上的真人节点
+
+扮演模式不是第二套引擎。它只把一名主动角色的输入从 `actor:action` / `actor:reaction` LLM 调用换成玩家提交，并在两个节点让出控制权：
+
+```text
+gm:opening
+  │
+  ├─ 扮演模式且玩家尚未宣告 → player_action（run.status = awaiting，后台任务退出）
+  │      玩家 POST /play/action
+  ▼
+actor:action × (N-1)          （玩家举动已在记录里，AI 提示词看不到它）
+  ▼
+gm:adjudication
+  ▼
+actor:reaction × T'           （T' 不含玩家；玩家是否被指向由 hostile 决定）
+  │
+  ├─ 有敌意指向玩家 → player_reaction（awaiting，后台任务退出）
+  │      玩家 POST /play/reaction
+  ▼
+本地结算 → gm:resolution → complete
+```
+
+两个顺序约定：
+
+1. **玩家先宣告。** 玩家不会看到本轮其他人的选择；AI 角色的举动提示词也不包含玩家的举动。只有回应阶段会把“指向你的敌意举动”交给玩家——与 AI 目标拿到的回应信息相同。
+2. **回应前不掷骰。** `player_reaction` 阶段停在 `runRolls` 之前；玩家提交回应后才统一结算继续/放下、分心、对抗与多人施压。
+
+### 信息边界在服务端
+
+`Run.play = { characterId, awaiting, recapAt, createdAt }`。只要 `recapAt` 为空，`GET /api/runs/:id` 返回的是 `src/engine/playerView.ts` 裁切后的视图：其他角色的秘密/内在/能力/记忆/物品/flags、gmNote、他人私密线索、他人 effect/内心/骰点/DC/裁定、失败的外部事件、outcome_notes、hiddenCanon 与 directorNotes 都不会出现在响应里。导出、全知正文与完整 JSON 同样拒绝。
+
+前端不是边界。它只渲染裁切后的 run；即使直接请求 API，复盘前也拿不到幕后信息。复盘（`POST /api/runs/:id/recap`）一次性解除裁切，并把 run 置为 `ended`：看见全部真相之后继续推进，会同时破坏这场游戏的可玩性与已公开信息的因果。
+
+扮演模式的服务端状态机：
+
+```text
+ready
+  │ advance（无 beat 或上一刻已完成，且不在等待）
+  ▼
+running ──► opening ──► player_action ──┐
+  ▲                                     │ 玩家提交 deed/effect
+  │                                     ▼
+  └────────────── awaiting ◄──── actions ─► adjudication ─► reactions
+                                                                │
+                                              ┌─ 玩家被敌意指向 ─┴─ 否
+                                              ▼                    │
+                                        player_reaction            │
+                                              │ 玩家提交回应        │
+                                              ▼                    ▼
+                                           rolling ─► resolution ─► ready | ended
+```
+
+`awaiting` 是持久化状态：服务重启后仍停在玩家的输入节点。`recapAt` 一旦写入，`advance` 与后台任务都拒绝继续。
+
+完整字段级裁切矩阵、API 与前端交互见 [`PLAY.md`](PLAY.md)。ADR：[`adr/0001-play-mode-info-boundary.md`](adr/0001-play-mode-info-boundary.md)。
 
 ---
 
@@ -135,6 +192,8 @@ src/
     run.ts                  run 初始化、时钟推进
     store.ts                原子 JSON 持久化、run 列表
     engine.ts               阶段编排、LLM 调用、状态应用、重试
+    play.ts                 玩家输入校验、player_action/player_reaction、复盘锁定
+    playerView.ts           服务端玩家视图：按角色认知边界裁切 run
   world/
     types.ts                世界领域类型、信号、事件、场景契约
     definition.ts           世界手稿归一化与预置加载
@@ -156,12 +215,17 @@ content/scenarios/
 content/worlds/
   three-tides.json          预置世界
 public/
-  index.html / styles.css / app.js
+  index.html                前端入口
+  js/                       api / state / dom / main / logic / render 模块
+  css/                      tokens / base / components / views / play
 tests/
   rules.test.ts             规则边界
   engine.test.ts            假模型下完整编排 + 信息隔离
+  play.test.ts              扮演模式等待/回应/裁切/复盘
   scenario.test.ts          手稿校验与时钟
   world.test.ts             世界纪元、并发、知识隔离、场景桥
+  ui-smoke.mjs              无头 DOM 冒烟（含扮演等待/复盘）
+  play-browser-check.mjs    真浏览器 + 真 LLM 的扮演全流程（可选，需要 Playwright）
 ```
 
 运行时不依赖第三方包；Node 24 原生执行 `.ts`（type stripping），`typescript` 只用于类型检查。UI 用本地 Playwright 做过桌面/移动端与交互验证，但它不是运行依赖。

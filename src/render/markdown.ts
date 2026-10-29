@@ -130,6 +130,14 @@ export function renderMarkdown(run: Run, options: { includeBackstage?: boolean }
   lines.push('');
   lines.push(`- 场景：${run.scenario.world.location}`);
   lines.push(`- 种子：\`${run.seed}\``);
+  if (run.play?.characterId) {
+    const player = run.scenario.characters.find(
+      (character) => character.id === run.play!.characterId,
+    );
+    lines.push(
+      `- 模式：扮演模式（你扮演 ${player?.name ?? run.play.characterId}）${run.play.recapAt ? ' · 已复盘，本战报包含全部幕后信息' : ''}`,
+    );
+  }
   lines.push(`- 角色：${run.scenario.characters.map((character) => `${character.name}（${character.title}）`).join('、')}`);
   lines.push('');
   lines.push('## 人物');

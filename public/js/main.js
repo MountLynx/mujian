@@ -22,6 +22,7 @@ import {
   openWorldOverview,
   openConfirmDelete,
   openConfirmDeleteWorld,
+  openRecap,
 } from './render/drawers.js';
 import {
   loadRun,
@@ -56,7 +57,21 @@ import {
   importJsonFile,
   validateEditor,
   updateEditorMessage,
+  setPlayMode,
+  selectPlayCharacter,
+  refreshPlayCastForPreset,
 } from './logic/create.js';
+import {
+  submitPlayAction,
+  submitPlayReaction,
+  confirmRecap,
+  unlockRecap,
+  focusPlayForm,
+  gotoPlayNow,
+  handlePlayAbilityChange,
+  preventPlayFormSubmit,
+  handlePlayKeydown,
+} from './logic/play.js';
 
 /* ---- 数据加载 ---- */
 
@@ -238,9 +253,57 @@ async function handleClick(event) {
       event.preventDefault();
       selectBeat(latestComplete(state.currentRun)?.id);
       break;
+    case 'goto-play-now':
+      event.preventDefault();
+      gotoPlayNow();
+      break;
+    case 'focus-play-form':
+      event.preventDefault();
+      focusPlayForm();
+      break;
+    case 'submit-play-action':
+      event.preventDefault();
+      await submitPlayAction(trigger);
+      break;
+    case 'submit-play-reaction':
+      event.preventDefault();
+      await submitPlayReaction(trigger);
+      break;
+    case 'confirm-recap':
+      event.preventDefault();
+      confirmRecap();
+      break;
+    case 'recap-confirm':
+      event.preventDefault();
+      await unlockRecap(trigger);
+      break;
+    case 'open-recap':
+      event.preventDefault();
+      openRecap();
+      break;
+    case 'recap-expand':
+      event.preventDefault();
+      document.querySelectorAll('.recap-modal details').forEach((node) => {
+        node.open = true;
+      });
+      break;
+    case 'recap-collapse':
+      event.preventDefault();
+      document.querySelectorAll('.recap-modal details').forEach((node) => {
+        node.open = false;
+      });
+      break;
     case 'create-tab':
       event.preventDefault();
       switchCreateMode(trigger.dataset.mode);
+      break;
+    case 'set-play-mode':
+      event.preventDefault();
+      setPlayMode(trigger.dataset.mode);
+      break;
+    case 'select-play-character':
+      event.preventDefault();
+      selectPlayCharacter(trigger.dataset.character);
       break;
     case 'select-preset': {
       event.preventDefault();
@@ -251,6 +314,7 @@ async function handleClick(event) {
       const preset = state.scenarios.find((item) => item.id === state.create.presetId);
       const maxBeatsNode = document.querySelector('#setting-max-beats');
       if (preset && maxBeatsNode) maxBeatsNode.value = String(preset.maxBeats);
+      refreshPlayCastForPreset();
       break;
     }
     case 'load-preset-template':
@@ -427,12 +491,19 @@ function handleChange(event) {
     importJsonFile(event.target.files?.[0]);
     event.target.value = '';
   }
+  if (
+    event.target?.name === 'play-ability' ||
+    event.target?.name === 'play-reaction-ability'
+  ) {
+    handlePlayAbilityChange(event);
+  }
 }
 
 function handleKeydown(event) {
   if (event.key === 'Escape' && !modalLayer.hidden) {
     closeOverlay();
   }
+  handlePlayKeydown(event);
 }
 
 /* ---- 启动 ---- */
@@ -447,6 +518,7 @@ async function init() {
   document.addEventListener('input', handleInput);
   document.addEventListener('change', handleChange);
   document.addEventListener('keydown', handleKeydown);
+  document.addEventListener('submit', preventPlayFormSubmit);
   window.addEventListener('hashchange', () => {
     route().catch((error) => {
       console.error(error);

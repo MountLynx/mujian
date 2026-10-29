@@ -1,6 +1,7 @@
 # 故事项目管理设计（PROJECTS）
 
 > 状态：**已实施（2026-10-27）。** 本文保留为设计与实施依据；实际落地按 §8 顺序完成。
+> 2026-10-28：扮演模式在 Run 内增加 `play` 字段（见 [`PLAY.md`](PLAY.md)），项目布局与清单 schema 不变。
 > 关联：[`FRONTEND-REDESIGN.md`](FRONTEND-REDESIGN.md)（v0.3 前端重构，已实施）。
 
 ## 0. 要解决的问题

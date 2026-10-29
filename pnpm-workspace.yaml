@@ -1,0 +1,6 @@
+allowBuilds:
+  '@ffmpeg-installer/linux-x64': true
+  '@ffprobe-installer/linux-x64': true
+  esbuild: true
+# pnpm 10+/12 reads build-script allowlists from here, not package.json.
+# These native binaries need their postinstall (permission fix / binary setup).

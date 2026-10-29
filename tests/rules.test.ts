@@ -296,6 +296,33 @@ test('规则：非敌意指向不进入回应，effect 直接对 DC 结算', () 
   assert.equal(result.actions[0]!.roll!.opponentTotal, null);
 });
 
+test('规则：目标在回应别的敌意时，非敌意指向仍对 DC 结算', () => {
+  const { chars } = setup();
+  const result = resolveChecks({
+    seed: 'seed-mixed-targets',
+    beatIndex: 0,
+    characters: chars,
+    actions: [
+      action({ id: 'hostile', characterId: 'a', targetId: 'b', hostile: true, ability: 'physique' }),
+      action({ id: 'nonhostile', characterId: 'c', targetId: 'b', hostile: false, ability: 'presence' }),
+    ],
+    reactions: [
+      reaction({ characterId: 'b', continueOriginal: false, ability: 'will', traitName: null }),
+    ],
+    adjudications: [
+      { actionId: 'hostile', difficultyLabel: '标准', dc: 15, modifier: 0, reason: '敌意', risk: '被挡回' },
+      { actionId: 'nonhostile', difficultyLabel: '容易', dc: 12, modifier: 0, reason: '非敌意', risk: '没被接住' },
+    ],
+  });
+  const nonhostile = result.actions.find((entry) => entry.id === 'nonhostile')!;
+  assert.equal(nonhostile.roll!.dc, 12);
+  assert.equal(nonhostile.roll!.opponentTotal, null);
+  const hostile = result.actions.find((entry) => entry.id === 'hostile')!;
+  const reactionRoll = result.reactions.find((entry) => entry.characterId === 'b')!.roll!;
+  assert.equal(hostile.roll!.opponentTotal, reactionRoll.total);
+  assert.deepEqual(Object.keys(reactionRoll.incomingTotals!), ['hostile']);
+});
+
 test('规则：无裁定时按 DC 15 兜底，而不是自动成功', () => {
   const { chars } = setup();
   const result = resolveChecks({

@@ -166,6 +166,14 @@ export class RunStore {
       ...(run.worldLink
         ? { worldId: run.worldLink.worldId, worldTitle: run.worldLink.worldTitle }
         : {}),
+      ...(run.play?.characterId
+        ? {
+            playCharacterName:
+              run.scenario.characters.find(
+                (character) => character.id === run.play!.characterId,
+              )?.name ?? run.play.characterId,
+          }
+        : {}),
     };
   }
 

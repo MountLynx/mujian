@@ -11,6 +11,9 @@ import {
   completeBeats,
   latestComplete,
   isRunning,
+  isPlayRun,
+  playAwaiting,
+  playRevealed,
 } from '../dom.js';
 import { renderErrorPage, bootScreen } from '../render/shell.js';
 import { renderRunPage } from '../render/run.js';
@@ -29,9 +32,11 @@ export async function loadRun(id) {
     state.active = Boolean(data.active);
     state.followLatest = true;
     state.lastLatestBeatId = latestComplete(data.run)?.id || null;
-    state.selectedBeatId = latestComplete(data.run)?.id || null;
+    const awaiting = playAwaiting(data.run);
+    state.selectedBeatId = awaiting ? null : latestComplete(data.run)?.id || null;
     state.pendingAdvance = false;
     state.stopRequested = false;
+    if (isPlayRun(data.run)) state.godView = playRevealed(data.run);
     document.title = `${data.run.scenario.title} · 幕间`;
     renderRunPage({ full: true, scrollTop: true });
     if (state.active || data.run.status === 'running') schedulePoll(id, token);
@@ -57,6 +62,11 @@ function schedulePoll(id, token, delay = 1100) {
   state.pollTimer = setTimeout(() => pollRun(id, token), delay);
 }
 
+/** 玩家提交举动/回应后，服务端已开始下一段推演。 */
+export function resumePolling(id, delay = 350) {
+  schedulePoll(id, state.routeToken, delay);
+}
+
 async function pollRun(id, token) {
   if (state.view !== 'run' || state.currentRun?.id !== id || token !== state.routeToken) return;
   if (state.pollBusy) {
@@ -73,12 +83,18 @@ async function pollRun(id, token) {
     state.active = Boolean(data.active);
     state.pendingAdvance = false;
     if (!data.active && data.run.status !== 'running') state.stopRequested = false;
-    const followedNewBeat = Boolean(
-      newLatest && newLatest !== previousLatest && (state.followLatest || !state.selectedBeatId),
-    );
-    if (followedNewBeat) state.selectedBeatId = newLatest;
+    const awaiting = playAwaiting(data.run);
+    if (awaiting) {
+      state.selectedBeatId = null;
+      state.followLatest = true;
+    } else {
+      const followedNewBeat = Boolean(
+        newLatest && newLatest !== previousLatest && (state.followLatest || !state.selectedBeatId),
+      );
+      if (followedNewBeat) state.selectedBeatId = newLatest;
+    }
     state.lastLatestBeatId = newLatest;
-    renderRunPage({ scrollToStage: followedNewBeat });
+    renderRunPage({ scrollToStage: Boolean(newLatest && newLatest !== previousLatest) });
     if (data.active || data.run.status === 'running') {
       schedulePoll(id, token);
     }
@@ -103,6 +119,14 @@ export async function advanceRun(mode = 'one') {
   const run = state.currentRun;
   if (run.ending) return;
   if (isRunning(run)) return;
+  if (isPlayRun(run) && playAwaiting(run)) {
+    toast('轮到你输入：先完成你的举动或回应。', 'error');
+    return;
+  }
+  if (isPlayRun(run) && mode === 'auto') {
+    toast('扮演模式需要你逐刻宣告，不能连续推演。', 'error');
+    return;
+  }
   const common = mode === 'auto' && completeBeats(run).length >= run.settings.maxBeats;
   if (common) {
     toast('已达到本场预设时刻上限，可以单步继续，或另起一场。', 'error');

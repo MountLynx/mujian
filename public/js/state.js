@@ -37,6 +37,13 @@ export const state = {
     presetId: null,
     editorText: '',
     editorMessage: null,
+    play: {
+      enabled: false,
+      characterId: null,
+      cast: [],
+      castError: null,
+      loading: false,
+    },
   },
 };
 
@@ -46,6 +53,7 @@ export const STATUS_LABELS = {
   paused: '暂停',
   ended: '已收束',
   error: '中断',
+  awaiting: '轮到你',
 };
 
 export const ABILITY_LABELS = {

@@ -14,6 +14,9 @@ import {
   latestComplete,
   findCharacter,
   characterName,
+  isPlayRun,
+  playRevealed,
+  playCharacterId,
 } from '../dom.js';
 import { worldSceneHook } from './world.js';
 import {
@@ -52,7 +55,49 @@ export function openCharacterDrawer(characterId) {
     completeBeats(run).find((beat) => beat.id === state.selectedBeatId) || latestComplete(run);
   const action = selectedBeat?.actions.find((entry) => entry.characterId === characterId);
   const reaction = selectedBeat?.reactions.find((entry) => entry.characterId === characterId);
-  const relationships = character.relationships
+  const isPlayer = playCharacterId(run) === characterId;
+  const hidden = isPlayRun(run) && !playRevealed(run) && !isPlayer;
+
+  if (hidden) {
+    const conditions = runtime.conditions || [];
+    showModal(`
+      <div class="drawer-backdrop" data-act="close-overlay"></div>
+      <aside class="drawer" role="dialog" aria-modal="true" aria-label="${attr(character.name)} 的公开资料">
+        <div class="drawer__head">
+          <span class="drawer__head-label">公开资料</span>
+          <button class="drawer__close" data-act="close-overlay" aria-label="关闭">${icon('close', 15)}</button>
+        </div>
+        <div class="drawer__hero">
+          <div class="drawer__identity">
+            ${avatar(character, 'lg')}
+            <div>
+              <h2 class="drawer__name">${escapeHtml(character.name)}</h2>
+              <div class="drawer__title">${escapeHtml(character.title)}${character.age ? ` · ${escapeHtml(character.age)} 岁` : ''}${character.pronouns ? ` · ${escapeHtml(character.pronouns)}` : ''}</div>
+            </div>
+          </div>
+          <p class="drawer__profile">${escapeHtml(character.publicProfile)}</p>
+          ${character.appearance ? `<p class="drawer__profile side-dim">${escapeHtml(character.appearance)}</p>` : ''}
+        </div>
+        <section class="drawer__section">
+          <div class="drawer__section-head"><span>你能看到的</span></div>
+          <div class="cond-list">${conditions.length ? conditions.map((condition) => `<div class="cond-row"><div class="cond-row__name"><span>${escapeHtml(condition.name)}</span></div><p>${escapeHtml(condition.description || '')}</p></div>`).join('') : '<div class="drawer-empty">没有可见的持续状态。</div>'}</div>
+        </section>
+        ${action || reaction
+          ? `<section class="drawer__section">
+              <div class="drawer__section-head"><span>最近一刻你看见的</span><span>${selectedBeat ? `第 ${selectedBeat.index + 1} 刻` : ''}</span></div>
+              ${action ? `<div class="trait-row"><div class="trait-row__name"><span>他做了什么</span></div><p>${escapeHtml(action.deed || action.description || '')}</p>${action.dialogue ? `<p class="act__quote">${escapeHtml(action.dialogue)}</p>` : ''}</div>` : ''}
+              ${reaction ? `<div class="trait-row" style="margin-top:8px"><div class="trait-row__name"><span>他的回应</span></div><p>${escapeHtml(reaction.description || '')}</p>${reaction.dialogue ? `<p class="act__quote">${escapeHtml(reaction.dialogue)}</p>` : ''}</div>` : ''}
+            </section>`
+          : ''}
+        <section class="drawer__section">
+          <div class="drawer__section-head"><span>幕后</span></div>
+          <p class="side-note">${icon('eye', 12)} 你正在扮演 ${escapeHtml(characterName(run, playCharacterId(run)))}。这个人的欲望、恐惧、秘密、记忆与能力不在你的可知范围内。故事结束、打开复盘之后，才能看到全部。</p>
+        </section>
+      </aside>`);
+    return;
+  }
+
+  const relationships = (character.relationships || [])
     .map((relationship) => {
       const target = findCharacter(run, relationship.targetId);
       if (!target) return '';
@@ -112,16 +157,18 @@ export function openCharacterDrawer(characterId) {
           </div>
         </div>
         <p class="drawer__profile">${escapeHtml(character.publicProfile)}</p>
-        ${state.godView && character.appearance ? `<p class="drawer__profile side-dim">${escapeHtml(character.appearance)}</p>` : ''}
+        ${(state.godView || isPlayer) && character.appearance ? `<p class="drawer__profile side-dim">${escapeHtml(character.appearance)}</p>` : ''}
       </div>
 
       <section class="drawer__section">
-        <div class="drawer__section-head"><span>内在</span></div>
+        <div class="drawer__section-head"><span>内在${isPlayer ? ' · 只有你知道' : ''}</span></div>
         <div class="inner-block">
           <div class="inner-item"><span>性格</span><p>${escapeHtml(character.personality)}</p></div>
           <div class="inner-item"><span>欲望</span><p>${escapeHtml(character.desire)}</p></div>
           <div class="inner-item"><span>恐惧</span><p>${escapeHtml(character.fear)}</p></div>
-          <div class="inner-item"><span>秘密 <button class="secret-toggle" data-act="reveal-secret">揭示</button></span><p class="secret-blur">${escapeHtml(character.secret)}</p></div>
+          ${isPlayer
+            ? `<div class="inner-item"><span>秘密</span><p>${escapeHtml(character.secret)}</p></div>`
+            : `<div class="inner-item"><span>秘密 <button class="secret-toggle" data-act="reveal-secret">揭示</button></span><p class="secret-blur">${escapeHtml(character.secret)}</p></div>`}
         </div>
       </section>
 
@@ -223,11 +270,22 @@ export function openRulebook() {
             <p>角色不会共享内心。导演给每人不同的私密线索；行动揭示秘密时，必须留下可被他人感知的证据。每个时刻结束后，角色会得到一条主观记忆。长线推演中，记忆与关系会反过来影响判断。</p>
           </section>
           <section class="rule-section">
-            <h3><span>06</span>世界层</h3>
+            <h3><span>06</span>扮演模式：你就是其中一个角色</h3>
+            <p>扮演模式把一名主动角色换成真人玩家。运行方式与推演模式完全相同：每个人秘密宣告 deed/effect，导演裁定，敌意举动的目标获得一次回应，骰点决定 effect 是否落地。区别只在于你的信息边界与角色完全一致。</p>
+            <ul>
+              <li><b>你能看到：</b>公开处境、自己的私密线索、自己的角色卡与记忆、公开事实、自己的举动、回应与检定。</li>
+              <li><b>你看不到：</b>其他人的秘密、欲望、内心、effect、检定与裁定，以及导演幕后注和剧本的隐藏真相。</li>
+              <li><b>他人的可见部分：</b>他们做了什么、说了什么，以及公开后果。</li>
+              <li><b>复盘：</b>故事结束后，你可以一次性公开全部幕后信息。复盘之后本场结束，不能继续推进。</li>
+            </ul>
+            <div class="rule-callout">信息边界由服务端裁切，不靠界面隐藏。复盘之前，完整战报与全知正文也不会交给你。</div>
+          </section>
+          <section class="rule-section">
+            <h3><span>07</span>世界层</h3>
             <p>世界层记录时间、区域资源、势力、线程与事实账本。事实有 <b>knownBy</b>——势力知道不等于每个角色知道；消息是在路上的信号，抵达之前不会改变任何人的认知。纪元可以长出聚焦场景，把镜头交给局部角色引擎。</p>
           </section>
           <section class="rule-section">
-            <h3><span>07</span>可复现的骰点</h3>
+            <h3><span>08</span>可复现的骰点</h3>
             <p>每一场有一个 seed。每个角色在某一时刻的举动骰与回应骰，都由 seed 和稳定的行为标签确定。重试生成叙事不会改变已锁定的骰点，便于复盘与调试。</p>
           </section>
         </div>
@@ -592,6 +650,221 @@ export function openWorldThreadDrawer(threadId) {
         </div>
       </section>
     </aside>`);
+}
+
+/* ---- 扮演模式：复盘 ---- */
+
+function recapRollText(roll, { outcome = true } = {}) {
+  if (!roll) return '';
+  const parts = [
+    `d20 ${roll.natural}`,
+    `${escapeHtml(ABILITY_LABELS[roll.ability] || roll.ability)} +${roll.abilityValue}`,
+  ];
+  if (roll.traitName) parts.push(`${escapeHtml(roll.traitName)} +${roll.traitBonus}`);
+  if (roll.conditionBonus) {
+    parts.push(`状态 ${roll.conditionBonus > 0 ? '+' : ''}${roll.conditionBonus}`);
+  }
+  if (roll.situationalBonus) {
+    parts.push(`裁定 ${roll.situationalBonus > 0 ? '+' : ''}${roll.situationalBonus}`);
+  }
+  if (roll.penalty) parts.push(`惩罚 ${roll.penalty}`);
+  const target =
+    roll.opponentTotal !== undefined && roll.opponentTotal !== null
+      ? `回应总值 ${roll.opponentTotal}`
+      : `DC ${roll.dc ?? '—'}`;
+  const margin = roll.margin ?? 0;
+  return `${parts.join(' + ')} = <b>${roll.total}</b>｜${target}｜差值 ${margin >= 0 ? '+' : ''}${margin}${outcome && roll.tier ? `｜<b>${escapeHtml(OUTCOME_LABELS[roll.tier] || roll.tier)}</b>` : ''}${roll.criticalByNatural20 ? '｜自然 20' : ''}`;
+}
+
+function recapBeatHtml(run, beat) {
+  const actionHtml = (beat.actions || [])
+    .map((action) => {
+      const name = characterName(run, action.characterId);
+      const target = action.targetId ? ` → ${characterName(run, action.targetId)}` : '';
+      const adjudication = (beat.adjudications || []).find((entry) => entry.actionId === action.id);
+      const outcome =
+        action.status === 'abandoned'
+          ? '放下原举动'
+          : OUTCOME_LABELS[action.outcome] || '未结算';
+      return `<article class="recap-action">
+        <header class="recap-action__head">
+          <b>${escapeHtml(name)}</b><span>${escapeHtml(action.summary || '（未命名）')}${escapeHtml(target)}</span>
+          <em class="verdict verdict--${OUTCOME_CLASS_FOR[action.outcome] || 'unknown'}">${escapeHtml(outcome)}</em>
+        </header>
+        <p class="act__desc">${escapeHtml(action.deed || action.description || '')}</p>
+        ${action.effect ? `<p class="act__effect">想要的效果：${escapeHtml(action.effect)}</p>` : ''}
+        ${action.dialogue ? `<p class="act__quote">${escapeHtml(action.dialogue)}</p>` : ''}
+        ${action.thought ? `<div class="thought"><span>内心</span>${escapeHtml(action.thought)}</div>` : ''}
+        ${action.stakes ? `<p class="act__note">赌注：${escapeHtml(action.stakes)}</p>` : ''}
+        ${adjudication ? `<p class="act__adj"><b>裁定</b> DC ${adjudication.dc}（${escapeHtml(adjudication.difficultyLabel)}）${adjudication.modifier ? ` / 修正 ${adjudication.modifier > 0 ? '+' : ''}${adjudication.modifier}` : ''}｜${escapeHtml(adjudication.reason)}｜风险：${escapeHtml(adjudication.risk)}</p>` : ''}
+        ${action.roll ? `<p class="recap-roll mono">${recapRollText(action.roll)}</p>` : ''}
+        ${action.outcomeNote ? `<p class="act__note">${escapeHtml(action.outcomeNote)}</p>` : ''}
+      </article>`;
+    })
+    .join('');
+  const reactionHtml = (beat.reactions || [])
+    .map((reaction) => {
+      const name = characterName(run, reaction.characterId);
+      return `<article class="recap-action recap-action--reaction">
+        <header class="recap-action__head"><b>${escapeHtml(name)}</b><span>${escapeHtml(reaction.summary || '回应')}（${escapeHtml(reaction.stance || '')}）</span><em>${reaction.continueOriginal ? '继续原举动' : '放下原举动'}</em></header>
+        ${reaction.description ? `<p class="act__desc">${escapeHtml(reaction.description)}</p>` : ''}
+        ${reaction.dialogue ? `<p class="act__quote">${escapeHtml(reaction.dialogue)}</p>` : ''}
+        ${reaction.thought ? `<div class="thought"><span>内心</span>${escapeHtml(reaction.thought)}</div>` : ''}
+        ${reaction.roll ? `<p class="recap-roll mono">${recapRollText(reaction.roll, { outcome: false })}</p>` : ''}
+      </article>`;
+    })
+    .join('');
+  const externalHtml = (beat.externalEvents || [])
+    .map(
+      (event) => `<div class="recap-external"><b>${escapeHtml(event.description)}</b>
+        <span class="mono">d20 ${event.natural} vs DC ${event.dc} · ${event.success ? '发生' : '未发生'}</span>
+        <p>${escapeHtml(event.fact)}</p>
+        ${event.reason ? `<small>${escapeHtml(event.reason)}</small>` : ''}</div>`,
+    )
+    .join('');
+  const notesHtml = (beat.outcomeNotes || [])
+    .map(
+      (note) => `<p class="act__note"><b>${escapeHtml(characterName(run, note.characterId))}</b>：${escapeHtml(note.note)}</p>`,
+    )
+    .join('');
+  const cueHtml = (beat.privateCues || [])
+    .map(
+      (cue) => `<div class="cue"><span>${escapeHtml(characterName(run, cue.characterId))}</span><p>${escapeHtml(cue.cue)}</p></div>`,
+    )
+    .join('');
+  const changes = beat.stateChanges;
+  const changeHtml = changes
+    ? `${changes.characters
+        .map((change) => {
+          const pieces = [];
+          if (change.stressDelta) pieces.push(`紧张 ${change.stressDelta > 0 ? '+' : ''}${change.stressDelta}`);
+          if (change.conditionsAdd.length) pieces.push(`状态 +${change.conditionsAdd.map((condition) => condition.name).join('、')}`);
+          if (change.conditionsRemove.length) pieces.push(`状态 -${change.conditionsRemove.join('、')}`);
+          if (change.inventoryAdd.length) pieces.push(`获得 ${change.inventoryAdd.join('、')}`);
+          if (change.inventoryRemove.length) pieces.push(`失去 ${change.inventoryRemove.join('、')}`);
+          if (change.privateNote) pieces.push(`私密笔记：${change.privateNote}`);
+          if (change.memory) pieces.push(`记忆：${change.memory.summary}`);
+          return pieces.length
+            ? `<div class="recap-change"><b>${escapeHtml(characterName(run, change.characterId))}</b><span>${escapeHtml(pieces.join('；'))}</span></div>`
+            : '';
+        })
+        .join('')}
+        ${changes.world.factsAdd.length ? `<div class="recap-change"><b>公开事实 +</b><span>${escapeHtml(changes.world.factsAdd.join('；'))}</span></div>` : ''}
+        ${changes.world.factsRemove.length ? `<div class="recap-change"><b>公开事实 −</b><span>${escapeHtml(changes.world.factsRemove.join('；'))}</span></div>` : ''}
+        ${Object.keys(changes.world.flagsSet || {}).length ? `<div class="recap-change"><b>flags</b><span class="mono">${escapeHtml(JSON.stringify(changes.world.flagsSet))}</span></div>` : ''}`
+    : '';
+  return `<details class="recap-beat">
+    <summary><b>第 ${beat.index + 1} 刻</b><span>${escapeHtml(beat.clock.display)} · ${escapeHtml(beat.title)}</span><i>${beat.actions.length} 举动 · ${beat.reactions.length} 回应</i></summary>
+    <div class="recap-beat__body">
+      ${beat.gmNote ? `<div class="cue cue--gm"><span>导演幕后注</span><p>${escapeHtml(beat.gmNote)}</p></div>` : ''}
+      ${cueHtml ? `<div class="recap-block"><h4>私密线索</h4>${cueHtml}</div>` : ''}
+      <div class="recap-block"><h4>举动</h4>${actionHtml || '<p class="side-empty">没有举动。</p>'}</div>
+      ${reactionHtml ? `<div class="recap-block"><h4>回应</h4>${reactionHtml}</div>` : ''}
+      ${externalHtml ? `<div class="recap-block"><h4>外部事件</h4>${externalHtml}</div>` : ''}
+      ${notesHtml ? `<div class="recap-block"><h4>幕后记录</h4>${notesHtml}</div>` : ''}
+      ${changeHtml ? `<div class="recap-block"><h4>状态变化</h4>${changeHtml}</div>` : ''}
+      <div class="recap-block"><h4>公开叙事</h4><div class="prose prose--recap">${paragraphHtml(beat.narration || '')}</div></div>
+      ${beat.nextTimeJump ? `<p class="side-note">时间推进 ${beat.nextTimeJump.elapsedMinutes} 分钟：${escapeHtml(beat.nextTimeJump.reason)}（${escapeHtml(beat.nextTimeJump.label)}）</p>` : ''}
+    </div>
+  </details>`;
+}
+
+const OUTCOME_CLASS_FOR = {
+  critical_success: 'crit',
+  success: 'ok',
+  soft_failure: 'softfail',
+};
+
+export function openConfirmRecap() {
+  const run = state.currentRun;
+  if (!run) return;
+  if (!isPlayRun(run) || playRevealed(run)) {
+    openRecap();
+    return;
+  }
+  const completed = completeBeats(run).length;
+  showModal(`
+    <div class="modal-backdrop" data-act="close-overlay"></div>
+    <div class="modal-shell">
+      <section class="modal modal--narrow" role="dialog" aria-modal="true" aria-label="复盘确认">
+        <div class="modal__head">
+          <div><h2 class="modal__title">要让幕后亮起来吗？</h2></div>
+          <button class="modal__close" data-act="close-overlay" aria-label="关闭">${icon('close', 15)}</button>
+        </div>
+        <div class="modal__body">
+          <p class="modal__note">复盘会一次性公开所有人的秘密、欲望、恐惧、内心、effect、检定与导演幕后注。${run.ending ? '故事已经收束，这是最后的阅读。' : `本场目前完成了 ${completed} 刻，现在复盘意味着故事停在这里。`}</p>
+          <p class="modal__note modal__note--dim">复盘之后本场结束，不能继续推进。若想继续这个故事，请另起一场。</p>
+        </div>
+        <div class="modal__foot">
+          <button class="btn btn--quiet btn--sm" data-act="close-overlay">再等等</button>
+          <button class="btn btn--primary btn--sm" data-act="recap-confirm">${icon('eye', 13)} 确认复盘</button>
+        </div>
+      </section>
+    </div>`);
+}
+
+export function openRecap() {
+  const run = state.currentRun;
+  if (!run || !isPlayRun(run) || !playRevealed(run)) return;
+  const playerId = playCharacterId(run);
+  const characters = run.scenario.characters
+    .map(
+      (character) => `<article class="recap-character">
+        <header class="recap-character__head">
+          ${avatar(character, 'sm')}
+          <b>${escapeHtml(character.name)}</b>
+          <span>${escapeHtml(character.title)}</span>
+          ${character.id === playerId ? '<span class="tag tag--gold">你扮演</span>' : ''}
+        </header>
+        <p class="drawer__profile">${escapeHtml(character.publicProfile)}</p>
+        <div class="inner-block">
+          <div class="inner-item"><span>性格</span><p>${escapeHtml(character.personality)}</p></div>
+          <div class="inner-item"><span>欲望</span><p>${escapeHtml(character.desire)}</p></div>
+          <div class="inner-item"><span>恐惧</span><p>${escapeHtml(character.fear)}</p></div>
+          <div class="inner-item"><span>秘密</span><p>${escapeHtml(character.secret)}</p></div>
+        </div>
+        <p class="side-note">能力：${Object.entries(character.abilities || {}).map(([key, value]) => `${escapeHtml(ABILITY_LABELS[key] || key)} ${value}`).join('｜')}${character.traits?.length ? `｜特质：${character.traits.map((trait) => escapeHtml(trait.name)).join('、')}` : ''}</p>
+      </article>`,
+    )
+    .join('');
+  const beats = completeBeats(run).map((beat) => recapBeatHtml(run, beat)).join('');
+  const canon = [
+    run.scenario.world.hiddenCanon
+      ? `<div class="recap-canon__item"><h4>导演级真相</h4><p>${escapeHtml(run.scenario.world.hiddenCanon)}</p></div>`
+      : '',
+    run.scenario.world.directorNotes
+      ? `<div class="recap-canon__item"><h4>导演笔记</h4><p>${escapeHtml(run.scenario.world.directorNotes)}</p></div>`
+      : '',
+  ].join('');
+  showModal(`
+    <div class="modal-backdrop" data-act="close-overlay"></div>
+    <div class="modal-shell">
+      <section class="modal modal--wide recap-modal" role="dialog" aria-modal="true" aria-label="完整复盘">
+        <div class="modal__head">
+          <div>
+            <span class="modal__kicker">复盘 · 全部幕后信息</span>
+            <h2 class="modal__title">《${escapeHtml(run.scenario.title)}》</h2>
+          </div>
+          <button class="modal__close" data-act="close-overlay" aria-label="关闭">${icon('close', 15)}</button>
+        </div>
+        <div class="modal__body">
+          <div class="recap-intro">
+            <p>你扮演的是 <b>${escapeHtml(characterName(run, playerId))}</b>。这一刻之后，你不再被角色的认知边界限制。</p>
+            ${run.ending ? `<div class="recap-ending"><span class="tag tag--gold">终章</span><b>${escapeHtml(run.ending.headline)}</b><div class="prose prose--recap">${paragraphHtml(run.ending.epilogue)}</div>${run.ending.finalImage ? `<p class="ending__image">${escapeHtml(run.ending.finalImage)}</p>` : ''}</div>` : '<p class="side-note">本场没有终章：你在故事中途选择了复盘。</p>'}
+          </div>
+          ${canon ? `<section class="recap-section"><h3>剧本背后</h3><div class="recap-canon">${canon}</div></section>` : ''}
+          <section class="recap-section"><h3>所有人的底牌</h3><div class="recap-cast">${characters}</div></section>
+          <section class="recap-section">
+            <div class="recap-section__bar"><h3>逐刻全记录</h3><div class="recap-tools"><button class="text-link" data-act="recap-expand">展开全部</button><button class="text-link" data-act="recap-collapse">收起全部</button></div></div>
+            <div class="recap-beats">${beats || '<p class="side-empty">还没有完成的时刻。</p>'}</div>
+          </section>
+        </div>
+        <div class="modal__foot">
+          <a class="btn btn--ghost btn--sm" href="/api/runs/${encodeURIComponent(run.id)}/export.md" download>${icon('download', 13)} 导出完整战报</a>
+          <button class="btn btn--quiet btn--sm" data-act="close-overlay">合上复盘</button>
+        </div>
+      </section>
+    </div>`);
 }
 
 /* ---- 打开入口 ---- */

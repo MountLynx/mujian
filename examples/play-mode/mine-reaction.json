@@ -1,0 +1,630 @@
+{
+  "version": 1,
+  "id": "run_4dfeaef4d540",
+  "seed": "mine-reaction-02",
+  "status": "ended",
+  "scenario": {
+    "id": "scenario-d426428c77fd",
+    "title": "最后一根火柴",
+    "subtitle": "矿井塌方后的第四个小时，氧气只够一个人。",
+    "kicker": "塌方 · 第四小时",
+    "isPreset": false,
+    "world": {
+      "title": "七号井",
+      "era": "现代 · 废弃煤矿",
+      "tone": "幽闭、粗粝、近距离的身体对抗；不靠怪物，靠氧气表和彼此欠下的债。",
+      "setting": "七号井的支护在四小时前塌了一截，唯一没被埋住的支巷通向一扇锈死的风门。水从煤壁上渗下来，漫过脚踝；一台老式氧气瓶靠在铁梯下，表针在红区。",
+      "location": "七号井支巷：铁梯、风门、氧气瓶，和一盏快没电的矿灯。",
+      "dateLabel": "塌方第四小时",
+      "startClock": "03:20",
+      "premise": "氧气只够一个人撑到救援。阿岚守着氧气瓶的阀门，老周认为她欠他一条命。",
+      "opening": "矿灯的光圈缩到两个人脚边。老周把撬棍从腰后抽出来，棍尖在铁梯上磕了一下，眼睛盯着阿岚搭在阀门上的那只手。他没有再说话。水又涨了一指。",
+      "directorNotes": "让身体动作先于语言。老周要的是氧气瓶；阿岚要的是不被丢下。任何和解都必须穿过已经发生的事。",
+      "hiddenCanon": "三年前的塌方里，老周为了保住整班人，亲手关上了阿岚哥哥所在的那道风门。阿岚知道，但从未说破。",
+      "initialFacts": [
+        "氧气表在红区，最多再撑四十分钟。",
+        "风门锈死，铁梯上方的通道塌了一半。",
+        "救援队最早也要天亮才能到。"
+      ],
+      "countdown": "四十分钟后氧气耗尽"
+    },
+    "characters": [
+      {
+        "id": "alan",
+        "name": "阿岚",
+        "title": "七号井的绞车工",
+        "age": "31",
+        "pronouns": "她",
+        "publicProfile": "瘦，手上有多年钢丝绳磨出的硬茧。塌方时她在井口值班，是第一个下去的人。她一直守着氧气瓶，不让任何人碰阀门。",
+        "personality": "冷静、记仇，习惯先算清水和氧气的余量再开口。她不怕死，但怕被人替她决定谁该活。",
+        "desire": "把氧气瓶留到自己和至少一个人都能撑到救援，或者亲手决定它给谁。",
+        "fear": "再一次被人从风门另一边关下。",
+        "secret": "她知道三年前那道风门是老周关上的，也知道哥哥最后敲了三下。",
+        "abilities": {
+          "physique": 6,
+          "agility": 6,
+          "perception": 8,
+          "intellect": 7,
+          "will": 8,
+          "presence": 5
+        },
+        "traits": [
+          {
+            "name": "听巷道",
+            "description": "能从水声和铁架的回响里判断塌方位置。",
+            "bonus": 2,
+            "ability": "perception"
+          },
+          {
+            "name": "绞车工的臂力",
+            "description": "长年拉钢丝绳练出的握力。",
+            "bonus": 2,
+            "ability": "physique"
+          }
+        ],
+        "possessions": [
+          "氧气瓶阀门扳手",
+          "矿灯",
+          "哥哥的旧哨子"
+        ],
+        "relationships": [
+          {
+            "targetId": "lao_zhou",
+            "label": "班长老周 / 债主",
+            "attitude": "他欠我一条命，却总表现得像是我欠他。"
+          }
+        ],
+        "memories": [
+          {
+            "summary": "三年前风门合上时，哥哥在里面敲了三下。",
+            "importance": 5
+          },
+          {
+            "summary": "老周今天下井时没带自己的呼吸器。",
+            "importance": 3
+          }
+        ],
+        "conditions": []
+      },
+      {
+        "id": "lao_zhou",
+        "name": "老周",
+        "title": "七号井的退休班长",
+        "age": "54",
+        "pronouns": "他",
+        "publicProfile": "肩膀很宽，右腿在塌方里被支架压过，走路拖着一条腿。他下井时没带自己的呼吸器，说留给年轻人。此刻他没有再解释，撬棍已经从腰后抽出来，横在身前。",
+        "personality": "粗暴、务实，到了这一步他不再解释。他相信井下只有先动手的人能活；愧疚也只是另一件需要压住的事。",
+        "desire": "在氧气耗尽前把气瓶从阿岚手里夺过来。她挡在阀门前面，他准备用撬棍把她的手撬开，再把她从铁梯上拖下来。",
+        "fear": "死在这条他亲手挖出来的巷道里，没人记得他救过谁。",
+        "secret": "三年前那道风门是他关的。他至今认为那是唯一能救更多人的选择。",
+        "abilities": {
+          "physique": 8,
+          "agility": 4,
+          "perception": 5,
+          "intellect": 6,
+          "will": 9,
+          "presence": 7
+        },
+        "traits": [
+          {
+            "name": "先下手为强",
+            "description": "在井下，犹豫的人先死。",
+            "bonus": 2,
+            "ability": "physique"
+          },
+          {
+            "name": "班长的命令",
+            "description": "他习惯用命令让人动起来。",
+            "bonus": 1,
+            "ability": "presence"
+          }
+        ],
+        "possessions": [
+          "矿灯",
+          "一根撬棍",
+          "旧的班组名单"
+        ],
+        "relationships": [
+          {
+            "targetId": "alan",
+            "label": "工友 / 死者的妹妹",
+            "attitude": "她必须活着上去，但不能拿走两个人的氧气。"
+          }
+        ],
+        "memories": [
+          {
+            "summary": "三年前他亲手关上风门，听见里面敲了三下。",
+            "importance": 5
+          },
+          {
+            "summary": "阿岚的哥哥最后喊的不是救命，是他的名字。",
+            "importance": 5
+          }
+        ],
+        "conditions": []
+      }
+    ],
+    "rules": {
+      "maxBeats": 3,
+      "difficultyGuidance": "身体对抗 DC 14–18；说服 DC 12–16。"
+    }
+  },
+  "settings": {
+    "maxBeats": 2,
+    "autoLimit": 2,
+    "thinking": "auto",
+    "model": "deepseek-flash"
+  },
+  "createdAt": "2026-10-28T11:55:44.592Z",
+  "updatedAt": "2026-10-28T11:56:24.677Z",
+  "clock": {
+    "minutes": 200,
+    "display": "03:20",
+    "dateLabel": "塌方第四小时"
+  },
+  "world": {
+    "publicFacts": [
+      "氧气表在红区，最多再撑四十分钟。",
+      "风门锈死，铁梯上方的通道塌了一半。",
+      "救援队最早也要天亮才能到。",
+      "氧气瓶阀门已被阿岚拧死，供氧的嘶声停止，瓶里的氧仍在，但当下无人能取用。",
+      "两人卡在铁梯与氧气瓶之间，老周的撬棍停在阿岚手侧，未落下。"
+    ],
+    "flags": {
+      "valve_shut": true
+    },
+    "pressure": "阀门锁死、撬棍悬着，两个人挤在两米宽的光圈里一起耗巷道残存的空气。",
+    "sceneTitle": "谁先松手"
+  },
+  "characters": {
+    "alan": {
+      "id": "alan",
+      "conditions": [
+        {
+          "name": "握死阀门的手",
+          "description": "扳手横在阀门前，只要她不松手，没人能拧开气瓶；这份僵持里的主动权握在她手里，也把她钉在原地。",
+          "modifier": 2,
+          "kind": "boon",
+          "visibility": "public",
+          "abilities": [
+            "will"
+          ],
+          "id": "cond_a719fb53aa8f",
+          "sourceBeat": 0
+        },
+        {
+          "name": "话已出口的硬撑",
+          "description": "风门那句话她说了，收不回，只能靠气势撑住不再解释。",
+          "modifier": -2,
+          "kind": "emotion",
+          "visibility": "private",
+          "abilities": [
+            "will"
+          ],
+          "id": "cond_a773fef57551",
+          "sourceBeat": 0
+        }
+      ],
+      "stress": 2,
+      "memories": [
+        {
+          "id": "mem_2930c20ca3f7",
+          "at": "塌方第四小时",
+          "beatIndex": null,
+          "summary": "三年前风门合上时，哥哥在里面敲了三下。",
+          "importance": 5,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_6b9d1410a968",
+          "at": "塌方第四小时",
+          "beatIndex": null,
+          "summary": "老周今天下井时没带自己的呼吸器。",
+          "importance": 3,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_95bccd20a153",
+          "at": "03:20",
+          "beatIndex": 0,
+          "summary": "嘶声断掉的那一刻，巷道里安静得能听见水在靴子里挤。",
+          "detail": "她的手只转了半圈，那股极轻的嘶声就断了。巷道里突然空了一块声音出来，滴水变得很响，水在靴帮的裂口里挤进挤出，也听得见。氧气表那根针停住了，贴着红区的边，一动不动——气没跑，全被堵在钢瓶里。阿岚退到铁梯第一级，扳手横在身前，横得很低，护着膝盖到腰那一段。她的手指还留着刚才拧阀门时压出来的红印。\n\n老周往前挪了半步。撬棍的扁头磕在铁梯横档上，脆响在支巷里撞了两下才消。棍身顺势横过来，停在她握扳手那只手边上，两指宽，没有落下去。他拖着右腿，把身体的重量压在那条好腿上，肩膀把矿灯的光挡掉了一小半。\n\n“让开。气瓶我来管，你上梯子。”\n\n她没让。撬棍停在那儿，她… 只有你知道：阀门是我关的，氧是我锁的。谁先松手，谁就得先解释风门那件事。",
+          "importance": 3,
+          "kind": "observation",
+          "source": "gm"
+        }
+      ],
+      "inventory": [
+        "氧气瓶阀门扳手",
+        "矿灯",
+        "哥哥的旧哨子"
+      ],
+      "flags": {}
+    },
+    "lao_zhou": {
+      "id": "lao_zhou",
+      "conditions": [
+        {
+          "name": "卡进夹角的右腿",
+          "description": "右腿被压过，此刻又找不到落脚点，膝盖在下沉，撑不了太久。",
+          "modifier": -2,
+          "kind": "injury",
+          "visibility": "public",
+          "abilities": [
+            "will",
+            "agility"
+          ],
+          "id": "cond_750f5aa62e71",
+          "sourceBeat": 0
+        },
+        {
+          "name": "没有落下的撬棍",
+          "description": "棍身停在她手侧却始终没砸下去，他自己清楚这一下为什么停住。",
+          "modifier": -1,
+          "kind": "emotion",
+          "visibility": "private",
+          "abilities": [
+            "will"
+          ],
+          "id": "cond_ea21290bb415",
+          "sourceBeat": 0
+        }
+      ],
+      "stress": 0,
+      "memories": [
+        {
+          "id": "mem_6492b979c943",
+          "at": "塌方第四小时",
+          "beatIndex": null,
+          "summary": "三年前他亲手关上风门，听见里面敲了三下。",
+          "importance": 5,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_8f02e2d7513a",
+          "at": "塌方第四小时",
+          "beatIndex": null,
+          "summary": "阿岚的哥哥最后喊的不是救命，是他的名字。",
+          "importance": 5,
+          "kind": "backstory",
+          "source": "scenario"
+        },
+        {
+          "id": "mem_9f874611faf1",
+          "at": "03:20",
+          "beatIndex": 0,
+          "summary": "撬棍停在她手边两指宽处，我没让它落下去。",
+          "detail": "她的手只转了半圈，那股极轻的嘶声就断了。巷道里突然空了一块声音出来，滴水变得很响，水在靴帮的裂口里挤进挤出，也听得见。氧气表那根针停住了，贴着红区的边，一动不动——气没跑，全被堵在钢瓶里。阿岚退到铁梯第一级，扳手横在身前，横得很低，护着膝盖到腰那一段。她的手指还留着刚才拧阀门时压出来的红印。\n\n老周往前挪了半步。撬棍的扁头磕在铁梯横档上，脆响在支巷里撞了两下才消。棍身顺势横过来，停在她握扳手那只手边上，两指宽，没有落下去。他拖着右腿，把身体的重量压在那条好腿上，肩膀把矿灯的光挡掉了一小半。\n\n“让开。气瓶我来管，你上梯子。”\n\n她没让。撬棍停在那儿，她… 只有你知道：她不退。她一提风门，这一趟就不是气瓶的事了。",
+          "importance": 3,
+          "kind": "observation",
+          "source": "gm"
+        }
+      ],
+      "inventory": [
+        "矿灯",
+        "一根撬棍",
+        "旧的班组名单"
+      ],
+      "flags": {}
+    }
+  },
+  "beats": [
+    {
+      "id": "beat_b8b6b1ce38b5",
+      "index": 0,
+      "title": "红区表针",
+      "phase": "complete",
+      "clock": {
+        "minutes": 200,
+        "display": "03:20",
+        "dateLabel": "塌方第四小时"
+      },
+      "timeJump": null,
+      "publicBrief": "矿灯的光圈只剩两步宽，落在两双泡在水里的靴子上。水已经漫过脚踝，冷得发木，每动一下都有细小的涟漪拍到煤壁上。氧气瓶靠在铁梯下，表针贴着红区的边，发出极轻的、几乎听不见的嘶声。老周的撬棍横在身前，棍尖刚才磕在铁梯横档上，那一声还在巷道里没散干净。阿岚一只手按在阀门上，指节泛白，另一只垂在身侧。风门在两个人背后，锈死的轮盘上挂着水珠。没有人说话，只有滴水、呼吸，和撬棍偶尔被挪动时铁与铁相擦的声音。",
+      "privateCues": [
+        {
+          "characterId": "alan",
+          "cue": "阀门上的铁锈硌进你掌心的硬茧里，凉的，可你手心是湿的。刚才那声棍尖磕铁梯的响，和你记忆里别的三下撞在一起——三下，不重，隔一会儿一下。"
+        },
+        {
+          "characterId": "lao_zhou",
+          "cue": "撬棍的木柄还带着你腰后的体温，右腿在冷水里一跳一跳地疼，从膝盖一直窜到胯。你不用看也知道表针停在哪儿——你听氧气出来的声音就知道还剩多少。"
+        }
+      ],
+      "pressure": "氧气表贴着红区，水还在涨，而老周手里的撬棍已经不在腰后了。",
+      "sceneQuestion": "那根撬棍会落在铁梯上，还是落在阿岚的手上？",
+      "gmNote": "开场让身体先说话：撬棍、水、阀门三样东西构成三角，谁先动谁就先暴露自己想要什么。",
+      "actions": [
+        {
+          "id": "act_9955ab60b0a7",
+          "characterId": "alan",
+          "category": "交涉",
+          "summary": "拧死阀门",
+          "deed": "我把氧气瓶的阀门拧死，退到铁梯第一级，把扳手横在身前。",
+          "effect": "让老周明白，动手只会让两个人都死在这里。",
+          "hostile": false,
+          "description": "我把氧气瓶的阀门拧死，退到铁梯第一级，把扳手横在身前。",
+          "dialogue": "你要动手，就先从我身上踩过去。",
+          "thought": "他要是真敢扑过来，我就把阀门拧断。",
+          "goalProgress": "",
+          "stakes": "最后的氧气和两个人都留在这条巷道里。",
+          "ability": "will",
+          "traitName": null,
+          "targetId": "lao_zhou",
+          "targetLabel": "老周",
+          "status": "resolved",
+          "penalties": -2,
+          "penaltyNotes": [
+            "分心回应 -2"
+          ],
+          "generatedBy": "player",
+          "createdAt": "2026-10-28T11:55:52.616Z",
+          "roll": {
+            "natural": 14,
+            "ability": "will",
+            "abilityValue": 8,
+            "traitName": null,
+            "traitBonus": 0,
+            "conditionBonus": 0,
+            "conditionNotes": [],
+            "situationalBonus": 0,
+            "penalty": -2,
+            "penaltyNotes": [
+              "分心回应 -2"
+            ],
+            "total": 20,
+            "dc": 15,
+            "opponentTotal": null,
+            "margin": 5,
+            "tier": "success",
+            "criticalByNatural20": false
+          },
+          "outcome": "success",
+          "outcomeNote": ""
+        },
+        {
+          "id": "act_922ff47ccc71",
+          "characterId": "lao_zhou",
+          "category": "行动",
+          "summary": "撬棍磕上铁梯逼近阀门",
+          "deed": "老周拖着右腿往前挪了半步，撬棍的扁头往铁梯横档上一磕，发出一声脆响，棍身随即横到阿岚手边，没有落下去，只是停在那里。",
+          "effect": "我希望她手一缩、从阀门上退开，让我能接管气瓶。",
+          "hostile": true,
+          "description": "老周拖着右腿往前挪了半步，撬棍的扁头往铁梯横档上一磕，发出一声脆响，棍身随即横到阿岚手边，没有落下去，只是停在那里。",
+          "dialogue": "让开。气瓶我来管，你上梯子。",
+          "thought": "不能再等了。她的手按在阀门上，表针就在红区边上。先把她从阀门上逼开，气瓶我来管。",
+          "goalProgress": "用撬棍和命令把她从阀门前面逼开，好让我拿到气瓶。",
+          "stakes": "如果她不让，我就得真动手，两个人都得耗在这段巷道里。",
+          "ability": "physique",
+          "traitName": "先下手为强",
+          "targetId": "alan",
+          "targetLabel": "阿岚",
+          "status": "resolved",
+          "penalties": 0,
+          "penaltyNotes": [],
+          "generatedBy": "llm",
+          "createdAt": "2026-10-28T11:55:54.889Z",
+          "roll": {
+            "natural": 17,
+            "ability": "physique",
+            "abilityValue": 8,
+            "traitName": "先下手为强",
+            "traitBonus": 2,
+            "conditionBonus": 0,
+            "conditionNotes": [],
+            "situationalBonus": 0,
+            "penalty": 0,
+            "penaltyNotes": [],
+            "total": 27,
+            "dc": null,
+            "opponentTotal": 23,
+            "margin": 4,
+            "tier": "success",
+            "criticalByNatural20": false
+          },
+          "outcome": "success",
+          "outcomeNote": ""
+        }
+      ],
+      "adjudications": [
+        {
+          "actionId": "act_9955ab60b0a7",
+          "difficultyLabel": "困难",
+          "dc": 15,
+          "modifier": 0,
+          "reason": "拧死阀门和退上铁梯本身轻易，难的是让一个已经拖着腿、握着撬棍上来的老班长把这句威胁听成警告而不是抢氧——他此刻的决心比她的动作更硬。",
+          "risk": "老周把拧阀读成“她要独占气瓶”，脚不停，反而更靠近；阀门被拧死，再开回来又要几十秒的气。"
+        },
+        {
+          "actionId": "act_922ff47ccc71",
+          "difficultyLabel": "困难",
+          "dc": 16,
+          "modifier": 0,
+          "reason": "她要退开需要越过“被丢下”这件事，而撬棍只是磕在铁梯上没落下去——这声脆响够不够重，取决于她信不信他真会动手。",
+          "risk": "她手不缩、身不让，撬棍停在水面上方成了僵持的支点，两个人一起把氧气耗在这半步距离里。"
+        }
+      ],
+      "reactions": [
+        {
+          "id": "rxn_428020d67613",
+          "characterId": "alan",
+          "incomingActionIds": [
+            "act_922ff47ccc71"
+          ],
+          "continueOriginal": true,
+          "summary": "把扳手横在阀门上",
+          "description": "我没有退，反而把扳手横在阀门上，肩膀顶住他的胸口，把两个人都卡在铁梯和氧气瓶之间。",
+          "dialogue": "你关过一次风门，还想再关第二次？",
+          "thought": "他要是真动手，我就让他一起留在这儿。",
+          "ability": "will",
+          "traitName": null,
+          "stance": "不退",
+          "createdAt": "2026-10-28T11:56:04.643Z",
+          "roll": {
+            "natural": 17,
+            "ability": "will",
+            "abilityValue": 8,
+            "traitName": null,
+            "traitBonus": 0,
+            "conditionBonus": 0,
+            "conditionNotes": [],
+            "situationalBonus": 0,
+            "penalty": -2,
+            "penaltyNotes": [
+              "分心兼顾原举动 -2"
+            ],
+            "total": 23,
+            "incomingTotals": {
+              "act_922ff47ccc71": 27
+            }
+          }
+        }
+      ],
+      "externalEvents": [
+        {
+          "id": "event_ee28d7e56e6c",
+          "description": "渗水继续上涨，漫过氧气瓶底座，冰冷的瓶身在水流里轻轻错动，表针跟着抖了一下。",
+          "likelihood": "possible",
+          "fact": "水已淹到氧气瓶底座，瓶身在水中微微松动。",
+          "reason": "水位上涨是塌方后积水的自然进程，与任何人的举动无关，也不针对某个角色的选择。",
+          "dc": 13,
+          "natural": 9,
+          "success": false,
+          "createdAt": "2026-10-28T11:56:04.250Z"
+        }
+      ],
+      "narration": "她的手只转了半圈，那股极轻的嘶声就断了。巷道里突然空了一块声音出来，滴水变得很响，水在靴帮的裂口里挤进挤出，也听得见。氧气表那根针停住了，贴着红区的边，一动不动——气没跑，全被堵在钢瓶里。阿岚退到铁梯第一级，扳手横在身前，横得很低，护着膝盖到腰那一段。她的手指还留着刚才拧阀门时压出来的红印。\n\n老周往前挪了半步。撬棍的扁头磕在铁梯横档上，脆响在支巷里撞了两下才消。棍身顺势横过来，停在她握扳手那只手边上，两指宽，没有落下去。他拖着右腿，把身体的重量压在那条好腿上，肩膀把矿灯的光挡掉了一小半。\n\n“让开。气瓶我来管，你上梯子。”\n\n她没让。撬棍停在那儿，她的手也没缩。阿岚反而把扳手横到阀门口上，肩往上顶，顶住他的胸口，一步不挪。铁梯的横档硌在她后背，钢瓶的瓶口硌在她腰侧，老周被卡在她和煤壁中间，两个人挤成一段谁也退不开的夹角。他的右腿在这姿势里找不到落脚的地方，膝盖一沉。\n\n“你关过一次风门，还想再关第二次？”\n\n话说出来，巷子里又安静下去。老周没有动，撬棍也没有动，棍身贴在她手背旁边，铁是凉的，凉得能分出哪里是铁、哪里是皮。光圈只有两步宽，落在两个人中间那点空隙上，谁也不够照亮全脸。空气在这段支巷里是定量的，两个人一起呼吸，就一起少下去。\n\n水在脚踝边上晃，没有往上走。矿灯的黄又暗了一层。她把扳手攥得更紧了一点，指节重新泛白。",
+      "outcomeNotes": [
+        {
+          "characterId": "alan",
+          "note": "拧死阀门并退上铁梯第一级，供氧嘶声断绝，把氧气变成谁也别想用的抵押品；但老周并未因此退开。"
+        },
+        {
+          "characterId": "lao_zhou",
+          "note": "拖着右腿逼近半步、撬棍磕响铁梯并停在她手侧，压迫到位却没逼退她，反被顶在煤壁与钢瓶之间卡住，右腿失稳。"
+        }
+      ],
+      "stateChanges": {
+        "characters": [
+          {
+            "characterId": "alan",
+            "stressDelta": 2,
+            "conditionsAdd": [
+              {
+                "name": "握死阀门的手",
+                "description": "扳手横在阀门前，只要她不松手，没人能拧开气瓶；这份僵持里的主动权握在她手里，也把她钉在原地。",
+                "modifier": 2,
+                "kind": "boon",
+                "visibility": "public",
+                "abilities": [
+                  "will"
+                ]
+              },
+              {
+                "name": "话已出口的硬撑",
+                "description": "风门那句话她说了，收不回，只能靠气势撑住不再解释。",
+                "modifier": -2,
+                "kind": "emotion",
+                "visibility": "private",
+                "abilities": [
+                  "will"
+                ]
+              }
+            ],
+            "conditionsRemove": [],
+            "inventoryAdd": [],
+            "inventoryRemove": [],
+            "privateNote": "阀门是我关的，氧是我锁的。谁先松手，谁就得先解释风门那件事。",
+            "memory": {
+              "summary": "嘶声断掉的那一刻，巷道里安静得能听见水在靴子里挤。",
+              "importance": 3
+            }
+          },
+          {
+            "characterId": "lao_zhou",
+            "stressDelta": 0,
+            "conditionsAdd": [
+              {
+                "name": "卡进夹角的右腿",
+                "description": "右腿被压过，此刻又找不到落脚点，膝盖在下沉，撑不了太久。",
+                "modifier": -2,
+                "kind": "injury",
+                "visibility": "public",
+                "abilities": [
+                  "will",
+                  "agility"
+                ]
+              },
+              {
+                "name": "没有落下的撬棍",
+                "description": "棍身停在她手侧却始终没砸下去，他自己清楚这一下为什么停住。",
+                "modifier": -1,
+                "kind": "emotion",
+                "visibility": "private",
+                "abilities": [
+                  "will"
+                ]
+              }
+            ],
+            "conditionsRemove": [],
+            "inventoryAdd": [],
+            "inventoryRemove": [],
+            "privateNote": "她不退。她一提风门，这一趟就不是气瓶的事了。",
+            "memory": {
+              "summary": "撬棍停在她手边两指宽处，我没让它落下去。",
+              "importance": 3
+            }
+          }
+        ],
+        "world": {
+          "factsAdd": [
+            "氧气瓶阀门已被阿岚拧死，供氧的嘶声停止，瓶里的氧仍在，但当下无人能取用。",
+            "两人卡在铁梯与氧气瓶之间，老周的撬棍停在阿岚手侧，未落下。"
+          ],
+          "factsRemove": [],
+          "flagsSet": {
+            "valve_shut": true
+          },
+          "pressure": "阀门锁死、撬棍悬着，两个人挤在两米宽的光圈里一起耗巷道残存的空气。",
+          "sceneTitle": "谁先松手"
+        }
+      },
+      "nextTimeJump": {
+        "elapsedMinutes": 4,
+        "label": "阀门拧死后第四分钟",
+        "reason": "没有人退开也没有人开口，僵持里只过了几次呼吸；矿灯又暗一层，把时间显出来。"
+      },
+      "ending": null,
+      "createdAt": "2026-10-28T11:55:44.600Z",
+      "completedAt": "2026-10-28T11:56:24.145Z"
+    }
+  ],
+  "progress": {
+    "phase": "idle",
+    "label": "复盘已开启",
+    "detail": "全部幕后信息已经公开。这场故事到此结束。",
+    "updatedAt": "2026-10-28T11:56:24.677Z"
+  },
+  "llm": {
+    "calls": 4,
+    "promptTokens": 8191,
+    "completionTokens": 4595,
+    "cachedTokens": 4096,
+    "reasoningTokens": 2247,
+    "totalTokens": 12786,
+    "failures": 0
+  },
+  "ending": null,
+  "error": null,
+  "play": {
+    "characterId": "alan",
+    "awaiting": null,
+    "recapAt": "2026-10-28T11:56:24.677Z",
+    "createdAt": "2026-10-28T11:55:44.592Z"
+  },
+  "startedAt": "2026-10-28T11:55:44.598Z",
+  "endedAt": "2026-10-28T11:56:24.677Z"
+}

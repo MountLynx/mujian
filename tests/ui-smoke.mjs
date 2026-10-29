@@ -273,7 +273,10 @@ step('推演页 · 时刻形态（完整数据）', () => {
   runRender.renderRunPage();
   const html = renderedHtml();
   if (!html.includes('推进一刻')) throw new Error('缺少推进按钮');
-  if (!html.includes('行动')) throw new Error('缺少行动账本');
+  if (!html.includes('<h2>举动</h2>')) throw new Error('缺少举动账本');
+  if (html.includes('data-act="open-recap"') || html.includes('打开完整复盘')) {
+    throw new Error('非扮演场不应出现复盘入口');
+  }
 });
 
 for (const god of [true, false]) {
@@ -494,6 +497,255 @@ step('区域签名：轮询不重写未变化区域', () => {
     runRender.renderRunPage();
     if (stageRegion.innerHTML === before) throw new Error('切换时刻后舞台未更新');
   }
+});
+
+
+/* ---- 扮演模式 ---- */
+
+const { redactRunForPlayer } = await import(join(root, 'src/engine/playerView.ts'));
+
+function currentViewHtml() {
+  let out = appEl.innerHTML;
+  for (const child of appEl._children.values()) out += child.innerHTML;
+  return out;
+}
+
+function playFixture({ awaiting = false, recap = false } = {}) {
+  const base = structuredClone(run);
+  const complete = base.beats.filter((beat) => beat.phase === 'complete');
+  const player = base.scenario.characters[0];
+  const other = base.scenario.characters[1];
+  base.scenario.world.hiddenCanon = 'HIDDEN_CANON_MARKER';
+  base.scenario.world.directorNotes = 'DIRECTOR_NOTES_MARKER';
+  player.secret = 'PLAYER_SECRET_MARKER';
+  other.secret = 'OTHER_SECRET_MARKER';
+  other.personality = 'OTHER_PERSONALITY_MARKER';
+  other.desire = 'OTHER_DESIRE_MARKER';
+  const now = new Date().toISOString();
+  base.play = {
+    characterId: player.id,
+    awaiting: awaiting ? 'action' : null,
+    recapAt: recap ? now : null,
+    createdAt: now,
+  };
+  base.status = awaiting ? 'awaiting' : recap ? 'ended' : 'ready';
+  base.beats = complete.slice(-1);
+  if (awaiting) {
+    const lastClock = base.beats.at(-1)?.clock || base.clock;
+    base.beats.push({
+      id: 'beat_play_partial',
+      index: base.beats.length,
+      title: '等你的一刻',
+      phase: 'player_action',
+      clock: { ...lastClock },
+      timeJump: null,
+      publicBrief: 'PUBLIC_BRIEF_MARKER 此刻所有人都能看见的处境。',
+      privateCues: [
+        { characterId: player.id, cue: 'PLAYER_CUE_MARKER 只有你注意到的细节。' },
+        { characterId: other.id, cue: 'OTHER_CUE_MARKER 别人的私密线索。' },
+      ],
+      pressure: '压力标记',
+      sceneQuestion: '问句标记',
+      gmNote: 'GM_NOTE_MARKER',
+      actions: [],
+      adjudications: [],
+      reactions: [],
+      externalEvents: [],
+      narration: '',
+      outcomeNotes: [],
+      stateChanges: null,
+      nextTimeJump: null,
+      ending: null,
+      createdAt: now,
+    });
+  }
+  return { base, player, other };
+}
+
+step('扮演模式 · 等待宣告的玩家视图', () => {
+  const { base } = playFixture({ awaiting: true });
+  const view = redactRunForPlayer(base);
+  const text = JSON.stringify(view);
+  for (const marker of [
+    'OTHER_SECRET_MARKER',
+    'OTHER_CUE_MARKER',
+    'GM_NOTE_MARKER',
+    'HIDDEN_CANON_MARKER',
+    'DIRECTOR_NOTES_MARKER',
+    'OTHER_PERSONALITY_MARKER',
+  ]) {
+    if (text.includes(marker)) throw new Error(`玩家视图泄露了 ${marker}`);
+  }
+  if (!text.includes('PLAYER_CUE_MARKER')) throw new Error('玩家视图缺少自己的私密线索');
+  state.currentRun = view;
+  state.active = false;
+  state.selectedBeatId = null;
+  state.godView = false;
+  runRender.renderRunPage({ full: true, scrollTop: false });
+  const html = currentViewHtml();
+  if (!html.includes('轮到你行动')) throw new Error('缺少轮到你行动提示');
+  if (!html.includes('PUBLIC_BRIEF_MARKER')) throw new Error('缺少公开处境');
+  if (!html.includes('PLAYER_CUE_MARKER')) throw new Error('缺少自己的私密线索');
+  if (html.includes('OTHER_CUE_MARKER') || html.includes('GM_NOTE_MARKER')) {
+    throw new Error('扮演模式页面泄露了未知信息');
+  }
+  if (html.includes('data-act="toggle-god"')) throw new Error('扮演模式不应显示全知开关');
+  if (!html.includes('宣告这一刻的举动')) throw new Error('缺少宣告按钮');
+  if (!html.includes('play-action-form')) throw new Error('缺少举动表单');
+});
+
+step('扮演模式 · 角色档案的信息边界', () => {
+  const { base, player, other } = playFixture({ awaiting: true });
+  const view = redactRunForPlayer(base);
+  state.currentRun = view;
+  drawers.openCharacterDrawer(other.id);
+  if (modalEl.innerHTML.includes('OTHER_SECRET_MARKER')) throw new Error('他人档案泄露秘密');
+  if (!modalEl.innerHTML.includes('公开资料')) throw new Error('他人档案未降级为公开资料');
+  drawers.openCharacterDrawer(player.id);
+  if (!modalEl.innerHTML.includes('PLAYER_SECRET_MARKER')) throw new Error('玩家自己的秘密应可见');
+  if (!modalEl.innerHTML.includes('只有你知道')) throw new Error('玩家档案缺少私密标记');
+});
+
+step('扮演模式 · 等待敌意回应的玩家视图', () => {
+  const { base, player, other } = playFixture({ awaiting: true });
+  const beat = base.beats.at(-1);
+  const now = new Date().toISOString();
+  beat.phase = 'player_reaction';
+  base.play.awaiting = 'reaction';
+  beat.actions = [
+    {
+      id: 'act_player',
+      characterId: player.id,
+      category: '调查',
+      summary: '把日志摊开',
+      deed: '我把守灯日志摊在灯台上。',
+      effect: '逼他解释那一页。',
+      hostile: false,
+      description: '我把守灯日志摊在灯台上。',
+      dialogue: '这一行是谁划掉的？',
+      thought: 'PLAYER_THOUGHT_FOR_REACTION',
+      goalProgress: '',
+      stakes: '',
+      ability: 'perception',
+      traitName: null,
+      targetId: other.id,
+      targetLabel: other.name,
+      status: 'declared',
+      penalties: 0,
+      penaltyNotes: [],
+      generatedBy: 'player',
+      createdAt: now,
+    },
+    {
+      id: 'act_other',
+      characterId: other.id,
+      category: '战斗',
+      summary: 'INCOMING_SUMMARY_MARKER',
+      deed: 'INCOMING_DEED_MARKER 我按住她的手腕，去掰她手里的钥匙。',
+      effect: 'INCOMING_EFFECT_MARKER 夺走总钥匙。',
+      hostile: true,
+      description: 'INCOMING_DEED_MARKER 我按住她的手腕，去掰她手里的钥匙。',
+      dialogue: 'INCOMING_DIALOGUE_MARKER 把钥匙给我。',
+      thought: 'INCOMING_THOUGHT_MARKER',
+      goalProgress: '',
+      stakes: '',
+      ability: 'physique',
+      traitName: null,
+      targetId: player.id,
+      targetLabel: player.name,
+      status: 'declared',
+      penalties: 0,
+      penaltyNotes: [],
+      generatedBy: 'llm',
+      createdAt: now,
+    },
+  ];
+  const view = redactRunForPlayer(base);
+  const viewBeat = view.beats.at(-1);
+  if (viewBeat.actions.length !== 2) throw new Error('等待回应时应保留自己的举动与指向自己的敌意举动');
+  if (viewBeat.actions.some((entry) => entry.thought === 'INCOMING_THOUGHT_MARKER')) {
+    throw new Error('等待回应时泄露了对方内心');
+  }
+  state.currentRun = view;
+  state.active = false;
+  state.selectedBeatId = null;
+  state.godView = false;
+  runRender.renderRunPage({ full: true });
+  const html = currentViewHtml();
+  for (const expected of ['轮到你回应', 'play-reaction-form', '继续原举动', '放下原举动', 'INCOMING_DEED_MARKER', 'INCOMING_EFFECT_MARKER', 'INCOMING_DIALOGUE_MARKER']) {
+    if (!html.includes(expected)) throw new Error(`回应视图缺少「${expected}」`);
+  }
+  if (html.includes('INCOMING_THOUGHT_MARKER') || html.includes('INCOMING_SUMMARY_MARKER')) {
+    throw new Error('回应视图泄露了敌意举动的内心或意图标题');
+  }
+});
+
+step('扮演模式 · 落定后的可见记录', () => {
+  const { base } = playFixture({ awaiting: false });
+  const view = redactRunForPlayer(base);
+  state.currentRun = view;
+  state.active = false;
+  state.godView = false;
+  state.selectedBeatId = view.beats.at(-1)?.id || null;
+  runRender.renderRunPage({ full: true });
+  const html = currentViewHtml();
+  if (html.includes('OTHER_SECRET_MARKER')) throw new Error('落定视图泄露他人秘密');
+  if (html.includes('OTHER_PERSONALITY_MARKER')) throw new Error('落定视图泄露他人性格');
+  if (!html.includes('你看见的')) throw new Error('缺少他人可观察记录');
+  if (!html.includes('旁人可感知的部分')) throw new Error('缺少可见范围说明');
+  if (!html.includes('你的举动')) throw new Error('缺少玩家自己的举动');
+});
+
+step('扮演模式 · 复盘解锁全部信息', () => {
+  const { base } = playFixture({ recap: true });
+  const view = redactRunForPlayer(base);
+  if (!view.play?.recapAt) throw new Error('复盘标记缺失');
+  state.currentRun = view;
+  state.selectedBeatId = view.beats.at(-1)?.id || null;
+  state.godView = true;
+  runRender.renderRunPage({ full: true });
+  const recapHtml = currentViewHtml();
+  if (!recapHtml.includes('复盘模式')) throw new Error('缺少复盘模式横幅');
+  if (recapHtml.includes('data-act="advance-one"')) throw new Error('复盘后仍显示推进按钮');
+  if (recapHtml.includes('/export.md') === false) throw new Error('复盘后缺少导出入口');
+  drawers.openRecap();
+  const html = modalEl.innerHTML;
+  if (!html.includes('OTHER_SECRET_MARKER')) throw new Error('复盘未公开他人秘密');
+  if (!html.includes('HIDDEN_CANON_MARKER')) throw new Error('复盘未公开导演级真相');
+  if (!html.includes('逐刻全记录')) throw new Error('复盘缺少逐刻记录');
+  if (!html.includes('导出完整战报')) throw new Error('复盘缺少导出入口');
+});
+
+step('新建页 · 扮演模式角色选择', () => {
+  const { player, other } = playFixture({ awaiting: false });
+  state.view = 'new';
+  state.create.mode = 'preset';
+  state.create.play.enabled = true;
+  state.create.play.loading = false;
+  state.create.play.castError = null;
+  state.create.play.cast = [
+    {
+      id: player.id,
+      name: player.name,
+      title: player.title,
+      publicProfile: player.publicProfile,
+      passive: false,
+    },
+    {
+      id: other.id,
+      name: other.name,
+      title: other.title,
+      publicProfile: other.publicProfile,
+      passive: false,
+    },
+  ];
+  state.create.play.characterId = player.id;
+  createRender.renderCreatePage();
+  const html = currentViewHtml();
+  if (!html.includes('扮演模式')) throw new Error('缺少扮演模式选项');
+  if (!html.includes('play-cast-card')) throw new Error('缺少角色选择卡');
+  if (!html.includes(player.name) || !html.includes(other.name)) throw new Error('角色选择缺少角色');
+  if (!html.includes('你拿到的是这个角色的可知信息')) throw new Error('缺少信息边界说明');
 });
 
 console.log(failures ? `\n${failures} 项失败` : '\n全部通过');

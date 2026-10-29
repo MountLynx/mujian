@@ -83,6 +83,7 @@ function runCard(run) {
     <h3 class="run-card__title">${escapeHtml(run.title)}</h3>
     <p class="run-card__sub">${escapeHtml(run.currentBeatTitle ? `最近一幕：${run.currentBeatTitle}` : run.subtitle || '')}</p>
     <div class="run-card__foot">
+      ${run.playCharacterName ? `<span><span class="tag tag--gold">扮演 · ${escapeHtml(run.playCharacterName)}</span></span>` : ''}
       <span>${run.beats} / ${run.maxBeats ?? '?'} 刻</span>
       <span class="run-card__go">${icon('arrow', 14)}</span>
     </div>

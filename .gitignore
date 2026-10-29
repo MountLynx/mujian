@@ -41,3 +41,13 @@ examples/genre-tests/dinner-prose-first-person.md
 *.log
 .idea/
 .vscode/
+
+# ── 视频成片与生成音轨（本机生成，不进版本库）──────────────────
+# 成片：video/out/；占位氛围垫与 SFX 混音轨各约 19M，由
+# `npm run video:bgm` 与 `node video/tools/make-sfx.mjs` 重新生成
+video/out/
+video/public/audio/bgm-placeholder.wav
+video/public/audio/sfx-track.wav
+
+# ── Windows 下载标记（浏览器/解压产生的附属文件）───────────────
+*:Zone.Identifier

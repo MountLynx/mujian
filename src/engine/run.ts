@@ -204,5 +204,13 @@ export function runSummary(run: Run): RunSummary {
     updatedAt: run.updatedAt,
     createdAt: run.createdAt,
     currentBeatTitle: last?.title || null,
+    ...(run.play?.characterId
+      ? {
+          playCharacterName:
+            run.scenario.characters.find(
+              (character) => character.id === run.play!.characterId,
+            )?.name ?? run.play.characterId,
+        }
+      : {}),
   };
 }

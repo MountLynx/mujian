@@ -123,6 +123,15 @@ if (values.resume) {
     run.status = 'paused';
     run.error = '上一次进程在执行中断开；可从当前阶段继续。';
   }
+  if (run.play && !run.play.recapAt) {
+    console.error('这一场是扮演模式：需要 Web 界面里的玩家输入，CLI 不能代替你宣告。');
+    console.error(`可以在 http://127.0.0.1:4386/#run/${run.id} 继续；复盘之后才能用 --prose-only。`);
+    process.exit(1);
+  }
+  if (run.play?.recapAt && !values['prose-only']) {
+    console.error('这一场已经复盘并结束；只有 --prose-only 可以继续使用它的记录。');
+    process.exit(1);
+  }
 } else {
   if (!hasLlmCredentials(provider)) {
     console.error(

@@ -10,13 +10,24 @@
     "demo": "node src/cli.ts --scenario fog-harbor",
     "test": "node --test tests/*.test.ts",
     "test:ui": "node tests/ui-smoke.mjs",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "video:typecheck": "tsc -p video/tsconfig.json --noEmit",
+    "video:bgm": "node video/tools/make-placeholder-bgm.mjs"
   },
   "engines": {
     "node": ">=24"
   },
   "devDependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "@ffprobe-installer/ffprobe": "^2.1.2",
+    "@remotion/cli": "^4.0.539",
     "@types/node": "^24.0.0",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "playwright": "^1.64.1",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "remotion": "^4.0.539",
     "typescript": "^5.8.0"
   }
 }

@@ -5,6 +5,93 @@ import { setAppHtml, escapeHtml, attr, avatar, icon, iconMarkSvg } from '../dom.
 import { topbarPlain } from './shell.js';
 import { blankScenarioTemplate } from '../logic/create.js';
 
+function playCastCardHtml(character) {
+  const passive = Boolean(character.passive);
+  const selected = state.create.play.characterId === character.id && !passive;
+  return `<button class="play-cast-card ${selected ? 'is-selected' : ''} ${passive ? 'is-passive' : ''}"
+      data-act="select-play-character" data-character="${attr(character.id)}"
+      ${passive ? 'disabled title="被动角色不主动行动，不能被玩家扮演"' : ''}>
+    <span class="play-cast-card__head">${avatar(character, 'sm')}<b>${escapeHtml(character.name || character.id)}</b>${passive ? '<i class="tag">被动</i>' : ''}</span>
+    <span class="play-cast-card__title">${escapeHtml(character.title || '')}</span>
+    <span class="play-cast-card__profile">${escapeHtml(character.publicProfile || '')}</span>
+  </button>`;
+}
+
+/** 角色选择列表（可单独刷新，不重建整页）。 */
+export function playCastListHtml() {
+  const play = state.create.play;
+  if (play.loading && !play.cast.length) {
+    return '<p class="side-empty">正在读取可扮演的角色……</p>';
+  }
+  if (play.castError) {
+    return `<p class="editor-message editor-message--error">${escapeHtml(play.castError)}</p>`;
+  }
+  if (!play.cast.length) {
+    return `<p class="side-empty">${state.create.mode === 'preset' ? '这个剧本没有可扮演的角色。' : '手稿里还没有可读的角色。检查 JSON 后再试。'}</p>`;
+  }
+  return play.cast.map(playCastCardHtml).join('');
+}
+
+/** 只更新游玩方式相关的 DOM，保留用户在设置里填的值。 */
+export function refreshPlayChooserDom() {
+  const enabled = state.create.play.enabled;
+  document.querySelectorAll('[data-act="set-play-mode"]').forEach((button) => {
+    const on = (button.dataset.mode === 'play') === enabled;
+    button.classList.toggle('is-active', on);
+    button.setAttribute('aria-selected', String(on));
+  });
+  const panel = document.querySelector('#play-cast-panel');
+  if (panel) panel.hidden = !enabled;
+  const list = document.querySelector('#play-cast');
+  if (list) list.innerHTML = playCastListHtml();
+  const startButton = document.querySelector('[data-act="start-create"]');
+  if (startButton && !startButton.classList.contains('is-loading')) {
+    const character = state.create.play.cast.find(
+      (entry) => entry.id === state.create.play.characterId,
+    );
+    startButton.innerHTML = enabled
+      ? character
+        ? `以 ${escapeHtml(character.name)} 的身份入戏`
+        : '选择你要扮演的角色'
+      : state.create.mode === 'preset'
+        ? '以这个剧本开局'
+        : '用这份手稿开局';
+    const apiMissing = Boolean(state.health && !state.health.hasApiKey);
+    startButton.disabled = apiMissing || (enabled && (!character || state.create.play.loading));
+  }
+  const hint = document.querySelector('.create-submit__hint');
+  if (hint) {
+    hint.textContent = enabled
+      ? '建场不需要立即推进；第一幕会先等你宣告。你只会看到这个角色能感知到的信息。'
+      : state.create.mode === 'preset'
+        ? '建场不会立即消耗 token；你可以在推演页逐刻推进。'
+        : '建场前会校验手稿，不会立即消耗 token。';
+  }
+}
+
+function playSetupHtml() {
+  const enabled = state.create.play.enabled;
+  return `
+  <section class="panel side-panel play-setup">
+    <div class="side-panel__head"><h2>游玩方式</h2></div>
+    <div class="mode-switch" role="tablist" aria-label="游玩方式">
+      <button class="mode-option ${enabled ? '' : 'is-active'}" data-act="set-play-mode" data-mode="spectate" role="tab" aria-selected="${!enabled}">
+        <b>推演模式</b>
+        <span>所有角色由 AI 扮演。你可以旁观，并查看全部幕后信息。</span>
+      </button>
+      <button class="mode-option ${enabled ? 'is-active' : ''}" data-act="set-play-mode" data-mode="play" role="tab" aria-selected="${enabled}">
+        <b>扮演模式</b>
+        <span>你接手其中一人。只看自己知道的，故事结束后才能复盘全部真相。</span>
+      </button>
+    </div>
+    <div id="play-cast-panel" class="play-cast-panel" ${enabled ? '' : 'hidden'}>
+      <p class="side-note">选择你要扮演的角色。别人的秘密、内心和检定，在复盘之前都不会交给你。</p>
+      <div id="play-cast" class="play-cast">${enabled ? playCastListHtml() : ''}</div>
+      <p class="play-privacy">${icon('eye', 12)} 你拿到的是这个角色的可知信息：公开处境、自己的私密线索与角色卡、公开事实、自己的检定。他人的 effect、内心、检定与导演幕后注属于未知。</p>
+    </div>
+  </section>`;
+}
+
 export function renderCreatePage() {
   const presets = state.scenarios;
   if (!state.create.presetId && presets.length) {
@@ -88,6 +175,7 @@ export function renderCreatePage() {
 
         <aside class="create-aside">
           ${settingsDisabled ? '<div class="api-warning">服务端还没有配置 DeepSeek API Key。可以建场浏览，但无法推进。请在 .env 中设置 DEEPSEEK_API_KEY。</div>' : ''}
+          ${playSetupHtml()}
           <section class="panel side-panel">
             <div class="side-panel__head"><h2>推演设置</h2></div>
             <p class="side-note">只影响这一次推演；手稿本身不会被改写。</p>
@@ -124,4 +212,5 @@ export function renderCreatePage() {
     </main>`,
     { scrollTop: true },
   );
+  refreshPlayChooserDom();
 }

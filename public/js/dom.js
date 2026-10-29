@@ -116,6 +116,39 @@ export function isRunning(run) {
   return state.active || run?.status === 'running' || state.pendingAdvance;
 }
 
+/* ---- 扮演模式 ---- */
+
+export function isPlayRun(run) {
+  return Boolean(run?.play?.characterId);
+}
+
+export function playRevealed(run) {
+  return !isPlayRun(run) || Boolean(run.play.recapAt);
+}
+
+export function playCharacterId(run) {
+  return run?.play?.characterId || null;
+}
+
+export function playCharacter(run) {
+  return playCharacterId(run) ? findCharacter(run, playCharacterId(run)) : null;
+}
+
+/** 'action' | 'reaction' | null */
+export function playAwaiting(run) {
+  if (!isPlayRun(run)) return null;
+  const last = run?.beats?.at(-1);
+  if (!last) return null;
+  if (last.phase === 'player_action') return 'action';
+  if (last.phase === 'player_reaction') return 'reaction';
+  return null;
+}
+
+/** 玩家视角下，角色的全部内幕是否对该玩家隐藏。 */
+export function playHidesCharacter(run, characterId) {
+  return isPlayRun(run) && !playRevealed(run) && characterId !== playCharacterId(run);
+}
+
 export function statusPill(status, customLabel) {
   const label = customLabel || STATUS_LABELS[status] || status;
   return `<span class="status-pill status-pill--${attr(status)}">${escapeHtml(label)}</span>`;
@@ -123,6 +156,11 @@ export function statusPill(status, customLabel) {
 
 export function runStatusLabel(run, active = false, beatCount = null) {
   if (active || run.status === 'running') return '推演中';
+  if (run.status === 'awaiting') {
+    const last = run.beats?.at(-1);
+    if (last?.phase === 'player_reaction') return '轮到你回应';
+    return '轮到你行动';
+  }
   if (run.status === 'ready') {
     const count = beatCount ?? completeBeats(run).length;
     return count > 0 ? '待续' : '待开场';

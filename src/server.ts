@@ -6,6 +6,15 @@ import { createLanguageModel } from './llm/client.ts';
 import { RunStore } from './engine/store.ts';
 import { createRun } from './engine/run.ts';
 import { RunEngine } from './engine/engine.ts';
+import {
+  createPlayConfig,
+  playAwaiting,
+  PlayInputError,
+  submitPlayerAction,
+  submitPlayerReaction,
+  unlockRecap,
+} from './engine/play.ts';
+import { redactRunForPlayer } from './engine/playerView.ts';
 import { WorldStore } from './world/store.ts';
 import { createWorldRun } from './world/run.ts';
 import { WorldEngine } from './world/engine.ts';
@@ -110,6 +119,20 @@ function thinking(value: unknown, fallback: ThinkingMode): ThinkingMode {
   return value === 'auto' || value === 'enabled' || value === 'disabled' ? value : fallback;
 }
 
+/** Play mode may be requested as `play: { characterId }` or a flat field. */
+function requestedPlayCharacterId(body: Record<string, unknown>): unknown {
+  const play = body.play;
+  if (play && typeof play === 'object' && !Array.isArray(play)) {
+    const record = play as Record<string, unknown>;
+    return record.characterId ?? record.playerCharacterId;
+  }
+  return body.playCharacterId;
+}
+
+function playRequested(body: Record<string, unknown>): boolean {
+  return (body.play !== undefined && body.play !== null) || typeof body.playerCharacterId === 'string';
+}
+
 async function loadRun(id: string): Promise<Run | null> {
   return store.load(id);
 }
@@ -151,6 +174,13 @@ function startJob(
 ): { started: boolean; reason?: string } {
   if (activeJobs.has(initial.id)) return { started: false, reason: '这一场已经在推演中。' };
   if (initial.ending) return { started: false, reason: '这一场已经结束。' };
+  if (initial.play?.recapAt) return { started: false, reason: '这一场已经复盘并结束。' };
+  if (initial.play && mode === 'auto') {
+    return { started: false, reason: '扮演模式需要你逐刻宣告，不能连续推演。' };
+  }
+  if (playAwaiting(initial)) {
+    return { started: false, reason: '轮到你输入，请先完成你的举动或回应。' };
+  }
   if (mode === 'auto' && initial.beats.filter((beat) => beat.phase === 'complete').length >= initial.settings.maxBeats) {
     return { started: false, reason: '已经达到本场设定的时刻上限，可以单步继续或新建一场。' };
   }
@@ -182,6 +212,7 @@ function startJob(
         await engine.advanceOne();
         completedThisRequest += 1;
 
+        if (run.status === 'awaiting') break;
         if (run.status === 'error') break;
         if (run.ending) break;
         if (job.stopRequested) break;
@@ -191,7 +222,7 @@ function startJob(
         await store.save(run);
       }
 
-      if (run.status !== 'ended' && run.status !== 'error') {
+      if (run.status !== 'ended' && run.status !== 'error' && run.status !== 'awaiting') {
         if (mode === 'auto') {
           run.status = 'paused';
           const reachedLimit =
@@ -530,6 +561,34 @@ const server = http.createServer(async (req, res) => {
         return;
       }
 
+      const scenarioCastMatch = pathname.match(/^\/api\/scenarios\/([a-zA-Z0-9_-]+)\/cast$/);
+      if (method === 'GET' && scenarioCastMatch) {
+        const scenario = await getPresetScenario(scenarioCastMatch[1]!);
+        if (!scenario) {
+          sendJson(res, 404, { error: '找不到这个预置剧本。' });
+          return;
+        }
+        // Play-mode setup must not read the preset's secrets just to pick a role.
+        sendJson(res, 200, {
+          id: scenario.id,
+          title: scenario.title,
+          subtitle: scenario.subtitle,
+          kicker: scenario.kicker,
+          location: scenario.world.location,
+          cast: scenario.characters.map((character) => ({
+            id: character.id,
+            name: character.name,
+            title: character.title,
+            age: character.age,
+            pronouns: character.pronouns,
+            publicProfile: character.publicProfile,
+            appearance: character.appearance,
+            passive: Boolean(character.passive),
+          })),
+        });
+        return;
+      }
+
       const scenarioMatch = pathname.match(/^\/api\/scenarios\/([a-zA-Z0-9_-]+)$/);
       if (method === 'GET' && scenarioMatch) {
         const scenario = await getPresetScenario(scenarioMatch[1]!);
@@ -681,6 +740,17 @@ const server = http.createServer(async (req, res) => {
           thinking: world.settings.thinking,
           autoLimit: scenario.rules.maxBeats,
         });
+        if (playRequested(body)) {
+          try {
+            run.play = createPlayConfig(run.scenario, requestedPlayCharacterId(body));
+          } catch (error) {
+            if (error instanceof PlayInputError) {
+              sendJson(res, 400, { error: error.message });
+              return;
+            }
+            throw error;
+          }
+        }
         run.worldLink = {
           worldId: world.id,
           worldTitle: world.definition.title,
@@ -701,7 +771,11 @@ const server = http.createServer(async (req, res) => {
           addedAt: nowIso(),
         });
         await worldStore.save(world);
-        sendJson(res, 201, { run, world, sceneRun: world.sceneRuns.at(-1) });
+        sendJson(res, 201, {
+          run: redactRunForPlayer(run),
+          world,
+          sceneRun: world.sceneRuns.at(-1),
+        });
         return;
       }
 
@@ -845,9 +919,20 @@ const server = http.createServer(async (req, res) => {
           thinking: thinking(body.thinking, config.llm.thinking),
           autoLimit: maxBeats,
         });
+        if (playRequested(body)) {
+          try {
+            run.play = createPlayConfig(run.scenario, requestedPlayCharacterId(body));
+          } catch (error) {
+            if (error instanceof PlayInputError) {
+              sendJson(res, 400, { error: error.message });
+              return;
+            }
+            throw error;
+          }
+        }
         await store.save(run);
-        console.log(`[run] created ${run.id} ${run.scenario.title}`);
-        sendJson(res, 201, { run, active: false });
+        console.log(`[run] created ${run.id} ${run.scenario.title}${run.play ? `（扮演 ${run.play.characterId}）` : ''}`);
+        sendJson(res, 201, { run: redactRunForPlayer(run), active: false });
         return;
       }
 
@@ -858,7 +943,10 @@ const server = http.createServer(async (req, res) => {
           sendJson(res, 404, { error: '找不到这一场推演。' });
           return;
         }
-        sendJson(res, 200, { run, active: activeJobs.has(run.id) });
+        sendJson(res, 200, {
+          run: redactRunForPlayer(run),
+          active: activeJobs.has(run.id),
+        });
         return;
       }
 
@@ -887,8 +975,20 @@ const server = http.createServer(async (req, res) => {
           sendJson(res, 409, { error: '这一场已经在推演中。' });
           return;
         }
+        if (playAwaiting(run)) {
+          sendJson(res, 409, { error: '轮到你输入：请先完成你的举动或回应。' });
+          return;
+        }
+        if (run.play?.recapAt) {
+          sendJson(res, 409, { error: '本场已经复盘并结束，不能继续推进。' });
+          return;
+        }
         const body = (await readJson(req)) as Record<string, unknown>;
         const mode = body.mode === 'auto' ? 'auto' : 'one';
+        if (run.play && mode === 'auto') {
+          sendJson(res, 400, { error: '扮演模式需要你逐刻宣告，不能连续推演。' });
+          return;
+        }
         const requested = clamp(
           Number.isFinite(Number(body.beats)) ? Number(body.beats) : 1,
           1,
@@ -929,11 +1029,106 @@ const server = http.createServer(async (req, res) => {
         return;
       }
 
+      const playActionMatch = pathname.match(
+        /^\/api\/runs\/([a-zA-Z0-9_-]+)\/play\/(action|reaction)$/,
+      );
+      if (playActionMatch && method === 'POST') {
+        if (!hasLlmCredentials()) {
+          sendJson(res, 503, { error: `服务端未配置 ${missingKeyName}。` });
+          return;
+        }
+        const run = await loadRun(playActionMatch[1]!);
+        if (!run) {
+          sendJson(res, 404, { error: '找不到这一场推演。' });
+          return;
+        }
+        if (!run.play) {
+          sendJson(res, 409, { error: '这一场不是扮演模式。' });
+          return;
+        }
+        if (activeJobs.has(run.id)) {
+          sendJson(res, 409, { error: '这一场已经在推演中。' });
+          return;
+        }
+        if (run.play.recapAt) {
+          sendJson(res, 409, { error: '本场已经复盘并结束。' });
+          return;
+        }
+        const kind = playActionMatch[2] === 'reaction' ? 'reaction' : 'action';
+        if (playAwaiting(run) !== kind) {
+          sendJson(res, 409, {
+            error:
+              kind === 'action'
+                ? '现在不是宣告举动的时候。'
+                : '现在没有需要你回应的敌意举动。',
+          });
+          return;
+        }
+        const body = await readJson(req);
+        try {
+          if (kind === 'action') submitPlayerAction(run, body);
+          else submitPlayerReaction(run, body);
+        } catch (error) {
+          if (error instanceof PlayInputError) {
+            sendJson(res, error.status, { error: error.message });
+            return;
+          }
+          throw error;
+        }
+        run.updatedAt = nowIso();
+        await store.save(run);
+        const started = startJob(run, 'one', 1);
+        if (!started.started) {
+          sendJson(res, 409, { error: started.reason ?? '无法继续推演。' });
+          return;
+        }
+        sendJson(res, 202, {
+          ok: true,
+          active: true,
+          run: redactRunForPlayer(run),
+        });
+        return;
+      }
+
+      const recapMatch = pathname.match(/^\/api\/runs\/([a-zA-Z0-9_-]+)\/recap$/);
+      if (recapMatch && method === 'POST') {
+        const run = await loadRun(recapMatch[1]!);
+        if (!run) {
+          sendJson(res, 404, { error: '找不到这一场推演。' });
+          return;
+        }
+        if (!run.play) {
+          sendJson(res, 409, { error: '这一场不是扮演模式。' });
+          return;
+        }
+        if (activeJobs.has(run.id)) {
+          sendJson(res, 409, { error: '这一刻还没有落定，无法复盘。' });
+          return;
+        }
+        try {
+          unlockRecap(run);
+        } catch (error) {
+          if (error instanceof PlayInputError) {
+            sendJson(res, error.status, { error: error.message });
+            return;
+          }
+          throw error;
+        }
+        await store.save(run);
+        console.log(`[run] recap unlocked ${run.id}`);
+        sendJson(res, 200, { ok: true, run });
+        return;
+      }
+
       const proseMatch = pathname.match(/^\/api\/runs\/([a-zA-Z0-9_-]+)\/prose$/);
       if (proseMatch && method === 'POST') {
         const run = await loadRun(proseMatch[1]!);
         if (!run) {
           sendJson(res, 404, { error: '找不到这一场推演。' });
+          return;
+        }
+        if (run.play && !run.play.recapAt) {
+          sendJson(res, 403, { error: '复盘之前，玩家只能使用自己可知的信息，不能生成全知正文。' });
           return;
         }
         const body = (await readJson(req)) as Record<string, unknown>;
@@ -962,6 +1157,10 @@ const server = http.createServer(async (req, res) => {
         const run = await loadRun(exportMatch[1]!);
         if (!run) {
           sendJson(res, 404, { error: '找不到这一场推演。' });
+          return;
+        }
+        if (run.play && !run.play.recapAt) {
+          sendJson(res, 403, { error: '复盘之前不能导出完整战报：它包含你还不知道的信息。' });
           return;
         }
         const filename = `${run.id}.${exportMatch[2] === 'md' ? 'md' : 'json'}`;

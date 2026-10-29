@@ -3,13 +3,16 @@
 import { state } from '../state.js';
 import { api } from '../api.js';
 import { toast, setBusyButton } from '../dom.js';
-import { renderCreatePage } from '../render/create.js';
+import { renderCreatePage, refreshPlayChooserDom } from '../render/create.js';
+
+let playCastRequest = 0;
 
 export async function loadCreatePage() {
   state.view = 'new';
   document.title = '新建推演 · 幕间';
   if (!state.health) await loadBaseDataFallback();
   renderCreatePage();
+  if (state.create.play.enabled) void loadPlayCast();
 }
 
 async function loadBaseDataFallback() {
@@ -104,6 +107,115 @@ export function blankScenarioTemplate() {
   };
 }
 
+/* ---- 扮演模式：角色选择 ---- */
+
+function normalizeCastId(value, fallback) {
+  const raw = String(value || '').trim() || fallback;
+  return (
+    raw
+      .toLowerCase()
+      .replace(/[^a-z0-9_\-\u4e00-\u9fff]+/g, '-')
+      .replace(/^-+|-+$/g, '')
+      .slice(0, 48) || fallback
+  );
+}
+
+/** 与服务端 normalizeScenario 相同的 id 归一化，保证建场时能对上角色。 */
+function castFromEditor() {
+  const textarea = document.querySelector('#custom-editor');
+  const raw = textarea?.value ?? state.create.editorText;
+  if (!String(raw || '').trim()) return { cast: [], error: '手稿还是空的。' };
+  let scenario;
+  try {
+    scenario = JSON.parse(raw);
+  } catch {
+    return { cast: [], error: '手稿还不是合法 JSON，暂时无法列出角色。' };
+  }
+  const characters = Array.isArray(scenario?.characters) ? scenario.characters : [];
+  if (!characters.length) return { cast: [], error: '手稿里还没有 characters。' };
+  const seen = new Set();
+  const cast = characters.map((entry, index) => {
+    const record = entry && typeof entry === 'object' ? entry : {};
+    const name = String(record.name || '').trim();
+    const baseId = normalizeCastId(
+      record.id || (name ? `角色-${name}` : ''),
+      `character-${index + 1}`,
+    );
+    let id = baseId;
+    let suffix = 2;
+    while (seen.has(id)) id = `${baseId}-${suffix++}`;
+    seen.add(id);
+    return {
+      id,
+      name: name || id,
+      title: String(record.title || ''),
+      publicProfile: String(record.publicProfile || ''),
+      passive: record.passive === true,
+    };
+  });
+  return { cast, error: null };
+}
+
+/** 读取可扮演角色的公开信息；预置剧本只请求 /cast，不把秘密带到前端。 */
+export async function loadPlayCast() {
+  const play = state.create.play;
+  const request = ++playCastRequest;
+  if (state.create.mode === 'preset') {
+    if (!state.create.presetId) {
+      play.cast = [];
+      play.castError = null;
+      refreshPlayChooserDom();
+      return;
+    }
+    play.loading = true;
+    play.castError = null;
+    refreshPlayChooserDom();
+    try {
+      const data = await api(
+        `/api/scenarios/${encodeURIComponent(state.create.presetId)}/cast`,
+      );
+      if (request !== playCastRequest) return;
+      play.cast = Array.isArray(data.cast) ? data.cast : [];
+    } catch (error) {
+      if (request !== playCastRequest) return;
+      play.cast = [];
+      play.castError = error.message || '无法读取这个剧本的角色。';
+    }
+  } else {
+    const result = castFromEditor();
+    play.cast = result.cast;
+    play.castError = result.error;
+  }
+  if (request !== playCastRequest) return;
+  play.loading = false;
+  const selectable = play.cast.filter((entry) => !entry.passive);
+  if (!selectable.some((entry) => entry.id === play.characterId)) {
+    play.characterId = selectable[0]?.id ?? null;
+  }
+  refreshPlayChooserDom();
+}
+
+export function setPlayMode(mode) {
+  const enabled = mode === 'play';
+  state.create.play.enabled = enabled;
+  refreshPlayChooserDom();
+  if (enabled) void loadPlayCast();
+}
+
+export function selectPlayCharacter(characterId) {
+  const character = state.create.play.cast.find((entry) => entry.id === characterId);
+  if (!character || character.passive) return;
+  state.create.play.characterId = characterId;
+  const error = document.querySelector('#create-error');
+  if (error) error.hidden = true;
+  refreshPlayChooserDom();
+}
+
+/** 预置剧本换选后，若正在选扮演角色，重新拉取该剧本的公开角色卡。 */
+export function refreshPlayCastForPreset() {
+  if (state.create.play.enabled) void loadPlayCast();
+}
+
 function readCreateSettings() {
   const maxBeatsNode = document.querySelector('#setting-max-beats');
   const seedNode = document.querySelector('#setting-seed');
@@ -130,15 +242,22 @@ export async function startCreate(button) {
   const settings = readCreateSettings();
   const settingsError = document.querySelector('#create-error');
   if (settingsError) settingsError.hidden = true;
+  const play = state.create.play;
+  if (play.enabled && !play.characterId) {
+    showCreateError('请先选择你要扮演的角色。');
+    toast('扮演模式需要选择一个角色。', 'error');
+    return;
+  }
   state.busyAction = true;
   setBusyButton(button, true, '正在建场');
+  const playPayload = play.enabled ? { play: { characterId: play.characterId } } : {};
   try {
     let data;
     if (state.create.mode === 'preset') {
       if (!state.create.presetId) throw new Error('还没有选择预置剧本。');
       data = await api('/api/runs', {
         method: 'POST',
-        body: JSON.stringify({ presetId: state.create.presetId, ...settings }),
+        body: JSON.stringify({ presetId: state.create.presetId, ...settings, ...playPayload }),
       });
     } else {
       const textarea = document.querySelector('#custom-editor');
@@ -152,10 +271,15 @@ export async function startCreate(button) {
       }
       data = await api('/api/runs', {
         method: 'POST',
-        body: JSON.stringify({ scenario, ...settings }),
+        body: JSON.stringify({ scenario, ...settings, ...playPayload }),
       });
     }
-    toast('场已建好。推开第一幕之前，所有骰子都还安静。', 'success');
+    toast(
+      play.enabled
+        ? '场已建好。第一幕会先等你宣告自己的举动。'
+        : '场已建好。推开第一幕之前，所有骰子都还安静。',
+      'success',
+    );
     location.hash = `#run/${encodeURIComponent(data.run.id)}`;
   } catch (error) {
     const suffix = error.issues?.length ? `\n${error.issues.join('；')}` : '';
@@ -178,17 +302,6 @@ export function switchCreateMode(mode) {
   document.querySelectorAll('.create-panel[data-panel]').forEach((panel) => {
     panel.hidden = panel.dataset.panel !== mode;
   });
-  const startButton = document.querySelector('[data-act="start-create"]');
-  if (startButton) {
-    startButton.innerHTML = `开局`;
-  }
-  const hint = document.querySelector('.create-submit__hint');
-  if (hint) {
-    hint.textContent =
-      mode === 'preset'
-        ? '建场不会立即消耗 token；你可以在推演页逐刻推进。'
-        : '建场前会校验手稿，不会立即消耗 token。';
-  }
   if (mode === 'custom') {
     const editor = document.querySelector('#custom-editor');
     if (editor && !editor.value.trim()) {
@@ -197,6 +310,8 @@ export function switchCreateMode(mode) {
     }
     editor?.focus({ preventScroll: true });
   }
+  refreshPlayChooserDom();
+  if (state.create.play.enabled) void loadPlayCast();
 }
 
 export function updateEditorMessage(type, text) {

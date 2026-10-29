@@ -173,3 +173,21 @@ test('时钟：起点与事件跳跃能跨午夜', () => {
   assert.equal(next.display, '00:10 · 次日');
   assert.equal(next.minutes, 24 * 60 + 10);
 });
+
+test('场景：扮演友好的两角色短局《最后一根火柴》可载入', async () => {
+  const scenario = await getPresetScenario('last-match');
+  assert.ok(scenario);
+  assert.equal(scenario.title, '最后一根火柴');
+  assert.equal(scenario.characters.length, 2);
+  assert.equal(scenario.characters.filter((character) => character.passive).length, 0);
+  assert.ok(scenario.world.hiddenCanon?.includes('风门'));
+  assert.equal(scenario.world.deadlineClock, '04:00');
+  for (const character of scenario.characters) {
+    assert.ok(character.desire.length > 10);
+    assert.ok(character.secret.length > 20);
+    assert.ok(character.traits.length >= 2);
+  }
+  const run = createRun(scenario, { seed: 'last-match-test' });
+  const deadline = deadlineForRun(run);
+  assert.equal(deadline?.clock, '04:00');
+});

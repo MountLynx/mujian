@@ -267,7 +267,14 @@ export function resolveChecks(params: {
       penaltyNotes: action.penaltyNotes,
     });
 
-    const incoming = action.targetId ? reactionCharMap.get(action.targetId) : undefined;
+    // Only hostile actions are contested against the target's reaction. A
+    // non-hostile action pointing at someone who happens to be reacting to a
+    // different threat still resolves against its own DC; the target's own deed
+    // is the answer to it.
+    const incoming =
+      action.targetId && action.hostile !== false
+        ? reactionCharMap.get(action.targetId)
+        : undefined;
     let targetScore: number;
     let dc: number | null = null;
     let opponentTotal: number | null = null;
